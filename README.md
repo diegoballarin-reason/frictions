@@ -25,7 +25,7 @@ Most of this work was done with Claude, and Claude is named wherever the episode
 
 This inventory was produced by applying the protocols it describes. The observations, the analysis, the protocols and the final revision are mine; the drafting was done in dialogue with the systems under observation, under those same protocols — blind fields, forced refutations, pre-declared failure criteria. A set of articles on the failure modes of language models, written without a working method for handling those failure modes, would be an odd artefact.
 
-Episodes are reconstructed rather than transcribed: same structure of error, neutral content. The project the material comes from stays out of view; the behaviour it exposed does not.
+Episodes are reconstructed rather than transcribed: same structure of error, neutral content. Where a piece reports episodes directly instead, as the case report in 08 does, it says so on its own first page. The project the material comes from stays out of view; the behaviour it exposed does not.
 
 ## Contents
 
@@ -50,14 +50,17 @@ The answer arrives with its reasoning already spent. Why that is expensive to co
 **[07 · The Comma Before the Conjunction](articles/07-punctuation-tells.en.md)** / *[La virgola prima della congiunzione](articles/07-punctuation-tells.it.md)*
 Punctuation errors as fingerprints. A proofreader's eye as an evaluation instrument.
 
+**[08 · Nine Countermeasures, Tested for Two Weeks](articles/08-countermeasures.en.md)** / *[Nove contromisure, provate per due settimane](articles/08-countermeasures.it.md)* — *case report*
+Nine interventions applied across a two-week research phase, each with its outcome. One line separates what held from what did not.
+
 ## What the inventory exercises
 
 | Practice | Where it operates |
 |---|---|
 | Naming and delimiting behavioural phenomena | every piece; the shared vocabulary of the series |
-| Protocol design and countermeasures | 01, 02, 03, 04, 06 |
+| Protocol design and countermeasures | 01, 02, 03, 04, 06, 08 |
 | Verification design, controls, pre-registration | 02, 05 |
-| Longitudinal evaluation across sessions | 01, 03 |
+| Longitudinal evaluation across sessions | 01, 03, 08 |
 | Close textual and editorial analysis | 07 |
 | Parallel authoring in EN and IT, two originals | every file |
 | Reading and situating published research | 01, 02, 03, 05 |
@@ -93,7 +96,7 @@ Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato o
 
 Questo inventario è stato prodotto applicando i protocolli che descrive. Osservazioni, analisi, protocolli e revisione finale sono miei; la stesura è avvenuta in dialogo con i sistemi sotto osservazione, sotto quegli stessi protocolli — campi ciechi, confutazioni obbligate, criteri di fallimento dichiarati in anticipo. Una serie di articoli sui modi di guasto dei modelli linguistici, scritta senza un metodo di lavoro per gestirli, sarebbe un oggetto singolare.
 
-Gli episodi sono ricostruiti, non trascritti: stessa struttura dell'errore, contenuto neutro. Il progetto da cui il materiale proviene resta fuori campo; il comportamento che ha messo in luce no.
+Gli episodi sono ricostruiti, non trascritti: stessa struttura dell'errore, contenuto neutro. Dove un pezzo riporta invece episodi diretti, come il rapporto di caso in 08, lo dichiara nella propria prima pagina. Il progetto da cui il materiale proviene resta fuori campo; il comportamento che ha messo in luce no.
 
 ## Indice
 
@@ -118,14 +121,17 @@ La risposta arriva col ragionamento già speso. Perché è costoso da rettificar
 **[07 · La virgola prima della congiunzione](articles/07-punctuation-tells.it.md)** / *[The Comma Before the Conjunction](articles/07-punctuation-tells.en.md)*
 Gli errori di interpunzione come impronte digitali. L'occhio del correttore di bozze come strumento di valutazione.
 
+**[08 · Nove contromisure, provate per due settimane](articles/08-countermeasures.it.md)** / *[Nine Countermeasures, Tested for Two Weeks](articles/08-countermeasures.en.md)* — *rapporto di caso*
+Nove interventi applicati lungo due settimane di lavoro, ciascuno col suo esito. Una linea separa quelli che hanno retto da quelli che non hanno retto.
+
 ## Che cosa mette in esercizio l'inventario
 
 | Pratica | Dove opera |
 |---|---|
 | Nominare e circoscrivere fenomeni di comportamento | tutti; il lessico condiviso della serie |
-| Progettazione di protocolli e contromisure | 01, 02, 03, 04, 06 |
+| Progettazione di protocolli e contromisure | 01, 02, 03, 04, 06, 08 |
 | Disegno della verifica, controlli, pre-registrazione | 02, 05 |
-| Valutazione longitudinale attraverso le sessioni | 01, 03 |
+| Valutazione longitudinale attraverso le sessioni | 01, 03, 08 |
 | Analisi testuale e redazionale ravvicinata | 07 |
 | Scrittura parallela in IT e EN, due originali | ogni file |
 | Lettura e collocazione della ricerca pubblicata | 01, 02, 03, 05 |
