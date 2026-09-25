@@ -19,11 +19,7 @@ Each article does three things and then stops: it names the phenomenon, shows a 
 
 ## Naming the model
 
-Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. Where the literature documents the same behaviour across vendors — positional degradation over long inputs,[^a] sycophancy under preference training,[^b] the limits of unaided self-correction[^c] — it is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
-
-[^a]: N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172. See 01.
-[^b]: M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548. See 02.
-[^c]: J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798. See 02.
+Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. Where the literature documents the same behaviour across vendors — positional degradation over long inputs (Liu et al., 2024), sycophancy under preference training (Sharma et al., 2024), the limits of unaided self-correction (Huang et al., 2024) — it is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
 
 ## Method
 
@@ -125,11 +121,7 @@ Ogni articolo fa tre cose e si ferma: nomina il fenomeno, mostra un caso di camp
 
 ## Nominare il modello
 
-Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Dove la letteratura documenta lo stesso comportamento presso più produttori — il degrado posizionale sugli input lunghi,[^a] la sicofantia sotto addestramento per preferenza,[^b] i limiti dell'autocorrezione non assistita[^c] — viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
-
-[^a]: N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172. CFR 01.
-[^b]: M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548. CFR 02.
-[^c]: J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798. CFR 02.
+Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Dove la letteratura documenta lo stesso comportamento presso più produttori — il degrado posizionale sugli input lunghi (Liu et al., 2024), la sicofantia sotto addestramento per preferenza (Sharma et al., 2024), i limiti dell'autocorrezione non assistita (Huang et al., 2024) — viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
 
 ## Metodo
 
