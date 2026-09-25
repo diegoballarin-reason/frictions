@@ -19,7 +19,11 @@ Each article does three things and then stops: it names the phenomenon, shows a 
 
 ## Naming the model
 
-Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. Where the literature documents the same behaviour across vendors — positional degradation over long inputs, sycophancy under preference training, the limits of unaided self-correction — it is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
+Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. Where the literature documents the same behaviour across vendors — positional degradation over long inputs,[^a] sycophancy under preference training,[^b] the limits of unaided self-correction[^c] — it is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
+
+[^a]: N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172. See 01.
+[^b]: M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548. See 02.
+[^c]: J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798. See 02.
 
 ## Method
 
@@ -78,6 +82,24 @@ Nine interventions applied across a two-week research phase, each with its outco
 | Checking generated claims against third-party records | study |
 | Coding a transcript into quantified categories | study |
 
+## Related work
+
+The phenomena here were named from observation before the literature was consulted. What follows is where they meet published work, not where they came from.
+
+| Where | Work |
+|---|---|
+| 01 | N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172 |
+| 01 | K. Hong, A. Troynikov, J. Huber, *Context Rot: How Increasing Input Tokens Impacts LLM Performance*, Chroma Research, July 2025 |
+| 01 | D. Wu et al., *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*, ICLR 2025, arXiv:2410.10813 |
+| 02 | M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548 |
+| 02 | J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798 |
+| 03 | P. Laban et al., *LLMs Get Lost in Multi-Turn Conversation*, 2025, arXiv:2505.06120 |
+| 05 | J. Zhang et al., *Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity*, arXiv:2510.01171 |
+| 06 | M. Turpin, J. Michael, E. Perez, S. R. Bowman, *Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting*, 2023, arXiv:2305.04388 |
+| 07 | T. Kumarage et al., *Stylometric Detection of AI-Generated Text in Twitter Timelines*, 2023, arXiv:2303.03697 |
+
+Two pieces carry no references, and should not. 04 is prescriptive and 08 is a case report: neither makes a claim about what the literature documents.
+
 Every article closes on a question its protocol does not answer. This page opens on the one they share: how much of what a model gets wrong is available to be&nbsp;noticed?
 
 ---
@@ -103,7 +125,11 @@ Ogni articolo fa tre cose e si ferma: nomina il fenomeno, mostra un caso di camp
 
 ## Nominare il modello
 
-Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Dove la letteratura documenta lo stesso comportamento presso più produttori — il degrado posizionale sugli input lunghi, la sicofantia sotto addestramento per preferenza, i limiti dell'autocorrezione non assistita — viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
+Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Dove la letteratura documenta lo stesso comportamento presso più produttori — il degrado posizionale sugli input lunghi,[^a] la sicofantia sotto addestramento per preferenza,[^b] i limiti dell'autocorrezione non assistita[^c] — viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
+
+[^a]: N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172. CFR 01.
+[^b]: M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548. CFR 02.
+[^c]: J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798. CFR 02.
 
 ## Metodo
 
@@ -161,6 +187,24 @@ Nove interventi applicati lungo due settimane di lavoro, ciascuno col suo esito.
 | Lettura e collocazione della ricerca pubblicata | 01, 02, 03, 05 |
 | Verifica di affermazioni generate contro registri di terzi | studio |
 | Codifica di un transcript in categorie quantificate | studio |
+
+## Lavori correlati
+
+I fenomeni raccolti qui sono stati nominati a partire dall'osservazione, prima che la letteratura venisse consultata. Quello che segue è dove incontrano il lavoro pubblicato, non da dove provengono.
+
+| Where | Work |
+|---|---|
+| 01 | N. F. Liu et al., *Lost in the Middle: How Language Models Use Long Contexts*, TACL 2024, arXiv:2307.03172 |
+| 01 | K. Hong, A. Troynikov, J. Huber, *Context Rot: How Increasing Input Tokens Impacts LLM Performance*, Chroma Research, July 2025 |
+| 01 | D. Wu et al., *LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory*, ICLR 2025, arXiv:2410.10813 |
+| 02 | M. Sharma et al., *Towards Understanding Sycophancy in Language Models*, ICLR 2024, arXiv:2310.13548 |
+| 02 | J. Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024, arXiv:2310.01798 |
+| 03 | P. Laban et al., *LLMs Get Lost in Multi-Turn Conversation*, 2025, arXiv:2505.06120 |
+| 05 | J. Zhang et al., *Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity*, arXiv:2510.01171 |
+| 06 | M. Turpin, J. Michael, E. Perez, S. R. Bowman, *Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting*, 2023, arXiv:2305.04388 |
+| 07 | T. Kumarage et al., *Stylometric Detection of AI-Generated Text in Twitter Timelines*, 2023, arXiv:2303.03697 |
+
+Due pezzi non portano riferimenti, e non devono portarne. Il 04 è prescrittivo e l'08 è un rapporto di caso: nessuno dei due afferma che cosa la letteratura documenti.
 
 Ogni articolo si chiude su una domanda cui il suo protocollo non risponde. Questa pagina si apre su quella che hanno in comune: quanta parte di ciò che un modello sbaglia è disponibile per essere&nbsp;notata?
 
