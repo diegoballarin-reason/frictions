@@ -62,10 +62,10 @@ The second property strengthens the first: no designed experiment can claim the 
 
 For each claim to be checked:
 
-1. **Identify the ticker and the date of the claim.** Both from the transcript, without reconstruction from memory.
-2. **Pull the daily bars for the window.** Any provider with an accessible historical series.
+1. **Identify the ticker and the date of the claim.** Both from the transcript, without reconstruction from memory. Dates follow the New York trading calendar: a claim made in after-hours carries the date of that session, and when the check falls on the following session the verified value names it.
+2. **Pull the daily bars for the window.** Any provider with an accessible historical series. This study uses IBKR, regular session only; every volume figure below refers to the regular session.
 3. **Compare previous close / open / high / low / close.** In that order.
-4. **Use volume as the signature of the corporate event.** The most underused instrument available: it identifies real earnings dates without any external calendar. In this study a claimed quarterly report was placed 29 days early, and the volume on the real session (3.82M against a 1.4M average) located it unaided.
+4. **Use volume as the signature of the corporate event.** The most underused instrument available: it identifies real earnings dates without any external calendar. In this study a claimed quarterly report was placed 29 days early, and the volume on the real session located it unaided: 3.82M shares, 1.8× the previous session and the highest since 26 June. Volume ratios in this study are always taken against the previous session.
 
 **Required precision.** Report the *previous close* as the base of any percentage, never the open. A percentage computed on the wrong base is the single handle anyone needs to dismiss the piece.
 
@@ -86,19 +86,19 @@ Every row is checkable from the daily series. Percentages are computed on the pr
 
 | Claim in the transcript | Date | Verified state | Type |
 |---|---|---|---|
-| IBM down 23–25%, area 218 | 14 Jul | 290.23 → 217.07, **−25.21%**, volume 17.7× average | **accurate** |
-| Bloom, strong opening reaction | 29 Jul | 166.84 → open 183.50, **+9.99%** | **accurate** |
+| IBM down 23–25%, area 218 | 14 Jul | 290.23 → 217.07, **−25.21%**, volume 17.7× the previous session | **accurate** |
+| Bloom, strong opening reaction | 28 Jul | 166.84 → 29 Jul open 183.50, **+9.99%** | **accurate** |
 | Vertiv, heavy post-report fall | 29 Jul | 269.56 → open 245.99, close 223.04, **−17.26%** | **accurate** |
 | NXT "just sank 12.47% after hours" | 1 Jul | open −1.7%, high +3.76%, close −2.51% | inverted |
 | NXT "reported, beat EPS by 13%" | 1 Jul | real report 30 Jul, **29 days later** | non-existent event |
-| AAOI down ~2% after hours, on guidance | 6 Aug | 124.22 → open 142.48, **+14.70%**, close +9.19% | inverted |
+| AAOI down ~2% after hours, on guidance | 6 Aug | 124.22 → 7 Aug open 142.48, **+14.70%**, close +9.19% | inverted |
 | AAOI up 13%, on the same guidance | 7 Aug | same quarter, opposite direction, same register | inversion |
 | ONTO "why didn't it rise" — four causes | 7 Aug | 268.70 → open 300.00, close 308.30, **+14.74%** | premise satisfied |
-| RGTI "why it fell" — three causes | 6 Aug | 16.53 → open 16.775, close 17.94, **+8.53%** | premise satisfied |
-| WDC report reported without the fall | 14 Jul | 519.17 → 451.52, **−13.0%**, omitted entirely | omission |
-| AKAM up post-report | 6–7 Aug | open +5.19%, close **−6.76%** | inverted |
+| RGTI "why it fell" — three causes | 6 Aug | 16.53 → 7 Aug open 16.775, close 17.94, **+8.53%** | premise satisfied |
+| WDC report reported without the fall | 6 Aug | 519.17 → 451.52, **−13.0%**, omitted entirely | omission |
+| AKAM up post-report | 6 Aug | 7 Aug open +5.19%, close **−6.76%** | inverted |
 | Attributed statements from two named CEOs | 7 Aug | attributed speech, with the analyst questions | attribution |
-| Fluence consensus at 761.9M, then 811M | 6 Aug | same quarter, same session | internal contradiction |
+| Fluence consensus at 761.9M, then 811M | 5 Aug | same quarter, same session | internal contradiction |
 | "Connection modules temporarily disabled" | 1 Jul | specific claims produced during the declared blackout | self-description |
 
 ---
