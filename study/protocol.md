@@ -96,7 +96,7 @@ Every row is checkable from the daily series. Percentages are computed on the pr
 | ONTO "why didn't it rise" — four causes | 7 Aug | 268.70 → open 300.00, close 308.30, **+14.74%** | premise satisfied |
 | RGTI "why it fell" — three causes | 6 Aug | 16.53 → 7 Aug open 16.775, close 17.94, **+8.53%** | premise satisfied |
 | WDC report reported without the fall | 6 Aug | 519.17 → 451.52, **−13.0%**, omitted entirely | omission |
-| AKAM up post-report | 6 Aug | 7 Aug open +5.19%, close **−6.76%** | inverted |
+| AKAM "down 2–3%" after hours, an hour after "slightly up" | 6 Aug | 7 Aug open +5.19%, close **−6.76%** | inverted |
 | Attributed statements from two named CEOs | 7 Aug | attributed speech, with the analyst questions | attribution |
 | Fluence consensus at 761.9M, then 811M | 5 Aug | same quarter, same session | internal contradiction |
 | "Connection modules temporarily disabled" | 1 Jul | specific claims produced during the declared blackout | self-description |
