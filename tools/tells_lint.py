@@ -192,9 +192,19 @@ def scan(path, forced=None):
 
 if __name__ == "__main__":
     files = [a for a in sys.argv[1:] if not a.startswith("--")]
-    forced = next((a.split("=")[1] for a in sys.argv if a.startswith("--lang=")), None)
+    forced = next((a.split("=", 1)[1].strip().lower()
+                   for a in sys.argv[1:] if a.startswith("--lang=")), None) or None
+    if forced and forced not in CHECKS:
+        sys.exit(f"Lingua non riconosciuta: '{forced}'. Valori ammessi: "
+                 f"{', '.join(CHECKS)}.")
     if not files:
         print(__doc__)
         sys.exit(1)
+    unreadable = 0
     for p in files:
-        scan(p, forced)
+        try:
+            scan(p, forced)
+        except OSError:
+            print(f"Impossibile aprire il file: {p}", file=sys.stderr)
+            unreadable += 1
+    sys.exit(1 if unreadable else 0)
