@@ -1,11 +1,11 @@
 # Frictions
 
-*Recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed — with one separate study on generated explanation, checked against third-party&nbsp;data.*<br>
+*Recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed. Alongside it, one separate study on generated explanation, checked against third-party&nbsp;data.*<br>
 *Bilingual, EN and IT.*
 
 [Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [Versione italiana](#attriti)
 
-A model rarely fails loudly. It agrees, it returns something plausible, and the work drifts — three sessions later you are re-arguing a term that was settled weeks ago. Benchmarks cannot see this. On month three of a project, it is most of what you see.
+A model rarely fails loudly. It agrees, it returns something plausible, and the work drifts. Three sessions later you are re-arguing a term that was settled weeks ago. Benchmarks cannot see this. On month three of a project, it is most of what you see.
 
 This is an inventory of those frictions, each one named, each with a case and a countermeasure.
 
@@ -19,11 +19,11 @@ Each article does three things and then stops: it names the phenomenon, shows a 
 
 ## Naming the model
 
-Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. Where the literature documents the same behaviour across vendors — positional degradation over long inputs (Liu et al., 2024), sycophancy under preference training (Sharma et al., 2024), the limits of unaided self-correction (Huang et al., 2024) — it is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
+Most of this work was done with Claude, and Claude is named wherever the episode is Claude's. For several of the behaviours collected here, the literature documents the same pattern across vendors: positional degradation over long inputs (Liu et al., 2024), sycophancy under preference training (Sharma et al., 2024), the limits of unaided self-correction (Huang et al., 2024). Where it does, the behaviour is described as a family trait rather than one company's fault. The distinction is not diplomacy. Attributing a general failure mode to a single system would make the diagnosis wrong.
 
 ## Method
 
-This inventory was produced by applying the protocols it describes. The observations, the analysis, the protocols and the final revision are mine; the drafting was done in dialogue with the systems under observation, under those same protocols — blind fields, forced refutations, pre-declared failure criteria. A set of articles on the failure modes of language models, written without a working method for handling those failure modes, would be an odd artefact.
+This inventory was produced by applying the protocols it describes. The observations, the analysis, the protocols and the final revision are mine; the drafting was done in dialogue with the systems under observation, under those same protocols: blind fields, forced refutations, pre-declared failure criteria. A set of articles on the failure modes of language models, written without a working method for handling those failure modes, would be an odd artefact.
 
 Within the series, episodes are reconstructed rather than transcribed: same structure of error, neutral content. Where a piece reports episodes directly instead, as the case report in 08 does, it says so on its own first page. The separate study follows a different rule again and declares it on its own first page: the material there is quoted verbatim, and every claim is checked against a public record. The project the material comes from stays out of view; the behaviour it exposed does not.
 
@@ -50,7 +50,7 @@ Ask for a test and you get a test that confirms the hypothesis. The blind field:
 The failure starts when the margin of uncertainty disappears. Four early signals, and why breaking the chain beats correcting it.
 
 **[04 · "Try Again" Is the Worst Prompt](articles/04-try-again.en.md)** / *[«Riprova» è il prompt peggiore](articles/04-try-again.it.md)*
-There are no token refunds for a model's mistakes — but tokens were never the expensive part. Diagnostic prompts for the second misunderstanding.
+There are no token refunds for a model's mistakes. But tokens were never the expensive part. Diagnostic prompts for the second misunderstanding.
 
 **[05 · The Collapse Toward the Typical](articles/05-typicality.en.md)** / *[Il collasso verso il tipico](articles/05-typicality.it.md)* — *field note*
 Ask for five alternatives and get five versions of one thing. Three conditions across four models, a shared repertoire, and one thing that does not move: the gesture.
@@ -59,7 +59,7 @@ Ask for five alternatives and get five versions of one thing. Three conditions a
 The answer arrives with its reasoning already spent. Why that is expensive to correct and dangerous to trust.
 
 **[07 · The Comma Before the Conjunction](articles/07-punctuation-tells.en.md)** / *[La virgola prima della congiunzione](articles/07-punctuation-tells.it.md)*
-Punctuation errors as fingerprints. A proofreader's eye as an evaluation instrument.
+Punctuation errors as fingerprints. A proofreader's eye as an evaluation instrument. The extraction step runs as a script: [tools/tells_lint.py](tools/tells_lint.py).
 
 **[08 · Nine Countermeasures, Tested for Two Weeks](articles/08-countermeasures.en.md)** / *[Nove contromisure, provate per due settimane](articles/08-countermeasures.it.md)* — *case report*
 Nine interventions applied across a two-week research phase, each with its outcome. One line separates what held from what did not.
@@ -102,12 +102,12 @@ Every article closes on a question its protocol does not answer. This page opens
 
 # Attriti
 
-*I modi ricorrenti in cui i modelli linguistici cedono, nominati e contrastati, dall'interno di un esteso progetto di scrittura e ricerca condotto come banco di prova continuativo — e uno studio separato sulla spiegazione generata, verificata contro dati di&nbsp;terzi.*<br>
+*I modi ricorrenti in cui i modelli linguistici cedono, nominati e contrastati, dall'interno di un esteso progetto di scrittura e ricerca condotto come banco di prova continuativo. Accanto, uno studio separato sulla spiegazione generata, verificata contro dati di&nbsp;terzi.*<br>
 *Bilingue, IT e EN.*
 
 [Rilasciato sotto Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [English version](#frictions)
 
-Un modello raramente fallisce ad alta voce. Asseconda, restituisce qualcosa di plausibile, e il lavoro slitta — tre sessioni dopo stai ridiscutendo un termine che era stato fissato settimane prima. I benchmark non vedono niente di tutto questo. Al terzo mese di un progetto è quasi tutto ciò che si vede.
+Un modello raramente fallisce ad alta voce. Asseconda, restituisce qualcosa di plausibile, e il lavoro slitta. Tre sessioni dopo stai ridiscutendo un termine che era stato fissato settimane prima. I benchmark non vedono niente di tutto questo. Al terzo mese di un progetto è quasi tutto ciò che si vede.
 
 Questo è l'inventario di quegli attriti, ciascuno con un nome, un caso e una contromisura.
 
@@ -121,11 +121,11 @@ Ogni articolo fa tre cose e si ferma: nomina il fenomeno, mostra un caso di camp
 
 ## Nominare il modello
 
-Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Dove la letteratura documenta lo stesso comportamento presso più produttori — il degrado posizionale sugli input lunghi (Liu et al., 2024), la sicofantia sotto addestramento per preferenza (Sharma et al., 2024), i limiti dell'autocorrezione non assistita (Huang et al., 2024) — viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
+Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato ovunque l'episodio sia di Claude. Per diversi comportamenti raccolti qui, la letteratura documenta lo stesso schema presso più produttori: il degrado posizionale sugli input lunghi (Liu et al., 2024), la sicofantia sotto addestramento per preferenza (Sharma et al., 2024), i limiti dell'autocorrezione non assistita (Huang et al., 2024). In quei casi il comportamento viene descritto come tratto di famiglia e non come colpa di un'azienda. Non è diplomazia: attribuire a un singolo sistema un modo di guasto generale renderebbe sbagliata la diagnosi.
 
 ## Metodo
 
-Questo inventario è stato prodotto applicando i protocolli che descrive. Osservazioni, analisi, protocolli e revisione finale sono miei; la stesura è avvenuta in dialogo con i sistemi sotto osservazione, sotto quegli stessi protocolli — campi ciechi, confutazioni obbligate, criteri di fallimento dichiarati in anticipo. Una serie di articoli sui modi di guasto dei modelli linguistici, scritta senza un metodo di lavoro per gestirli, sarebbe un oggetto singolare.
+Questo inventario è stato prodotto applicando i protocolli che descrive. Osservazioni, analisi, protocolli e revisione finale sono miei; la stesura è avvenuta in dialogo con i sistemi sotto osservazione, sotto quegli stessi protocolli: campi ciechi, confutazioni obbligate, criteri di fallimento dichiarati in anticipo. Una serie di articoli sui modi di guasto dei modelli linguistici, scritta senza un metodo di lavoro per gestirli, sarebbe un oggetto singolare.
 
 Dentro la serie, gli episodi sono ricostruiti, non trascritti: stessa struttura dell'errore, contenuto neutro. Dove un pezzo riporta invece episodi diretti, come il rapporto di caso in 08, lo dichiara nella propria prima pagina. Lo studio separato segue una regola ancora diversa e la dichiara nella propria: lì il materiale è citato alla lettera, e ogni affermazione è verificata contro un registro pubblico. Il progetto da cui il materiale proviene resta fuori campo; il comportamento che ha messo in luce no.
 
@@ -152,7 +152,7 @@ Chiedi un test e ottieni un test che conferma l'ipotesi. Il campo cieco: come si
 Il guasto comincia quando sparisce il margine di incertezza. Quattro segnali precoci, e perché interrompere la catena funziona meglio che correggerla.
 
 **[04 · «Riprova» è il prompt peggiore](articles/04-try-again.it.md)** / *["Try Again" Is the Worst Prompt](articles/04-try-again.en.md)*
-Gli errori di un modello non incontrano mai un rimborso in token — ma i token non sono mai stati la parte cara. Prompt diagnostici per il secondo fraintendimento.
+Gli errori di un modello non incontrano mai un rimborso in token. Ma i token non sono mai stati la parte cara. Prompt diagnostici per il secondo fraintendimento.
 
 **[05 · Il collasso verso il tipico](articles/05-typicality.it.md)** / *[The Collapse Toward the Typical](articles/05-typicality.en.md)* — *nota di ricerca dal campo*
 Chiedi cinque alternative e ottieni cinque versioni della stessa cosa. Tre condizioni su quattro modelli, un repertorio condiviso, e una cosa che non si muove: il gesto.
@@ -161,7 +161,7 @@ Chiedi cinque alternative e ottieni cinque versioni della stessa cosa. Tre condi
 La risposta arriva col ragionamento già speso. Perché è costoso da rettificare e pericoloso da accettare.
 
 **[07 · La virgola prima della congiunzione](articles/07-punctuation-tells.it.md)** / *[The Comma Before the Conjunction](articles/07-punctuation-tells.en.md)*
-Gli errori di interpunzione come impronte digitali. L'occhio del correttore di bozze come strumento di valutazione.
+Gli errori di interpunzione come impronte digitali. L'occhio del correttore di bozze come strumento di valutazione. Il passo di estrazione gira come script: [tools/tells_lint.py](tools/tells_lint.py).
 
 **[08 · Nove contromisure, provate per due settimane](articles/08-countermeasures.it.md)** / *[Nine Countermeasures, Tested for Two Weeks](articles/08-countermeasures.en.md)* — *rapporto di caso*
 Nove interventi applicati lungo due settimane di lavoro, ciascuno col suo esito. Una linea separa quelli che hanno retto da quelli che non hanno retto.
@@ -202,4 +202,4 @@ Ogni articolo si chiude su una domanda cui il suo protocollo non risponde. Quest
 
 ---
 
-© Diego Ballarin. Testi rilasciati sotto [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): condivisione e adattamento consentiti con attribuzione, uso commerciale&nbsp;escluso.
+© Diego Ballarin. Testi rilasciati sotto [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): condivisione e adattamento consentiti con attribuzione, uso commerciale escluso. Il codice in [tools/](tools/) è rilasciato sotto licenza&nbsp;[MIT](tools/LICENSE).
