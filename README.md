@@ -1,6 +1,6 @@
 # Frictions
 
-*Recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed. Alongside it, one separate study on generated explanation, checked against third-party&nbsp;data.*<br>
+*Some recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed. Alongside it, a separate study of the causes a model gave for stock-market moves, checked against the&nbsp;prices.*<br>
 *Bilingual, EN and IT.*
 
 [Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [Versione italiana](#attriti)
@@ -102,7 +102,7 @@ Every article closes on a question its protocol does not answer. This page opens
 
 # Attriti
 
-*I modi ricorrenti in cui i modelli linguistici cedono, nominati e contrastati, dall'interno di un esteso progetto di scrittura e ricerca condotto come banco di prova continuativo. Accanto, uno studio separato sulla spiegazione generata, verificata contro dati di&nbsp;terzi.*<br>
+*Alcuni cedimenti ricorrenti di modelli linguistici, emersi nel corso di un ampio progetto di scrittura e ricerca usato come banco di prova permanente, qui nominati e isolati. Accanto, uno studio a sé sulle cause che un modello ha attribuito ai movimenti di Borsa, verificate sui&nbsp;prezzi.*<br>
 *Bilingue, IT e EN.*
 
 [Rilasciato sotto Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [English version](#frictions)
