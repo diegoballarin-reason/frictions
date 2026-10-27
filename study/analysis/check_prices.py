@@ -36,8 +36,18 @@ def load_bars(path):
 
 
 def load_claims(path):
+    """The claims that can be checked on a price: those with a session to check."""
     with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        return [c for c in csv.DictReader(f) if c["session"]]
+
+
+def claimed_label(c):
+    lo, hi = c["claimed_low_pct"], c["claimed_high_pct"]
+    if lo and not hi:
+        return f"over {float(lo):+.0f}"
+    if lo:
+        return f"{float(lo):+.2f}" if lo == hi else f"{float(lo):+.0f} to {float(hi):+.0f}"
+    return c["claimed_direction"]
 
 
 def session(bars, ticker, date):
@@ -111,13 +121,11 @@ def check_volume_signature(bars):
 def claims_table(bars, claims):
     """One line per claim: what was claimed, what the record says."""
     print("\nClaims against the record (percent on the previous close)")
-    print(f"  {'id':10} {'origin':6} {'claimed':>14}   {'open':>7} {'close':>7}   type")
+    print(f"  {'id':3} {'ticker':5} {'origin':12} {'claimed':>12}  on    {'open':>7} {'close':>7}   type")
     for c in claims:
         prev, bar, _ = session(bars, c["ticker"], c["session"])
-        lo, hi = c["claimed_low_pct"], c["claimed_high_pct"]
-        claimed = (f"{float(lo):+.2f}" if lo == hi else f"{float(lo):+.0f} to {float(hi):+.0f}") if lo else c["claimed_direction"]
-        print(f"  {c['id']:10} {c['origin']:6} {claimed:>14}   {pct(bar['open'], prev['close']):+7.2f} "
-              f"{pct(bar['close'], prev['close']):+7.2f}   {c['protocol_type']}")
+        print(f"  {c['id']:3} {c['ticker']:5} {c['origin']:12} {claimed_label(c):>12}  {c['checked_on']:5} "
+              f"{pct(bar['open'], prev['close']):+7.2f} {pct(bar['close'], prev['close']):+7.2f}   {c['protocol_type']}")
 
 
 # ── geometry for the infographic ─────────────────────────────────────────────
@@ -152,7 +160,11 @@ def geometry_claims(bars, claims, path):
         parts.append(f'  <line id="{c["id"]}-range" x1="{x(p["low"]):.2f}" y1="{y:.2f}" x2="{x(p["high"]):.2f}" y2="{y:.2f}" stroke-width="0.5"/>')
         parts.append(f'  <circle id="{c["id"]}-open" cx="{x(p["open"]):.2f}" cy="{y:.2f}" r="3"/>')
         parts.append(f'  <circle id="{c["id"]}-close" cx="{x(p["close"]):.2f}" cy="{y:.2f}" r="3" fill="#000"/>')
-        if c["claimed_low_pct"]:
+        if c["claimed_low_pct"] and not c["claimed_high_pct"]:  # "more than": open to the right or left
+            a = x(float(c["claimed_low_pct"]))
+            d = 1 if float(c["claimed_low_pct"]) > 0 else -1
+            parts.append(f'  <path id="{c["id"]}-claim" d="M{a:.2f} {y - 9:.2f} V{y + 9:.2f} M{a:.2f} {y:.2f} h{d * 30}" stroke-width="2"/>')
+        elif c["claimed_low_pct"]:
             a, b = x(float(c["claimed_low_pct"])), x(float(c["claimed_high_pct"]))
             if a == b:
                 parts.append(f'  <path id="{c["id"]}-claim" d="M{a:.2f} {y - 9:.2f} V{y + 9:.2f}" stroke-width="2"/>')
@@ -217,7 +229,7 @@ def main(argv):
         os.makedirs(os.path.join(out, "windows"), exist_ok=True)
         geometry_claims(bars, claims, os.path.join(out, "claims.svg"))
         for c in claims:
-            geometry_window(bars, c, os.path.join(out, "windows", f"{c['id']}.svg"))
+            geometry_window(bars, c, os.path.join(out, "windows", f"{c['id']}-{c['ticker'].lower()}.svg"))
         geometry_volume(bars, os.path.join(out, "nxt-volume.svg"))
         print(f"\nGeometry written to {out}")
     print(f"\n{'All printed figures match.' if not failures else f'{failures} figure(s) do not match.'}")
