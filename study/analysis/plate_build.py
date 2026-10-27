@@ -292,7 +292,6 @@ head = chrome[:head_end] + PLATE_CSS + chrome[head_end:chrome.index("<main")]
 head = re.sub(r"<title>.*?</title>", "<title>on certainty — diego ballarin</title>", head, flags=re.S)
 head = re.sub(r'<meta name="description" content="[^"]*"',
               '<meta name="description" content="Six claims a language model made about stock moves, each checked against the day\'s prices: three right, three wrong, all in the same register. Plate 1 of nothing to notice it by."', head)
-head = head.replace('<meta name="robots" content="index, follow" />', '<meta name="robots" content="noindex, nofollow" />')
 head = head.replace("https://diegoballarin.com/work/agent-review", "https://diegoballarin.com/work/on-certainty")
 # the section menu of the case study does not apply here
 a, b = head.index('<div class="index-nav">'), head.index('\n    </div>\n  </header>')
