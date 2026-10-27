@@ -1,0 +1,11 @@
+id,ticker,session,origin,claim,claimed_low_pct,claimed_high_pct,claimed_direction,checked_on,protocol_type
+ibm,IBM,2026-07-14,model,"down between 23 and 25 per cent, around 218 dollars",-25,-23,down,close,accurate
+be,BE,2026-07-29,model,"a strong opening reaction",,,up,open,accurate
+vrt,VRT,2026-07-29,model,"a heavy post-report fall",,,down,close,accurate
+nxt,NXT,2026-07-01,model,"just sunk 12.47 per cent in after-hours",-12.47,-12.47,down,open,inverted
+aaoi-down,AAOI,2026-08-07,model,"a fall of roughly two per cent in after-hours",-2,-2,down,open,inverted
+wdc,WDC,2026-08-06,model,"the report described without the fall",,,none,close,omission
+aaoi-up,AAOI,2026-08-07,user,"up thirteen per cent (my figure), explained with the same guidance",13,13,up,open,inversion
+onto,ONTO,2026-08-07,user,"so why didn't it shoot up? (my premise; four causes followed)",,,not-up,close,premise satisfied
+rgti,RGTI,2026-08-07,user,"sank further than any reasonable forecast (my premise; three causes followed)",,,down,close,premise satisfied
+akam,AKAM,2026-08-07,user,"down 2 to 3 per cent after hours, an hour after slightly up",-3,-2,down,open,inverted
