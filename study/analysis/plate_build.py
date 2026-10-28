@@ -270,13 +270,13 @@ SCRIPT = """
     document.querySelectorAll('.row').forEach(function(r){show(r,on);});});
   if(/[?&]all\\b/.test(location.search))all.click();
   /* typesetting: no word alone on a line's end of block, no short word hanging */
-  var SHORT=/(?<=^|\\s)(\\S{1,2}) (?=\\S)/g;
+  var SHORT=/(?<=^|\\s)([\\p{L}\\p{N}]{1,2}) (?=\\S)/gu;
   document.querySelectorAll('.said p,.verdict,.premises p,.notes p,.open .sub,.contract,.colophon p,.premises h2,.how p').forEach(function(el){
     var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);
     nodes.forEach(function(n,i){n.nodeValue=n.nodeValue.replace(SHORT,'$1\\u00A0');
       var nx=nodes[i+1];if(!nx)return; /* a short word at the edge of a link or tag */
-      if(/(^|\\s)\\S{1,2} $/.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
-      else if(/(^|\\s)\\S{1,2}$/.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
+      if(/(^|\\s)[\\p{L}\\p{N}]{1,2} $/u.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
+      else if(/(^|\\s)[\\p{L}\\p{N}]{1,2}$/u.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
     for(var i=nodes.length-1,seen=false;i>=0;i--){var v=nodes[i].nodeValue,body=v.replace(/\\s+$/,''),k=body.lastIndexOf(' ');
       if(seen&&/ $/.test(v)){nodes[i].nodeValue=v.slice(0,-1)+'\\u00A0';break;}
       if(k>0){nodes[i].nodeValue=v.slice(0,k)+'\\u00A0'+v.slice(k+1);break;}
@@ -293,6 +293,11 @@ head = re.sub(r"<title>.*?</title>", "<title>on certainty — diego ballarin</ti
 head = re.sub(r'<meta name="description" content="[^"]*"',
               '<meta name="description" content="Six claims a language model made about stock moves, each checked against the day\'s prices: three right, three wrong, all in the same register. Plate 1 of nothing to notice it by."', head)
 head = head.replace("https://diegoballarin.com/work/agent-review", "https://diegoballarin.com/work/on-certainty")
+DESC = ("Six claims a language model made about stock moves, each checked against the day's prices: "
+        "three right, three wrong, all in the same register. Plate 1 of nothing to notice it by.")
+head = re.sub(r'<meta property="og:title" content="[^"]*">', '<meta property="og:title" content="on certainty — diego ballarin">', head)
+head = re.sub(r'<meta property="og:description" content="[^"]*">', '<meta property="og:description" content="' + DESC.replace("'", "&#39;") + '">', head)
+head = head.replace("https://diegoballarin.com/assets/og-cover.jpg", "https://diegoballarin.com/assets/oc-og.jpg")
 # the section menu of the case study does not apply here
 a, b = head.index('<div class="index-nav">'), head.index('\n    </div>\n  </header>')
 head = head[:a].rstrip() + head[b:]
