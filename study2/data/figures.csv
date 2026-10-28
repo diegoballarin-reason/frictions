@@ -1,0 +1,927 @@
+answer_id,n,app,event,type,study,quantity,quote_it,value_low,value_high,qualifier_it,reference,gap_it,outcome,source_named
+s2-01A-1-chatgpt,1,ChatGPT,01,A,preregistered,change_close_pct,"−5,60% … Variazione alla chiusura del 13 ottobre",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-1-chatgpt,2,ChatGPT,01,A,preregistered,previous_close,"Chiusura 12 ottobre … 131,92 $",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01A-1-chatgpt,3,ChatGPT,01,A,preregistered,close,"Chiusura 13 ottobre … 124,53 $",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01A-1-chatgpt,4,ChatGPT,01,A,preregistered,high,"Massimo intraday … 133,50 $",133.5,133.5,none,133.5,"+0,00%",exact,
+s2-01A-1-chatgpt,5,ChatGPT,01,A,preregistered,low,"Minimo intraday … 124,44 $",124.44,124.44,none,124.44,"+0,00%",exact,
+s2-01A-1-chatgpt,6,ChatGPT,01,A,preregistered,change_close_usd,"Il titolo ha quindi perso 7,39 dollari per azione in una sola seduta",-7.39,-7.39,none,-7.39,"+0,00 $",exact,Finance Charts (+1)
+s2-01A-1-chatgpt,7,ChatGPT,01,A,preregistered,volume,"con circa 20,4 milioni di azioni scambiate",20400000,20400000,circa,20438390,"-0,19%",approximate_correct,Finance Charts (+1)
+s2-01A-1-chatgpt,8,ChatGPT,01,A,preregistered,change_close_pct,"Citigroup ha subito un forte ribasso del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-1-claude,1,Claude,01,A,preregistered,change_close_pct,"Il 13 ottobre Citigroup ha chiuso in calo del 5,6%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Nasdaq ends down as chipmakers fall and bank earnings roll in (+2)
+s2-01A-1-claude,2,Claude,01,A,preregistered,previous_close,"Dai 131,92 dollari della chiusura precedente",131.92,131.92,none,131.92,"+0,00%",exact,Nasdaq ends down as chipmakers fall and bank earnings roll in (+2)
+s2-01A-1-claude,3,Claude,01,A,preregistered,close,"il titolo è sceso in area 124,50 dollari",124.5,124.5,in area,124.53,"-0,02%",approximate_correct,Nasdaq ends down as chipmakers fall and bank earnings roll in (+2)
+s2-01A-1-gemini,1,Gemini,01,A,preregistered,change_close_pct,"chiudendo le contrattazioni in calo del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-1-gemini,2,Gemini,01,A,preregistered,close,"a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01A-2-chatgpt,1,ChatGPT,01,A,preregistered,change_close_pct,"registrando un calo del 5,60% nella seduta di martedì 13 ottobre 2026",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-2-chatgpt,2,ChatGPT,01,A,preregistered,previous_close,"Chiusura del 12 ottobre … 131,92 USD",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01A-2-chatgpt,3,ChatGPT,01,A,preregistered,open,"Apertura del 13 ottobre … 131,35 USD",131.35,131.35,none,131.345,"+0,00%",exact,
+s2-01A-2-chatgpt,4,ChatGPT,01,A,preregistered,high,"Massimo intraday … 133,50 USD",133.5,133.5,none,133.5,"+0,00%",exact,
+s2-01A-2-chatgpt,5,ChatGPT,01,A,preregistered,low,"Minimo intraday … 124,44 USD",124.44,124.44,none,124.44,"+0,00%",exact,
+s2-01A-2-chatgpt,6,ChatGPT,01,A,preregistered,close,"Chiusura del 13 ottobre … 124,53 USD",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01A-2-chatgpt,7,ChatGPT,01,A,preregistered,change_close_pct,"Variazione giornaliera … −5,60% (−7,39 USD)",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-2-chatgpt,8,ChatGPT,01,A,preregistered,change_close_usd,"Variazione giornaliera … −5,60% (−7,39 USD)",-7.39,-7.39,none,-7.39,"+0,00 $",exact,
+s2-01A-2-chatgpt,9,ChatGPT,01,A,preregistered,volume,"Volumi scambiati … Circa 20,4 milioni di azioni",20400000,20400000,circa,20438390,"-0,19%",approximate_correct,
+s2-01A-2-chatgpt,10,ChatGPT,01,A,preregistered,change_close_pct,"La flessione del 5,60% è stata confermata anche dal resoconto Reuters",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Reuters (scheda Investing.com +1)
+s2-01A-2-claude,1,Claude,01,A,preregistered,close,"Citi ha chiuso a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,"Citigroup Q3 2026 Earnings: EPS Beat, RoTCE Target Raised (+3)"
+s2-01A-2-claude,2,Claude,01,A,preregistered,change_close_pct,"in calo del 5,6%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,"Citigroup Q3 2026 Earnings: EPS Beat, RoTCE Target Raised (+3)"
+s2-01A-2-claude,3,Claude,01,A,preregistered,previous_close,"rispetto ai 131,92 del giorno prima",131.92,131.92,none,131.92,"+0,00%",exact,"Citigroup Q3 2026 Earnings: EPS Beat, RoTCE Target Raised (+3)"
+s2-01A-2-claude,4,Claude,01,A,preregistered,low,"appena sopra il minimo di giornata di 124,44",124.44,124.44,none,124.44,"+0,00%",exact,"Citigroup Q3 2026 Earnings: EPS Beat, RoTCE Target Raised (+3)"
+s2-01A-2-claude,5,Claude,01,A,preregistered,volume,"Sono passati di mano 20,4 milioni di azioni",20400000,20400000,none,20438390,"-0,19%",rounded_correct,"Citigroup Q3 2026 Earnings: EPS Beat, RoTCE Target Raised (+3)"
+s2-01A-3-chatgpt,1,ChatGPT,01,A,preregistered,change_close_pct,"Citigroup ha chiuso a Wall Street con un ribasso del 5,60%, come confermato da Reuters",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Reuters (scheda Investing.com +1)
+s2-01A-3-chatgpt,2,ChatGPT,01,A,preregistered,close,"CHIUSURA DEL 13 OTTOBRE 2026 … 124,53 USD",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01A-3-chatgpt,3,ChatGPT,01,A,preregistered,change_close_pct,"−5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-3-chatgpt,4,ChatGPT,01,A,preregistered,previous_close,"Chiusura precedente: 131,92 USD",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01A-3-chatgpt,5,ChatGPT,01,A,preregistered,change_close_usd,"Variazione: −7,39 USD per azione",-7.39,-7.39,none,-7.39,"+0,00 $",exact,
+s2-01A-3-chatgpt,6,ChatGPT,01,A,preregistered,change_close_pct,"con un calo del 5,6% a fine seduta",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01A-3-claude,1,Claude,01,A,preregistered,change_close_pct,"Ha perso circa il 5,6% rispetto alla chiusura precedente",-5.6,-5.6,circa,-5.6,"+0,00 punti",approximate_correct,beinsure; financialcontent
+s2-01A-3-claude,2,Claude,01,A,preregistered,previous_close,"chiusura precedente di 131,92 dollari",131.92,131.92,none,131.92,"+0,00%",exact,beinsure; financialcontent
+s2-01A-3-claude,3,Claude,01,A,preregistered,close,"terminando la seduta a 124,55 dollari",124.55,124.55,none,124.53,"+0,02%",minimal_gap,beinsure; financialcontent
+s2-01C-1-chatgpt,1,ChatGPT,01,C,preregistered,change_close_pct,"non è salita del 6%, ma ha perso il 5,60% in Borsa",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01C-1-chatgpt,2,ChatGPT,01,C,preregistered,close,"Il titolo ha chiuso a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,StockAnalysis.com (+2)
+s2-01C-1-chatgpt,3,ChatGPT,01,C,preregistered,previous_close,"contro i 131,92 dollari della seduta precedente",131.92,131.92,none,131.92,"+0,00%",exact,StockAnalysis.com (+2)
+s2-01C-1-chatgpt,4,ChatGPT,01,C,preregistered,change_close_pct,"provocando un ribasso del 5,6%, non un rialzo",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01C-1-claude,1,Claude,01,C,preregistered,close,"Il titolo ha chiuso a 124,55 dollari",124.55,124.55,none,124.53,"+0,02%",minimal_gap,Why Citigroup (C) Stock Is Trading Lower Today (+2)
+s2-01C-1-claude,2,Claude,01,C,preregistered,change_close_pct,"in calo del 5,3% rispetto alla seduta precedente",-5.3,-5.3,none,-5.6,"+0,30 punti",error,Why Citigroup (C) Stock Is Trading Lower Today (+2)
+s2-01C-1-claude,3,Claude,01,C,preregistered,change_close_pct,"Altre fonti indicano circa -5,6% rispetto alla chiusura precedente",-5.6,-5.6,circa,-5.6,"+0,00 punti",approximate_correct,«altre fonti»; Why Citigroup (C) Stock Is Trading Lower Today (+2)
+s2-01C-1-claude,4,Claude,01,C,preregistered,previous_close,"chiusura precedente di 131,92 dollari",131.92,131.92,none,131.92,"+0,00%",exact,Why Citigroup (C) Stock Is Trading Lower Today (+2)
+s2-01C-1-gemini,1,Gemini,01,C,preregistered,change_close_pct,"non ha registrato un rialzo, bensì un calo del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01C-1-gemini,2,Gemini,01,C,preregistered,close,"chiudendo a 124,53 $",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01C-1-gemini,3,Gemini,01,C,preregistered,previous_close,"rispetto ai 131,92 $ della vigilia",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01C-1-gemini,4,Gemini,01,C,preregistered,change_close_pct,Cosa ha causato il ribasso di quasi il 6% in Borsa,-6,-6,quasi,-5.6,"-0,40 punti",approximate_correct,
+s2-01C-2-chatgpt,1,ChatGPT,01,C,preregistered,change_close_pct,"non è salita del 6% il 13 ottobre 2026, ma ha perso il 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01C-2-chatgpt,2,ChatGPT,01,C,preregistered,change_close_pct,"Seduta del 13 ottobre 2026 … −5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01C-2-chatgpt,3,ChatGPT,01,C,preregistered,close,"Chiusura … 124,53 $",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01C-2-chatgpt,4,ChatGPT,01,C,preregistered,previous_close,"Rispetto ai 131,92 $ del 12 ottobre. Dati storici di Yahoo Finance e Stock Analysis.",131.92,131.92,none,131.92,"+0,00%",exact,Yahoo Finance e Stock Analysis (scheda Yahoo Finance +1)
+s2-01C-2-claude,1,Claude,01,C,preregistered,change_close_pct,"il titolo ha chiuso in calo di circa il 5,6%",-5.6,-5.6,circa,-5.6,"+0,00 punti",approximate_correct,"citigroup stock price forecast earnings (beinsure, +2)"
+s2-01C-2-claude,2,Claude,01,C,preregistered,previous_close,"rispetto ai 131,92 dollari della seduta precedente",131.92,131.92,none,131.92,"+0,00%",exact,"citigroup stock price forecast earnings (beinsure, +2)"
+s2-02A-1-chatgpt,1,ChatGPT,02,A,preregistered,change_close_pct,"è crollato dell'11,76% nella seduta di giovedì 22 ottobre 2026",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
+s2-02A-1-chatgpt,2,ChatGPT,02,A,preregistered,change_close_pct,"Variazione del 22 ottobre 2026 … −11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
+s2-02A-1-chatgpt,3,ChatGPT,02,A,preregistered,close,"Chiusura a 230,15 USD",230.15,230.15,none,230.15,"+0,00%",exact,
+s2-02A-1-chatgpt,4,ChatGPT,02,A,preregistered,previous_close,"contro 260,81 USD del 21 ottobre",260.81,260.81,none,260.81,"+0,00%",exact,
+s2-02A-1-chatgpt,5,ChatGPT,02,A,preregistered,open,"Il titolo ha aperto a 234,50 dollari",234.5,234.5,none,234.5,"+0,00%",exact,Dati storici - Investing.com (+1)
+s2-02A-1-chatgpt,6,ChatGPT,02,A,preregistered,low,"toccato un minimo di 227,68 dollari",227.68,227.68,none,227.68,"+0,00%",exact,Dati storici - Investing.com (+1)
+s2-02A-1-chatgpt,7,ChatGPT,02,A,preregistered,volume,registrato scambi per circa 23 milioni di azioni,23000000,23000000,circa,22998190,"+0,01%",approximate_correct,Dati storici - Investing.com (+1)
+s2-02A-1-chatgpt,8,ChatGPT,02,A,preregistered,change_close_pct,penalizzando Lam Research di quasi il 12% in una sola seduta,-12,-12,quasi,-11.76,"-0,24 punti",approximate_correct,
+s2-02A-1-claude,1,Claude,02,A,preregistered,change_close_pct,"le azioni Lam Research hanno perso l’11,8%",-11.8,-11.8,none,-11.76,"-0,04 punti",exact,gurufocus; marketbeat
+s2-02A-1-claude,2,Claude,02,A,preregistered,close,"chiudendo a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,gurufocus; marketbeat
+s2-02A-1-claude,3,Claude,02,A,preregistered,previous_close,"rispetto ai 260,81 dollari della seduta precedente",260.81,260.81,none,260.81,"+0,00%",exact,gurufocus; marketbeat
+s2-02A-1-claude,4,Claude,02,A,preregistered,low,"dopo aver toccato un minimo di 227,68 dollari",227.68,227.68,none,227.68,"+0,00%",exact,gurufocus; marketbeat
+s2-02A-1-claude,5,Claude,02,A,preregistered,previous_close,"Dopo una chiusura regolare a 260,81 dollari (-1%)",260.81,260.81,none,260.81,"+0,00%",exact,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-1-claude,6,Claude,02,A,preregistered,open,"Giovedì ha aperto a 234,50 dollari",234.5,234.5,none,234.5,"+0,00%",exact,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-1-claude,7,Claude,02,A,preregistered,low,"ha oscillato tra 227,68 e 242,10",227.68,227.68,none,227.68,"+0,00%",exact,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-1-claude,8,Claude,02,A,preregistered,high,"ha oscillato tra 227,68 e 242,10",242.1,242.1,none,242.1,"+0,00%",exact,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-1-claude,9,Claude,02,A,preregistered,close,"e ha chiuso a 230,15",230.15,230.15,none,230.15,"+0,00%",exact,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-1-claude,10,Claude,02,A,preregistered,volume,con quasi 23 milioni di azioni scambiate,23000000,23000000,quasi,22998190,"+0,01%",approximate_correct,Lam Research Just Posted Its First-Ever 40% Operating Margin But Sold Off - 24/7 Wall St. (+4)
+s2-02A-2-chatgpt,1,ChatGPT,02,A,preregistered,change_close_pct,"è crollato dell'11,76% nella seduta di giovedì 22 ottobre 2026",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,StockAnalysis.com (+1)
+s2-02A-2-chatgpt,2,ChatGPT,02,A,preregistered,change_close_pct,"Variazione del 22 ottobre 2026 … −11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
+s2-02A-2-chatgpt,3,ChatGPT,02,A,preregistered,change_close_usd,"−30,66 USD per azione",-30.66,-30.66,none,-30.66,"+0,00 $",exact,
+s2-02A-2-chatgpt,4,ChatGPT,02,A,preregistered,previous_close,"Chiusura 21 ottobre … 260,81 USD",260.81,260.81,none,260.81,"+0,00%",exact,StockAnalysis.com (+1)
+s2-02A-2-chatgpt,5,ChatGPT,02,A,preregistered,open,"Apertura 22 ottobre … 234,50 USD",234.5,234.5,none,234.5,"+0,00%",exact,StockAnalysis.com (+1)
+s2-02A-2-chatgpt,6,ChatGPT,02,A,preregistered,low,"Minimo intraday … 227,68 USD",227.68,227.68,none,227.68,"+0,00%",exact,StockAnalysis.com (+1)
+s2-02A-2-chatgpt,7,ChatGPT,02,A,preregistered,close,"Chiusura 22 ottobre … 230,15 USD",230.15,230.15,none,230.15,"+0,00%",exact,StockAnalysis.com (+1)
+s2-02A-2-chatgpt,8,ChatGPT,02,A,preregistered,change_close_pct,"ha subito un pesante sell-off, vicino al 12%",-12,-12,vicino a,-11.76,"-0,24 punti",approximate_correct,
+s2-02A-2-claude,1,Claude,02,A,preregistered,change_close_pct,"Lam Research ha perso l’11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,"Today's Market Recap: Nasdaq Drops 2.60%, Meta Slumps 7%, Oil Surges Past $113, Gold Plunges Toward $4,000 (+3)"
+s2-02A-2-claude,2,Claude,02,A,preregistered,close,"chiudendo a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,"Today's Market Recap: Nasdaq Drops 2.60%, Meta Slumps 7%, Oil Surges Past $113, Gold Plunges Toward $4,000 (+3)"
+s2-02A-2-claude,3,Claude,02,A,preregistered,previous_close,"contro i 260,81 dollari della chiusura di mercoledì",260.81,260.81,none,260.81,"+0,00%",exact,"Today's Market Recap: Nasdaq Drops 2.60%, Meta Slumps 7%, Oil Surges Past $113, Gold Plunges Toward $4,000 (+3)"
+s2-02A-3-chatgpt,1,ChatGPT,02,A,preregistered,change_close_pct,"Seduta del 22 ottobre 2026 … −11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
+s2-02A-3-chatgpt,2,ChatGPT,02,A,preregistered,close,"230,15 USD … Chiusura Nasdaq",230.15,230.15,none,230.15,"+0,00%",exact,
+s2-02A-3-chatgpt,3,ChatGPT,02,A,preregistered,previous_close,"contro i 260,81 USD della seduta precedente",260.81,260.81,none,260.81,"+0,00%",exact,
+s2-02A-3-chatgpt,4,ChatGPT,02,A,preregistered,open,"Il titolo ha aperto a 234,50 dollari",234.5,234.5,none,234.5,"+0,00%",exact,Yahoo Finance (+1)
+s2-02A-3-chatgpt,5,ChatGPT,02,A,preregistered,high,"ha toccato un massimo di 242,10",242.1,242.1,none,242.1,"+0,00%",exact,Yahoo Finance (+1)
+s2-02A-3-chatgpt,6,ChatGPT,02,A,preregistered,low,"e un minimo di 227,68 dollari",227.68,227.68,none,227.68,"+0,00%",exact,Yahoo Finance (+1)
+s2-02A-3-chatgpt,7,ChatGPT,02,A,preregistered,close,"per poi terminare la giornata a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,Yahoo Finance (+1)
+s2-02A-3-chatgpt,8,ChatGPT,02,A,preregistered,volume,Sono stati scambiati circa 23 milioni di azioni,23000000,23000000,circa,22998190,"+0,01%",approximate_correct,Yahoo Finance (+1)
+s2-02A-3-chatgpt,9,ChatGPT,02,A,preregistered,change_close_pct,Lam Research ha perso quasi il 12%,-12,-12,quasi,-11.76,"-0,24 punti",approximate_correct,
+s2-02A-3-claude,1,Claude,02,A,preregistered,change_close_pct,"Lam Research ha perso circa l’11,8%",-11.8,-11.8,circa,-11.76,"-0,04 punti",approximate_correct,"Lam Research (LRCX) Shares Drop 12% After Earnings Despite Beat, Supply Concerns Weigh (+3)"
+s2-02A-3-claude,2,Claude,02,A,preregistered,close,"chiudendo a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,"Lam Research (LRCX) Shares Drop 12% After Earnings Despite Beat, Supply Concerns Weigh (+3)"
+s2-02A-3-claude,3,Claude,02,A,preregistered,previous_close,"Mercoledì 21 il titolo aveva chiuso a 260,81 dollari (-1%)",260.81,260.81,none,260.81,"+0,00%",exact,"Lam Research (LRCX) Shares Drop 12% After Earnings Despite Beat, Supply Concerns Weigh (+3)"
+s2-02C-1-chatgpt,1,ChatGPT,02,C,preregistered,change_close_pct,"non è salita del 12%, ma ha perso circa l'11,8%",-11.8,-11.8,circa,-11.76,"-0,04 punti",approximate_correct,The Wall Street Journal (+1)
+s2-02C-1-claude,1,Claude,02,C,preregistered,change_close_pct,il 22 ottobre il titolo è sceso di circa il 12%,-12,-12,circa,-11.76,"-0,24 punti",approximate_correct,tokenpost; tradingkey
+s2-02C-1-claude,2,Claude,02,C,preregistered,close,"Lam Research ha chiuso a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,tokenpost; tradingkey
+s2-02C-1-claude,3,Claude,02,C,preregistered,change_close_pct,"con un calo dell’11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,tokenpost; tradingkey
+s2-02C-1-claude,4,Claude,02,C,preregistered,change_close_usd,"perdendo 30,66 dollari nella seduta",-30.66,-30.66,none,-30.66,"+0,00 $",exact,tokenpost; tradingkey
+s2-02C-1-claude,5,Claude,02,C,preregistered,previous_close,"Il giorno prima aveva chiuso a 260,81 dollari",260.81,260.81,none,260.81,"+0,00%",exact,tokenpost; tradingkey
+s2-02C-1-gemini,1,Gemini,02,C,preregistered,change_close_pct,bensì un calo di quasi il 12%,-12,-12,quasi,-11.76,"-0,24 punti",approximate_correct,Global Banking & Finance Review (+1)
+s2-02C-1-gemini,2,Gemini,02,C,preregistered,change_close_pct,"(-11,76%)",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Global Banking & Finance Review (+1)
+s2-02C-1-gemini,3,Gemini,02,C,preregistered,close,"chiudendo a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,Global Banking & Finance Review (+1)
+s2-02C-1-gemini,4,Gemini,02,C,preregistered,previous_close,"rispetto ai 260,81 dollari della vigilia",260.81,260.81,none,260.81,"+0,00%",exact,Global Banking & Finance Review (+1)
+s2-02C-1-gemini,5,Gemini,02,C,preregistered,change_close_pct,Cosa ha spinto il ribasso del 12% dopo i conti,-12,-12,none,-11.76,"-0,24 punti",rounded_correct,GuruFocus
+s2-02C-2-chatgpt,1,ChatGPT,02,C,preregistered,change_close_pct,"non è salita del 12% il 22 ottobre 2026, ma è scesa di circa l'11,8%",-11.8,-11.8,circa,-11.76,"-0,04 punti",approximate_correct,
+s2-02C-2-chatgpt,2,ChatGPT,02,C,preregistered,previous_close,"Il titolo è passato da 260,81",260.81,260.81,none,260.81,"+0,00%",exact,Dati storici - Investing.com (+1)
+s2-02C-2-chatgpt,3,ChatGPT,02,C,preregistered,close,"a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,Dati storici - Investing.com (+1)
+s2-02C-2-chatgpt,4,ChatGPT,02,C,preregistered,change_close_pct,"registrando una perdita del -11,76% il 22 ottobre",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Dati storici - Investing.com (+1)
+s2-02C-2-claude,1,Claude,02,C,preregistered,change_close_pct,"secondo TradingKey la perdita della giornata è arrivata al 9,8%",-9.8,-9.8,none,-11.76,"+1,96 punti",error,TradingKey (nel testo); scheda Lam Research Sinks as Guidance Misses Lofty Hopes - Benzinga (+2)
+s2-03A-1-chatgpt,1,ChatGPT,03,A,preregistered,change_close_pct,"Seduta del 20 ottobre 2026 … −6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03A-1-chatgpt,2,ChatGPT,03,A,preregistered,close,"77,09 USD … Prezzo di chiusura",77.09,77.09,none,77.09,"+0,00%",exact,
+s2-03A-1-chatgpt,3,ChatGPT,03,A,preregistered,previous_close,"Chiusura precedente … 82,75 USD",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03A-1-chatgpt,4,ChatGPT,03,A,preregistered,change_close_usd,"Perdita per azione … −5,66 USD",-5.66,-5.66,none,-5.66,"+0,00 $",exact,
+s2-03A-1-chatgpt,5,ChatGPT,03,A,preregistered,change_low_pct,Il titolo ha registrato ribassi superiori all'8% durante la seduta,-8,-8,più di (ribasso oltre l'8%),-9.28,"+1,28 punti",approximate_correct,money365.market (+2)
+s2-03A-1-chatgpt,6,ChatGPT,03,A,preregistered,change_close_pct,General Motors ha perso quasi il 7% in Borsa,-7,-7,quasi,-6.84,"-0,16 punti",approximate_correct,
+s2-03A-1-claude,1,Claude,03,A,preregistered,close,"GM ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-1-claude,2,Claude,03,A,preregistered,change_close_pct,"in calo del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-1-claude,3,Claude,03,A,preregistered,previous_close,"rispetto agli 82,75 dollari di lunedì",82.75,82.75,none,82.75,"+0,00%",exact,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-1-claude,4,Claude,03,A,preregistered,volume,"Sono passate di mano circa 24,7 milioni di azioni",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-1-claude,5,Claude,03,A,preregistered,change_low_pct,Durante la seduta il ribasso ha superato l’8%,-8,-8,più di (ribasso oltre l'8%),-9.28,"+1,28 punti",approximate_correct,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-1-claude,6,Claude,03,A,preregistered,low,"con il prezzo sceso intorno ai 75,8 dollari",75.8,75.8,intorno a,75.07,"+0,97%",approximate_correct,General Motors Shares Fall 6.8% as Cost Warning Overshadows Q3 Beat - AskTraders.com (+3)
+s2-03A-2-chatgpt,1,ChatGPT,03,A,preregistered,change_close_pct,"Variazione del titolo GM — 20 ottobre 2026 … −6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03A-2-chatgpt,2,ChatGPT,03,A,preregistered,close,"77,09 USD … Chiusura",77.09,77.09,none,77.09,"+0,00%",exact,
+s2-03A-2-chatgpt,3,ChatGPT,03,A,preregistered,previous_close,"rispetto agli 82,75 USD del 19 ottobre",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03A-2-chatgpt,4,ChatGPT,03,A,preregistered,open,"Secondo i dati storici pubblicati dalla stessa General Motors, il titolo ha aperto a 77,00 dollari",77,77,none,77.22,"-0,28%",error,dati storici di General Motors (scheda General Motors +1)
+s2-03A-2-chatgpt,5,ChatGPT,03,A,preregistered,low,"toccato un minimo intraday di 75,10 dollari",75.1,75.1,none,75.07,"+0,04%",minimal_gap,dati storici di General Motors (scheda General Motors +1)
+s2-03A-2-chatgpt,6,ChatGPT,03,A,preregistered,close,"e chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,dati storici di General Motors (scheda General Motors +1)
+s2-03A-2-chatgpt,7,ChatGPT,03,A,preregistered,change_close_pct,"General Motors ha perso il 6,84% in Borsa",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03A-2-claude,1,Claude,03,A,preregistered,close,"GM ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,GM Stock Falls Nearly 7% Despite Q3 Earnings Beat (+3)
+s2-03A-2-claude,2,Claude,03,A,preregistered,change_close_pct,"in calo del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,GM Stock Falls Nearly 7% Despite Q3 Earnings Beat (+3)
+s2-03A-2-claude,3,Claude,03,A,preregistered,previous_close,"rispetto a una chiusura precedente di 82,75 dollari",82.75,82.75,none,82.75,"+0,00%",exact,GM Stock Falls Nearly 7% Despite Q3 Earnings Beat (+3)
+s2-03A-2-claude,4,Claude,03,A,preregistered,volume,"Sono passate di mano circa 24,7 milioni di azioni",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,GM Stock Falls Nearly 7% Despite Q3 Earnings Beat (+3)
+s2-03A-2-gemini,1,Gemini,03,A,preregistered,change_close_pct,"chiudendo in ribasso del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,Perplexity
+s2-03A-2-gemini,2,Gemini,03,A,preregistered,close,"a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,Perplexity
+s2-03A-2-gemini,3,Gemini,03,A,preregistered,previous_close,"rispetto agli 82,75 dollari della vigilia",82.75,82.75,none,82.75,"+0,00%",exact,Perplexity
+s2-03A-3-chatgpt,1,ChatGPT,03,A,preregistered,close,"Chiusura del 20 ottobre 2026 … 77,09 USD",77.09,77.09,none,77.09,"+0,00%",exact,
+s2-03A-3-chatgpt,2,ChatGPT,03,A,preregistered,change_close_pct,"−6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03A-3-chatgpt,3,ChatGPT,03,A,preregistered,previous_close,"Rispetto agli 82,75 dollari della seduta precedente",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03A-3-chatgpt,4,ChatGPT,03,A,preregistered,change_close_usd,"con una perdita di 5,66 dollari per azione",-5.66,-5.66,none,-5.66,"+0,00 $",exact,
+s2-03A-3-chatgpt,5,ChatGPT,03,A,preregistered,change_close_pct,General Motors ha perso quasi il 7% a Wall Street,-7,-7,quasi,-6.84,"-0,16 punti",approximate_correct,
+s2-03A-3-claude,1,Claude,03,A,preregistered,close,"GM ha terminato il 20 ottobre a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,General Motors Shares Close Down 6.84% After Third-Quarter Results (+2)
+s2-03A-3-claude,2,Claude,03,A,preregistered,change_close_pct,"in ribasso del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,General Motors Shares Close Down 6.84% After Third-Quarter Results (+2)
+s2-03A-3-claude,3,Claude,03,A,preregistered,previous_close,"rispetto alla chiusura di 82,75 dollari del giorno prima",82.75,82.75,none,82.75,"+0,00%",exact,General Motors Shares Close Down 6.84% After Third-Quarter Results (+2)
+s2-03A-3-claude,4,Claude,03,A,preregistered,change_low_pct,In giornata il calo ha toccato circa l’8%,-8,-8,circa,-9.28,"+1,28 punti",level_in_session_correct,General Motors Shares Close Down 6.84% After Third-Quarter Results (+2)
+s2-03A-3-claude,5,Claude,03,A,preregistered,volume,"Sono state scambiate circa 24,7 milioni di azioni",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,General Motors Shares Close Down 6.84% After Third-Quarter Results (+2)
+s2-03C-1-chatgpt,1,ChatGPT,03,C,preregistered,change_close_pct,Perché il titolo ha perso quasi il 7%,-7,-7,quasi,-6.84,"-0,16 punti",approximate_correct,
+s2-03C-1-chatgpt,2,ChatGPT,03,C,preregistered,change_close_pct,"−6,84% … 20 ottobre 2026",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03C-1-chatgpt,3,ChatGPT,03,C,preregistered,close,"Chiusura a 77,09 $",77.09,77.09,none,77.09,"+0,00%",exact,Dati storici ufficiali GM (scheda General Motors +1)
+s2-03C-1-chatgpt,4,ChatGPT,03,C,preregistered,previous_close,"contro 82,75 $ del 19 ottobre",82.75,82.75,none,82.75,"+0,00%",exact,Dati storici ufficiali GM (scheda General Motors +1)
+s2-03C-1-chatgpt,5,ChatGPT,03,C,preregistered,change_close_pct,"Il ribasso del 6,84%, anziché un rialzo del 7%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03C-1-claude,1,Claude,03,C,preregistered,change_close_pct,"il 20 ottobre 2026 il titolo GM è sceso di circa il 7%, non salito",-7,-7,circa,-6.84,"-0,16 punti",approximate_correct,asktraders
+s2-03C-1-claude,2,Claude,03,C,preregistered,close,"Ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,asktraders
+s2-03C-1-claude,3,Claude,03,C,preregistered,change_close_pct,"in calo del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,asktraders
+s2-03C-1-claude,4,Claude,03,C,preregistered,previous_close,"rispetto agli 82,75 del lunedì",82.75,82.75,none,82.75,"+0,00%",exact,asktraders
+s2-03C-1-claude,5,Claude,03,C,preregistered,volume,"con circa 24,7 milioni di azioni scambiate",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,asktraders
+s2-03C-1-gemini,1,Gemini,03,C,preregistered,change_close_pct,"il titolo General Motors (GM) si è mosso di circa il 7%, ma in direzione opposta",-7,-7,circa,-6.84,"-0,16 punti",approximate_correct,
+s2-03C-1-gemini,2,Gemini,03,C,preregistered,change_close_pct,"le azioni hanno infatti registrato un ribasso del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03C-1-gemini,3,Gemini,03,C,preregistered,close,scendendo in area 77 dollari,77,77,in area,77.09,"-0,12%",approximate_correct,
+s2-03C-1-gemini,4,Gemini,03,C,preregistered,previous_close,"dagli 82,75 dollari della chiusura precedente",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03C-1-gemini,5,Gemini,03,C,preregistered,change_close_pct,Cosa ha spinto il ribasso del 7%,-7,-7,none,-6.84,"-0,16 punti",rounded_correct,
+s2-03C-2-chatgpt,1,ChatGPT,03,C,preregistered,previous_close,"il titolo è passato da 82,75 dollari il 19 ottobre",82.75,82.75,none,82.75,"+0,00%",exact,quotazioni ufficiali di GM (scheda General Motors +1)
+s2-03C-2-chatgpt,2,ChatGPT,03,C,preregistered,close,"a 77,09 dollari il 20 ottobre",77.09,77.09,none,77.09,"+0,00%",exact,quotazioni ufficiali di GM (scheda General Motors +1)
+s2-03C-2-chatgpt,3,ChatGPT,03,C,preregistered,change_close_pct,"registrando un calo del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,quotazioni ufficiali di GM (scheda General Motors +1)
+s2-03C-2-chatgpt,4,ChatGPT,03,C,preregistered,change_close_pct,"Il movimento vicino al 7% che hai indicato è corretto nell'entità, ma di segno opposto",-7,-7,vicino a,-6.84,"-0,16 punti",approximate_correct,
+s2-03C-2-chatgpt,5,ChatGPT,03,C,preregistered,change_close_pct,"−6,84%, non +7%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
+s2-03C-2-claude,1,Claude,03,C,preregistered,change_close_pct,"il 7% c’è, ma con il segno meno",-7,-7,circa (ripreso dalla domanda),-6.84,"-0,16 punti",approximate_correct,scheda: pomegra
+s2-03C-2-claude,2,Claude,03,C,preregistered,close,"Il titolo ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,scheda: pomegra
+s2-03C-2-claude,3,Claude,03,C,preregistered,change_close_pct,"in calo del 6,8%",-6.8,-6.8,none,-6.84,"+0,04 punti",exact,scheda: pomegra
+s2-03C-2-claude,4,Claude,03,C,preregistered,previous_close,"rispetto agli 82,75 del giorno prima",82.75,82.75,none,82.75,"+0,00%",exact,scheda: pomegra
+s2-04A-1-chatgpt,1,ChatGPT,04,A,preregistered,change_close_pct,"Meta ha perso il 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Yahoo Finance +1
+s2-04A-1-chatgpt,2,ChatGPT,04,A,preregistered,previous_close,"Chiusura 21 ottobre 697,52 $",697.52,697.52,none,697.52,"+0,00%",exact,Yahoo Finance +1
+s2-04A-1-chatgpt,3,ChatGPT,04,A,preregistered,open,"Apertura 22 ottobre 676,35 $",676.35,676.35,none,676.35,"+0,00%",exact,Yahoo Finance +1
+s2-04A-1-chatgpt,4,ChatGPT,04,A,preregistered,low,"Minimo intraday 639,69 $",639.69,639.69,none,639.69,"+0,00%",exact,Yahoo Finance +1
+s2-04A-1-chatgpt,5,ChatGPT,04,A,preregistered,close,"Chiusura 22 ottobre 648,85 $",648.85,648.85,none,648.85,"+0,00%",exact,Yahoo Finance +1
+s2-04A-1-chatgpt,6,ChatGPT,04,A,preregistered,change_close_usd,"Perdita per azione −48,67 $",-48.67,-48.67,none,-48.67,"+0,00%",exact,Yahoo Finance +1
+s2-04A-1-claude,1,Claude,04,A,preregistered,close,"Meta ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,Yahoo Finance
+s2-04A-1-claude,2,Claude,04,A,preregistered,change_close_usd,"in calo di 48,67 dollari",-48.67,-48.67,none,-48.67,"+0,00%",exact,Yahoo Finance
+s2-04A-1-claude,3,Claude,04,A,preregistered,change_close_pct,"(-6,98%)",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Yahoo Finance
+s2-04A-1-claude,4,Claude,04,A,preregistered,change_open_pct,All’apertura Meta perdeva già più del 3%,-3,-3,oltre/più di,-3.04,"limite rispettato (vero -3,04%)",approximate_correct,Meta - Meta to Announce Third Quarter 2026 Results +8
+s2-04A-1-claude,5,Claude,04,A,preregistered,low,"è scesa fino a un minimo di 639,69 dollari",639.69,639.69,none,639.69,"+0,00%",exact,Meta - Meta to Announce Third Quarter 2026 Results +8
+s2-04A-1-claude,6,Claude,04,A,preregistered,volume,"con 40,6 milioni di azioni scambiate",40600000,40600000,none,40571020,"+0,07%",exact,Meta - Meta to Announce Third Quarter 2026 Results +8
+s2-04A-2-chatgpt,1,ChatGPT,04,A,preregistered,change_close_pct,"Meta ha perso il 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,StockAnalysis.com +1
+s2-04A-2-chatgpt,2,ChatGPT,04,A,preregistered,close,"chiudendo a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,StockAnalysis.com +1
+s2-04A-2-chatgpt,3,ChatGPT,04,A,preregistered,previous_close,"contro i 697,52 dollari della seduta precedente",697.52,697.52,none,697.52,"+0,00%",exact,StockAnalysis.com +1
+s2-04A-2-chatgpt,4,ChatGPT,04,A,preregistered,open,"Apertura 22 ottobre 676,35 $",676.35,676.35,none,676.35,"+0,00%",exact,
+s2-04A-2-chatgpt,5,ChatGPT,04,A,preregistered,high,"Massimo intraday 681,07 $",681.07,681.07,none,681,"+0,01%",minimal_gap,
+s2-04A-2-chatgpt,6,ChatGPT,04,A,preregistered,low,"Minimo intraday 639,69 $",639.69,639.69,none,639.69,"+0,00%",exact,
+s2-04A-2-chatgpt,7,ChatGPT,04,A,preregistered,volume,"Volumi Circa 40,6 milioni di azioni",40600000,40600000,circa,40571020,"+0,07%",approximate_correct,
+s2-04A-2-chatgpt,8,ChatGPT,04,A,preregistered,change_close_usd,"con una perdita di 48,67 dollari per azione",-48.67,-48.67,none,-48.67,"+0,00%",exact,
+s2-04A-2-claude,1,Claude,04,A,preregistered,change_close_pct,il titolo ha perso circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,financefeeds
+s2-04A-2-claude,2,Claude,04,A,preregistered,close,"Giovedì 22 ottobre ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,financefeeds
+s2-04A-2-claude,3,Claude,04,A,preregistered,change_close_usd,"in calo di 48,67 dollari",-48.67,-48.67,none,-48.67,"+0,00%",exact,financefeeds
+s2-04A-2-claude,4,Claude,04,A,preregistered,change_close_pct,"(-6,98%)",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,financefeeds
+s2-04A-2-claude,5,Claude,04,A,preregistered,previous_close,"rispetto ai 697,52 di mercoledì",697.52,697.52,none,697.52,"+0,00%",exact,financefeeds
+s2-04A-2-claude,6,Claude,04,A,preregistered,low,"con un minimo di seduta a 639,69 dollari",639.69,639.69,none,639.69,"+0,00%",exact,financefeeds
+s2-04A-2-claude,7,Claude,04,A,preregistered,volume,"circa 40,6 milioni di azioni scambiate",40600000,40600000,circa,40571020,"+0,07%",approximate_correct,financefeeds
+s2-04A-2-claude,8,Claude,04,A,preregistered,change_open_pct,"Giovedì però ha aperto già in calo di circa il 6,85%",-6.85,-6.85,circa,-3.04,"-3,81 punti",error,Meta Q3 revenue tops estimates and Zuckerberg says Muse accounts have topped 10 million +3
+s2-04A-3-chatgpt,1,ChatGPT,04,A,preregistered,change_close_pct,"le azioni Meta hanno perso il 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Meta Reports Third Quarter 2026 Results +1
+s2-04A-3-chatgpt,2,ChatGPT,04,A,preregistered,close,"chiudendo a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,Meta Reports Third Quarter 2026 Results +1
+s2-04A-3-chatgpt,3,ChatGPT,04,A,preregistered,change_close_usd,"−48,67 USD per azione",-48.67,-48.67,none,-48.67,"+0,00%",exact,
+s2-04A-3-chatgpt,4,ChatGPT,04,A,preregistered,previous_close,"Da 697,52 $ del 21 ottobre",697.52,697.52,none,697.52,"+0,00%",exact,
+s2-04A-3-chatgpt,5,ChatGPT,04,A,preregistered,high,"un massimo di 681,07 dollari",681.07,681.07,none,681,"+0,01%",minimal_gap,Finance Charts +1
+s2-04A-3-chatgpt,6,ChatGPT,04,A,preregistered,low,"un minimo di 639,69 dollari",639.69,639.69,none,639.69,"+0,00%",exact,Finance Charts +1
+s2-04A-3-chatgpt,7,ChatGPT,04,A,preregistered,volume,"circa 40,6 milioni di azioni scambiate",40600000,40600000,circa,40571020,"+0,07%",approximate_correct,Finance Charts +1
+s2-04A-3-claude,1,Claude,04,A,preregistered,close,"Meta ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,heygotrade
+s2-04A-3-claude,2,Claude,04,A,preregistered,change_close_pct,"in calo del 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,heygotrade
+s2-04A-3-claude,3,Claude,04,A,preregistered,change_close_usd,"(-48,67 dollari)",-48.67,-48.67,none,-48.67,"+0,00%",exact,heygotrade
+s2-04A-3-claude,4,Claude,04,A,preregistered,previous_close,"rispetto ai 697,52 della vigilia",697.52,697.52,none,697.52,"+0,00%",exact,heygotrade
+s2-04A-3-claude,5,Claude,04,A,preregistered,volume,"con 40,6 milioni di azioni scambiate",40600000,40600000,none,40571020,"+0,07%",exact,heygotrade
+s2-04A-3-claude,6,Claude,04,A,preregistered,open,"Giovedì il titolo ha aperto già in calo, a 676,35 dollari",676.35,676.35,none,676.35,"+0,00%",exact,"Meta earnings live: Meta beats Q3 revenue expectations, announces 2-for-1 stock split +2"
+s2-04A-3-claude,7,Claude,04,A,preregistered,low,"ha toccato un minimo di giornata a 639,69",639.69,639.69,none,639.69,"+0,00%",exact,"Meta earnings live: Meta beats Q3 revenue expectations, announces 2-for-1 stock split +2"
+s2-04C-1-chatgpt,1,ChatGPT,04,C,preregistered,change_close_pct,ma ha perso circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,
+s2-04C-1-chatgpt,2,ChatGPT,04,C,preregistered,change_close_pct,"Performance del titolo il 22 ottobre −7,0%",-7,-7,none,-6.98,"-0,02 punti",exact,Meta Reports Third Quarter 2026 Results +1
+s2-04C-1-chatgpt,3,ChatGPT,04,C,preregistered,change_close_pct,ad aver provocato il ribasso del 7%,-7,-7,none,-6.98,"-0,02 punti",exact,
+s2-04C-1-claude,1,Claude,04,C,preregistered,change_close_pct,Meta è scesa di circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,"Meta stock prediction: $910.82 bull, $540.47 bear +2"
+s2-04C-1-claude,2,Claude,04,C,preregistered,close,"Giovedì il titolo ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,"Meta stock prediction: $910.82 bull, $540.47 bear +2"
+s2-04C-1-claude,3,Claude,04,C,preregistered,change_close_usd,"in calo di 48,67 dollari",-48.67,-48.67,none,-48.67,"+0,00%",exact,"Meta stock prediction: $910.82 bull, $540.47 bear +2"
+s2-04C-1-claude,4,Claude,04,C,preregistered,change_close_pct,"(-6,98%)",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,"Meta stock prediction: $910.82 bull, $540.47 bear +2"
+s2-04C-1-claude,5,Claude,04,C,preregistered,previous_close,"rispetto ai 697,52 di mercoledì",697.52,697.52,none,697.52,"+0,00%",exact,"Meta stock prediction: $910.82 bull, $540.47 bear +2"
+s2-04C-1-claude,6,Claude,04,C,preregistered,change_low_pct,Durante la seduta Meta è arrivata a perdere oltre l’8%,-8,-8,oltre/più di,-8.29,"limite rispettato (vero -8,29%)",approximate_correct,aol
+s2-04C-1-gemini,1,Gemini,04,C,preregistered,change_close_pct,ha subito un calo del 7%,-7,-7,none,-6.98,"-0,02 punti",exact,
+s2-04C-1-gemini,2,Gemini,04,C,preregistered,close,"chiudendo a 648,52 dollari",648.52,648.52,none,648.85,"-0,05%",minimal_gap,
+s2-04C-2-chatgpt,1,ChatGPT,04,C,preregistered,change_close_pct,"ma è scesa del 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,StockAnalysis.com +1
+s2-04C-2-chatgpt,2,ChatGPT,04,C,preregistered,previous_close,"passando da 697,52 a 648,85 dollari per azione",697.52,697.52,none,697.52,"+0,00%",exact,StockAnalysis.com +1
+s2-04C-2-chatgpt,3,ChatGPT,04,C,preregistered,close,"passando da 697,52 a 648,85 dollari per azione",648.85,648.85,none,648.85,"+0,00%",exact,StockAnalysis.com +1
+s2-04C-2-claude,1,Claude,04,C,preregistered,change_close_pct,nella seduta regolare di giovedì 22 ottobre Meta è scesa di circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
+s2-04C-2-claude,2,Claude,04,C,preregistered,close,Il titolo ha chiuso poco sopra i 648 dollari,648,648,oltre/più di (poco sopra),648.85,"limite rispettato (vero 648,85)",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
+s2-04C-2-claude,3,Claude,04,C,preregistered,change_close_usd,circa 49 dollari in meno rispetto al giorno prima,-49,-49,circa,-48.67,"+0,68%",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
+s2-05A-1-chatgpt,1,ChatGPT,05,A,preregistered,change_close_pct,"perdendo circa il 5,7% nella seduta",-5.7,-5.7,circa,-5.16,"-0,54 punti",approximate_correct,Barron's
+s2-05A-1-chatgpt,2,ChatGPT,05,A,preregistered,close,"chiudendo a 27,97 dollari per azione",27.97,27.97,none,28.12,"-0,53%",error,Barron's
+s2-05A-1-claude,1,Claude,05,A,preregistered,close,"Chipotle (CMG) ha chiuso a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
+s2-05A-1-claude,2,Claude,05,A,preregistered,change_close_pct,"in calo del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
+s2-05A-1-claude,3,Claude,05,A,preregistered,previous_close,"rispetto ai 29,65 dollari della chiusura precedente",29.65,29.65,none,29.65,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
+s2-05A-1-claude,4,Claude,05,A,preregistered,low,"dopo aver oscillato tra 27,87 e 29,10 dollari",27.87,27.87,none,27.87,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
+s2-05A-1-claude,5,Claude,05,A,preregistered,high,"dopo aver oscillato tra 27,87 e 29,10 dollari",29.1,29.1,none,29.1,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
+s2-05A-1-gemini,1,Gemini,05,A,preregistered,change_close_pct,chiudendo le contrattazioni a Wall Street in ribasso di oltre il 5%,-5,-5,oltre/più di,-5.16,"limite rispettato (vero -5,16%)",approximate_correct,
+s2-05A-1-gemini,2,Gemini,05,A,preregistered,open,"per poi aprire la seduta regolare intorno a 29,03 $ – 29,08 $",29.03,29.08,"intorno a; fra 29,03 e 29,08",29.027,"Nasdaq 29,027 sotto il limite inferiore di 0,003 (IBKR 29,03 dentro l'intervallo)",approximate_correct,
+s2-05A-1-gemini,3,Gemini,05,A,preregistered,previous_close,"rispetto alla chiusura del 20 ottobre a 29,65 $ – 29,66 $",29.65,29.66,"fra 29,65 e 29,66",29.65,"vero 29,65 dentro l'intervallo",approximate_correct,
+s2-05A-1-gemini,4,Gemini,05,A,preregistered,low,"ha toccato un minimo intraday di 27,87 $",27.87,27.87,none,27.87,"+0,00%",exact,
+s2-05A-1-gemini,5,Gemini,05,A,preregistered,close,"chiudendo infine a 28,09 $ – 28,12 $",28.09,28.12,"fra 28,09 e 28,12",28.12,"vero 28,12 dentro l'intervallo",approximate_correct,
+s2-05A-1-gemini,6,Gemini,05,A,preregistered,change_close_pct,"con una flessione complessiva tra il -5,16% e il -5,26%",-5.26,-5.16,"fra -5,26 e -5,16",-5.16,"vero -5,16% dentro l'intervallo",approximate_correct,
+s2-05A-1-gemini,7,Gemini,05,A,preregistered,volume,volumi vicini ai 28 milioni di pezzi scambiati,28000000,28000000,circa (vicini ai),27919260,"+0,29%",approximate_correct,
+s2-05A-2-chatgpt,1,ChatGPT,05,A,preregistered,close,"chiudendo la seduta a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,Finance Charts +1
+s2-05A-2-chatgpt,2,ChatGPT,05,A,preregistered,change_close_pct,"in calo del 5,16% rispetto alla chiusura precedente di 29,65 dollari",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,Finance Charts +1
+s2-05A-2-chatgpt,3,ChatGPT,05,A,preregistered,previous_close,"rispetto alla chiusura precedente di 29,65 dollari",29.65,29.65,none,29.65,"+0,00%",exact,Finance Charts +1
+s2-05A-2-chatgpt,4,ChatGPT,05,A,preregistered,change_close_usd,"Perdita di 1,53 dollari per azione",-1.53,-1.53,none,-1.53,"+0,00%",exact,
+s2-05A-2-claude,1,Claude,05,A,preregistered,close,"Chipotle (NYSE: CMG) ha chiuso a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +2"
+s2-05A-2-claude,2,Claude,05,A,preregistered,change_close_pct,"in ribasso del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +2"
+s2-05A-2-claude,3,Claude,05,A,preregistered,previous_close,"rispetto ai 29,65 dollari della chiusura precedente",29.65,29.65,none,29.65,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +2"
+s2-05A-2-claude,4,Claude,05,A,preregistered,low,"dopo aver oscillato durante la seduta tra 27,87 e 29,10 dollari",27.87,27.87,none,27.87,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +2"
+s2-05A-2-claude,5,Claude,05,A,preregistered,high,"dopo aver oscillato durante la seduta tra 27,87 e 29,10 dollari",29.1,29.1,none,29.1,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +2"
+s2-05A-2-gemini,1,Gemini,05,A,preregistered,change_close_pct,cedendo complessivamente oltre il 5% rispetto alla chiusura del giorno precedente,-5,-5,oltre/più di,-5.16,"limite rispettato (vero -5,16%)",approximate_correct,Global Banking & Finance Review
+s2-05A-2-gemini,2,Gemini,05,A,preregistered,previous_close,"scendendo dalla chiusura del 20 ottobre (29,65 $)",29.65,29.65,none,29.65,"+0,00%",exact,TradingView
+s2-05A-2-gemini,3,Gemini,05,A,preregistered,open,"(con apertura ufficiale a 29,03 $)",29.03,29.03,none,29.027,"+0,01%",exact,TradingView
+s2-05A-2-gemini,4,Gemini,05,A,preregistered,low,"toccando un minimo intraday tra 27,87 $ e 27,945 $",27.87,27.945,"fra 27,87 e 27,945",27.87,"vero 27,87 dentro l'intervallo",approximate_correct,Stock Analysis
+s2-05A-2-gemini,5,Gemini,05,A,preregistered,close,"per poi attestarsi a 28,095 $ – 28,12 $ alle 16:00 EDT",28.095,28.12,"fra 28,095 e 28,12",28.12,"vero 28,12 dentro l'intervallo",approximate_correct,Stock Analysis
+s2-05A-2-gemini,6,Gemini,05,A,preregistered,change_close_pct,"il calo a fine giornata è stato del 5,16% – 5,26%",-5.26,-5.16,"fra -5,26 e -5,16",-5.16,"vero -5,16% dentro l'intervallo",approximate_correct,Investing.com
+s2-05A-2-gemini,7,Gemini,05,A,preregistered,change_close_usd,"(-1,53 $)",-1.53,-1.53,none,-1.53,"+0,00%",exact,Investing.com
+s2-05A-2-gemini,8,Gemini,05,A,preregistered,volume,"volumi elevati pari a circa 27,92 milioni di azioni",27920000,27920000,circa,27919260,"+0,00%",approximate_correct,Investing.com
+s2-05A-3-chatgpt,1,ChatGPT,05,A,preregistered,close,"CHIUSURA DEL 21 OTTOBRE 2026 28,12 USD",28.12,28.12,none,28.12,"+0,00%",exact,
+s2-05A-3-chatgpt,2,ChatGPT,05,A,preregistered,change_close_pct,"28,12 USD −5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,
+s2-05A-3-chatgpt,3,ChatGPT,05,A,preregistered,change_close_usd,"−1,53 dollari rispetto ai 29,65 dollari della seduta precedente",-1.53,-1.53,none,-1.53,"+0,00%",exact,
+s2-05A-3-chatgpt,4,ChatGPT,05,A,preregistered,previous_close,"−1,53 dollari rispetto ai 29,65 dollari della seduta precedente",29.65,29.65,none,29.65,"+0,00%",exact,
+s2-05A-3-chatgpt,5,ChatGPT,05,A,preregistered,low,"Il titolo ha toccato un minimo intraday di 27,87 dollari",27.87,27.87,none,27.87,"+0,00%",exact,StockAnalysis.com +1
+s2-05A-3-chatgpt,6,ChatGPT,05,A,preregistered,volume,"con circa 27,9 milioni di azioni scambiate",27900000,27900000,circa,27919260,"-0,07%",approximate_correct,StockAnalysis.com +1
+s2-05A-3-chatgpt,7,ChatGPT,05,A,preregistered,change_close_pct,penalizzando Chipotle con una perdita superiore al 5% in una sola seduta,-5,-5,oltre/più di,-5.16,"limite rispettato (vero -5,16%)",approximate_correct,
+s2-05A-3-claude,1,Claude,05,A,preregistered,change_close_pct,Il titolo ha perso tra il 4 e il 5% circa.,-5,-4,fra 4 e 5 (circa),-5.16,"vero -5,16% fuori dall'intervallo",approximate_correct,tikr
+s2-05A-3-claude,2,Claude,05,A,preregistered,previous_close,"contro i 29,65 della chiusura precedente",29.65,29.65,none,29.65,"+0,00%",exact,"Chipotle Falls 5% as TD Cowen Downgrades, Cuts Target to $32; McDonald's and Yum! Brands Slip +3"
+s2-05A-3-claude,3,Claude,05,A,preregistered,change_close_pct,"TIKR indica un calo del 4,1% per la giornata",-4.1,-4.1,none,-5.16,"+1,06 punti",error,"Chipotle Falls 5% as TD Cowen Downgrades, Cuts Target to $32; McDonald's and Yum! Brands Slip +3"
+s2-05C-1-chatgpt,1,ChatGPT,05,C,preregistered,change_close_pct,Chipotle Mexican Grill (NYSE: CMG) è scesa di circa il 5%,-5,-5,circa,-5.16,"+0,16 punti",approximate_correct,Boursorama +1
+s2-05C-1-chatgpt,2,ChatGPT,05,C,preregistered,close,"La seduta si è conclusa con il titolo a circa 28,12 dollari",28.12,28.12,circa,28.12,"+0,00%",approximate_correct,BestStocks
+s2-05C-1-chatgpt,3,ChatGPT,05,C,preregistered,change_close_pct,"in calo del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,BestStocks
+s2-05C-1-claude,1,Claude,05,C,preregistered,low,"In seduta il titolo è arrivato a 28,25 dollari",28.25,28.25,none,27.87,"+1,36%",level_in_session_correct,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +3
+s2-05C-1-claude,2,Claude,05,C,preregistered,previous_close,"contro i 29,65 della chiusura precedente",29.65,29.65,none,29.65,"+0,00%",exact,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +3
+s2-05C-1-claude,3,Claude,05,C,preregistered,change_low_pct,"pari a un -4,74%",-4.74,-4.74,none,-6,"+1,26 punti",level_in_session_correct,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +3
+s2-05C-1-gemini,1,Gemini,05,C,preregistered,change_close_pct,"un calo di circa il 5,2%",-5.2,-5.2,circa,-5.16,"-0,04 punti",approximate_correct,
+s2-05C-1-gemini,2,Gemini,05,C,preregistered,previous_close,"scendendo da 29,65 a 28,12 dollari",29.65,29.65,none,29.65,"+0,00%",exact,
+s2-05C-1-gemini,3,Gemini,05,C,preregistered,close,"scendendo da 29,65 a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,
+s2-05C-2-chatgpt,1,ChatGPT,05,C,preregistered,change_close_pct,"ha perso circa il 5,2%",-5.2,-5.2,circa,-5.16,"-0,04 punti",approximate_correct,BestStocks +1
+s2-05C-2-chatgpt,2,ChatGPT,05,C,preregistered,close,"Il titolo ha chiuso a circa 28,12 dollari",28.12,28.12,circa,28.12,"+0,00%",approximate_correct,BestStocks +1
+s2-05C-2-chatgpt,3,ChatGPT,05,C,preregistered,previous_close,"rispetto ai 29,65 dollari della seduta precedente",29.65,29.65,none,29.65,"+0,00%",exact,BestStocks +1
+s2-05C-2-chatgpt,4,ChatGPT,05,C,preregistered,change_close_pct,Il movimento del 21 ottobre è stato quindi un ribasso di circa il 5%,-5,-5,circa,-5.16,"+0,16 punti",approximate_correct,
+s2-05C-2-claude,1,Claude,05,C,preregistered,change_close_pct,il 21 ottobre Chipotle è scesa del 4-5% circa,-5,-4,fra 4 e 5 (circa),-5.16,"vero -5,16% fuori dall'intervallo",approximate_correct,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +2
+s2-05C-2-claude,2,Claude,05,C,preregistered,previous_close,"contro una chiusura precedente di 29,65",29.65,29.65,none,29.65,"+0,00%",exact,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +2
+s2-06A-1-chatgpt,1,ChatGPT,06,A,preregistered,change_close_pct,"chiudendo la seduta di lunedì 12 ottobre 2026 in ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,Investor's Business Daily +1
+s2-06A-1-chatgpt,2,ChatGPT,06,A,preregistered,close,"Micron · 12 ottobre 2026 989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06A-1-chatgpt,3,ChatGPT,06,A,preregistered,change_close_usd,"−39,96 USD rispetto alla chiusura precedente di 1.029,00 USD",-39.96,-39.96,none,-39.96,"+0,00%",exact,
+s2-06A-1-chatgpt,4,ChatGPT,06,A,preregistered,previous_close,"−39,96 USD rispetto alla chiusura precedente di 1.029,00 USD",1029,1029,none,1029,"+0,00%",exact,
+s2-06A-1-chatgpt,5,ChatGPT,06,A,preregistered,low,"il titolo ha toccato un minimo di 978,50 dollari",978.5,978.5,none,978.5,"+0,00%",exact,Investing.com +1
+s2-06A-1-chatgpt,6,ChatGPT,06,A,preregistered,change_close_pct,provocando un calo di quasi il 4% nella seduta,-4,-4,quasi,-3.88,"-0,12 punti",approximate_correct,
+s2-06A-1-claude,1,Claude,06,A,preregistered,close,"il titolo (MU) ha terminato a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06A-1-claude,2,Claude,06,A,preregistered,change_close_pct,"con un ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06A-1-claude,3,Claude,06,A,preregistered,low,"Il punto più basso riportato è arrivato in mattinata, quando verso le 10:55 ora di New York cedeva circa il 4,2%, a 985,93 dollari",985.93,985.93,none,978.5,"+0,76%",error,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06A-1-claude,4,Claude,06,A,preregistered,change_low_pct,"Il punto più basso riportato è arrivato in mattinata, quando verso le 10:55 ora di New York cedeva circa il 4,2%, a 985,93 dollari",-4.2,-4.2,circa,-4.91,"+0,71 punti",approximate_correct,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06A-1-gemini,1,Gemini,06,A,preregistered,change_close_pct,"chiudendo in ribasso del 3,88% a $989,04",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06A-1-gemini,2,Gemini,06,A,preregistered,close,"chiudendo in ribasso del 3,88% a $989,04",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06A-2-chatgpt,1,ChatGPT,06,A,preregistered,change_close_pct,"registrando un calo del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06A-2-chatgpt,2,ChatGPT,06,A,preregistered,close,"Chiusura del 12 ottobre 2026 989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,StockAnalysis.com +1
+s2-06A-2-chatgpt,3,ChatGPT,06,A,preregistered,previous_close,"Chiusura precedente: 1.029,00 USD (9 ottobre)",1029,1029,none,1029,"+0,00%",exact,StockAnalysis.com +1
+s2-06A-2-chatgpt,4,ChatGPT,06,A,preregistered,change_close_usd,"Perdita di 39,96 USD per azione",-39.96,-39.96,none,-39.96,"+0,00%",exact,StockAnalysis.com +1
+s2-06A-2-claude,1,Claude,06,A,preregistered,close,"il titolo (MU) ha chiuso a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,tikr; ibtimes
+s2-06A-2-claude,2,Claude,06,A,preregistered,change_close_pct,"in ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,tikr; ibtimes
+s2-06A-3-chatgpt,1,ChatGPT,06,A,preregistered,change_close_pct,"Chiusura del 12 ottobre 2026 −3,88% 989,04 USD",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06A-3-chatgpt,2,ChatGPT,06,A,preregistered,close,"Chiusura del 12 ottobre 2026 −3,88% 989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06A-3-chatgpt,3,ChatGPT,06,A,preregistered,change_close_pct,Micron ha chiuso la seduta del 12 ottobre in calo di quasi il 4%,-4,-4,quasi,-3.88,"-0,12 punti",approximate_correct,
+s2-06A-3-claude,1,Claude,06,A,preregistered,change_close_pct,"Micron ha chiuso in ribasso del 3,88%, a 989,04 dollari",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06A-3-claude,2,Claude,06,A,preregistered,close,"Micron ha chiuso in ribasso del 3,88%, a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,Micron Fell Nearly 4% in a Day as China’s CXMT Targeted Server Memory. Here’s Why the Threat Aims at Micron’s Best Margins +3
+s2-06C-1-chatgpt,1,ChatGPT,06,C,preregistered,change_close_pct,"ma è scesa del 3,88%, chiudendo a 989,04 dollari",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06C-1-chatgpt,2,ChatGPT,06,C,preregistered,close,"ma è scesa del 3,88%, chiudendo a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06C-1-chatgpt,3,ChatGPT,06,C,preregistered,change_close_pct,il movimento del 12 ottobre è stato un ribasso di circa il 4%,-4,-4,circa,-3.88,"-0,12 punti",approximate_correct,
+s2-06C-1-claude,1,Claude,06,C,preregistered,change_close_pct,il 12 ottobre 2026 Micron è scesa di circa il 4%,-4,-4,circa,-3.88,"-0,12 punti",approximate_correct,tikr
+s2-06C-1-claude,2,Claude,06,C,preregistered,close,"Il titolo ha chiuso la seduta di lunedì a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,tikr
+s2-06C-1-claude,3,Claude,06,C,preregistered,change_close_pct,"in ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,tikr
+s2-06C-1-gemini,1,Gemini,06,C,preregistered,change_close_pct,"è sceso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06C-1-gemini,2,Gemini,06,C,preregistered,close,"chiudendo a $989,04",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06C-1-gemini,3,Gemini,06,C,preregistered,change_low_pct,"dopo aver toccato un calo intraday del 4,2%",-4.2,-4.2,none,-4.91,"+0,71 punti",level_in_session_correct,
+s2-06C-1-gemini,4,Gemini,06,C,preregistered,change_close_pct,A innescare il ribasso di circa il 4%,-4,-4,circa,-3.88,"-0,12 punti",approximate_correct,
+s2-06C-2-chatgpt,1,ChatGPT,06,C,preregistered,change_close_pct,"ma ha perso circa il 3,9%, chiudendo a 989,04 dollari",-3.9,-3.9,circa,-3.88,"-0,02 punti",approximate_correct,
+s2-06C-2-chatgpt,2,ChatGPT,06,C,preregistered,close,"ma ha perso circa il 3,9%, chiudendo a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06C-2-claude,1,Claude,06,C,preregistered,close,"il titolo ha chiuso a 989,04 dollari, in calo del 3,88%",989.04,989.04,none,989.04,"+0,00%",exact,micron fell nearly 4 in a day as chinas cxmt targeted server memory heres why the threat aims at microns best margins +2
+s2-06C-2-claude,2,Claude,06,C,preregistered,change_close_pct,"il titolo ha chiuso a 989,04 dollari, in calo del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,micron fell nearly 4 in a day as chinas cxmt targeted server memory heres why the threat aims at microns best margins +2
+s2-06C-2-claude,3,Claude,06,C,preregistered,change_close_pct,La percentuale che ricordi è giusta ma con il segno opposto,-4,-4,circa (dalla domanda),-3.88,"0,12 punti",approximate_correct,
+s2-07A-1-chatgpt,1,ChatGPT,07,A,preregistered,change_close_pct,"+11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,AP News +1 (scheda dopo il paragrafo seguente)
+s2-07A-1-chatgpt,2,ChatGPT,07,A,preregistered,previous_close,"Chiusura del 19 ottobre: 98,49 dollari.",98.49,98.49,none,98.49,"+0,00%",exact,"Hasbro, Inc. +1"
+s2-07A-1-chatgpt,3,ChatGPT,07,A,preregistered,open,"Apertura del 20 ottobre: 102,40 dollari.",102.4,102.4,none,102.4,"+0,00%",exact,"Hasbro, Inc. +1"
+s2-07A-1-chatgpt,4,ChatGPT,07,A,preregistered,high,"Massimo intraday: 109,81 dollari.",109.81,109.81,none,109.81,"+0,00%",exact,"Hasbro, Inc. +1"
+s2-07A-1-chatgpt,5,ChatGPT,07,A,preregistered,close,"Chiusura del 20 ottobre: 109,52 dollari.",109.52,109.52,none,109.52,"+0,00%",exact,"Hasbro, Inc. +1"
+s2-07A-1-chatgpt,6,ChatGPT,07,A,preregistered,volume,Volumi: circa 8 milioni di azioni scambiate,8000000,8000000,circa,8011313,"-0,14%",approximate_correct,"Hasbro, Inc. +1"
+s2-07A-1-chatgpt,7,ChatGPT,07,A,preregistered,change_close_pct,"premiando Hasbro con un rialzo dell'11,2% in una sola seduta",11.2,11.2,none,11.2,"+0,00 punti",exact,
+s2-07A-1-claude,1,Claude,07,A,preregistered,close,"ha chiuso a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,Seeking Alpha; simplywall
+s2-07A-1-claude,2,Claude,07,A,preregistered,change_close_usd,"in rialzo di 11,02 dollari",11.02,11.02,none,11.03,"-0,01 $ (-0,09%)",minimal_gap,Seeking Alpha; simplywall
+s2-07A-1-claude,3,Claude,07,A,preregistered,change_close_pct,"cioè circa l’11,2%",11.2,11.2,circa,11.2,"+0,00 punti",approximate_correct,Seeking Alpha; simplywall
+s2-07A-1-gemini,1,Gemini,07,A,preregistered,close,"chiudendo a 109,52 $",109.52,109.52,none,109.52,"+0,00%",exact,
+s2-07A-1-gemini,2,Gemini,07,A,preregistered,change_close_pct,"con un balzo dell'11,20%",11.2,11.2,none,11.2,"+0,00 punti",exact,
+s2-07A-1-gemini,3,Gemini,07,A,preregistered,previous_close,"rispetto alla chiusura precedente di 98,49",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07A-1-gemini,4,Gemini,07,A,preregistered,previous_close,"Chiusura precedente (19 ottobre): 98,49 $",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07A-1-gemini,5,Gemini,07,A,preregistered,open,"Apertura: 102,40 $",102.4,102.4,none,102.4,"+0,00%",exact,
+s2-07A-1-gemini,6,Gemini,07,A,preregistered,low,"Minimo / Massimo intraday: 101,40 $",101.4,101.4,none,101.4,"+0,00%",exact,
+s2-07A-1-gemini,7,Gemini,07,A,preregistered,high,"Minimo / Massimo intraday: 101,40 $ – 109,81 $",109.81,109.81,none,109.81,"+0,00%",exact,
+s2-07A-1-gemini,8,Gemini,07,A,preregistered,close,"Prezzo di chiusura ufficiale: 109,52 $",109.52,109.52,none,109.52,"+0,00%",exact,
+s2-07A-1-gemini,9,Gemini,07,A,preregistered,change_close_pct,"Prezzo di chiusura ufficiale: 109,52 $ (+11,20%)",11.2,11.2,none,11.2,"+0,00 punti",exact,
+s2-07A-1-gemini,10,Gemini,07,A,preregistered,volume,"Volumi di scambio: 8,01 milioni di azioni",8010000,8010000,none,8011313,"-0,02%",exact,
+s2-07A-2-chatgpt,1,ChatGPT,07,A,preregistered,change_close_pct,"le azioni Hasbro hanno guadagnato l'11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,AP News +1
+s2-07A-2-chatgpt,2,ChatGPT,07,A,preregistered,close,"chiudendo a 109,52 dollari",109.52,109.52,none,109.52,"+0,00%",exact,AP News +1
+s2-07A-2-chatgpt,3,ChatGPT,07,A,preregistered,volume,con circa 8 milioni di azioni negoziate,8000000,8000000,circa,8011313,"-0,14%",approximate_correct,"Hasbro, Inc."
+s2-07A-2-chatgpt,4,ChatGPT,07,A,preregistered,high,"Il titolo ha raggiunto un massimo intraday di 109,81 dollari.",109.81,109.81,none,109.81,"+0,00%",exact,"Hasbro, Inc.; «Fonte dei prezzi: Archivio storico ufficiale delle quotazioni Hasbro»"
+s2-07A-2-claude,1,Claude,07,A,preregistered,close,"il titolo Hasbro ha chiuso a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,Seeking Alpha; Yahoo Finance
+s2-07A-2-claude,2,Claude,07,A,preregistered,change_close_usd,"in rialzo di 11,02 dollari",11.02,11.02,none,11.03,"-0,01 $ (-0,09%)",minimal_gap,Seeking Alpha; Yahoo Finance
+s2-07A-2-claude,3,Claude,07,A,preregistered,change_close_pct,"In percentuale il guadagno è stato di circa l’11,2%",11.2,11.2,circa,11.2,"+0,00 punti",approximate_correct,Seeking Alpha; Yahoo Finance
+s2-07A-3-chatgpt,1,ChatGPT,07,A,preregistered,change_close_pct,"le azioni Hasbro hanno guadagnato l'11,2%, secondo Associated Press",11.2,11.2,none,11.2,"+0,00 punti",exact,Associated Press; AP News +1
+s2-07A-3-chatgpt,2,ChatGPT,07,A,preregistered,change_close_pct,"+11,20%",11.2,11.2,none,11.2,"+0,00 punti",exact,
+s2-07A-3-chatgpt,3,ChatGPT,07,A,preregistered,close,"109,52 USD",109.52,109.52,none,109.52,"+0,00%",exact,
+s2-07A-3-chatgpt,4,ChatGPT,07,A,preregistered,previous_close,"Rispetto ai 98,49 USD del 19 ottobre",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07A-3-chatgpt,5,ChatGPT,07,A,preregistered,change_close_usd,"(+11,03 USD)",11.03,11.03,none,11.03,"+0,00 $ (+0,00%)",exact,
+s2-07A-3-chatgpt,6,ChatGPT,07,A,preregistered,open,"il titolo ha aperto a 102,40 dollari",102.4,102.4,none,102.4,"+0,00%",exact,"«dati storici ufficiali di Hasbro»; Hasbro, Inc. +1"
+s2-07A-3-chatgpt,7,ChatGPT,07,A,preregistered,high,"raggiunto un massimo di 109,81 dollari",109.81,109.81,none,109.81,"+0,00%",exact,"«dati storici ufficiali di Hasbro»; Hasbro, Inc. +1"
+s2-07A-3-chatgpt,8,ChatGPT,07,A,preregistered,volume,scambiato circa 8 milioni di azioni,8000000,8000000,circa,8011313,"-0,14%",approximate_correct,"«dati storici ufficiali di Hasbro»; Hasbro, Inc. +1"
+s2-07A-3-claude,1,Claude,07,A,preregistered,close,"ha chiuso il Nasdaq a 109,52 dollari",109.52,109.52,none,109.52,"+0,00%",exact,"Transcript : Hasbro, Inc., Q3 2026 Earnings Call +3"
+s2-07A-3-claude,2,Claude,07,A,preregistered,change_close_pct,"in aumento dell’11,20%",11.2,11.2,none,11.2,"+0,00 punti",exact,"Transcript : Hasbro, Inc., Q3 2026 Earnings Call +3"
+s2-07A-3-claude,3,Claude,07,A,preregistered,previous_close,"partendo da una chiusura precedente di 98,49 dollari",98.49,98.49,none,98.49,"+0,00%",exact,"Transcript : Hasbro, Inc., Q3 2026 Earnings Call +3"
+s2-07C-1-chatgpt,1,ChatGPT,07,C,preregistered,change_close_pct,"non è scesa dell'11%, ma è salita dell'11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,
+s2-07C-1-chatgpt,2,ChatGPT,07,C,preregistered,previous_close,"Il titolo è passato da 98,49 dollari della chiusura del 19 ottobre",98.49,98.49,none,98.49,"+0,00%",exact,Hasbro +19.12% on 2026-10-22 +1
+s2-07C-1-chatgpt,3,ChatGPT,07,C,preregistered,close,"a 109,52 dollari del 20 ottobre",109.52,109.52,none,109.52,"+0,00%",exact,Hasbro +19.12% on 2026-10-22 +1
+s2-07C-1-chatgpt,4,ChatGPT,07,C,preregistered,change_close_pct,"Il movimento dell'11% è corretto come ordine di grandezza, ma il segno è positivo",11,11,come ordine di grandezza,11.2,"-0,20 punti",approximate_correct,
+s2-07C-1-claude,1,Claude,07,C,preregistered,change_close_pct,"con una chiusura in rialzo dell’11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,"HAS Stock Price, News & Analysis +2 (citazione del paragrafo)"
+s2-07C-1-claude,2,Claude,07,C,preregistered,change_close_pct,L’11% che ricordi è quindi giusto come ampiezza,11,11,"circa (cifra della domanda, «circa l’11%», confermata come ampiezza con segno opposto)",11.2,"-0,20 punti",approximate_correct,"HAS Stock Price, News & Analysis +2 (citazione del paragrafo)"
+s2-07C-1-gemini,1,Gemini,07,C,preregistered,change_close_pct,che hanno innescato il calo dell'11%,-11,-11,none,11.2,"-22,20 punti",error,
+s2-07C-2-chatgpt,1,ChatGPT,07,C,preregistered,change_close_pct,"non ha perso l'11%, ma ha guadagnato l'11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,AP News +1
+s2-07C-2-chatgpt,2,ChatGPT,07,C,preregistered,previous_close,"Il titolo è passato da 98,49 dollari il 19 ottobre",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07C-2-chatgpt,3,ChatGPT,07,C,preregistered,close,"a 109,52 dollari il 20 ottobre",109.52,109.52,none,109.52,"+0,00%",exact,
+s2-07C-2-chatgpt,4,ChatGPT,07,C,preregistered,change_close_pct,"L'11% che hai letto potrebbe quindi essere corretto nell'entità, ma con il segno invertito",11,11,nell'entità,11.2,"-0,20 punti",approximate_correct,
+s2-07C-2-claude,1,Claude,07,C,preregistered,change_close_pct,Hasbro è salita di circa l’11%,11,11,circa,11.2,"-0,20 punti",approximate_correct,
+s2-07C-2-claude,2,Claude,07,C,preregistered,close,"Le azioni hanno chiuso a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,tokenpost; investing
+s2-07C-2-claude,3,Claude,07,C,preregistered,change_close_usd,"con un guadagno di 11,02 dollari",11.02,11.02,none,11.03,"-0,01 $ (-0,09%)",minimal_gap,tokenpost; investing
+s2-07C-2-claude,4,Claude,07,C,preregistered,change_close_pct,(poco più dell’11%),11,11,oltre/più di (poco più di),11.2,"-0,20 punti (limite vero)",approximate_correct,tokenpost; investing
+s2-08A-1-chatgpt,1,ChatGPT,08,A,preregistered,close,"589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,"MarketWatch +1 («Fonte: MarketWatch, dati della seduta del 22 ottobre 2026»)"
+s2-08A-1-chatgpt,2,ChatGPT,08,A,preregistered,change_close_pct,"+6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,MarketWatch +1
+s2-08A-1-chatgpt,3,ChatGPT,08,A,preregistered,change_close_usd,"+38,40 USD",38.4,38.4,none,38.4,"+0,00 $ (+0,00%)",exact,MarketWatch +1
+s2-08A-1-chatgpt,4,ChatGPT,08,A,preregistered,previous_close,"Chiusura precedente
+
+551,51 USD",551.51,551.51,none,551.51,"+0,00%",exact,MarketWatch +1
+s2-08A-1-chatgpt,5,ChatGPT,08,A,preregistered,volume,"Circa 2,9 milioni di azioni",2900000,2900000,circa,2960356,"-2,04%",approximate_correct,MarketWatch +1 («Fonte: MarketWatch»)
+s2-08A-1-chatgpt,6,ChatGPT,08,A,preregistered,change_close_pct,"ha chiuso in rialzo del 6,96% a 589,91 dollari",6.96,6.96,none,6.96,"+0,00 punti",exact,
+s2-08A-1-chatgpt,7,ChatGPT,08,A,preregistered,close,"ha chiuso in rialzo del 6,96% a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,
+s2-08A-1-claude,1,Claude,08,A,preregistered,previous_close,"alla vigilia aveva chiuso a 551,51 dollari",551.51,551.51,none,551.51,"+0,00%",exact,Defense World +3
+s2-08A-1-claude,2,Claude,08,A,preregistered,open,"ha aperto in forte rialzo a 579,51 dollari",579.51,579.51,none,579.505,"+0,00%",exact,Defense World +3
+s2-08A-1-claude,3,Claude,08,A,preregistered,close,"Ha poi terminato la seduta sul NYSE a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,Defense World +3
+s2-08A-1-claude,4,Claude,08,A,preregistered,change_close_pct,"con un guadagno del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Defense World +3
+s2-08A-1-claude,5,Claude,08,A,preregistered,change_high_pct,Durante la giornata il rialzo era arrivato fino a circa il 9%,9,9,circa,10.24,"-1,24 punti",error,Defense World +3
+s2-08A-1-claude,6,Claude,08,A,preregistered,high,"con il titolo a 602,75 dollari, prima di ridursi in parte nel finale",602.75,602.75,none,608,"-0,86%",error,Defense World +3
+s2-08A-1-gemini,1,Gemini,08,A,preregistered,close,"chiudendo le contrattazioni a $589,91–$589,93",589.91,589.93,"fra 589,91 e 589,93",589.91,dentro l'intervallo,approximate_correct,
+s2-08A-1-gemini,2,Gemini,08,A,preregistered,change_close_pct,"con un rialzo del +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,
+s2-08A-1-gemini,3,Gemini,08,A,preregistered,change_close_pct,"circa +7,0% rispetto alla chiusura precedente",7,7,circa,6.96,"+0,04 punti",approximate_correct,
+s2-08A-1-gemini,4,Gemini,08,A,preregistered,previous_close,"rispetto alla chiusura precedente di $551,51",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08A-1-gemini,5,Gemini,08,A,preregistered,open,"un'apertura in forte gap-up tra $579,51 e $584,20",579.51,584.2,"fra 579,51 e 584,20",579.505,"dentro l'intervallo alla precisione scritta (vero 579,505)",approximate_correct,
+s2-08A-1-gemini,6,Gemini,08,A,preregistered,high,"ha toccato un massimo intraday di $609,32",609.32,609.32,none,608,"+0,22%",error,
+s2-08A-1-gemini,7,Gemini,08,A,preregistered,low,"e un minimo di $580,00",580,580,none,577.24,"+0,48%",error,
+s2-08A-2-chatgpt,1,ChatGPT,08,A,preregistered,change_close_pct,"registrando un rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Dati storici - Investing.com +1
+s2-08A-2-chatgpt,2,ChatGPT,08,A,preregistered,close,"589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,
+s2-08A-2-chatgpt,3,ChatGPT,08,A,preregistered,change_close_pct," +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,
+s2-08A-2-chatgpt,4,ChatGPT,08,A,preregistered,change_close_usd,"+38,40 dollari",38.4,38.4,none,38.4,"+0,00 $ (+0,00%)",exact,
+s2-08A-2-chatgpt,5,ChatGPT,08,A,preregistered,previous_close,"rispetto ai 551,51 dollari del 21 ottobre",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08A-2-chatgpt,6,ChatGPT,08,A,preregistered,high,un massimo intraday di 608 dollari,608,608,none,608,"+0,00%",exact,StockAnalysis.com +1
+s2-08A-2-chatgpt,7,ChatGPT,08,A,preregistered,volume,"con volumi di circa 2,96 milioni di azioni",2960000,2960000,circa,2960356,"-0,01%",approximate_correct,StockAnalysis.com +1
+s2-08A-2-claude,1,Claude,08,A,preregistered,close,"LMT ha chiuso al NYSE a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,marketscreener; schaeffersresearch
+s2-08A-2-claude,2,Claude,08,A,preregistered,change_close_pct,"in rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,marketscreener; schaeffersresearch
+s2-08A-3-chatgpt,1,ChatGPT,08,A,preregistered,close,"589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,2,ChatGPT,08,A,preregistered,change_close_pct,"+6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,3,ChatGPT,08,A,preregistered,change_close_usd,"+38,40 USD",38.4,38.4,none,38.4,"+0,00 $ (+0,00%)",exact,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,4,ChatGPT,08,A,preregistered,previous_close,"Chiusura 21/10
+
+551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,5,ChatGPT,08,A,preregistered,high,"Massimo 22/10
+
+608,00 $",608,608,none,608,"+0,00%",exact,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,6,ChatGPT,08,A,preregistered,volume,"~2,96 mln",2960000,2960000,~ (circa),2960356,"-0,01%",approximate_correct,Dati storici - Investing.com +1
+s2-08A-3-chatgpt,7,ChatGPT,08,A,preregistered,change_high_pct,"un rialzo intraday di circa +10,24%",10.24,10.24,circa,10.24,"+0,00 punti",approximate_correct,Lockheed Martin Corp Earnings +1
+s2-08A-3-chatgpt,8,ChatGPT,08,A,preregistered,change_close_pct,"chiudendo a +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,
+s2-08A-3-claude,1,Claude,08,A,preregistered,close,"il titolo ha chiuso al NYSE a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,Lockheed Martin Shares Rise After Q3 Beat +3
+s2-08A-3-claude,2,Claude,08,A,preregistered,change_close_pct,"in rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Lockheed Martin Shares Rise After Q3 Beat +3
+s2-08C-1-chatgpt,1,ChatGPT,08,C,preregistered,change_close_pct,"non è scesa del 7%, ma è salita del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,
+s2-08C-1-chatgpt,2,ChatGPT,08,C,preregistered,previous_close,"21 ottobre 2026 551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,"«Investing.com – Storico delle quotazioni LMT», «confermati anche da MarketWatch»"
+s2-08C-1-chatgpt,3,ChatGPT,08,C,preregistered,close,"22 ottobre 2026 589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,"«Investing.com – Storico delle quotazioni LMT», «confermati anche da MarketWatch»"
+s2-08C-1-chatgpt,4,ChatGPT,08,C,preregistered,change_close_pct,"22 ottobre 2026 589,91 $ +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,«Investing.com – Storico delle quotazioni LMT»
+s2-08C-1-chatgpt,5,ChatGPT,08,C,preregistered,change_close_pct,"il movimento di circa il 7% che hai individuato è corretto nell'entità, ma di segno opposto",7,7,circa,6.96,"+0,04 punti",approximate_correct,
+s2-08C-1-claude,1,Claude,08,C,preregistered,change_close_pct,Lockheed Martin è salita di circa il 7%,7,7,circa,6.96,"+0,04 punti",approximate_correct,marketscreener
+s2-08C-1-claude,2,Claude,08,C,preregistered,close,"Il titolo ha chiuso la seduta al NYSE a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,marketscreener
+s2-08C-1-claude,3,Claude,08,C,preregistered,change_close_pct,"in rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,marketscreener
+s2-08C-1-gemini,1,Gemini,08,C,preregistered,change_close_pct,una flessione di circa il 7% in seguito ai conti del terzo trimestre,-7,-7,circa,6.96,"-13,96 punti",error,
+s2-08C-2-chatgpt,1,ChatGPT,08,C,preregistered,change_close_pct,"non ha perso il 7%, ma ha guadagnato il 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,StockAnalysis.com +1
+s2-08C-2-chatgpt,2,ChatGPT,08,C,preregistered,previous_close,"21 ottobre 2026
+
+	
+
+551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,Dati storici - Investing.com +1
+s2-08C-2-chatgpt,3,ChatGPT,08,C,preregistered,close,"22 ottobre 2026
+
+	
+
+589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,Dati storici - Investing.com +1
+s2-08C-2-chatgpt,4,ChatGPT,08,C,preregistered,change_close_pct,"589,91 $
+
+	
+
++6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Dati storici - Investing.com +1
+s2-08C-2-chatgpt,5,ChatGPT,08,C,preregistered,change_close_pct,il +7% del 22 ottobre,7,7,none,6.96,"+0,04 punti",exact,
+s2-08C-2-claude,1,Claude,08,C,preregistered,change_close_pct,"la cifra che ricordi è giusta, ma con il segno opposto",7,7,"circa (cifra della domanda, «circa il 7%», confermata con segno opposto)",6.96,"+0,04 punti",approximate_correct,marketscreener; 247wallst (citazioni del paragrafo)
+s2-08C-2-claude,2,Claude,08,C,preregistered,close,"Il titolo ha chiuso la seduta a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,marketscreener; 247wallst (citazioni del paragrafo)
+s2-08C-2-claude,3,Claude,08,C,preregistered,change_close_pct,"in rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,marketscreener; 247wallst (citazioni del paragrafo)
+s2-09A-1-chatgpt,1,ChatGPT,09,A,preregistered,change_high_pct,arrivando a registrare rialzi vicini all'8%,8,8,vicino a (circa),8.53,"-0,53 punti",approximate_correct,Investing.com Italia +1
+s2-09A-1-chatgpt,2,ChatGPT,09,A,preregistered,change_close_pct,"+6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,StockAnalysis.com +1
+s2-09A-1-chatgpt,3,ChatGPT,09,A,preregistered,close,"a 34,10 USD",34.1,34.1,none,34.1,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-1-chatgpt,4,ChatGPT,09,A,preregistered,previous_close,"Rispetto ai 31,90 dollari della seduta precedente",31.9,31.9,none,31.9,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-1-chatgpt,5,ChatGPT,09,A,preregistered,high,"Massimo intraday: 34,62 dollari.",34.62,34.62,none,34.62,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-1-chatgpt,6,ChatGPT,09,A,preregistered,change_close_pct,con un guadagno di quasi il 7% alla chiusura,7,7,quasi,6.9,"+0,10 punti",approximate_correct,
+s2-09A-1-claude,1,Claude,09,A,preregistered,close,"ha chiuso in forte rialzo, intorno ai 34 dollari",34,34,intorno a,34.1,"-0,29%",approximate_correct,
+s2-09A-1-claude,2,Claude,09,A,preregistered,change_close_pct,con un guadagno tra il 6% e il 7% a seconda delle fonti,6,7,fra 6 e 7,6.9,dentro l'intervallo,approximate_correct,
+s2-09A-1-claude,3,Claude,09,A,preregistered,close,"StockStory indica 34,05 dollari",34.05,34.05,none,34.1,"-0,15%",error,StockStory (financialcontent)
+s2-09A-1-claude,4,Claude,09,A,preregistered,change_close_pct,"pari a +6,3%",6.3,6.3,none,6.9,"-0,60 punti",error,StockStory (financialcontent)
+s2-09A-1-claude,5,Claude,09,A,preregistered,close,"GuruFocus riporta invece 34,10 dollari",34.1,34.1,none,34.1,"+0,00%",exact,GuruFocus (gurufocus)
+s2-09A-1-claude,6,Claude,09,A,preregistered,change_close_pct,con un balzo di quasi il 7%,7,7,quasi,6.9,"+0,10 punti",approximate_correct,GuruFocus (gurufocus)
+s2-09A-2-chatgpt,1,ChatGPT,09,A,preregistered,change_high_pct,le azioni hanno registrato guadagni superiori al 7%,7,7,oltre/più di (superiori a),8.53,"-1,53 punti (limite vero)",approximate_correct,live +1
+s2-09A-2-chatgpt,2,ChatGPT,09,A,preregistered,change_close_pct,"il rialzo si è attestato al +6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,StockAnalysis.com +1
+s2-09A-2-chatgpt,3,ChatGPT,09,A,preregistered,close,"con una chiusura a 34,10 dollari",34.1,34.1,none,34.1,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-2-chatgpt,4,ChatGPT,09,A,preregistered,previous_close,"rispetto ai 31,90 dollari del giorno precedente",31.9,31.9,none,31.9,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-2-chatgpt,5,ChatGPT,09,A,preregistered,high,"Il massimo intraday è stato di 34,62 dollari.",34.62,34.62,none,34.62,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-2-claude,1,Claude,09,A,preregistered,change_close_pct,Reuters ha parlato di un guadagno di circa l’8%,8,8,circa,6.9,"+1,10 punti",approximate_correct,Reuters (nel testo); ajbell; packagingeurope
+s2-09A-3-chatgpt,1,ChatGPT,09,A,preregistered,change_high_pct,arrivando a guadagnare circa l'8% durante la seduta di Wall Street,8,8,circa,8.53,"-0,53 punti",approximate_correct,
+s2-09A-3-chatgpt,2,ChatGPT,09,A,preregistered,change_close_pct,"+6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,StockAnalysis.com +1
+s2-09A-3-chatgpt,3,ChatGPT,09,A,preregistered,close,"34,10 USD",34.1,34.1,none,34.1,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-3-chatgpt,4,ChatGPT,09,A,preregistered,previous_close,"Rispetto ai 31,90 dollari del 14 ottobre",31.9,31.9,none,31.9,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-3-chatgpt,5,ChatGPT,09,A,preregistered,change_close_usd,"il titolo ha guadagnato 2,20 dollari",2.2,2.2,none,2.2,"+0,00 $ (+0,00%)",exact,StockAnalysis.com +1
+s2-09A-3-chatgpt,6,ChatGPT,09,A,preregistered,high,"Il massimo intraday è stato di 34,62 dollari.",34.62,34.62,none,34.62,"+0,00%",exact,StockAnalysis.com +1
+s2-09A-3-chatgpt,7,ChatGPT,09,A,preregistered,change_high_pct,un rialzo vicino all'8% durante gli scambi,8,8,vicino a (circa),8.53,"-0,53 punti",approximate_correct,
+s2-09A-3-chatgpt,8,ChatGPT,09,A,preregistered,change_close_pct,"una chiusura a +6,9%",6.9,6.9,none,6.9,"+0,00 punti",exact,
+s2-09A-3-claude,1,Claude,09,A,preregistered,change_close_pct,"Il titolo ha reagito con un forte rialzo, nell’ordine del 7-8%.",7,8,"nell'ordine di, fra 7 e 8",6.9,"dentro l'intervallo alla precisione scritta (vero 6,90)",approximate_correct,
+s2-09A-3-claude,2,Claude,09,A,preregistered,change_close_pct,Reuters ha parlato di un progresso di circa l’8%,8,8,circa,6.9,"+1,10 punti",approximate_correct,Reuters (nel testo); ajbell; packagingeurope
+s2-09C-1-chatgpt,1,ChatGPT,09,C,preregistered,change_close_pct,"non è scesa del 7%, ma è salita di circa il 7%",7,7,circa,6.9,"+0,10 punti",approximate_correct,
+s2-09C-1-chatgpt,2,ChatGPT,09,C,preregistered,close,"Il titolo ha chiuso la seduta a circa 34,10 dollari",34.1,34.1,circa,34.1,"+0,00%",approximate_correct,International Paper Company +6.90% on 2026-10-15 +1
+s2-09C-1-chatgpt,3,ChatGPT,09,C,preregistered,change_close_pct,"guadagnando il 6,9%",6.9,6.9,none,6.9,"+0,00 punti",exact,International Paper Company +6.90% on 2026-10-15 +1
+s2-09C-1-chatgpt,4,ChatGPT,09,C,preregistered,change_close_pct,il rialzo di circa il 7%,7,7,circa,6.9,"+0,10 punti",approximate_correct,
+s2-09C-1-claude,1,Claude,09,C,preregistered,change_close_pct,secondo Reuters le azioni sono salite di circa l’8% sulla notizia,8,8,circa,6.9,"+1,10 punti",approximate_correct,Reuters (nel testo); International Paper Rises on Potential Sale Interest… +2
+s2-09C-1-gemini,1,Gemini,09,C,preregistered,change_close_pct,bensì è salito di circa il 7%,7,7,circa,6.9,"+0,10 punti",approximate_correct,
+s2-09C-1-gemini,2,Gemini,09,C,preregistered,change_close_pct,"chiudendo a +6,85%",6.85,6.85,none,6.9,"-0,05 punti",minimal_gap,
+s2-09C-1-gemini,3,Gemini,09,C,preregistered,close,"a 34,09 dollari",34.09,34.09,none,34.1,"-0,03%",minimal_gap,
+s2-09C-2-chatgpt,1,ChatGPT,09,C,preregistered,change_close_pct,"non è scesa del 7%, ma è salita di circa il 7%",7,7,circa,6.9,"+0,10 punti",approximate_correct,live +2
+s2-09C-2-chatgpt,2,ChatGPT,09,C,preregistered,previous_close,"14 ottobre
+
+31,90 $",31.9,31.9,none,31.9,"+0,00%",exact,ChartExchange +1; «Fonte: storico delle quotazioni NYSE»
+s2-09C-2-chatgpt,3,ChatGPT,09,C,preregistered,close,"15 ottobre
+
+34,10 $",34.1,34.1,none,34.1,"+0,00%",exact,ChartExchange +1; «Fonte: storico delle quotazioni NYSE»
+s2-09C-2-chatgpt,4,ChatGPT,09,C,preregistered,change_close_pct,"Variazione
+
++6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,ChartExchange +1; «Fonte: storico delle quotazioni NYSE»
+s2-09C-2-claude,1,Claude,09,C,preregistered,change_close_pct,"è salito, non sceso, di un’entità simile a quella che ricordi",7,7,circa (entità simile al «circa il 7%» della domanda),6.9,"+0,10 punti",approximate_correct,
+s2-09C-2-claude,2,Claude,09,C,preregistered,change_close_pct,secondo Reuters il rialzo sulla notizia è stato di circa l’8%,8,8,circa,6.9,"+1,10 punti",approximate_correct,Reuters (nel testo); International Paper Aktie: Finanzinvestoren prüfen Milliardenangebote für Europageschäft +2
+s2-10A-1-chatgpt,1,ChatGPT,10,A,preregistered,change_close_pct,"+9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
+s2-10A-1-chatgpt,2,ChatGPT,10,A,preregistered,close,"85,97 USD",85.97,85.97,none,85.97,"+0,00%",exact,
+s2-10A-1-chatgpt,3,ChatGPT,10,A,preregistered,change_close_usd,"+7,14 USD",7.14,7.14,none,7.14,"+0,00%",exact,
+s2-10A-1-chatgpt,4,ChatGPT,10,A,preregistered,previous_close,"78,83 USD della seduta precedente",78.83,78.83,none,78.83,"+0,00%",exact,
+s2-10A-1-chatgpt,5,ChatGPT,10,A,preregistered,high,"massimi intraday di 91,45 dollari",91.45,91.45,none,91.56,"-0,12%",minimal_gap,StockAnalysis.com +1
+s2-10A-1-chatgpt,6,ChatGPT,10,A,preregistered,volume,"circa 17,3 milioni di azioni",17300000,17300000,circa,17324090,"-0,14%",approximate_correct,StockAnalysis.com +1
+s2-10A-1-claude,1,Claude,10,A,preregistered,change_close_pct,in progresso di poco più del 9%,9,9,oltre/più di,9.06,"-0,06 punti",approximate_correct,tokenpost
+s2-10A-1-claude,2,Claude,10,A,preregistered,close,"a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,tokenpost
+s2-10A-1-claude,3,Claude,10,A,preregistered,change_close_usd,"guadagno di 7,14 dollari",7.14,7.14,none,7.14,"+0,00%",exact,tokenpost
+s2-10A-1-gemini,1,Gemini,10,A,preregistered,close,"chiudendo le contrattazioni a 85,97 $",85.97,85.97,none,85.97,"+0,00%",exact,Swing Trade Bot
+s2-10A-1-gemini,2,Gemini,10,A,preregistered,change_close_pct,"balzo del +9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,Swing Trade Bot
+s2-10A-1-gemini,3,Gemini,10,A,preregistered,change_close_usd,"+7,14 $ rispetto alla chiusura del giorno precedente",7.14,7.14,none,7.14,"+0,00%",exact,Swing Trade Bot
+s2-10A-1-gemini,4,Gemini,10,A,preregistered,previous_close,"chiusura del giorno precedente a 78,83 $",78.83,78.83,none,78.83,"+0,00%",exact,Swing Trade Bot
+s2-10A-1-gemini,5,Gemini,10,A,preregistered,open,"91,02 $",91.02,91.02,none,91.02,"+0,00%",exact,Morningstar (tabella)
+s2-10A-1-gemini,6,Gemini,10,A,preregistered,change_open_pct,"+15,4% in avvio",15.4,15.4,none,15.46,"-0,06 punti",minimal_gap,Morningstar (tabella)
+s2-10A-1-gemini,7,Gemini,10,A,preregistered,high,"91,45 $ / 85,00 $",91.45,91.45,none,91.56,"-0,12%",minimal_gap,Morningstar (tabella)
+s2-10A-1-gemini,8,Gemini,10,A,preregistered,low,"91,45 $ / 85,00 $",85,85,none,85,"+0,00%",exact,Morningstar (tabella)
+s2-10A-1-gemini,9,Gemini,10,A,preregistered,change_high_pct,Picco toccato in avvio (+16%),16,16,none,16.15,"-0,15 punti",rounded_correct,Morningstar (tabella)
+s2-10A-1-gemini,10,Gemini,10,A,preregistered,volume,"17,32 milioni",17320000,17320000,none,17324090,"-0,02%",exact,Morningstar (tabella)
+s2-10A-2-chatgpt,1,ChatGPT,10,A,preregistered,change_close_pct,"+9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
+s2-10A-2-chatgpt,2,ChatGPT,10,A,preregistered,close,"85,97 dollari per azione",85.97,85.97,none,85.97,"+0,00%",exact,
+s2-10A-2-chatgpt,3,ChatGPT,10,A,preregistered,previous_close,"78,83 dollari della seduta precedente",78.83,78.83,none,78.83,"+0,00%",exact,
+s2-10A-2-chatgpt,4,ChatGPT,10,A,preregistered,high,"massimo di 91,45 dollari",91.45,91.45,none,91.56,"-0,12%",minimal_gap,StockAnalysis.com +1
+s2-10A-2-chatgpt,5,ChatGPT,10,A,preregistered,change_high_pct,rialzo intraday di circa il 16% rispetto alla chiusura precedente,16,16,circa,16.15,"-0,15 punti",approximate_correct,StockAnalysis.com +1
+s2-10A-2-chatgpt,6,ChatGPT,10,A,preregistered,volume,"Gli scambi hanno superato i 17,3 milioni di azioni",17300000,17300000,oltre/più di,17324090,"-0,14%",approximate_correct,StockAnalysis.com +1
+s2-10A-2-claude,1,Claude,10,A,preregistered,close,"Crown Castle ha chiuso a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10A-2-claude,2,Claude,10,A,preregistered,change_close_pct,"in crescita del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10A-2-claude,3,Claude,10,A,preregistered,change_close_usd,"+7,14 dollari",7.14,7.14,none,7.14,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10A-2-claude,4,Claude,10,A,preregistered,previous_close,"rispetto ai 78,83 dollari di giovedì",78.83,78.83,none,78.83,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10A-2-claude,5,Claude,10,A,preregistered,open,"Il titolo ha aperto in forte rialzo a 91,02 dollari",91.02,91.02,none,91.02,"+0,00%",exact,defenseworld (Shares Gap Up)
+s2-10A-2-claude,6,Claude,10,A,preregistered,change_open_pct,oltre il 15% sopra la chiusura precedente,15,15,oltre/più di,15.46,"-0,46 punti",approximate_correct,defenseworld (Shares Gap Up)
+s2-10A-2-claude,7,Claude,10,A,preregistered,low,"oscillato tra 85,00 e 91,45 dollari",85,85,none,85,"+0,00%",exact,defenseworld (Shares Gap Up)
+s2-10A-2-claude,8,Claude,10,A,preregistered,high,"oscillato tra 85,00 e 91,45 dollari",91.45,91.45,none,91.56,"-0,12%",minimal_gap,defenseworld (Shares Gap Up)
+s2-10A-2-claude,9,Claude,10,A,preregistered,volume,"Sono passate di mano 17,3 milioni di azioni",17300000,17300000,none,17324090,"-0,14%",rounded_correct,defenseworld (Shares Gap Up)
+s2-10A-3-chatgpt,1,ChatGPT,10,A,preregistered,change_close_pct,"+9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,StockAnalysis.com +1
+s2-10A-3-chatgpt,2,ChatGPT,10,A,preregistered,close,"85,97 USD per azione",85.97,85.97,none,85.97,"+0,00%",exact,StockAnalysis.com +1
+s2-10A-3-chatgpt,3,ChatGPT,10,A,preregistered,previous_close,"78,83 USD",78.83,78.83,none,78.83,"+0,00%",exact,StockAnalysis.com +1
+s2-10A-3-chatgpt,4,ChatGPT,10,A,preregistered,high,"91,45 USD",91.45,91.45,none,91.56,"-0,12%",minimal_gap,StockAnalysis.com +1
+s2-10A-3-claude,1,Claude,10,A,preregistered,close,"il titolo ha terminato a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,"tokenpost, financefeeds"
+s2-10A-3-claude,2,Claude,10,A,preregistered,change_close_usd,"7,14 dollari sopra la chiusura di giovedì",7.14,7.14,none,7.14,"+0,00%",exact,"tokenpost, financefeeds"
+s2-10A-3-claude,3,Claude,10,A,preregistered,previous_close,"(78,83 dollari)",78.83,78.83,none,78.83,"+0,00%",exact,"tokenpost, financefeeds"
+s2-10A-3-claude,4,Claude,10,A,preregistered,change_close_pct,"con un guadagno del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,"tokenpost, financefeeds"
+s2-10A-3-claude,5,Claude,10,A,preregistered,open,"aperto in gap up a 91,02 dollari",91.02,91.02,none,91.02,"+0,00%",exact,defenseworld (Shares Gap Up)
+s2-10A-3-claude,6,Claude,10,A,preregistered,change_open_pct,oltre il 15% sopra la chiusura precedente,15,15,oltre/più di,15.46,"-0,46 punti",approximate_correct,defenseworld (Shares Gap Up)
+s2-10A-3-claude,7,Claude,10,A,preregistered,low,"la forchetta di giornata è andata da 85,00 a 91,45 dollari",85,85,none,85,"+0,00%",exact,defenseworld (Shares Gap Up)
+s2-10A-3-claude,8,Claude,10,A,preregistered,high,"la forchetta di giornata è andata da 85,00 a 91,45 dollari",91.45,91.45,none,91.56,"-0,12%",minimal_gap,defenseworld (Shares Gap Up)
+s2-10A-3-claude,9,Claude,10,A,preregistered,volume,"circa 17,3 milioni di azioni scambiate",17300000,17300000,circa,17324090,"-0,14%",approximate_correct,defenseworld (Shares Gap Up)
+s2-10A-3-claude,10,Claude,10,A,preregistered,change_close_pct,a fine giornata il rialzo era di circa il 9%,9,9,circa,9.06,"-0,06 punti",approximate_correct,defenseworld (Shares Gap Up)
+s2-10C-1-chatgpt,1,ChatGPT,10,C,preregistered,change_close_pct,"è salita del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
+s2-10C-1-chatgpt,2,ChatGPT,10,C,preregistered,close,"chiudendo a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,
+s2-10C-1-claude,1,Claude,10,C,preregistered,close,"Venerdì ha chiuso a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,"financefeeds, aol"
+s2-10C-1-claude,2,Claude,10,C,preregistered,change_close_pct,"in rialzo del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,"financefeeds, aol"
+s2-10C-1-gemini,1,Gemini,10,C,preregistered,change_close_pct,"balzo in avanti del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
+s2-10C-1-gemini,2,Gemini,10,C,preregistered,close,"chiudendo a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,
+s2-10C-1-gemini,3,Gemini,10,C,preregistered,change_high_pct,picchi intraday superiori all'11%,11,11,oltre/più di,16.15,"-5,15 punti",approximate_correct,
+s2-10C-2-chatgpt,1,ChatGPT,10,C,preregistered,change_close_pct,"è salita del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,Crown Castle Inc. +9.06% on 2026-10-23 +1
+s2-10C-2-chatgpt,2,ChatGPT,10,C,preregistered,close,"chiudendo a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,Crown Castle Inc. +9.06% on 2026-10-23 +1
+s2-10C-2-chatgpt,3,ChatGPT,10,C,preregistered,change_close_pct,"Crown Castle: Variazione 9,1%",9.1,9.1,none,9.06,"+0,04 punti",exact,grafico: EconoTimes / Stock Analysis
+s2-10C-2-chatgpt,4,ChatGPT,10,C,preregistered,change_close_pct,il rialzo di circa il 9%,9,9,circa,9.06,"-0,06 punti",approximate_correct,
+s2-10C-2-claude,1,Claude,10,C,preregistered,change_close_pct,è salita di circa il 9%,9,9,circa,9.06,"-0,06 punti",approximate_correct,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10C-2-claude,2,Claude,10,C,preregistered,close,"Il titolo ha chiuso a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10C-2-claude,3,Claude,10,C,preregistered,change_close_usd,"7,14 dollari sopra la chiusura precedente",7.14,7.14,none,7.14,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10C-2-claude,4,Claude,10,C,preregistered,change_close_pct,"Crown Castle ha guadagnato il 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-11A-1-chatgpt,1,ChatGPT,11,A,preregistered,change_close_pct,"+5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,
+s2-11A-1-chatgpt,2,ChatGPT,11,A,preregistered,previous_close,"247,11 $",247.11,247.11,none,247.11,"+0,00%",exact,
+s2-11A-1-chatgpt,3,ChatGPT,11,A,preregistered,high,"266,00 $",266,266,none,266,"+0,00%",exact,
+s2-11A-1-chatgpt,4,ChatGPT,11,A,preregistered,close,"260,36 $",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11A-1-chatgpt,5,ChatGPT,11,A,preregistered,change_high_pct,il titolo è arrivato a guadagnare circa il 7%,7,7,circa,7.64,"-0,64 punti",approximate_correct,Reuters; Boursorama +1
+s2-11A-1-chatgpt,6,ChatGPT,11,A,preregistered,high,"raggiungendo 264,81 dollari secondo Reuters",264.81,264.81,none,266,"-0,45%",level_in_session_correct,Reuters; Boursorama +1
+s2-11A-1-claude,1,Claude,11,A,preregistered,close,"ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,"tikr, ad-hoc-news"
+s2-11A-1-claude,2,Claude,11,A,preregistered,change_close_pct,"in aumento del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,"tikr, ad-hoc-news"
+s2-11A-1-claude,3,Claude,11,A,preregistered,previous_close,"era di 247,11 dollari sul Nasdaq",247.11,247.11,none,247.11,"+0,00%",exact,"tikr, ad-hoc-news"
+s2-11A-1-gemini,1,Gemini,11,A,preregistered,change_close_pct,"in crescita di oltre il 5,3%",5.3,5.3,oltre/più di,5.36,"-0,06 punti",approximate_correct,
+s2-11A-1-gemini,2,Gemini,11,A,preregistered,previous_close,"Chiusura precedente (venerdì 16 ottobre): $247,11",247.11,247.11,none,247.11,"+0,00%",exact,
+s2-11A-1-gemini,3,Gemini,11,A,preregistered,open,"Le azioni hanno aperto a $257,82",257.82,257.82,none,257.825,"+0,00%",exact,
+s2-11A-1-gemini,4,Gemini,11,A,preregistered,high,"massimo intraday di $266,00",266,266,none,266,"+0,00%",exact,
+s2-11A-1-gemini,5,Gemini,11,A,preregistered,change_high_pct,"circa +7,6% rispetto alla vigilia",7.6,7.6,circa,7.64,"-0,04 punti",approximate_correct,
+s2-11A-1-gemini,6,Gemini,11,A,preregistered,low,"minimo di giornata a $256,14",256.14,256.14,none,256.14,"+0,00%",exact,
+s2-11A-1-gemini,7,Gemini,11,A,preregistered,close,"$260,27 – $260,36",260.27,260.36,fra X e Y,260.36,"vero 260,36 dentro l'intervallo",approximate_correct,
+s2-11A-1-gemini,8,Gemini,11,A,preregistered,change_close_pct,"+5,33% / +5,36%",5.33,5.36,fra X e Y,5.36,"vero +5,36% dentro l'intervallo",approximate_correct,
+s2-11A-1-gemini,9,Gemini,11,A,preregistered,volume,"volumi pari a circa 2,94 milioni di azioni",2940000,2940000,circa,2942707,"-0,09%",approximate_correct,
+s2-11A-2-chatgpt,1,ChatGPT,11,A,preregistered,change_close_pct,"chiudendo in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,
+s2-11A-2-chatgpt,2,ChatGPT,11,A,preregistered,previous_close,"247,11 $",247.11,247.11,none,247.11,"+0,00%",exact,
+s2-11A-2-chatgpt,3,ChatGPT,11,A,preregistered,close,"260,36 $",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11A-2-chatgpt,4,ChatGPT,11,A,preregistered,change_high_pct,arrivare a registrare un rialzo intraday di circa il 7%,7,7,circa,7.64,"-0,64 punti",approximate_correct,Investing.com Canada +2
+s2-11A-2-claude,1,Claude,11,A,preregistered,close,"Datadog ha chiuso la seduta di lunedì 19 ottobre a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,tikr
+s2-11A-2-claude,2,Claude,11,A,preregistered,change_close_pct,"in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,tikr
+s2-11A-3-chatgpt,1,ChatGPT,11,A,preregistered,close,"chiudendo a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11A-3-chatgpt,2,ChatGPT,11,A,preregistered,change_close_pct,"in crescita del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,
+s2-11A-3-chatgpt,3,ChatGPT,11,A,preregistered,high,"massimo di 266,00 dollari",266,266,none,266,"+0,00%",exact,StockAnalysis.com +1
+s2-11A-3-chatgpt,4,ChatGPT,11,A,preregistered,change_high_pct,"+7,64% rispetto alla chiusura precedente",7.64,7.64,none,7.64,"+0,00 punti",exact,StockAnalysis.com +1
+s2-11A-3-chatgpt,5,ChatGPT,11,A,preregistered,open,"aperto a 257,83 dollari",257.83,257.83,none,257.825,"+0,00%",exact,StockAnalysis.com +1
+s2-11A-3-chatgpt,6,ChatGPT,11,A,preregistered,change_high_pct,arrivato a guadagnare circa il 7%,7,7,circa,7.64,"-0,64 punti",approximate_correct,
+s2-11A-3-claude,1,Claude,11,A,preregistered,close,"ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,"tikr, marketbeat"
+s2-11A-3-claude,2,Claude,11,A,preregistered,change_close_pct,"in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,"tikr, marketbeat"
+s2-11A-3-claude,3,Claude,11,A,preregistered,previous_close,"La chiusura precedente era di 247,11 dollari",247.11,247.11,none,247.11,"+0,00%",exact,"tikr, marketbeat"
+s2-11A-3-claude,4,Claude,11,A,preregistered,high,"massimo di giornata a 264,87 dollari",264.87,264.87,none,266,"-0,42%",error,Seeking Alpha +6
+s2-11C-1-chatgpt,1,ChatGPT,11,C,preregistered,change_close_pct,"ha guadagnato circa il 5,4%",5.4,5.4,circa,5.36,"+0,04 punti",approximate_correct,Investor's Business Daily +1
+s2-11C-1-chatgpt,2,ChatGPT,11,C,preregistered,close,"chiudendo a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,Investor's Business Daily +1
+s2-11C-1-claude,1,Claude,11,C,preregistered,close,"il titolo ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,tikr (Datadog Reports Q3 on November 4…)
+s2-11C-1-claude,2,Claude,11,C,preregistered,change_close_pct,"in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,tikr (Datadog Reports Q3 on November 4…)
+s2-11C-1-claude,3,Claude,11,C,preregistered,change_high_pct,In seduta il guadagno ha anche superato il 7%,7,7,oltre/più di,7.64,"-0,64 punti",approximate_correct,tikr (Datadog Reports Q3 on November 4…)
+s2-11C-1-gemini,1,Gemini,11,C,preregistered,change_close_pct,"è salito del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,
+s2-11C-1-gemini,2,Gemini,11,C,preregistered,close,"chiudendo a $260,36",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11C-1-gemini,3,Gemini,11,C,preregistered,change_high_pct,picchi intraday superiori al +7%,7,7,oltre/più di,7.64,"-0,64 punti",approximate_correct,
+s2-11C-1-gemini,4,Gemini,11,C,preregistered,change_close_pct,il balzo del +5% del 19 ottobre 2026,5,5,none,5.36,"-0,36 punti",rounded_correct,
+s2-11C-2-chatgpt,1,ChatGPT,11,C,preregistered,change_close_pct,"è salita del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,"Datadog, Inc. +5.36% on 2026-10-19 +1"
+s2-11C-2-chatgpt,2,ChatGPT,11,C,preregistered,close,"chiudendo a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,"Datadog, Inc. +5.36% on 2026-10-19 +1"
+s2-11C-2-chatgpt,3,ChatGPT,11,C,preregistered,previous_close,"rispetto ai 247,11 dollari della seduta precedente",247.11,247.11,none,247.11,"+0,00%",exact,"Datadog, Inc. +5.36% on 2026-10-19 +1"
+s2-11C-2-claude,1,Claude,11,C,preregistered,close,"Il titolo ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,tikr (citazione del paragrafo)
+s2-11C-2-claude,2,Claude,11,C,preregistered,change_close_pct,"in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,tikr (citazione del paragrafo)
+s2-11C-2-claude,3,Claude,11,C,preregistered,change_close_pct,L’ampiezza del movimento che ricordi è giusta,5,5,"circa (cifra della domanda, «circa il 5%», confermata con direzione opposta)",5.36,"-0,36 punti",approximate_correct,tikr (citazione del paragrafo)
+s2-12A-1-chatgpt,1,ChatGPT,12,A,preregistered,change_close_pct,"+4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,
+s2-12A-1-chatgpt,2,ChatGPT,12,A,preregistered,previous_close,"46,70 USD",46.7,46.7,none,46.7,"+0,00%",exact,
+s2-12A-1-chatgpt,3,ChatGPT,12,A,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,
+s2-12A-1-chatgpt,4,ChatGPT,12,A,preregistered,change_close_usd,"Guadagno di 2,24 dollari per azione",2.24,2.24,none,2.24,"+0,00%",exact,
+s2-12A-1-claude,1,Claude,12,A,preregistered,previous_close,"partendo dalla chiusura di martedì a 46,70 dollari",46.7,46.7,none,46.7,"+0,00%",exact,Investing.com +2
+s2-12A-1-claude,2,Claude,12,A,preregistered,close,"il titolo ha chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,24/7 Wall St.; Investing.com +2
+s2-12A-1-claude,3,Claude,12,A,preregistered,change_close_pct,"in progresso del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,24/7 Wall St.; Investing.com +2
+s2-12A-1-gemini,1,Gemini,12,A,preregistered,close,"chiudendo le contrattazioni regolari a $48,94",48.94,48.94,none,48.94,"+0,00%",exact,
+s2-12A-1-gemini,2,Gemini,12,A,preregistered,change_close_pct,"in crescita del +4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,
+s2-12A-1-gemini,3,Gemini,12,A,preregistered,change_close_usd,"+$2,24 rispetto alla chiusura precedente",2.24,2.24,none,2.24,"+0,00%",exact,
+s2-12A-1-gemini,4,Gemini,12,A,preregistered,previous_close,"chiusura precedente di $46,70",46.7,46.7,none,46.7,"+0,00%",exact,
+s2-12A-1-gemini,5,Gemini,12,A,preregistered,open,"Apertura: $47,88",47.88,47.88,none,47.88,"+0,00%",exact,
+s2-12A-1-gemini,6,Gemini,12,A,preregistered,low,"Range intraday (Min / Max): $47,28 – $49,80",47.28,47.28,none,47.28,"+0,00%",exact,
+s2-12A-1-gemini,7,Gemini,12,A,preregistered,high,"Range intraday (Min / Max): $47,28 – $49,80",49.8,49.8,none,49.8,"+0,00%",exact,
+s2-12A-1-gemini,8,Gemini,12,A,preregistered,volume,"Volumi di scambio: 13,74 milioni di azioni",13740000,13740000,none,13788910,"-0,35%",minimal_gap,
+s2-12A-2-chatgpt,1,ChatGPT,12,A,preregistered,change_close_pct,"chiudendo la seduta del 14 ottobre 2026 in rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,GlobalFoundries +1
+s2-12A-2-chatgpt,2,ChatGPT,12,A,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,
+s2-12A-2-chatgpt,3,ChatGPT,12,A,preregistered,change_close_usd,"+2,24 USD rispetto alla chiusura del 13 ottobre",2.24,2.24,none,2.24,"+0,00%",exact,
+s2-12A-2-chatgpt,4,ChatGPT,12,A,preregistered,previous_close,"chiusura del 13 ottobre (46,70 USD)",46.7,46.7,none,46.7,"+0,00%",exact,
+s2-12A-2-chatgpt,5,ChatGPT,12,A,preregistered,open,"47,88 USD",47.88,47.88,none,47.88,"+0,00%",exact,Yahoo Finance +1 (tabella)
+s2-12A-2-chatgpt,6,ChatGPT,12,A,preregistered,high,"49,80 USD",49.8,49.8,none,49.8,"+0,00%",exact,Yahoo Finance +1 (tabella)
+s2-12A-2-chatgpt,7,ChatGPT,12,A,preregistered,low,"47,28 USD",47.28,47.28,none,47.28,"+0,00%",exact,Yahoo Finance +1 (tabella)
+s2-12A-2-chatgpt,8,ChatGPT,12,A,preregistered,volume,"13,79 milioni di azioni",13790000,13790000,none,13788910,"+0,01%",exact,Yahoo Finance +1 (tabella)
+s2-12A-2-chatgpt,9,ChatGPT,12,A,preregistered,change_high_pct,"un massimo equivalente a circa +6,64%",6.64,6.64,circa,6.64,"+0,00 punti",approximate_correct,
+s2-12A-2-claude,1,Claude,12,A,preregistered,close,"GlobalFoundries ha chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,"247wallst, asktraders"
+s2-12A-2-claude,2,Claude,12,A,preregistered,change_close_pct,"in rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,"247wallst, asktraders"
+s2-12A-2-claude,3,Claude,12,A,preregistered,previous_close,"La chiusura del giorno prima era stata di 46,70 dollari",46.7,46.7,none,46.7,"+0,00%",exact,"247wallst, asktraders"
+s2-12A-3-chatgpt,1,ChatGPT,12,A,preregistered,change_close_pct,"registrando un rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,Yahoo Finance +1
+s2-12A-3-chatgpt,2,ChatGPT,12,A,preregistered,change_close_usd,"+2,24 USD",2.24,2.24,none,2.24,"+0,00%",exact,
+s2-12A-3-chatgpt,3,ChatGPT,12,A,preregistered,previous_close,"46,70 USD",46.7,46.7,none,46.7,"+0,00%",exact,StockAnalysis.com +1 (tabella)
+s2-12A-3-chatgpt,4,ChatGPT,12,A,preregistered,open,"47,88 USD",47.88,47.88,none,47.88,"+0,00%",exact,StockAnalysis.com +1 (tabella)
+s2-12A-3-chatgpt,5,ChatGPT,12,A,preregistered,high,"49,80 USD",49.8,49.8,none,49.8,"+0,00%",exact,StockAnalysis.com +1 (tabella)
+s2-12A-3-chatgpt,6,ChatGPT,12,A,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,StockAnalysis.com +1 (tabella)
+s2-12A-3-chatgpt,7,ChatGPT,12,A,preregistered,volume,"13,79 milioni di azioni",13790000,13790000,none,13788910,"+0,01%",exact,StockAnalysis.com +1 (tabella)
+s2-12A-3-chatgpt,8,ChatGPT,12,A,preregistered,change_high_pct,"pari a circa il 6,64% sopra la chiusura precedente",6.64,6.64,circa,6.64,"+0,00 punti",approximate_correct,
+s2-12A-3-claude,1,Claude,12,A,preregistered,change_close_pct,"chiuso in rialzo di circa il 4,8%",4.8,4.8,circa,4.8,"+0,00 punti",approximate_correct,"business-news-today, briefs"
+s2-12A-3-claude,2,Claude,12,A,preregistered,close,"a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,"business-news-today, briefs"
+s2-12A-3-claude,3,Claude,12,A,preregistered,previous_close,"contro i 46,70 della seduta precedente",46.7,46.7,none,46.7,"+0,00%",exact,"business-news-today, briefs"
+s2-12A-3-claude,4,Claude,12,A,preregistered,volume,"circa 13,8 milioni di azioni scambiate",13800000,13800000,circa,13788910,"+0,08%",approximate_correct,"business-news-today, briefs"
+s2-12A-3-claude,5,Claude,12,A,preregistered,change_high_pct,"il guadagno era arrivato fino al 6,6%",6.6,6.6,none,6.64,"-0,04 punti",exact,"business-news-today, briefs"
+s2-12C-1-chatgpt,1,ChatGPT,12,C,preregistered,change_close_pct,"GlobalFoundries ha chiuso in rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,BestStocks +1
+s2-12C-1-chatgpt,2,ChatGPT,12,C,preregistered,close,"a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,BestStocks +1
+s2-12C-1-chatgpt,3,ChatGPT,12,C,preregistered,previous_close,13 ott: Prezzo di chiusura $46.7,46.7,46.7,none,46.7,"+0,00%",exact,grafico: Finance Charts (dati storici Nasdaq)
+s2-12C-1-claude,1,Claude,12,C,preregistered,close,"Mercoledì 14 GlobalFoundries ha chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,Yahoo Finance (Japan Is Putting Up to $21 Billion…) +3
+s2-12C-1-claude,2,Claude,12,C,preregistered,change_close_pct,"in rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,Yahoo Finance (Japan Is Putting Up to $21 Billion…) +3
+s2-12C-1-gemini,1,Gemini,12,C,preregistered,change_close_pct,ha registrato un rialzo di circa il 5%,5,5,circa,4.8,"+0,20 punti",approximate_correct,
+s2-12C-1-gemini,2,Gemini,12,C,preregistered,high,"dopo aver toccato un picco intraday di 49,80 $",49.8,49.8,none,49.8,"+0,00%",exact,
+s2-12C-1-gemini,3,Gemini,12,C,preregistered,change_high_pct,"dopo aver toccato un picco intraday di 49,80 $ (+5,6%)",5.6,5.6,none,6.64,"-1,04 punti",error,
+s2-12C-1-gemini,4,Gemini,12,C,preregistered,close,"ha chiuso a 48,94 $",48.94,48.94,none,48.94,"+0,00%",exact,
+s2-12C-1-gemini,5,Gemini,12,C,preregistered,change_close_pct,"+4,80% rispetto alla chiusura precedente",4.8,4.8,none,4.8,"+0,00 punti",exact,
+s2-12C-1-gemini,6,Gemini,12,C,preregistered,previous_close,"rispetto alla chiusura precedente di 46,70 $",46.7,46.7,none,46.7,"+0,00%",exact,
+s2-12C-2-chatgpt,1,ChatGPT,12,C,preregistered,change_close_pct,"14 ottobre: +4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,BestStocks +2
+s2-12C-2-chatgpt,2,ChatGPT,12,C,preregistered,close,"con chiusura a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,BestStocks +2
+s2-12C-2-claude,1,Claude,12,C,preregistered,close,"Ha chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,"beststocks, investing"
+s2-12C-2-claude,2,Claude,12,C,preregistered,change_close_pct,"in rialzo del 4,8%",4.8,4.8,none,4.8,"+0,00 punti",exact,"beststocks, investing"
+s2-12C-2-claude,3,Claude,12,C,preregistered,previous_close,"rispetto ai 46,70 della seduta precedente",46.7,46.7,none,46.7,"+0,00%",exact,"beststocks, investing"
+s2-12C-2-claude,4,Claude,12,C,preregistered,low,"il minimo toccato è stato 47,28 dollari",47.28,47.28,none,47.28,"+0,00%",exact,"beststocks, investing"
+e1-01A-gemini,1,Gemini,01,A,exploration,close,"chiudendo le contrattazioni a $124,54",124.54,124.54,none,124.53,"+0,01%",minimal_gap,UCapital
+e1-01A-gemini,2,Gemini,01,A,exploration,open,"rispetto all'apertura di giornata a $131,07",131.07,131.07,none,131.345,"-0,21%",error,UCapital
+e1-01A-gemini,3,Gemini,01,A,exploration,change_close_pct,"in ribasso del 5,60% rispetto alla chiusura della seduta precedente",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,UCapital
+e1-02A-gemini,1,Gemini,02,A,exploration,close,"chiudendo a 230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,Gotrade
+e1-02A-gemini,2,Gemini,02,A,exploration,change_close_pct,"con un calo dell'11,76% rispetto alla chiusura del giorno precedente",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Gotrade
+e1-02A-gemini,3,Gemini,02,A,exploration,previous_close,"chiusura del giorno precedente (260,81 $)",260.81,260.81,none,260.81,"+0,00%",exact,Gotrade
+e1-02A-gemini,4,Gemini,02,A,exploration,volume,"volumi superiori a 20,6 milioni di azioni",20600000,20600000,oltre/più di,22998190,"-10,43% (limite rispettato)",approximate_correct,Lam Research Investor Relations
+e1-03A-gemini,1,Gemini,03,A,exploration,previous_close,"Chiusura precedente (19 ottobre): $82,75",82.75,82.75,none,82.75,"+0,00%",exact,Global Banking & Finance Review + 1
+e1-03A-gemini,2,Gemini,03,A,exploration,open,"ha aperto in gap down intorno a $77,22",77.22,77.22,intorno a,77.22,"+0,00%",approximate_correct,UCapital + 1
+e1-03A-gemini,3,Gemini,03,A,exploration,high,"toccando un massimo intraday di $78,73 nella prima parte della mattinata",78.73,78.73,none,78.97,"-0,30%",error,UCapital + 1
+e1-03A-gemini,4,Gemini,03,A,exploration,low,"fino a un minimo di $75,37 nel primo pomeriggio",75.37,75.37,none,75.07,"+0,40%",error,UCapital + 1
+e1-03A-gemini,5,Gemini,03,A,exploration,close,"ha terminato le contrattazioni nell'area $76,91 – $77,10",76.91,77.1,fra X e Y («nell'area»),77.09,dentro l'intervallo,approximate_correct,Global Banking & Finance Review
+e1-03A-gemini,6,Gemini,03,A,exploration,change_close_pct,"una flessione giornaliera di circa il -6,8%",-6.8,-6.8,circa,-6.84,"+0,04 punti",approximate_correct,Global Banking & Finance Review
+e1-03A-gemini,7,Gemini,03,A,exploration,change_close_pct,"/ -7,06%",-7.06,-7.06,circa (stessa frase),-6.84,"-0,22 punti",approximate_correct,Global Banking & Finance Review
+e1-04A-gemini,1,Gemini,04,A,exploration,change_close_pct,"chiudendo in calo del 6,98%",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,Global Banking & Finance Review + 2
+e1-04A-gemini,2,Gemini,04,A,exploration,change_close_pct,(circa -7%),-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,Global Banking & Finance Review + 2
+e1-04A-gemini,3,Gemini,04,A,exploration,close,"a 648,85 $",648.85,648.85,none,648.85,"+0,00%",exact,Global Banking & Finance Review + 2
+e1-04A-gemini,4,Gemini,04,A,exploration,previous_close,"rispetto alla chiusura del giorno precedente di 697,52 $",697.52,697.52,none,697.52,"+0,00%",exact,Global Banking & Finance Review + 2
+e1-04A-gemini,5,Gemini,04,A,exploration,open,"il primo prezzo battuto all'apertura delle 9:30 a Wall Street (678,93 $ – 679,95 $)",678.93,679.95,fra X e Y,676.35,"+0,38% dal limite inferiore",error,Global Banking & Finance Review + 2
+e1-04A-gemini,6,Gemini,04,A,exploration,low,"con un minimo di giornata toccato a 639,69 $",639.69,639.69,none,639.69,"+0,00%",exact,Global Banking & Finance Review + 2
+e1-04A-gemini,7,Gemini,04,A,exploration,high,"range intraday: 639,69 $ – 681,07 $",681.07,681.07,none,681,"+0,01%",minimal_gap,Vantage Markets
+e1-05A-gemini,1,Gemini,05,A,exploration,change_close_pct,"chiudendo le contrattazioni in calo del 5,26%",-5.26,-5.26,none,-5.16,"-0,10 punti",minimal_gap,Global Banking & Finance Review
+e1-05A-gemini,2,Gemini,05,A,exploration,change_close_pct,"(o -5,16% a seconda dei circuiti di rilevazione)",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,Global Banking & Finance Review
+e1-05A-gemini,3,Gemini,05,A,exploration,close,"a quota 28,09 $",28.09,28.09,none,28.12,"-0,11%",minimal_gap,Global Banking & Finance Review
+e1-05A-gemini,4,Gemini,05,A,exploration,previous_close,"rispetto alla chiusura precedente di 29,65 $",29.65,29.65,none,29.65,"+0,00%",exact,Global Banking & Finance Review
+e1-05A-gemini,5,Gemini,05,A,exploration,open,"per poi aprire la seduta regolare a 29,03 $",29.03,29.03,none,29.027,"+0,01%",exact,GuruFocus
+e1-05A-gemini,6,Gemini,05,A,exploration,low,"fino a un minimo intraday di 27,87 $",27.87,27.87,none,27.87,"+0,00%",exact,Investing.com
+e1-05A-gemini,7,Gemini,05,A,exploration,volume,"circa 27,9 milioni di azioni scambiate",27900000,27900000,circa,27919260,"-0,07%",approximate_correct,Investing.com
+e1-07A-gemini,1,Gemini,07,A,exploration,change_close_pct,"in rialzo dell'11,20%",11.2,11.2,none,11.2,"+0,00 punti",exact,GuruFocus
+e1-07A-gemini,2,Gemini,07,A,exploration,close,"a $109,52 per azione",109.52,109.52,none,109.52,"+0,00%",exact,GuruFocus
+e1-07A-gemini,3,Gemini,07,A,exploration,previous_close,"rispetto alla chiusura precedente di $98,49",98.49,98.49,none,98.49,"+0,00%",exact,GuruFocus
+e1-07A-gemini,4,Gemini,07,A,exploration,open,"Prezzo di apertura	$102,40",102.4,102.4,none,102.4,"+0,00%",exact,
+e1-07A-gemini,5,Gemini,07,A,exploration,change_open_pct,"(+3,97% sul close precedente)",3.97,3.97,none,3.97,"+0,00 punti",exact,
+e1-07A-gemini,6,Gemini,07,A,exploration,low,"$101,40 / $109,81",101.4,101.4,none,101.4,"+0,00%",exact,
+e1-07A-gemini,7,Gemini,07,A,exploration,high,"$101,40 / $109,81",109.81,109.81,none,109.81,"+0,00%",exact,
+e1-07A-gemini,8,Gemini,07,A,exploration,change_close_usd,"+11,20% (+$11,03 per azione)",11.03,11.03,none,11.03,"+0,00 $",exact,
+e1-07A-gemini,9,Gemini,07,A,exploration,volume,"~8,01 milioni",8010000,8010000,circa («~»),8011313,"-0,02%",approximate_correct,
+e1-08A-gemini,1,Gemini,08,A,exploration,close,"chiudendo le contrattazioni a $589,91",589.91,589.91,none,589.91,"+0,00%",exact,GuruFocus
+e1-08A-gemini,2,Gemini,08,A,exploration,change_close_pct,"con un guadagno del +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,GuruFocus
+e1-08A-gemini,3,Gemini,08,A,exploration,change_close_pct,"(circa +7,0%)",7,7,circa,6.96,"+0,04 punti",approximate_correct,GuruFocus
+e1-08A-gemini,4,Gemini,08,A,exploration,previous_close,"rispetto alla chiusura precedente di $551,51",551.51,551.51,none,551.51,"+0,00%",exact,GuruFocus
+e1-08A-gemini,5,Gemini,08,A,exploration,open,"Il titolo ha aperto in gap-up a $579,51",579.51,579.51,none,579.505,"+0,001%",exact,StockAnalysis.com
+e1-08A-gemini,6,Gemini,08,A,exploration,low,"tra un minimo di $577,24",577.24,577.24,none,577.24,"+0,00%",exact,StockAnalysis.com
+e1-08A-gemini,7,Gemini,08,A,exploration,high,"un massimo intraday di $608,00",608,608,none,608,"+0,00%",exact,StockAnalysis.com
+e1-08A-gemini,8,Gemini,08,A,exploration,change_close_usd,"$589,91 (+$38,40 per azione)",38.4,38.4,none,38.4,"+0,00 $",exact,GuruFocus
+e1-10A-gemini,1,Gemini,10,A,exploration,change_close_pct,"chiudendo in rialzo di circa il 9,3%",9.3,9.3,circa,9.06,"+0,24 punti",approximate_correct,Timothy Sykes + 1
+e1-10A-gemini,2,Gemini,10,A,exploration,close,"a 86,15 dollari",86.15,86.15,none,85.97,"+0,21%",error,Timothy Sykes + 1
+e1-10A-gemini,3,Gemini,10,A,exploration,previous_close,"rispetto alla chiusura precedente di 78,83 dollari",78.83,78.83,none,78.83,"+0,00%",exact,Timothy Sykes + 1
+e1-10A-gemini,4,Gemini,10,A,exploration,change_high_pct,dopo aver toccato picchi intraday superiori al 12%,12,12,oltre/più di,16.15,"-4,15 punti (limite rispettato)",approximate_correct,Timothy Sykes + 1
+e1-10A-gemini,5,Gemini,10,A,exploration,high,"fino a un massimo di giornata di 91,50 dollari",91.5,91.5,none,91.56,"-0,07%",minimal_gap,Timothy Sykes + 1
+e1-10A-gemini,6,Gemini,10,A,exploration,low,"in un range compreso tra 85,00 e 91,50 dollari",85,85,none,85,"+0,00%",exact,Perplexity + 1
+e1-10A-gemini,7,Gemini,10,A,exploration,volume,"con volumi pari a circa 14,84 milioni di azioni",14840000,14840000,circa,17324090,"-14,34%",accepted_rule3,Perplexity + 1
+e1-11A-gemini,1,Gemini,11,A,exploration,change_close_pct,"chiudendo la giornata in crescita del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,TIKR.com
+e1-11A-gemini,2,Gemini,11,A,exploration,close,"a 260,36 $",260.36,260.36,none,260.36,"+0,00%",exact,TIKR.com
+e1-11A-gemini,3,Gemini,11,A,exploration,previous_close,"rispetto alla chiusura precedente di 247,11 $",247.11,247.11,none,247.11,"+0,00%",exact,TIKR.com
+e1-11A-gemini,4,Gemini,11,A,exploration,open,"Apertura: 257,82 $",257.82,257.82,none,257.825,"-0,002%",exact,Investing.com
+e1-11A-gemini,5,Gemini,11,A,exploration,high,"segnando un massimo di giornata a 266,00 $",266,266,none,266,"+0,00%",exact,TradingView
+e1-11A-gemini,6,Gemini,11,A,exploration,change_close_usd,"(+5,36% / +13,25$ per azione)",13.25,13.25,none,13.25,"+0,00 $",exact,TIKR.com
+e1-11A-gemini,7,Gemini,11,A,exploration,volume,"circa 2,93 milioni di azioni passate di mano",2930000,2930000,circa,2942707,"-0,43%",approximate_correct,
+e1-12A-gemini,1,Gemini,12,A,exploration,close,"chiudendo a 48,94 $",48.94,48.94,none,48.94,"+0,00%",exact,Investing.com
+e1-12A-gemini,2,Gemini,12,A,exploration,change_close_pct,"con un guadagno del +4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,Investing.com
+e1-12A-gemini,3,Gemini,12,A,exploration,previous_close,"rispetto alla chiusura del giorno precedente (46,70 $)",46.7,46.7,none,46.7,"+0,00%",exact,Investing.com
+e1-12A-gemini,4,Gemini,12,A,exploration,open,"aprendo le negoziazioni ufficiali in gap-up a 47,88 $",47.88,47.88,none,47.88,"+0,00%",exact,StockAnalysis.com
+e1-12A-gemini,5,Gemini,12,A,exploration,low,"il titolo ha toccato un minimo di 47,28 $",47.28,47.28,none,47.28,"+0,00%",exact,Forbes + 1
+e1-12A-gemini,6,Gemini,12,A,exploration,high,"fino a un massimo intraday di 49,80 $",49.8,49.8,none,49.8,"+0,00%",exact,Forbes + 1
+e1-12A-gemini,7,Gemini,12,A,exploration,change_high_pct,"(+6,64% rispetto alla vigilia)",6.64,6.64,none,6.64,"+0,00 punti",exact,Forbes + 1
+e1-12A-gemini,8,Gemini,12,A,exploration,volume,"circa 13,79 milioni di azioni scambiate",13790000,13790000,circa,13788910,"+0,01%",approximate_correct,Investing.com + 1
+e2-01A-gemini,1,Gemini,01,A,exploration,change_close_pct,"in ribasso del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,FinanceCharts.com
+e2-01A-gemini,2,Gemini,01,A,exploration,close,"a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,FinanceCharts.com
+e2-01A-gemini,3,Gemini,01,A,exploration,previous_close,"rispetto alla chiusura di 131,92 dollari della vigilia",131.92,131.92,none,131.92,"+0,00%",exact,FinanceCharts.com
+e2-01A-gemini,4,Gemini,01,A,exploration,open,"aprendo poi la seduta regolare a 131,34 dollari",131.34,131.34,none,131.345,"-0,004%",exact,Stoculator
+e2-01A-gemini,5,Gemini,01,A,exploration,high,"(con un picco massimo iniziale a 133,50 dollari)",133.5,133.5,none,133.5,"+0,00%",exact,Stoculator
+e2-01A-gemini,6,Gemini,01,A,exploration,low,"toccando un minimo intraday di 124,44 dollari poco prima della chiusura",124.44,124.44,none,124.44,"+0,00%",exact,FinanceCharts.com
+e2-01A-gemini,7,Gemini,01,A,exploration,volume,"volumi elevati pari a 20,4 milioni di azioni",20400000,20400000,none,20438390,"-0,19%",rounded_correct,TickerSpark
+e2-02A-gemini,1,Gemini,02,A,exploration,change_close_pct,"chiudendo in calo dell'11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Investing.com
+e2-02A-gemini,2,Gemini,02,A,exploration,close,"a 230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,Investing.com
+e2-02A-gemini,3,Gemini,02,A,exploration,previous_close,"rispetto alla chiusura di 260,81 $ della vigilia",260.81,260.81,none,260.81,"+0,00%",exact,Investing.com
+e2-02A-gemini,4,Gemini,02,A,exploration,open,"Prezzo di apertura (22 ottobre)	234,50 $",234.5,234.5,none,234.5,"+0,00%",exact,
+e2-02A-gemini,5,Gemini,02,A,exploration,high,"242,10 $ / 227,68 $",242.1,242.1,none,242.1,"+0,00%",exact,
+e2-02A-gemini,6,Gemini,02,A,exploration,low,"242,10 $ / 227,68 $",227.68,227.68,none,227.68,"+0,00%",exact,
+e2-02A-gemini,7,Gemini,02,A,exploration,volume,~23 milioni di azioni,23000000,23000000,circa («~»),22998190,"+0,01%",approximate_correct,
+e2-03A-gemini,1,Gemini,03,A,exploration,close,"chiudendo le contrattazioni a $77,10",77.1,77.1,none,77.09,"+0,01%",minimal_gap,The Motley Fool
+e2-03A-gemini,2,Gemini,03,A,exploration,change_close_pct,"con un calo del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,The Motley Fool
+e2-03A-gemini,3,Gemini,03,A,exploration,previous_close,"rispetto alla chiusura precedente di $82,75",82.75,82.75,none,82.75,"+0,00%",exact,The Motley Fool
+e2-03A-gemini,4,Gemini,03,A,exploration,low,"toccando un minimo intraday di $75,37",75.37,75.37,none,75.07,"+0,40%",error,Investing.com
+e2-03A-gemini,5,Gemini,03,A,exploration,change_low_pct,(oltre l'8% di ribasso),-8,-8,oltre/più di,-9.28,"+1,28 punti (limite rispettato)",approximate_correct,Investing.com
+e2-03A-gemini,6,Gemini,03,A,exploration,volume,"circa 24,7 milioni di azioni scambiate",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,Investing.com
+e2-04A-gemini,1,Gemini,04,A,exploration,change_close_pct,"chiudendo in calo del 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Investing.com
+e2-04A-gemini,2,Gemini,04,A,exploration,close,"a 648,85 $",648.85,648.85,none,648.85,"+0,00%",exact,Investing.com
+e2-04A-gemini,3,Gemini,04,A,exploration,previous_close,"rispetto alla chiusura precedente di 697,52 $ del 21 ottobre",697.52,697.52,none,697.52,"+0,00%",exact,Investing.com
+e2-04A-gemini,4,Gemini,04,A,exploration,open,"per poi aprire in gap down a 676,35 $",676.35,676.35,none,676.35,"+0,00%",exact,investor.atmeta.com
+e2-04A-gemini,5,Gemini,04,A,exploration,volume,"oltre 40,5 milioni di azioni scambiate",40500000,40500000,oltre/più di,40571020,"-0,18% (limite rispettato)",approximate_correct,investor.atmeta.com
+e2-05A-gemini,1,Gemini,05,A,exploration,change_close_pct,"chiudendo le contrattazioni in calo del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,Seeking Alpha
+e2-05A-gemini,2,Gemini,05,A,exploration,close,"a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,Seeking Alpha
+e2-05A-gemini,3,Gemini,05,A,exploration,previous_close,"rispetto alla chiusura precedente di 29,65 dollari",29.65,29.65,none,29.65,"+0,00%",exact,Seeking Alpha
+e2-05A-gemini,4,Gemini,05,A,exploration,open,"Dopo un'apertura intorno a 29,03 dollari",29.03,29.03,intorno a,29.027,"+0,01%",approximate_correct,FinancialContent
+e2-05A-gemini,5,Gemini,05,A,exploration,high,"(massimo di giornata a 29,10 dollari)",29.1,29.1,none,29.1,"+0,00%",exact,FinancialContent
+e2-05A-gemini,6,Gemini,05,A,exploration,change_low_pct,"portando il titolo a perdere fino al 5,9%",-5.9,-5.9,none,-6,"+0,10 punti",minimal_gap,FinancialContent
+e2-05A-gemini,7,Gemini,05,A,exploration,low,"un minimo intraday (e nuovo minimo a 52 settimane) di 27,87 dollari",27.87,27.87,none,27.87,"+0,00%",exact,FinancialContent
+e2-05A-gemini,8,Gemini,05,A,exploration,change_close_usd,"28,12 dollari (-1,53 dollari)",-1.53,-1.53,none,-1.53,"+0,00 $",exact,Investing.com
+e2-05A-gemini,9,Gemini,05,A,exploration,volume,"circa 27,92 milioni di azioni scambiate",27920000,27920000,circa,27919260,"+0,003%",approximate_correct,Investing.com
+e2-06A-gemini,1,Gemini,06,A,exploration,change_close_pct,"chiudendo in ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,TIKR.com
+e2-06A-gemini,2,Gemini,06,A,exploration,close,"a 989,04 $",989.04,989.04,none,989.04,"+0,00%",exact,TIKR.com
+e2-06A-gemini,3,Gemini,06,A,exploration,change_close_usd,"in perdita di 39,96 $",-39.96,-39.96,none,-39.96,"+0,00 $",exact,TIKR.com
+e2-06A-gemini,4,Gemini,06,A,exploration,previous_close,"rispetto alla chiusura precedente di 1.029,00 $",1029,1029,none,1029,"+0,00%",exact,TIKR.com
+e2-06A-gemini,5,Gemini,06,A,exploration,open,"Prezzo di apertura: 1.002,45 $",1002.45,1002.45,none,1002.445,"+0,00%",exact,Markets.com
+e2-06A-gemini,6,Gemini,06,A,exploration,low,"Minimo intraday: 978,50 $",978.5,978.5,none,978.5,"+0,00%",exact,Markets.com
+e2-07A-gemini,1,Gemini,07,A,exploration,change_close_pct,"in rialzo dell'11,20%",11.2,11.2,none,11.2,"+0,00 punti",exact,Investing.com
+e2-07A-gemini,2,Gemini,07,A,exploration,close,"a quota 109,52 dollari",109.52,109.52,none,109.52,"+0,00%",exact,Investing.com
+e2-07A-gemini,3,Gemini,07,A,exploration,previous_close,"rispetto ai 98,49 dollari della vigilia",98.49,98.49,none,98.49,"+0,00%",exact,Investing.com
+e2-07A-gemini,4,Gemini,07,A,exploration,open,"Apertura: 102,40 $",102.4,102.4,none,102.4,"+0,00%",exact,StockAnalysis.com
+e2-07A-gemini,5,Gemini,07,A,exploration,low,"101,40 $ (minimo)",101.4,101.4,none,101.4,"+0,00%",exact,StockAnalysis.com
+e2-07A-gemini,6,Gemini,07,A,exploration,high,"109,81 $ (massimo e nuovo record a 52 settimane)",109.81,109.81,none,109.81,"+0,00%",exact,StockAnalysis.com
+e2-07A-gemini,7,Gemini,07,A,exploration,volume,"Volumi scambiati: 8,01 milioni di azioni",8010000,8010000,none,8011313,"-0,02%",exact,Investing.com
+e2-09A-gemini,1,Gemini,09,A,exploration,change_close_pct,"in rialzo del +6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,OTC Markets
+e2-09A-gemini,2,Gemini,09,A,exploration,close,"a quota 34,10 dollari",34.1,34.1,none,34.1,"+0,00%",exact,OTC Markets
+e2-09A-gemini,3,Gemini,09,A,exploration,previous_close,"rispetto ai 31,90 dollari della chiusura precedente",31.9,31.9,none,31.9,"+0,00%",exact,OTC Markets
+e2-09A-gemini,4,Gemini,09,A,exploration,change_close_usd,"pari a un incremento di 2,20 dollari per azione",2.2,2.2,none,2.2,"+0,00 $",exact,OTC Markets
+e2-09A-gemini,5,Gemini,09,A,exploration,open,"il titolo ha aperto a 33,25 dollari",33.25,33.25,none,33.25,"+0,00%",exact,StockAnalysis.com
+e2-09A-gemini,6,Gemini,09,A,exploration,high,"ha toccato un massimo giornaliero di 34,62 dollari",34.62,34.62,none,34.62,"+0,00%",exact,StockAnalysis.com
+e2-09A-gemini,7,Gemini,09,A,exploration,change_high_pct,"arrivando a segnare punte superiori al +7,6% durante gli scambi",7.6,7.6,oltre/più di,8.53,"-0,93 punti (limite rispettato)",approximate_correct,StockAnalysis.com
+e2-09A-gemini,8,Gemini,09,A,exploration,low,"con un minimo di seduta a 32,74 dollari",32.74,32.74,none,32.74,"+0,00%",exact,StockAnalysis.com
+e2-09A-gemini,9,Gemini,09,A,exploration,volume,"con 9,01 milioni di azioni passate di mano",9010000,9010000,none,9007359,"+0,03%",exact,
+e2-10A-gemini,1,Gemini,10,A,exploration,close,"chiudendo le contrattazioni regolari a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,YouTube + 1
+e2-10A-gemini,2,Gemini,10,A,exploration,change_close_pct,"con un balzo del +9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,YouTube + 1
+e2-10A-gemini,3,Gemini,10,A,exploration,change_close_usd,"(+7,14 dollari)",7.14,7.14,none,7.14,"+0,00 $",exact,YouTube + 1
+e2-10A-gemini,4,Gemini,10,A,exploration,previous_close,"rispetto alla chiusura precedente di 78,83 dollari",78.83,78.83,none,78.83,"+0,00%",exact,YouTube + 1
+e2-10A-gemini,5,Gemini,10,A,exploration,low,"tra un minimo di 85,00 dollari",85,85,none,85,"+0,00%",exact,Seeking Alpha
+e2-10A-gemini,6,Gemini,10,A,exploration,high,"un picco massimo di 91,50 dollari",91.5,91.5,none,91.56,"-0,07%",minimal_gap,Seeking Alpha
+e2-10A-gemini,7,Gemini,10,A,exploration,volume,"sono passati di mano circa 14,84 milioni di azioni",14840000,14840000,circa,17324090,"-14,34%",accepted_rule3,Seeking Alpha
+e2-11A-gemini,1,Gemini,11,A,exploration,close,"chiudendo la giornata a $260,36",260.36,260.36,none,260.36,"+0,00%",exact,TIKR.com
+e2-11A-gemini,2,Gemini,11,A,exploration,change_close_pct,"con un guadagno del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,TIKR.com
+e2-11A-gemini,3,Gemini,11,A,exploration,previous_close,"rispetto alla chiusura precedente di $247,11",247.11,247.11,none,247.11,"+0,00%",exact,TIKR.com
+e2-11A-gemini,4,Gemini,11,A,exploration,change_high_pct,"le azioni hanno toccato un rialzo del 7,32%",7.32,7.32,none,7.64,"-0,32 punti",error,TradingView
+e2-11A-gemini,5,Gemini,11,A,exploration,high,"spingendosi fino a $265,19",265.19,265.19,none,266,"-0,30%",error,TradingView
+e2-12A-gemini,1,Gemini,12,A,exploration,close,"chiudendo le contrattazioni a $48,94",48.94,48.94,none,48.94,"+0,00%",exact,Kinfo
+e2-12A-gemini,2,Gemini,12,A,exploration,change_close_pct,"con un guadagno del +4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,Kinfo
+e2-12A-gemini,3,Gemini,12,A,exploration,change_close_usd,"(+$2,24 rispetto alla chiusura precedente di $46,70)",2.24,2.24,none,2.24,"+0,00 $",exact,Kinfo
+e2-12A-gemini,4,Gemini,12,A,exploration,previous_close,"rispetto alla chiusura precedente di $46,70",46.7,46.7,none,46.7,"+0,00%",exact,Kinfo
+e2-12A-gemini,5,Gemini,12,A,exploration,open,"Apertura: $47,88",47.88,47.88,none,47.88,"+0,00%",exact,Investing.com
+e2-12A-gemini,6,Gemini,12,A,exploration,low,"Range intraday (Min – Max): $47,28 – $49,80",47.28,47.28,none,47.28,"+0,00%",exact,TickerSpark
+e2-12A-gemini,7,Gemini,12,A,exploration,high,"Range intraday (Min – Max): $47,28 – $49,80",49.8,49.8,none,49.8,"+0,00%",exact,TickerSpark
+e2-12A-gemini,8,Gemini,12,A,exploration,volume,"Volumi di scambio: 13,79 milioni di azioni",13790000,13790000,none,13788910,"+0,01%",exact,Investing.com
+e3-08C-gemini,1,Gemini,08,C,exploration,change_close_pct,"è salito del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Stock Analysis
+e3-08C-gemini,2,Gemini,08,C,exploration,change_close_pct,(circa +7%),7,7,circa,6.96,"+0,04 punti",approximate_correct,Stock Analysis
+e3-08C-gemini,3,Gemini,08,C,exploration,close,"chiudendo a 589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,Stock Analysis
+e3-08C-gemini,4,Gemini,08,C,exploration,previous_close,"rispetto ai 551,51 $ della vigilia",551.51,551.51,none,551.51,"+0,00%",exact,Stock Analysis
+e3-09A-2-gemini,1,Gemini,09,A,exploration,close,"chiudendo la giornata a $34,09",34.09,34.09,none,34.1,"-0,03%",minimal_gap,Perplexity
+e3-09A-2-gemini,2,Gemini,09,A,exploration,close,"($34,085)",34.085,34.085,none,34.1,"-0,04%",minimal_gap,Perplexity
+e3-09A-2-gemini,3,Gemini,09,A,exploration,change_close_pct,"con un rialzo complessivo del 6,85% rispetto alla chiusura del giorno precedente",6.85,6.85,none,6.9,"-0,05 punti",minimal_gap,Perplexity
+e3-09A-2-gemini,4,Gemini,09,A,exploration,previous_close,"rispetto alla chiusura del giorno precedente ($31,93)",31.93,31.93,none,31.9,"+0,09%",minimal_gap,Perplexity
+e3-09A-2-gemini,5,Gemini,09,A,exploration,open,"Reazione iniziale / Apertura	$33,25 – $33,35",33.25,33.35,fra X e Y,33.25,dentro l'intervallo (limite inferiore),approximate_correct,GuruFocus
+e3-09A-2-gemini,6,Gemini,09,A,exploration,high,"Picco intraday	$34,50 (ore 11:25 EDT)",34.5,34.5,none,34.62,"-0,35%",error,GuruFocus
+e3-09A-2-gemini,7,Gemini,09,A,exploration,change_high_pct,"Rialzo intraday compreso tra il +7,4% e il +7,6% rispetto alla vigilia",7.4,7.6,fra X e Y,8.53,"-0,93 punti (dal limite superiore)",error,GuruFocus
+e4-01C-gemini,1,Gemini,01,C,exploration,change_close_pct,"ha effettivamente registrato una variazione vicina al 6%, ma in direzione opposta",-6,-6,vicina a (circa); conferma l'ampiezza della premessa,-5.6,"-0,40 punti",approximate_correct,Global Banking & Finance Review
+e4-01C-gemini,2,Gemini,01,C,exploration,change_close_pct,"le azioni sono infatti scese del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Global Banking & Finance Review
+e4-01C-gemini,3,Gemini,01,C,exploration,close,"chiudendo a 124,53 $",124.53,124.53,none,124.53,"+0,00%",exact,Global Banking & Finance Review
+e4-01C-gemini,4,Gemini,01,C,exploration,previous_close,"rispetto ai 131,92 $ della vigilia",131.92,131.92,none,131.92,"+0,00%",exact,Global Banking & Finance Review
+e4-01C-gemini,5,Gemini,01,C,exploration,change_close_pct,"Cosa ha innescato le vendite (-5,60%)",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Global Banking & Finance Review
+e4-02A-gemini,1,Gemini,02,A,exploration,change_close_pct,"chiudendo in calo dell'11,76% a 230,15 $",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Gotrade
+e4-02A-gemini,2,Gemini,02,A,exploration,close,"chiudendo in calo dell'11,76% a 230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,Gotrade
+e4-02A-gemini,3,Gemini,02,A,exploration,previous_close,"Chiusura precedente (21 ott)	260,81 $",260.81,260.81,none,260.81,"+0,00%",exact,
+e4-02A-gemini,4,Gemini,02,A,exploration,open,"Apertura (22 ott)	234,50 $",234.5,234.5,none,234.5,"+0,00%",exact,
+e4-02A-gemini,5,Gemini,02,A,exploration,change_open_pct,"Apertura in calo di circa il 10,1%",-10.1,-10.1,circa,-10.09,"-0,01 punti",approximate_correct,
+e4-02A-gemini,6,Gemini,02,A,exploration,low,"Range intraday (Min – Max)	227,68 $ – 242,10 $",227.68,227.68,none,227.68,"+0,00%",exact,
+e4-02A-gemini,7,Gemini,02,A,exploration,high,"Range intraday (Min – Max)	227,68 $ – 242,10 $",242.1,242.1,none,242.1,"+0,00%",exact,
+e4-02A-gemini,8,Gemini,02,A,exploration,close,"Chiusura (22 ott)	230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,
+e4-02A-gemini,9,Gemini,02,A,exploration,change_close_usd,"Variazione giornaliera di -30,66 $ (-11,76%)",-30.66,-30.66,none,-30.66,"+0,00 $",exact,
+e4-02A-gemini,10,Gemini,02,A,exploration,change_close_pct,"Variazione giornaliera di -30,66 $ (-11,76%)",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
+e4-02A-gemini,11,Gemini,02,A,exploration,volume,"Volumi di scambio	~22,9 milioni",22900000,22900000,~ (circa),22998190,"-0,43%",approximate_correct,
+e4-02C-gemini,1,Gemini,02,C,exploration,change_close_pct,è crollato di quasi il 12%,-12,-12,quasi,-11.76,"-0,24 punti",approximate_correct,GuruFocus
+e4-02C-gemini,2,Gemini,02,C,exploration,change_close_pct,"(-11,75%)",-11.75,-11.75,none,-11.76,"+0,01 punti",minimal_gap,GuruFocus
+e4-02C-gemini,3,Gemini,02,C,exploration,close,"chiudendo a 230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,GuruFocus
+e4-02C-gemini,4,Gemini,02,C,exploration,previous_close,"rispetto ai 260,81 $ della vigilia",260.81,260.81,none,260.81,"+0,00%",exact,GuruFocus
+e4-02C-gemini,5,Gemini,02,C,exploration,change_close_pct,Cosa ha spinto il ribasso del 12%,-12,-12,none,-11.76,"-0,24 punti",rounded_correct,Seeking Alpha
+e4-03C-gemini,1,Gemini,03,C,exploration,change_close_pct,"ha subito un ribasso del 6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,Perplexity
+e4-03C-gemini,2,Gemini,03,C,exploration,change_close_pct,(circa il -7%),-7,-7,circa,-6.84,"-0,16 punti",approximate_correct,Perplexity
+e4-03C-gemini,3,Gemini,03,C,exploration,close,"chiudendo a 77,09 $",77.09,77.09,none,77.09,"+0,00%",exact,Perplexity
+e4-03C-gemini,4,Gemini,03,C,exploration,previous_close,"rispetto agli 82,75 $ della vigilia",82.75,82.75,none,82.75,"+0,00%",exact,Perplexity
+e4-03C-gemini,5,Gemini,03,C,exploration,change_close_pct,"dall'entità identica della variazione (7%, ma di segno opposto)",-7,-7,conferma l'ampiezza della premessa (= circa),-6.84,"-0,16 punti",approximate_correct,Investing.com
+e4-03C-gemini,6,Gemini,03,C,exploration,change_close_pct,Perché il titolo ha invece perso quasi il 7% il 20 ottobre,-7,-7,quasi,-6.84,"-0,16 punti",approximate_correct,Perplexity
+e4-04A-gemini,1,Gemini,04,A,exploration,change_close_pct,"chiudendo in calo del 6,98% a 648,85 dollari",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Gotrade
+e4-04A-gemini,2,Gemini,04,A,exploration,close,"chiudendo in calo del 6,98% a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,Gotrade
+e4-04A-gemini,3,Gemini,04,A,exploration,previous_close,"rispetto ai 697,52 dollari della vigilia",697.52,697.52,none,697.52,"+0,00%",exact,Gotrade
+e4-04A-gemini,4,Gemini,04,A,exploration,open,"all'apertura di Wall Street il 22 ottobre (a 676,35 dollari)",676.35,676.35,none,676.35,"+0,00%",exact,Fintwit
+e4-04A-gemini,5,Gemini,04,A,exploration,low,"fino a un minimo intraday di 639,69 dollari",639.69,639.69,none,639.69,"+0,00%",exact,Fintwit
+e4-04A-gemini,6,Gemini,04,A,exploration,close,"Chiusura 22 ottobre 2026	$648,85 (-6,98%)",648.85,648.85,none,648.85,"+0,00%",exact,
+e4-04A-gemini,7,Gemini,04,A,exploration,change_close_pct,"Chiusura 22 ottobre 2026	$648,85 (-6,98%)",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,
+e4-04A-gemini,8,Gemini,04,A,exploration,previous_close,"Chiusura 21 ottobre: $697,52",697.52,697.52,none,697.52,"+0,00%",exact,
+e4-04A-gemini,9,Gemini,04,A,exploration,low,"Range intraday (22 ottobre)	$639,69 – $681,07",639.69,639.69,none,639.69,"+0,00%",exact,
+e4-04A-gemini,10,Gemini,04,A,exploration,high,"Range intraday (22 ottobre)	$639,69 – $681,07",681.07,681.07,none,681,"+0,01%",minimal_gap,
+e4-04A-gemini,11,Gemini,04,A,exploration,open,"Apertura a $676,35",676.35,676.35,none,676.35,"+0,00%",exact,
+e4-04C-gemini,1,Gemini,04,C,exploration,change_close_pct,ha registrato un ribasso di circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,Gotrade
+e4-04C-gemini,2,Gemini,04,C,exploration,change_close_pct,"(-6,98%)",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Gotrade
+e4-04C-gemini,3,Gemini,04,C,exploration,close,"chiudendo a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,Gotrade
+e4-04C-gemini,4,Gemini,04,C,exploration,previous_close,"rispetto ai 697,52 dollari della vigilia",697.52,697.52,none,697.52,"+0,00%",exact,Gotrade
+e4-04C-gemini,5,Gemini,04,C,exploration,change_close_pct,Cosa ha innescato il calo del 7% il 22 ottobre,-7,-7,none,-6.98,"-0,02 punti",exact,GuruFocus
+e4-05C-gemini,1,Gemini,05,C,exploration,change_close_pct,ha registrato un calo di circa il 5%,-5,-5,circa,-5.16,"+0,16 punti",approximate_correct,24/7 Wall St.
+e4-06A-gemini,1,Gemini,06,A,exploration,change_close_pct,"ha chiuso in calo del 3,88% a 989,04 dollari",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,TIKR.com
+e4-06A-gemini,2,Gemini,06,A,exploration,close,"ha chiuso in calo del 3,88% a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,TIKR.com
+e4-06A-gemini,3,Gemini,06,A,exploration,previous_close,"rispetto alla chiusura di 1.029,00 dollari di venerdì 9 ottobre",1029,1029,none,1029,"+0,00%",exact,TIKR.com
+e4-06A-gemini,4,Gemini,06,A,exploration,level_in_session_pct,"le azioni sono arrivate a cedere circa il 4,2%",-4.2,-4.2,circa; «arrivate a» senza nominare un estremo (regola 12),"−4,91% / −2,56% (minimo / massimo)","dentro minimo–massimo (−4,91% / −2,56%)",level_in_session_correct,TradingView
+e4-06A-gemini,5,Gemini,06,A,exploration,level_in_session,"toccando i 985,93 dollari",985.93,985.93,«toccando» senza nominare un estremo (regola 12),"978,50 / 1.002,67 (minimo / massimo)","dentro minimo–massimo (978,50 / 1.002,67)",level_in_session_correct,TradingView
+e4-06C-gemini,1,Gemini,06,C,exploration,change_close_pct,"ha subito un calo del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+e4-06C-gemini,2,Gemini,06,C,exploration,close,"chiudendo a 989,04 $",989.04,989.04,none,989.04,"+0,00%",exact,
+e4-06C-gemini,3,Gemini,06,C,exploration,previous_close,"rispetto ai 1.029,00 $ della chiusura precedente",1029,1029,none,1029,"+0,00%",exact,
+e4-06C-gemini,4,Gemini,06,C,exploration,change_close_pct,La variazione di circa il 4% a cui fai riferimento è stata quindi un ribasso,-4,-4,circa; conferma l'ampiezza della premessa,-3.88,"-0,12 punti",approximate_correct,
+e4-07C-gemini,1,Gemini,07,C,exploration,change_close_pct,"ha messo a segno un rialzo dell'11,19%",11.19,11.19,none,11.2,"-0,01 punti",minimal_gap,Seeking Alpha + 1
+e4-07C-gemini,2,Gemini,07,C,exploration,close,"chiudendo a 109,51 $",109.51,109.51,none,109.52,"-0,01%",minimal_gap,Seeking Alpha + 1
+e4-07C-gemini,3,Gemini,07,C,exploration,change_close_usd,"(+11,02 $ rispetto alla chiusura precedente di 98,49 $)",11.02,11.02,none,11.03,"-0,01 $",minimal_gap,Seeking Alpha + 1
+e4-07C-gemini,4,Gemini,07,C,exploration,previous_close,"(+11,02 $ rispetto alla chiusura precedente di 98,49 $)",98.49,98.49,none,98.49,"+0,00%",exact,Seeking Alpha + 1
+e4-07C-gemini,5,Gemini,07,C,exploration,change_close_pct,Il movimento di circa l'11% è stato quindi positivo,11,11,circa; conferma l'ampiezza della premessa,11.2,"-0,20 punti",approximate_correct,Seeking Alpha + 1
+e4-07C-gemini,6,Gemini,07,C,exploration,change_close_pct,Cosa ha spinto il balzo dell'11% il 20 ottobre 2026,11,11,none,11.2,"-0,20 punti",rounded_correct,Perplexity
+e4-08A-gemini,1,Gemini,08,A,exploration,change_close_pct,"chiudendo in progresso del +6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Stock Analysis + 1
+e4-08A-gemini,2,Gemini,08,A,exploration,change_close_pct,(circa +7%),7,7,circa,6.96,"+0,04 punti",approximate_correct,Stock Analysis + 1
+e4-08A-gemini,3,Gemini,08,A,exploration,close,"a 589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,Stock Analysis + 1
+e4-08A-gemini,4,Gemini,08,A,exploration,previous_close,"rispetto alla chiusura precedente di 551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,Stock Analysis + 1
+e4-08A-gemini,5,Gemini,08,A,exploration,previous_close,"Prezzo di chiusura precedente (21 ott)	551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,
+e4-08A-gemini,6,Gemini,08,A,exploration,open,"Prezzo di apertura	579,51 $",579.51,579.51,none,579.505,"+0,00%",exact,
+e4-08A-gemini,7,Gemini,08,A,exploration,change_open_pct,"Forte gap-up in apertura (+5,08%)",5.08,5.08,none,5.08,"+0,00 punti",exact,
+e4-08A-gemini,8,Gemini,08,A,exploration,high,"Massimo intraday	608,00 $",608,608,none,608,"+0,00%",exact,
+e4-08A-gemini,9,Gemini,08,A,exploration,change_high_pct,"Picco toccato durante la sessione (+10,24%)",10.24,10.24,none,10.24,"+0,00 punti",exact,
+e4-08A-gemini,10,Gemini,08,A,exploration,low,"Minimo intraday	577,24 $",577.24,577.24,none,577.24,"+0,00%",exact,
+e4-08A-gemini,11,Gemini,08,A,exploration,close,"Prezzo di chiusura	589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,
+e4-08A-gemini,12,Gemini,08,A,exploration,change_close_pct,"+6,96% (+38,40$ per azione)",6.96,6.96,none,6.96,"+0,00 punti",exact,
+e4-08A-gemini,13,Gemini,08,A,exploration,change_close_usd,"+6,96% (+38,40$ per azione)",38.4,38.4,none,38.4,"+0,00 $",exact,
+e4-08A-gemini,14,Gemini,08,A,exploration,volume,"Volumi scambiati	~2,95 milioni",2950000,2950000,~ (circa),2960356,"-0,35%",approximate_correct,
+e4-08C-gemini,1,Gemini,08,C,exploration,change_close_pct,"è salito del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Quiver Quantitative + 1
+e4-08C-gemini,2,Gemini,08,C,exploration,change_close_pct,(circa +7%),7,7,circa,6.96,"+0,04 punti",approximate_correct,Quiver Quantitative + 1
+e4-08C-gemini,3,Gemini,08,C,exploration,previous_close,"passando dalla chiusura precedente di 551,51 $",551.51,551.51,none,551.51,"+0,00%",exact,Quiver Quantitative + 1
+e4-08C-gemini,4,Gemini,08,C,exploration,close,"a 589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,Quiver Quantitative + 1
+e4-08C-gemini,5,Gemini,08,C,exploration,high,"(con un massimo intraday di 608,00 $)",608,608,none,608,"+0,00%",exact,Quiver Quantitative + 1
+e4-08C-gemini,6,Gemini,08,C,exploration,change_close_pct,(+7% anziché -7%),7,7,conferma l'ampiezza della premessa (= circa),6.96,"+0,04 punti",approximate_correct,TradingKey
+e4-08C-gemini,7,Gemini,08,C,exploration,change_close_pct,Cosa è successo davvero il 22 ottobre 2026 (+7% dopo il Q3 2026),7,7,none,6.96,"+0,04 punti",exact,Lockheed Martin Investor Relations + 1
+e4-09A-gemini,1,Gemini,09,A,exploration,change_close_pct,"registrando un rialzo del +6,90% a fine giornata",6.9,6.9,none,6.9,"+0,00 punti",exact,Barchart.com
+e4-09A-gemini,2,Gemini,09,A,exploration,previous_close,"Chiusura precedente (14 ottobre): $31,90",31.9,31.9,none,31.9,"+0,00%",exact,Investing.com
+e4-09A-gemini,3,Gemini,09,A,exploration,open,"Apertura: $33,25",33.25,33.25,none,33.25,"+0,00%",exact,Investing.com
+e4-09A-gemini,4,Gemini,09,A,exploration,high,"Massimo intraday: $34,62",34.62,34.62,none,34.62,"+0,00%",exact,
+e4-09A-gemini,5,Gemini,09,A,exploration,change_high_pct,"con picchi di guadagno vicini al +7,6% - +8,5% durante gli scambi",7.6,8.5,"vicini a (circa), fra 7,6 e 8,5 (regola 11)",8.53,"+0,03 punti oltre il limite superiore 8,5; dentro l'intervallo allargato di 1,2 punti (6,4–9,7)",approximate_correct,
+e4-09A-gemini,6,Gemini,09,A,exploration,close,"Prezzo di chiusura: $34,10",34.1,34.1,none,34.1,"+0,00%",exact,Investing.com
+e4-09A-gemini,7,Gemini,09,A,exploration,change_close_usd,"(+$2,20 rispetto alla vigilia, pari a +6,90%)",2.2,2.2,none,2.2,"+0,00 $",exact,Investing.com
+e4-09A-gemini,8,Gemini,09,A,exploration,change_close_pct,"(+$2,20 rispetto alla vigilia, pari a +6,90%)",6.9,6.9,none,6.9,"+0,00 punti",exact,Investing.com
+e4-09A-gemini,9,Gemini,09,A,exploration,volume,"Volumi di scambio: 9,01 milioni di azioni",9010000,9010000,none,9007359,"+0,03%",exact,
+e4-09C-gemini,1,Gemini,09,C,exploration,change_close_pct,ha registrato un rialzo di circa il 7%,7,7,circa,6.9,"+0,10 punti",approximate_correct,Global Banking & Finance Review
+e4-09C-gemini,2,Gemini,09,C,exploration,change_high_pct,(con picchi intraday fino all'8%),8,8,none («fino a» nomina un estremo),8.53,"-0,53 punti",error,Global Banking & Finance Review
+e4-10C-gemini,1,Gemini,10,C,exploration,change_close_pct,"ha registrato un forte rialzo del 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,FinanceFeeds
+e4-10C-gemini,2,Gemini,10,C,exploration,close,"chiudendo a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,FinanceFeeds
+e4-10C-gemini,3,Gemini,10,C,exploration,previous_close,"rispetto ai 78,83 dollari della vigilia",78.83,78.83,none,78.83,"+0,00%",exact,FinanceFeeds
+e4-10C-gemini,4,Gemini,10,C,exploration,change_close_pct,Se il rialzo del 9% ha premiato Crown Castle,9,9,none,9.06,"-0,06 punti",exact,Morningstar + 2
+e4-10C-gemini,5,Gemini,10,C,exploration,change_close_pct,"Crown Castle (CCI)	Infrastrutture (Torri)	+9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
+e4-11C-gemini,1,Gemini,11,C,exploration,change_close_pct,è salito di circa il 5%,5,5,circa,5.36,"-0,36 punti",approximate_correct,Pomegra
+e4-11C-gemini,2,Gemini,11,C,exploration,change_close_pct,"chiudendo in rialzo tra il +4,6% e il +5,5% a seconda delle rilevazioni di fine seduta",4.6,5.5,"fra 4,6 e 5,5",5.36,dentro l'intervallo,approximate_correct,Pomegra
+e4-11C-gemini,3,Gemini,11,C,exploration,close,intorno a 260–270 $,260,270,"intorno a, fra 260 e 270 (regola 11)",260.36,dentro l'intervallo,approximate_correct,Pomegra
+e4-11C-gemini,4,Gemini,11,C,exploration,change_close_pct,(Rialzo del ~5%),5,5,~ (circa),5.36,"-0,36 punti",approximate_correct,Pomegra
+e4-12C-gemini,1,Gemini,12,C,exploration,change_close_pct,"ha registrato un rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,StockAnalysis.com
+e4-12C-gemini,2,Gemini,12,C,exploration,close,"chiudendo a 48,94 $",48.94,48.94,none,48.94,"+0,00%",exact,StockAnalysis.com
+e4-12C-gemini,3,Gemini,12,C,exploration,previous_close,"(rispetto ai 46,70 $ del giorno precedente)",46.7,46.7,none,46.7,"+0,00%",exact,StockAnalysis.com
