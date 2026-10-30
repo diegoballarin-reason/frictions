@@ -421,7 +421,7 @@ P3_LABEL = (f"All {len(GEM)} of Gemini's answers by the time the question was se
             f"{N_GEM_REF} gave no prices, {IN_BAND} of the {N_GEM_REF_A} refusals to A between 13:20 and 15:26.")
 
 # ── panel 4: the session's prices and the other numbers, by app ─────────────
-TITLES = {"ChatGPT": "The sun is yellow!", "Claude": "To know means to be mistaken.", "Gemini": "I am always ready – until I’m not."}
+TITLES = {"ChatGPT": "The sun is yellow!", "Claude": "To know means to be mistaken.", "Gemini": "I am always ready – till I’m not."}
 
 
 def panel4(wide=True):
