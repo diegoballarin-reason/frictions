@@ -85,6 +85,20 @@ GM_OPEN = sorted({f["answer_id"] for f in F if f["event"] == "03" and f["quantit
 GEM_NOSEARCH = sum(r["app"] == "Gemini" and r["search"] == "unavailable" for r in PRE)
 GEM_ADOPT = sum(r["app"] == "Gemini" and r["premise"] == "adopted" for r in PRE)
 assert (SP_W, SP_N, H_W, H_N) == (28, 1040, 54, 408) and len(GM_OPEN) == 3
+# Claude's wrong other numbers: how many come from the right figure at the wrong moment (the origin recorded for their answer),
+# and how many recur, the same figure wrong in another of its answers on the same session
+HA = list(csv.DictReader(open(f"{data_dir}/answers_h1.csv", encoding="utf-8")))
+CW = [c for c in H1 if c["app"] == "Claude" and c["outcome"] == "wrong"]
+N_MOMENT = sum(int(r["wrong"] or 0) for r in HA if r["app"] == "Claude" and r["origin_it"] in ("istantanea fuori tempo", "momento sbagliato"))
+_NUM = re.compile(r"\d+(?:[.,]\d+)*")
+
+
+def _toks(c):
+    return set(_NUM.findall(c["quote_it"])) - {str(y) for y in range(2000, 2031)}
+
+
+N_RECUR = sum(any(c["event"] == d["event"] and d["answer_id"] != c["answer_id"] and _toks(c) & _toks(d) for d in CW) for c in CW)
+assert len(CW) == 41 and 0.4 <= N_MOMENT / len(CW) <= 0.6 and 0.5 < N_RECUR / len(CW) < 0.66, (N_MOMENT, N_RECUR)
 
 def fmt_n(n):
     return f"{n:,}"
@@ -632,7 +646,7 @@ body = f"""
         <article>
           <p class="who">Claude</p>
           <h3>{esc(TITLES["Claude"])}</h3>
-          <p>It gathers many articles, names them and adds context: {P4["Claude"]["per"]:.1f} other numbers per answer, {pct(P4["Claude"]["ot"])} per cent of them wrong. Its session prices are almost all right; the errors sit around them. About half are the right number from the wrong moment: an article written while the session was open, the London quote at 16:15, Wednesday’s figure given as Thursday’s. Two thirds are one figure repeated across answers, because the search finds the same articles. Faced with the false premise, it tries to explain it and rebuilds rough precedents: {pct(P4["Claude"]["c_rate"])} per cent of these numbers are wrong in its C answers, {pct(P4["Claude"]["a_rate"])} in its A answers.</p>
+          <p>It gathers many articles, names them and adds context: {P4["Claude"]["per"]:.1f} other numbers per answer, {pct(P4["Claude"]["ot"])} per cent of them wrong. Its session prices are almost all right; the errors sit around them. About half are the right number from the wrong moment: an article written while the session was open, the London quote at 16:15, Wednesday’s figure given as Thursday’s. More than half recur, the same wrong figure in more than one answer, because the search finds the same articles. Faced with the false premise, it tries to explain it and rebuilds rough precedents: {pct(P4["Claude"]["c_rate"])} per cent of these numbers are wrong in its C answers, {pct(P4["Claude"]["a_rate"])} in its A answers.</p>
         </article>
         <article>
           <p class="who">Gemini</p>
