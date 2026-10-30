@@ -1,13 +1,14 @@
 """Build plate 2 of 'nothing to notice it by' as a page of diegoballarin.com.
 
-Three panels, all placed from the exported data of study 2 (study2/data):
+Four panels, all placed from the final data of study 2 (study2/data):
   1. every answer to A (how did the stock react?) and C (the same with a false premise), one mark each;
-  2. every single figure about the session in those answers, by its distance from the exchange's record;
-  3. Gemini's answers by the hour they were sent, in New York.
+  2. every single figure about the session in the scored answers, A, C and U, by its distance from the exchange's record;
+  3. Gemini's answers by the hour they were sent, in New York;
+  4. for each app, the share of wrong figures among the session's prices and among the other numbers that can be checked (H1).
 Nothing is typed by hand except the words; every count in the text is computed here.
 
 Usage: plate2_build.py DATA_DIR CHROME_PAGE OUT_HTML
-  DATA_DIR     study2/data (events.csv, answers.csv, figures.csv)
+  DATA_DIR     study2/data (events.csv, answers.csv, figures.csv, claims.csv)
   CHROME_PAGE  the case study page, whose head, menus and colophon styles are reused
 """
 import csv
@@ -21,6 +22,7 @@ data_dir, chrome_path, out_path = sys.argv[1:4]
 A = list(csv.DictReader(open(f"{data_dir}/answers.csv", encoding="utf-8")))
 F = list(csv.DictReader(open(f"{data_dir}/figures.csv", encoding="utf-8")))
 E = {r["event"]: r for r in csv.DictReader(open(f"{data_dir}/events.csv", encoding="utf-8"))}
+CL = list(csv.DictReader(open(f"{data_dir}/claims.csv", encoding="utf-8")))
 EVS = sorted(E)
 
 NAMES = {"C": "Citigroup", "LRCX": "Lam Research", "GM": "General Motors", "META": "Meta", "CMG": "Chipotle", "MU": "Micron",
@@ -52,6 +54,45 @@ GEM = [r for r in A if r["app"] == "Gemini"]
 GEM_PRE_A = [r for r in A if r["app"] == "Gemini" and r["study"] == "preregistered" and r["type"] == "A"]
 N_GEM_PRE_A, N_GEM_PRE_REF = len(GEM_PRE_A), sum(r["refused"] == "yes" for r in GEM_PRE_A)
 assert N_AP_RIGHT == N_AP
+PRE = [r for r in A if r["study"] == "preregistered"]
+PRE_AP = [r for r in PRE if r["type"] == "A" and r["prices"] != "none_given"]
+assert all(r["direction"] == "right" for r in PRE_AP)
+
+
+def wilson(k, n, z=1.96):
+    if not n:
+        return (0.0, 0.0)
+    p, d = k / n, 1 + z * z / n
+    c, h = (p + z * z / (2 * n)) / d, z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
+    return (max(0.0, c - h) * 100, min(1.0, c + h) * 100)
+
+
+H1_TYPES = ("other_sessions", "outside_and_intraday", "history", "premise_hypothesis")
+H1 = [c for c in CL if c["type"] in H1_TYPES and c["in_words"] == "no"]   # numbers in words stay out, as in the pilot
+P4 = {}
+for app in APPS:
+    n_ans = sum(r["app"] == app for r in PRE)
+    sp = [f for f in F if f["study"] == "preregistered" and f["app"] == app]
+    ot = [c for c in H1 if c["app"] == app and c["outcome"] in ("right", "wrong")]
+    P4[app] = {"sp": (sum(f["outcome"] == "error" for f in sp), len(sp)), "ot": (sum(c["outcome"] == "wrong" for c in ot), len(ot)),
+               "per": sum(c["app"] == app for c in H1) / n_ans, "wper": sum(c["outcome"] == "wrong" for c in ot) / n_ans,
+               "c_rate": (lambda x: (sum(c["outcome"] == "wrong" for c in x), len(x)))([c for c in ot if c["question_type"] == "C"]),
+               "a_rate": (lambda x: (sum(c["outcome"] == "wrong" for c in x), len(x)))([c for c in ot if c["question_type"] == "A"])}
+SP_W, SP_N = sum(P4[a]["sp"][0] for a in APPS), sum(P4[a]["sp"][1] for a in APPS)
+H_W, H_N = sum(P4[a]["ot"][0] for a in APPS), sum(P4[a]["ot"][1] for a in APPS)
+N_PRE = len(PRE)
+GM_OPEN = sorted({f["answer_id"] for f in F if f["event"] == "03" and f["quantity"] == "open" and f["outcome"] == "error" and f["app"] == "ChatGPT"})
+GEM_NOSEARCH = sum(r["app"] == "Gemini" and r["search"] == "unavailable" for r in PRE)
+GEM_ADOPT = sum(r["app"] == "Gemini" and r["premise"] == "adopted" for r in PRE)
+assert (SP_W, SP_N, H_W, H_N) == (28, 1040, 54, 408) and len(GM_OPEN) == 3
+
+def fmt_n(n):
+    return f"{n:,}"
+
+
+def pct(kn):
+    return f"{100 * kn[0] / kn[1]:.1f}"
+
 
 # ── panel 1: every answer ───────────────────────────────────────────────────
 BLOCKS = [
@@ -216,13 +257,20 @@ N_SINGLE = N_EQUAL + N_OFF + N_BOUND
 ERR_PRICE = sorted(abs(float(f["value_low"]) / truth(E[f["event"]], f["quantity"]) - 1) * 100
                    for f in F if f["outcome"] == "error" and f["quantity"] in PRICE and f["quantity"] != "volume" and f["value_low"] == f["value_high"])
 
-LOG_LO, LOG_HI = -2.0, 2.5
+LOG_LO, LOG_HI = -2.35, 3.05   # below 0.01 of a gap (volumes a few shares off) the marks gather at the left, packed
 
 
 def swarm(pts, X, yc, R, gap=0.6):
-    """place marks along x, stacking alternately above and below the line where they would touch."""
+    """place marks along x, stacking alternately above and below the line where they would touch;
+    the few under 0.01 of a gap are packed in a small block left of the 0.01 tick."""
     placed, out = [], []
-    for n_, f in pts:
+    tiny = [p for p in pts if p[0] < 0.01]
+    rows = max(1, min(3, len(tiny)))
+    for k, (n_, f) in enumerate(tiny):
+        c, r = k // rows, k % rows
+        x, y = X(0.01) - 8 - c * (2 * R + gap), yc + (r - (rows - 1) / 2) * (2 * R + gap)
+        placed.append((x, y)); out.append((x, y, n_, f))
+    for n_, f in [p for p in pts if p[0] >= 0.01]:
         x = X(max(n_, 10 ** LOG_LO))
         dy, k = 0.0, 0
         while any((x - px) ** 2 + (yc + dy - py) ** 2 < (2 * R + gap) ** 2 for px, py in placed):
@@ -305,7 +353,7 @@ def panel2(wide=True):
         s.append(f'<line class="rule" x1="0" y1="{y0 + RH:.1f}" x2="{W}" y2="{y0 + RH:.1f}"/>')
     ya = top + len(APPS) * RH
     s.append(f'<line class="axis" x1="{AX0}" y1="{ya}" x2="{AX1}" y2="{ya}"/>')
-    for n_, lab in ((0.01, "0.01"), (0.1, "0.1"), (1, "1"), (10, "10"), (100, "100")):
+    for n_, lab in ((0.01, "0.01"), (0.1, "0.1"), (1, "1"), (10, "10"), (100, "100"), (1000, "1000")):
         x = X(n_)
         s.append(f'<line class="tick" x1="{x:.1f}" y1="{ya}" x2="{x:.1f}" y2="{ya + 5}"/><text class="tl" x="{x:.1f}" y="{ya + 19}">{lab}</text>')
     if wide:
@@ -372,6 +420,57 @@ N_GEM_REF_A = sum(r["refused"] == "yes" and r["type"] == "A" for r in GEM)
 P3_LABEL = (f"All {len(GEM)} of Gemini's answers by the time the question was sent, in New York: "
             f"{N_GEM_REF} gave no prices, {IN_BAND} of the {N_GEM_REF_A} refusals to A between 13:20 and 15:26.")
 
+# ── panel 4: the session's prices and the other numbers, by app ─────────────
+TITLES = {"ChatGPT": "The sun is yellow!", "Claude": "To know means to be mistaken.", "Gemini": "I am always ready – until I’m not."}
+
+
+def panel4(wide=True):
+    W = 940 if wide else 400
+    if wide:
+        LW, AX0, AX1, RH, TOPR = 250, 262, 700, 104, 10
+    else:
+        LW, AX0, AX1, RH, TOPR = 0, 6, 330, 158, 56
+    XMAX = 35
+
+    def X(v):
+        return AX0 + v / XMAX * (AX1 - AX0)
+
+    H = len(APPS) * RH + 46
+    s = [f'<svg class="p4" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(P4_LABEL)}">']
+    for i, app in enumerate(APPS):
+        y0 = i * RH
+        d = P4[app]
+        s.append(f'<text class="app" x="0" y="{y0 + 22:.1f}">{app}</text>')
+        if wide:
+            s.append(f'<text class="ttl" x="0" y="{y0 + 44:.1f}">{esc(TITLES[app])}</text>')
+            s.append(f'<text class="per" x="{W}" y="{y0 + 30:.1f}">{d["per"]:.1f} other numbers per answer</text>')
+            s.append(f'<text class="per" x="{W}" y="{y0 + 50:.1f}">{d["wper"]:.2f} wrong per answer</text>')
+        else:
+            s.append(f'<text class="ttl" x="0" y="{y0 + 44:.1f}">{esc(TITLES[app])}</text>')
+            s.append(f'<text class="per" x="{W}" y="{y0 + 22:.1f}">{d["per"]:.1f} per answer · {d["wper"]:.2f} wrong</text>')
+        for j, (key, cls, lab) in enumerate((("sp", "g-app", "the session’s prices"), ("ot", "g-ex", "the other numbers"))):
+            k, n = d[key]
+            lo, hi = wilson(k, n)
+            y = y0 + TOPR + 16 + j * 24
+            v = 100 * k / n
+            s.append(f'<g><title>{esc(f"{app}, {lab}: {k} wrong of {n}, {v:.1f} per cent (95 per cent interval {lo:.1f}–{hi:.1f})")}</title>'
+                     f'<line class="ci" x1="{X(lo):.1f}" y1="{y:.1f}" x2="{X(hi):.1f}" y2="{y:.1f}"/>'
+                     f'<circle class="{cls}" cx="{X(v):.1f}" cy="{y:.1f}" r="5"/></g>')
+            s.append(f'<text class="cnt" x="{X(hi) + 8:.1f}" y="{y + 3.8:.1f}">{k}/{n}</text>')
+        s.append(f'<line class="rule" x1="0" y1="{y0 + RH - 8:.1f}" x2="{W}" y2="{y0 + RH - 8:.1f}"/>')
+    ya = len(APPS) * RH
+    s.append(f'<line class="axis" x1="{AX0}" y1="{ya}" x2="{AX1}" y2="{ya}"/>')
+    for v in range(0, XMAX + 1, 5 if wide else 10):
+        s.append(f'<line class="tick" x1="{X(v):.1f}" y1="{ya}" x2="{X(v):.1f}" y2="{ya + 5}"/><text class="tl" x="{X(v):.1f}" y="{ya + 19}">{v}</text>')
+    s.append(f'<text class="axl{"" if wide else " start"}" x="{AX1 if wide else 0}" y="{ya + 40}">per cent of the figures wrong</text>')
+    s.append("</svg>")
+    return "".join(s)
+
+
+P4_LABEL = (f"In the {N_PRE} pre-registered answers, the session’s prices were wrong {SP_W} times in {SP_N}; the other numbers that can be checked "
+            f"{H_W} times in {H_N}: ChatGPT {P4['ChatGPT']['ot'][0]} of {P4['ChatGPT']['ot'][1]}, Claude {P4['Claude']['ot'][0]} of {P4['Claude']['ot'][1]}, "
+            f"Gemini {P4['Gemini']['ot'][0]} of {P4['Gemini']['ot'][1]}.")
+
 # ── legends ─────────────────────────────────────────────────────────────────
 LEG1 = """
         <p class="legend" aria-hidden="true">
@@ -396,6 +495,13 @@ LEG3 = """
           <span><svg viewBox="0 0 16 16"><circle class="g-ex" cx="8" cy="8" r="4.2"/></svg>with the day’s data</span>
           <span><svg viewBox="0 0 16 16"><circle class="g-refc" cx="8" cy="8" r="4.2"/></svg>no prices: it said it had none</span>
           <span><svg viewBox="0 0 34 16"><rect class="band" x="1" y="1" width="32" height="14"/></svg>13:20 to 15:26, New York</span>
+        </p>"""
+
+LEG4 = """
+        <p class="legend" aria-hidden="true">
+          <span><svg viewBox="0 0 16 16"><circle class="g-app" cx="8" cy="8" r="5"/></svg>the prices of the session asked about</span>
+          <span><svg viewBox="0 0 16 16"><circle class="g-ex" cx="8" cy="8" r="5"/></svg>the other numbers that can be checked</span>
+          <span><svg viewBox="0 0 34 16"><line class="ci" x1="2" y1="8" x2="32" y2="8"/></svg>95 per cent interval</span>
         </p>"""
 
 EVENT_KEY = "".join(
@@ -444,6 +550,17 @@ PLATE_CSS = """
   .legend span{display:inline-flex;align-items:center;gap:0.55em;}
   .legend svg{width:16px;height:16px;overflow:visible;flex:none;}
   .legend svg[viewBox="0 0 34 16"]{width:34px;}
+  svg .ttl{font-family:var(--sans);font-style:italic;font-size:15px;fill:var(--ink);letter-spacing:0;}
+  svg .per{font-size:11px;text-anchor:end;}
+  svg .ci,.ci{stroke:var(--ink);stroke-width:1.2;}
+  .apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,44px);margin:0 0 3.4em;}
+  .apps article{border-top:1px solid var(--ink);padding-top:0.9em;}
+  .apps .who{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);margin:0 0 0.5em;}
+  .apps h3{font-family:var(--display);font-weight:var(--dw);font-size:clamp(20px,2.1vw,25px);line-height:1.15;letter-spacing:-0.012em;margin:0 0 0.6em;}
+  .apps p{margin:0;font-size:16px;line-height:1.55;text-wrap:pretty;}
+  .shown{margin:0 0 3.4em;font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;}
+  .shown a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;}
+  .shown a:hover{color:var(--accent);}
   .evkey{list-style:none;margin:0 0 1.6em;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.35em 1.2em;
     font-family:var(--mono);font-size:11.5px;letter-spacing:0.02em;color:var(--faint);}
   .evkey b{font-family:var(--display);font-weight:var(--dw);font-size:14px;color:var(--ink);margin-right:0.3em;}
@@ -454,7 +571,7 @@ PLATE_CSS = """
   .notes a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);}
   @media (max-width:760px){
     .wide{display:none;} .narrow{display:block;}
-    .notes{grid-template-columns:minmax(0,1fr);}
+    .notes,.apps{grid-template-columns:minmax(0,1fr);}
   }
   @media (max-width:340px){ .evkey{grid-template-columns:minmax(0,1fr);} }
 """
@@ -472,12 +589,12 @@ body = f"""
 
     <section class="open" data-screen-label="opening">
       <div class="kicker"><span><a href="/work">work</a> · where no one can know · plate 2 of 2, 2026</span></div>
-      <h1 class="statement">On precision.<span class="q"> Title to come.</span></h1>
-      <p class="sub">Asked how twelve stocks moved in a session, three chat apps with web search gave the right direction in all {N_AP} answers that quoted prices; {N_AP_ERR} of those answers had at least one price off the exchange’s record.</p>
-      <p class="contract">Twelve sessions of October 2026, asked about in the chat apps of ChatGPT, Claude and Gemini between 25 and 28 October, with web search on and each app at its highest settings. Every figure about the session in {len(S)} answers was checked against the exchange’s record. The questions were in Italian.</p>
+      <h1 class="statement">On precision.<span class="q"> Either say or show it!</span></h1>
+      <p class="sub">Asked how twelve stocks moved in a session, three chat apps with web search gave the right direction every time they quoted prices and got the session’s figures wrong {SP_W} times in {fmt_n(SP_N)}. The numbers they added around them, about other days and hours, history and the false premise, were wrong {H_W} times in {H_N}.</p>
+      <p class="contract">Twelve sessions of October 2026, asked about in the chat apps of ChatGPT, Claude and Gemini between 25 and 28 October, with web search on and each app at its highest settings. Every figure about the session in {len(S)} answers was checked against the exchange’s record. In the {N_PRE} pre-registered ones, so was every other number the prices could check. The questions were in Italian.</p>
     </section>
 
-    <section class="plate" aria-label="study 2 in three panels">
+    <section class="plate" aria-label="study 2 in four panels">
       <div class="panel" id="answers">
         <h2>Every answer.</h2>
         <p class="sub2">One mark for each answer. <b>A</b> asks how the stock reacted to its results; <b>C</b> asks why it moved the other way, a premise that is false. Gemini’s exploration blocks, outside the pre-registered plan, are set apart.</p>
@@ -487,22 +604,49 @@ body = f"""
 
       <div class="panel" id="figures">
         <h2>Every figure.</h2>
-        <p class="sub2">The {N_SINGLE} single figures about the session in those answers. {N_EQUAL} are equal to the record at the precision written; {N_OFF} are set by their distance from it. The price errors lie between {ERR_PRICE[0]:.2f} and {ERR_PRICE[-1]:.2f} per cent off, written like the rest. Left out of the scale: {N_BOUND} bounds and levels inside the day’s range, such as “more than 8 per cent”, all right.</p>
+        <p class="sub2">The {fmt_n(N_SINGLE)} single figures about the session in every scored answer, A, C and U, which asks for the official open, close and volume. {fmt_n(N_EQUAL)} are equal to the record at the precision written; {N_OFF} are set by their distance from it. The price errors lie between {ERR_PRICE[0]:.2f} and {ERR_PRICE[-1]:.2f} per cent off, written like the rest. The scale leaves out {N_BOUND} bounds and levels inside the day’s range, such as “more than 8 per cent”, all of them right.</p>
         <div class="fig wide">{panel2()}</div>
         <div class="fig narrow">{panel2(wide=False)}</div>{LEG2}
       </div>
 
       <div class="panel" id="hours">
         <h2>Gemini, by the hour.</h2>
-        <p class="sub2">All {len(GEM)} of its answers, A, C and U (the official open, close and volume), by the time each question was sent, in New York. {IN_BAND} of its {N_GEM_REF_A} refusals to A fall between 13:20 and 15:26. The plate shows when, not why.</p>
+        <p class="sub2">All {len(GEM)} of its answers, A, C and U, by the time each question was sent, in New York. {IN_BAND} of its {N_GEM_REF_A} refusals to A fall between 13:20 and 15:26. The plate shows when, not why.</p>
         <div class="fig wide">{panel3()}</div>
         <div class="fig narrow">{panel3(wide=False)}</div>{LEG3}
       </div>
 
+      <div class="panel" id="around">
+        <h2>The day, and around it.</h2>
+        <p class="sub2">For each app, the share of wrong figures in the {N_PRE} pre-registered answers, among the prices of the session asked about and among the other numbers that can be checked. These are about other sessions, the pre-market, the after-hours and the moments of the day, history and the false premise. Numbers written in words are left out, as in the pilot.</p>
+        <div class="fig wide">{panel4()}</div>
+        <div class="fig narrow">{panel4(wide=False)}</div>{LEG4}
+      </div>
+
+      <div class="apps">
+        <article>
+          <p class="who">ChatGPT</p>
+          <h3>{esc(TITLES["ChatGPT"])}</h3>
+          <p>It gives the session’s prices and little else, {P4["ChatGPT"]["per"]:.1f} other numbers per answer. It is rarely wrong: {P4["ChatGPT"]["sp"][0]} of its {P4["ChatGPT"]["sp"][1]} figures about the session, {P4["ChatGPT"]["ot"][0]} of its {P4["ChatGPT"]["ot"][1]} other numbers. When it is, it has trusted a source that looks official and measures something else: General Motors’ open at 77.00, from the company’s own pages, repeated in three answers. The price of caution is an answer with little around it.</p>
+        </article>
+        <article>
+          <p class="who">Claude</p>
+          <h3>{esc(TITLES["Claude"])}</h3>
+          <p>It gathers many articles, names them and adds context: {P4["Claude"]["per"]:.1f} other numbers per answer, {pct(P4["Claude"]["ot"])} per cent of them wrong. Its session prices are almost all right; the errors sit around them. About half are the right number from the wrong moment: an article written while the session was open, the London quote at 16:15, Wednesday’s figure given as Thursday’s. Two thirds are one figure repeated across answers, because the search finds the same articles. Faced with the false premise, it tries to explain it and rebuilds rough precedents: {pct(P4["Claude"]["c_rate"])} per cent of these numbers are wrong in its C answers, {pct(P4["Claude"]["a_rate"])} in its A answers.</p>
+        </article>
+        <article>
+          <p class="who">Gemini</p>
+          <h3>{esc(TITLES["Gemini"])}</h3>
+          <p>Everything depends on search. In {GEM_NOSEARCH} of its {sum(r["app"] == "Gemini" for r in PRE)} answers it had none, and it said so rather than invent, with {"two exceptions" if GEM_ADOPT == 2 else str(GEM_ADOPT) + " exceptions"}: C answers that admit having no data, then take the false fall as given and explain it. When search works, it sometimes fills the fields with values given as the day’s that belong to other sessions or to no source at all. Of its other numbers, {pct(P4["Gemini"]["ot"])} per cent are wrong, most of all its hypotheses on the premise.</p>
+        </article>
+      </div>
+
+      <p class="shown"><a href="/work/on-precision/shown">shown, not said: the same answers in quartz</a></p>
+
       <div class="notes">
-        <p><b>method</b>Close, high and low from Interactive Brokers’ daily bars, regular session; open and volume from Nasdaq’s history. Moves are on the previous close. A price is off beyond 0.13 per cent, a change beyond 0.14 points, a volume beyond 0.1 per cent; with “about”, beyond 1 per cent or 1.2 points. The rules were fixed before the scoring.</p>
+        <p><b>method</b>Close, high and low from Interactive Brokers’ daily bars, regular session; open and volume from Nasdaq’s history. Moves are on the previous close. A price is off beyond 0.13 per cent, a change beyond 0.14 points, a volume beyond 0.1 per cent; with “about”, beyond 1 per cent or 1.2 points. The other numbers were checked against the same sources, with intraday bars for the moments of the day. The rules were fixed before the scoring.</p>
         <p><b>selection</b>Twelve sessions and 36 questions fixed in a pre-registration before the first answer, each asked in a new chat. Gemini’s usage limits left it with fewer answers; its exploration blocks are declared as a deviation and kept apart. No rate is claimed beyond these answers.</p>
-        <p><b>source</b>The answers, every scored figure and the scripts that recompute this plate are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study2">GitHub</a>. The scoring was proposed in two independent passes and confirmed answer by answer.</p>
+        <p><b>source</b>The answers, every scored figure and the scripts that recompute this plate are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study2">GitHub</a>. Claude proposed every evaluation, its own answers included. The rules were fixed beforehand and each evaluation was confirmed one by one.</p>
       </div>
     </section>
 
@@ -511,7 +655,7 @@ body = f"""
         <div class="rail"></div>
         <div class="c-body">
           <h3>nothing to notice it by</h3>
-          <p>Research, data and design: Diego Ballarin, 2026. Every mark is placed from the data by a script; the rules and the decisions are mine, and the collection, the drafting and the code were done in dialogue with Claude. Plate 1 is <a href="/work/on-certainty">on certainty</a>.</p>
+          <p>Research, data and design: Diego Ballarin, 2026. Every mark is placed from the data by a script; the rules and the decisions are mine, and the collection, the drafting and the code were done in dialogue with Claude. Plate&nbsp;1 is <a href="/work/on-certainty">on certainty</a>. Plate&nbsp;2 is also <a href="/work/on-precision/shown">shown in quartz</a>.</p>
         </div>
       </section>
     </div>
@@ -524,7 +668,7 @@ SCRIPT = """
 (function(){
   /* typesetting: no word alone at the end of a block, no short word hanging */
   var SHORT=/(?<=^|\\s)([\\p{L}\\p{N}]{1,2}) (?=\\S)/gu;
-  document.querySelectorAll('.panel .sub2,.notes p,.open .sub,.contract,.colophon p,.panel h2,.legend span').forEach(function(el){
+  document.querySelectorAll('.panel .sub2,.notes p,.open .sub,.contract,.colophon p,.panel h2,.legend span,.apps p,.apps h3').forEach(function(el){
     var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);
     nodes.forEach(function(n,i){n.nodeValue=n.nodeValue.replace(SHORT,'$1\\u00A0');
       var nx=nodes[i+1];if(!nx)return;
@@ -540,7 +684,7 @@ SCRIPT = """
 """
 
 DESC = (f"Twelve stock sessions asked about in three chat apps with web search: every answer, every figure against the "
-        f"exchange's record, and when Gemini declined. Plate 2 of nothing to notice it by.")
+        f"exchange's record, when Gemini declined, and the numbers around the day. Plate 2 of nothing to notice it by.")
 chrome = open(chrome_path, encoding="utf-8").read()
 head_end = chrome.index("</style>")
 head = chrome[:head_end] + PLATE_CSS + chrome[head_end:chrome.index("<main")]

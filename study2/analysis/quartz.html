@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" href="/assets/favicon.ico" sizes="32x32"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>on precision, shown — diego ballarin</title>
+<meta name="description" content="Every figure three chat apps gave about twelve stock sessions, set inside a quartz crystal: the right ones on the phantom of their session, the wrong ones off it, the numbers around the day floating free. Plate 2 of nothing to notice it by, shown." />
+<meta name="author" content="Diego Ballarin" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://diegoballarin.com/work/on-precision/shown" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diegoballarin.com/work/on-precision/shown">
+<meta property="og:title" content="on precision, shown — diego ballarin">
+<meta property="og:description" content="Every figure three chat apps gave about twelve stock sessions, set inside a quartz crystal. Plate 2 of nothing to notice it by, shown.">
+<meta property="og:image" content="https://diegoballarin.com/assets/op-quartz-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  @font-face{font-family:'Neutra Display';src:url('/assets/fonts/NeutraDisp-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap;}
+  @font-face{font-family:'Neue Haas Unica';src:url('/assets/fonts/NeueHaasUnica-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap;}
+  @font-face{font-family:'Neue Haas Unica';src:url('/assets/fonts/NeueHaasUnica-Italic.woff') format('woff');font-weight:400;font-style:italic;font-display:swap;}
+  @font-face{font-family:'Neue Haas Unica';src:url('/assets/fonts/NeueHaasUnica-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap;}
+  /* Plate 2, shown: the same system as /work (Neutra for display, Unica for reading, Space Mono for labels),
+     turned to a dark room, because the object is a crystal under a lamp. Everything said sits at the edges. */
+  :root{ --bg:#09090a; --ink:#eceae5; --mute:#9a978f; --faint:#5f5d58; --rule:#2c2c2c; --accent:oklch(0.72 0.06 153);
+    --sans:'Neue Haas Unica','Helvetica Neue',Helvetica,Arial,sans-serif;
+    --mono:'Space Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+    --display:'Neutra Display','Helvetica Neue',Helvetica,Arial,sans-serif; --dw:500;
+    --gut:max(30px,env(safe-area-inset-left,0px)); --gutr:max(30px,env(safe-area-inset-right,0px)); --top:calc(env(safe-area-inset-top,0px) + 62px);
+    color-scheme:dark; }
+  *{box-sizing:border-box;}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);overflow:hidden;font:13px/1.5 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%}
+  [hidden]{display:none!important}
+  ::selection{background:oklch(0.72 0.06 153 / 0.3);}
+  :focus-visible{outline:1px solid var(--accent);outline-offset:3px;}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);}
+  a:hover{color:var(--accent);}
+  #stage{position:fixed;inset:0}
+  #stage canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
+  #stage canvas:active{cursor:grabbing}
+
+  /* ---- running head (as /work), on the dark ---- */
+  .head{position:fixed;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:2em;
+    padding:calc(env(safe-area-inset-top,0px) + 15px) var(--gutr) 17px var(--gut);font-family:var(--mono);font-size:12px;line-height:normal;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);
+    background:linear-gradient(rgba(9,9,10,0.92) 55%,rgba(9,9,10,0));}
+  .head a{border-bottom:0;}
+  .head .l{display:flex;align-items:baseline;gap:1.1em;}
+  .head .r{display:flex;gap:2.6em;justify-self:end;align-items:center;}
+  .head b{color:var(--ink);font-weight:400;}
+  .head .home{color:var(--ink);transition:color .28s ease;white-space:nowrap;}
+  .head .home:hover{color:var(--accent);}
+  .head .head-cv{margin-left:0.7em;color:var(--accent);white-space:nowrap;}
+  .head .head-cv:hover{color:var(--ink);}
+  .head .worklink{color:var(--mute);}
+  .head .worklink:hover{color:var(--ink);}
+  .navmark{justify-self:center;align-self:center;display:inline-block;position:relative;top:1px;width:1.05em;font-family:var(--display);font-weight:var(--dw);font-size:22px;line-height:1;letter-spacing:0;text-transform:none;color:var(--faint);}
+  .navmark span{position:absolute;left:50%;top:0;transition:transform .5s cubic-bezier(.2,.7,.2,1),color .35s ease;}
+  .navmark .up{clip-path:inset(0 0 37.2% 0);transform:translate(calc(-50% - 3px),-2px);color:var(--ink);}
+  .navmark .dn{clip-path:inset(62.8% 0 0 0);transform:translate(calc(-50% + 3px),2px);}
+  .navmark:hover span{transform:translateX(-50%);color:var(--ink);}
+  .wnav{position:relative;display:inline-flex;}
+  .wtoggle{appearance:none;border:0;background:transparent;cursor:pointer;font:inherit;font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;padding:0;white-space:nowrap;color:var(--mute);transition:color .2s;}
+  .wtoggle:hover,.wtoggle[aria-expanded="true"]{color:var(--ink);}
+  .wmenu{position:absolute;top:calc(100% + 16px);right:0;z-index:60;background:#121214;border:1px solid var(--rule);box-shadow:0 18px 54px rgba(0,0,0,0.5);text-align:right;
+    min-width:196px;padding:14px 16px 15px;display:flex;flex-direction:column;gap:0.72em;}
+  .wmenu .wrow{font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);display:block;}
+  .wmenu .wrow .sw{display:inline-grid;justify-items:end;}
+  .wmenu .wrow .d,.wmenu .wrow .h{grid-area:1/1;transition:opacity .42s ease;white-space:nowrap;}
+  .wmenu .wrow .h{opacity:0;}
+  .wmenu a.wrow:hover{color:var(--accent);}
+  .wmenu a.wrow:hover .d{opacity:0;} .wmenu a.wrow:hover .h{opacity:1;}
+  .wmenu .wrow.off{color:var(--faint);cursor:default;}
+  .wmenu .wrow.off .h{font-style:italic;text-transform:none;letter-spacing:0.02em;}
+  .wmenu .wrow.off:hover .d{opacity:0;} .wmenu .wrow.off:hover .h{opacity:1;}
+  .wm-group{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:0.5em;}
+  .wm-h{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);}
+  .wm-links{display:flex;flex-direction:column;gap:0.5em;font-family:var(--mono);font-size:11.5px;letter-spacing:0;text-transform:none;}
+  .wm-links a{color:var(--ink);align-self:flex-end;border-bottom:1px solid var(--accent);}
+
+  /* ---- what is said, at the edges ---- */
+  .ui{position:fixed;z-index:2}
+  .intro{top:var(--top);left:var(--gut);width:min(23rem,calc(100vw - 60px));display:grid;gap:.7rem;pointer-events:none}
+  .intro a{pointer-events:auto}
+  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;white-space:nowrap;text-transform:uppercase;color:var(--faint);display:flex;gap:0.8em;align-items:center;flex-wrap:wrap;}
+  .kicker::before{content:"";width:22px;height:1px;background:var(--faint);display:inline-block;}
+  .kicker a{color:var(--accent);border-bottom:0;}
+  .kicker a:hover{color:var(--ink);}
+  h1{margin:0;font-family:var(--display);font-weight:var(--dw);font-size:clamp(26px,2.9vw,38px);line-height:1.08;letter-spacing:-0.02em}
+  .dek{margin:0;color:var(--mute);font-size:13.5px;line-height:1.5}
+  nav.ui{left:var(--gut);bottom:calc(env(safe-area-inset-bottom,0px) + 30px);display:grid;gap:10px;justify-items:start;max-width:calc(100vw - 60px)}
+  .btns{display:flex;gap:6px;flex-wrap:wrap}
+  .btns button{white-space:nowrap}
+  .hint{margin:0;font-family:var(--mono);font-size:10px;line-height:1.55;color:var(--faint);max-width:19rem}
+  button{font:400 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);background:transparent;border:1px solid var(--rule);padding:8px 10px 7px;border-radius:2px;cursor:pointer}
+  button:hover{color:var(--ink);border-color:var(--faint)}
+  button[aria-pressed="true"]{color:var(--ink);border-color:var(--ink)}
+  aside.ui{right:var(--gutr);bottom:calc(env(safe-area-inset-bottom,0px) + 30px);width:min(19rem,calc(100vw - 60px));display:grid;gap:12px;color:var(--mute)}
+  .key{display:grid;gap:8px;overflow-y:auto;scrollbar-width:thin;align-content:start;font-size:12.5px;line-height:1.5}
+  .key p{margin:0}
+  .key.more{-webkit-mask-image:linear-gradient(#000 calc(100% - 28px),transparent);mask-image:linear-gradient(#000 calc(100% - 28px),transparent)}
+  .key .note{color:var(--faint)}
+  #why,.whyprobe{border-top:1px solid var(--rule);padding-top:11px;display:grid;gap:5px;min-height:6.5em;font-size:12.5px;line-height:1.5}
+  #why .h,.whyprobe .h{color:var(--ink);font-family:var(--mono);font-size:10px;letter-spacing:.06em;line-height:1.55}
+  #why b,.whyprobe b{color:var(--ink);font-weight:500}
+  #why .idle{color:var(--faint);font-family:var(--mono);font-size:10px;letter-spacing:.06em}
+  /* the lit phantom's caption: in the left column, under the opening, still while the crystal turns */
+  #tags .cap{position:fixed;z-index:1;left:var(--gut);width:min(23rem,calc(100vw - 60px));display:grid;gap:7px;pointer-events:none;opacity:0;transition:opacity .3s}
+  #tags .cap .nm{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+  #tags .cap .rw{font-size:13.5px;line-height:1.5;color:var(--ink);opacity:0;transition:opacity .8s}
+  #tags .tag{position:fixed;z-index:1;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);white-space:nowrap;transform:translate(-50%,-50%);pointer-events:none;opacity:0}
+  .nogl{position:fixed;inset:0;display:grid;place-items:center;padding:110px 30px 30px}
+  .nogl img{max-width:min(720px,100%);max-height:70vh;object-fit:contain;-webkit-mask-image:radial-gradient(closest-side,#000 72%,transparent);mask-image:radial-gradient(closest-side,#000 72%,transparent)}
+  .nogl p{max-width:34rem;color:var(--mute);font-size:13.5px;text-align:center;margin:1.2em auto 0}
+  @media (max-width:760px){
+    .head .head-cv,.navmark{display:none}
+    .key{display:none}
+    aside.ui{left:var(--gut);width:auto}
+    .dek{font-size:12.5px}
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="tags" aria-hidden="true"></div>
+<header class="head">
+    <div class="l"><a class="home" href="/"><b>diego ballarin</b></a><a class="head-cv" href="/assets/cv_diego_ballarin_eng.pdf" target="_blank" rel="noopener">curriculum<span class="cv-ext"> vitae</span></a></div><a class="navmark" href="/" title="entrance" aria-label="entrance"><span class="up">§</span><span class="dn">§</span></a>
+    <div class="r">
+      <a class="worklink" href="/work">work</a>
+      <div class="wnav">
+        <button class="wtoggle" type="button" aria-expanded="false" aria-haspopup="true">writing</button>
+        <div class="wmenu" hidden>
+          <a class="wrow" href="/frictions"><span class="sw"><span class="d">llm research</span><span class="h">frictions</span></span></a>
+          <a class="wrow" href="/editorial"><span class="sw"><span class="d">editorial portfolio</span><span class="h">five pieces plus two</span></span></a>
+          <span class="wrow off"><span class="sw"><span class="d">personal</span><span class="h">not yet</span></span></span>
+          <div class="wm-group"><div class="wm-h">personal info</div><div class="wm-links"><a href="mailto:diegoballarin@icloud.com">diegoballarin@icloud.com</a><a href="tel:+393479280321">+39 3479280321</a></div></div>
+        </div>
+      </div>
+    </div>
+</header>
+<section class="ui intro" id="intro">
+  <div class="kicker"><span><a href="/work">work</a> · where no one can know · <a href="/work/on-precision">plate 2</a>, shown</span></div>
+  <h1>Shown, not said.</h1>
+  <p class="dek prose" id="dek"></p>
+</section>
+<nav class="ui" aria-label="View">
+  <div class="btns"><button id="turn" type="button" aria-pressed="true">Turning</button><button id="split" type="button" aria-pressed="false">Split</button><button id="reset" type="button">Reset view</button></div>
+  <p class="hint" id="hint"></p>
+</nav>
+<aside class="ui">
+  <div class="key" id="key"></div>
+  <div id="why" aria-live="polite"><span class="idle">Point at a light, or tap it, to read it.</span></div>
+</aside>
+<noscript><div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>The crystal is drawn by a script. A still of it is shown here; <a href="/work/on-precision">plate 2</a> says the same data.</p></div></div></noscript>
+<script type="application/json" id="data">/*DATA*/</script>
+<script type="importmap">{"imports":{"three":"/assets/three/0.160.0/build/three.module.js","three/addons/":"/assets/three/0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
+import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+{ const c = document.createElement('canvas'); if (!(c.getContext('webgl2') || c.getContext('webgl'))) {
+  document.body.insertAdjacentHTML('beforeend', '<div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>This browser does not draw WebGL, so the crystal cannot be turned or read here. A still of it is shown instead; <a href="/work/on-precision">plate 2</a> says the same data.</p></div></div>');
+  document.querySelectorAll('nav.ui, aside.ui').forEach(el => el.hidden = true); throw new Error('no WebGL'); } }
+const RAW = JSON.parse(document.getElementById('data').textContent);
+const ANS = RAW.answers.filter(a => a.study === 'preregistered');
+const EVS = RAW.events;
+const V = (x, y, z) => new THREE.Vector3(x, y, z), DEG = Math.PI / 180;
+let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const ss = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+const col = (r, g, b) => new THREE.Color().setRGB(r, g, b);
+
+// ---------- the grammar ----------
+const APPS = ['ChatGPT', 'Claude', 'Gemini'];
+// the six faces of each phantom tip: the large r faces hold the reaction answers (three repeats), the small z faces the false premises (two)
+const FACESPEC = APPS.flatMap(app => [{ app, t: 'A', reps: ['1', '2', '3'] }, { app, t: 'C', reps: ['1', '2'] }]);
+const ROWS = ['change_close_pct', 'change_close_usd', 'close', 'previous_close', 'open', 'high', 'low', 'change_open_pct', 'change_high_pct', 'change_low_pct', 'volume'];
+const HT = { other_sessions: 'another session', outside_and_intraday: 'the pre-market, the after-hours or a moment of the day', history: 'a comparison with history', premise_hypothesis: 'a hypothesis on the false premise' };
+const QNAME = { change_close_pct: 'change on close, %', change_close_usd: 'change on close, $', close: 'close', previous_close: 'previous close', open: 'open', high: 'high', low: 'low', change_open_pct: 'move at the open', change_high_pct: 'move to the high', change_low_pct: 'move to the low', volume: 'volume' };
+const OUT = { exact: 'equal to the record', minimal_gap: 'within the minimal gap of the record', approximate_correct: 'an approximation within its tolerance', rounded_correct: 'rounded, and right', level_in_session_correct: 'a level inside the day’s range', accepted_rule3: 'another provider’s volume, accepted by rule 3', error: 'an error' };
+const LIFT = 0.045;                                      // per doubling of the minimal gap
+const isErr = f => f.o === 'error';                       // as the study counts it: within the minimal gap or a declared tolerance is right
+const liftOf = d => Math.sign(d) * LIFT * Math.log2(1 + Math.abs(d));
+
+// ---------- noise, for the matrix ----------
+const fr = x => x - Math.floor(x);
+const h3 = (x, y, z) => fr(Math.sin(x * 127.1 + y * 311.7 + z * 74.7) * 43758.5453);
+function vn(x, y, z) {
+  const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z), xf = x - xi, yf = y - yi, zf = z - zi;
+  const u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf), w = zf * zf * (3 - 2 * zf), l = (a, b, t) => a + (b - a) * t, c = (i, j, k) => h3(xi + i, yi + j, zi + k);
+  return l(l(l(c(0, 0, 0), c(1, 0, 0), u), l(c(0, 1, 0), c(1, 1, 0), u), v), l(l(c(0, 0, 1), c(1, 0, 1), u), l(c(0, 1, 1), c(1, 1, 1), u), v), w);
+}
+const fbm = (x, y, z, o = 5) => { let a = 0.5, f = 1, s = 0; for (let i = 0; i < o; i++) { s += a * (vn(x * f, y * f, z * f) * 2 - 1); a *= 0.5; f *= 2.03; } return s; };
+const ridge = (x, y, z) => { let a = 0.5, f = 1, s = 0; for (let i = 0; i < 4; i++) { s += a * (1 - Math.abs(vn(x * f, y * f, z * f) * 2 - 1)) ** 2; a *= 0.5; f *= 2.1; } return s; };
+
+// ---------- a natural quartz point as a convex polyhedron of planes ----------
+const A0 = 0.7, YB = -1.25, YT = 0.85;
+const IDEAL = [], PH = [];
+for (let k = 0; k < 6; k++) { const ph = (k * 60 + 30) * DEG + (rnd() - .5) * 5 * DEG; PH.push(ph); const a = A0 * (1 + (rnd() - .5) * 0.18); IDEAL.push({ n: V(Math.cos(ph), 0.035, Math.sin(ph)).normalize(), d: a, kind: 'prism', k }); }
+for (let k = 0; k < 6; k++) {
+  const ph = PH[k], e = ((k % 2 ? 47 : 41) + (rnd() - .5) * 3) * DEG, top = YT + (rnd() - .5) * 0.1;
+  const n = V(Math.cos(e) * Math.cos(ph), Math.sin(e), Math.cos(e) * Math.sin(ph));
+  IDEAL.push({ n, d: n.dot(V(A0 * Math.cos(ph), top, A0 * Math.sin(ph))) + (k % 2 ? 0.07 : 0), kind: 'tip', k });
+}
+IDEAL.push({ n: V(0, -1, 0), d: -YB, kind: 'base' });
+function poly(planes) {
+  const verts = [];
+  for (let i = 0; i < planes.length; i++) for (let j = i + 1; j < planes.length; j++) for (let k = j + 1; k < planes.length; k++) {
+    const a = planes[i], b = planes[j], c = planes[k];
+    const m = new THREE.Matrix3().set(a.n.x, a.n.y, a.n.z, b.n.x, b.n.y, b.n.z, c.n.x, c.n.y, c.n.z);
+    if (Math.abs(m.determinant()) < 1e-9) continue;
+    const p = V(a.d, b.d, c.d).applyMatrix3(m.clone().invert());
+    if (planes.every(q => q.n.dot(p) <= q.d + 1e-6) && !verts.some(v => v.distanceTo(p) < 1e-5)) verts.push(p);
+  }
+  return planes.map((pl, i) => {
+    const on = verts.filter(v => Math.abs(pl.n.dot(v) - pl.d) < 1e-5);
+    const c = on.reduce((s, v) => s.add(v), V()).multiplyScalar(1 / Math.max(1, on.length));
+    const u = (Math.abs(pl.n.y) > 0.9 ? V(1, 0, 0) : V(0, 1, 0)).cross(pl.n).normalize(), w = pl.n.clone().cross(u);
+    on.sort((p, q) => Math.atan2(p.clone().sub(c).dot(w), p.clone().sub(c).dot(u)) - Math.atan2(q.clone().sub(c).dot(w), q.clone().sub(c).dot(u)));
+    return { pl, i, verts: on };
+  }).filter(f => f.verts.length >= 3);
+}
+// the outer crystal: the ideal habit, chipped twice at the shoulder and with a sliver broken along one upright edge
+const OUTER = IDEAL.slice();
+{
+  const VV = []; poly(IDEAL).forEach(f => f.verts.forEach(v => { if (!VV.some(w => w.distanceTo(v) < 1e-4)) VV.push(v); }));
+  const near = az => VV.filter(v => Math.abs(v.y - YT) < 0.35).sort((a, b) => Math.abs(Math.atan2(Math.sin(Math.atan2(a.z, a.x) - az), Math.cos(Math.atan2(a.z, a.x) - az))) - Math.abs(Math.atan2(Math.sin(Math.atan2(b.z, b.x) - az), Math.cos(Math.atan2(b.z, b.x) - az))))[0];
+  [[95 * DEG, 0.08], [-150 * DEG, 0.06]].forEach(([az, cut]) => { const v = near(az); const n = v.clone().sub(V(0, v.y - 0.55, 0)).normalize(); OUTER.push({ n, d: n.dot(v) - cut, kind: 'chip' }); });
+  const a = IDEAL[3], b = IDEAL[4], y0 = -0.35;               // a point on the upright edge between prism faces 3 and 4
+  const det = a.n.x * b.n.z - a.n.z * b.n.x, ra = a.d - a.n.y * y0, rb = b.d - b.n.y * y0;
+  const pe = V((ra * b.n.z - a.n.z * rb) / det, y0, (a.n.x * rb - ra * b.n.x) / det);
+  const n = a.n.clone().add(b.n).normalize().add(V(0, -0.14, 0)).normalize();
+  OUTER.push({ n, d: n.dot(pe) - 0.035, kind: 'chip' });
+}
+const FOUT = poly(OUTER);
+
+// the phantoms: earlier shapes of the same habit, grown from a seed below the base and cut by it
+// the phantoms: the crystal grew upward, and each session left its tip behind inside; below them lies the milky quartz it grew from
+const N = EVS.length, DYC = 1.8;                          // how far below today's tip the milky core ends
+const OUTLAST = Math.max(0, ...ANS.filter(a => a.event === EVS[N - 1].event).flatMap(a => a.figs).filter(f => f.d > 0).map(f => liftOf(f.d)));
+const DY0 = DYC - 0.11, DY1 = Math.max(0.16, (OUTLAST + 0.03) / 0.66);   // the last tip keeps room for its outward needles
+const dyOf = i => DY0 + (DY1 - DY0) * i / (N - 1);
+const phantom = dy => poly(IDEAL.map(p => p.kind === 'tip' ? { ...p, d: p.d - dy * p.n.y } : p));
+
+// ---------- renderer, studio, two scenes ----------
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(Math.min(matchMedia('(pointer: coarse)').matches ? 1.5 : 2, window.devicePixelRatio || 1));
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace;   // the whole picture is composed in display values
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+stage.appendChild(renderer.domElement);
+const camera = new THREE.PerspectiveCamera(27, 1, 0.1, 100);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.enablePan = false; controls.minDistance = 3.4; controls.maxDistance = 16;
+controls.minPolarAngle = 0.12; controls.maxPolarAngle = Math.PI / 2 + 0.1;   // look from above or level, never from under the ground
+const room = new THREE.Scene(); room.background = col(0.02, 0.02, 0.022);
+const lamp = (w, h, pos, k) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.ShaderMaterial({ side: THREE.DoubleSide, uniforms: { k: { value: k } },   // soft boxes, falling off to their edges
+    vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`,
+    fragmentShader: `uniform float k; varying vec2 vUv; void main(){ vec2 q = abs(vUv - .5) * 2.; float a = (1. - smoothstep(.2, 1., q.x)) * (1. - smoothstep(.5, 1., q.y)); gl_FragColor = vec4(vec3(k * a), 1.); }` })); m.position.copy(pos); m.lookAt(0, 0, 0); room.add(m); };
+lamp(2.4, 12, V(-7, 2, 5), 2.2); lamp(1.2, 8, V(8, 1, 3), 0.6); lamp(6, 6, V(-1, 9, 3), 2.4); lamp(30, 20, V(0, 0, -14), 0.06);
+const cubeRT = new THREE.WebGLCubeRenderTarget(256, { type: THREE.HalfFloatType }); new THREE.CubeCamera(0.1, 50, cubeRT).update(renderer, room);
+const pmrem = new THREE.PMREMGenerator(renderer).fromScene(room, 0.02).texture;
+
+const inner = new THREE.Scene(), outer = new THREE.Scene();   // the inside is rendered first and seen through the faces
+const RT = new THREE.WebGLRenderTarget(4, 4, { samples: 4, type: THREE.HalfFloatType });
+const FOCUS = { value: 8 }, SCALE = { value: 450 }, PXR = { value: 1 };          // the plane in focus inside the crystal; pixels per unit of point size
+function rig() {                                          // turntable → matrix and a leaning crystal
+  const turn = new THREE.Group(), piv = new THREE.Group(), cry = new THREE.Group();
+  piv.position.set(0, YB + 0.35, 0); piv.rotation.set(0.05, 0, -0.1); cry.position.set(0, -(YB + 0.35), 0);
+  turn.add(piv); piv.add(cry); return { turn, cry };
+}
+const RIn = rig(), ROut = rig(); inner.add(RIn.turn); outer.add(ROut.turn);
+function lights(sc, shadows) {
+  const k = new THREE.DirectionalLight(0xffffff, 3.4); k.position.set(-3, 6, 4); sc.add(k);
+  if (shadows) { k.castShadow = true; k.shadow.mapSize.set(2048, 2048); Object.assign(k.shadow.camera, { left: -2.2, right: 2.2, top: 2.2, bottom: -2.2, near: 1, far: 16 }); k.shadow.bias = -0.0004; k.shadow.normalBias = 0.015; k.shadow.radius = 3; }
+  const f = new THREE.DirectionalLight(0xffffff, 0.7); f.position.set(5, 1.5, 3); sc.add(f);
+  const r = new THREE.DirectionalLight(0xffffff, 1.4); r.position.set(1, 3, -6); sc.add(r);
+  sc.add(new THREE.HemisphereLight(col(0.7, 0.72, 0.76), col(0.08, 0.07, 0.06), 0.9));
+}
+lights(inner, false); lights(outer, true);
+// the studio sweep behind, the same in both passes
+const bgMat = new THREE.ShaderMaterial({ uniforms: { uAsp: { value: 1 } }, depthTest: false, depthWrite: false,
+  vertexShader: `varying vec2 vUv; void main(){ vUv = position.xy * .5 + .5; gl_Position = vec4(position.xy, .9999, 1.); }`,
+  fragmentShader: `uniform float uAsp; varying vec2 vUv; void main(){ vec2 q = (vUv - vec2(.5, .6)) * vec2(uAsp, 1.); float r = length(q);
+    vec3 c = mix(vec3(.088, .089, .094), vec3(.032, .032, .035), smoothstep(0., .9, r)); gl_FragColor = vec4(c, 1.); }` });
+[inner, outer].forEach(sc => { const m = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), bgMat); m.frustumCulled = false; m.renderOrder = -10; sc.add(m); });
+
+// ---------- the matrix the crystal grew from: a broken lump of dark rock, crusted with small crystals ----------
+const RY = YB - 0.37;                                    // the ground
+const FAC = Array.from({ length: 6 }, (_, k) => { const th = (k / 6) * 2 * Math.PI + (rnd() - .5) * 0.7; return { c: Math.cos(th), s: Math.sin(th), r: 1.0 + rnd() * 0.32, k: 1.0 + rnd() * 1.6, a: 0.05 + rnd() * 0.28 }; });
+const TOP = Array.from({ length: 3 }, () => { const th = rnd() * 2 * Math.PI; return { c: Math.cos(th), s: Math.sin(th), b: 0.52 + rnd() * 0.12, k: 0.25 + rnd() * 0.3 }; });
+function hAt(x, z) {                                     // a mound, cut by steep fracture faces round the sides and tilted cleavages across the top
+  const r = Math.hypot(x, z);
+  let h = 0.64 * Math.pow(Math.max(0, 1 - (r / 1.6) ** 2), 0.6) * (1 + 0.5 * fbm(x * 1.1 + 2, 0.3, z * 1.1, 4)) + 0.09 * fbm(x * 2.6 + 8, 0.9, z * 2.6, 3)
+        + 0.16 * (ridge(x * 2.7, 1.7, z * 2.7) - 0.45) + 0.035 * fbm(x * 11, 2.2, z * 11, 3);
+  for (const f of FAC) h = Math.min(h, f.a + f.k * (f.r - (x * f.c + z * f.s)) + 0.1 * fbm(x * 3 + f.r, 1, z * 3, 3));
+  for (const f of TOP) h = Math.min(h, f.b + f.k * (0.2 - (x * f.c + z * f.s)) + 0.02 * fbm(x * 9, 3, z * 9, 2));
+  h += 0.22 * Math.exp(-(((r - 0.78) / 0.2) ** 2)) * (0.5 + 0.9 * vn(x * 4, 1, z * 4));      // a collar climbing the crystal
+  if (r < 0.72) h = 0.06 + (h - 0.06) * ss(0.42, 0.72, r);                                 // the socket it sits in
+  return h;
+}
+const NR = 170, NS = 400, HG = new Float32Array((NR + 1) * NS), RPOS = [], RIDX = [];
+for (let i = 0; i <= NR; i++) for (let j = 0; j < NS; j++) {
+  const r = 0.03 + 1.67 * i / NR, th = j / NS * 2 * Math.PI, x = r * Math.cos(th), z = r * Math.sin(th), h = hAt(x, z);
+  HG[i * NS + j] = h; RPOS.push(x, RY + Math.max(-0.05, h), z);
+  if (i < NR) { const A = i * NS + j, B = i * NS + (j + 1) % NS, C = (i + 1) * NS + j, D = (i + 1) * NS + (j + 1) % NS; RIDX.push(A, B, C, B, D, C); }
+}
+const RCOL = new Float32Array(HG.length * 3), RAO = new Float32Array(HG.length);             // cavities darker; rust stains over the top
+for (let i = 0; i <= NR; i++) for (let j = 0; j < NS; j++) {
+  let s = 0, n = 0; for (const [di, dj] of [[3, 0], [-3, 0], [0, 3], [0, -3], [2, 2], [-2, 2], [2, -2], [-2, -2]]) { const ii = i + di; if (ii < 0 || ii > NR) continue; s += HG[ii * NS + (j + dj + NS) % NS]; n++; }
+  const h = HG[i * NS + j], ao = Math.max(0.35, Math.min(1, 1 - 5 * (s / n - h)));
+  const x = RPOS[(i * NS + j) * 3], z = RPOS[(i * NS + j) * 3 + 2], rust = ss(0.05, 0.4, fbm(x * 2.4 + 5, 1.1, z * 2.4, 4)) * 0.4;
+  RAO[i * NS + j] = ao; RCOL.set([ao * (1 + 0.6 * rust), ao * (1 + 0.05 * rust), ao * (1 - 0.35 * rust)], (i * NS + j) * 3);
+}
+const rg = new THREE.BufferGeometry(); rg.setAttribute('position', new THREE.Float32BufferAttribute(RPOS, 3)); rg.setAttribute('color', new THREE.BufferAttribute(RCOL, 3)); rg.setAttribute('aAo', new THREE.BufferAttribute(RAO, 1)); rg.setIndex(RIDX); rg.computeVertexNormals();
+const rockM = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.9, metalness: 0, envMap: pmrem, envMapIntensity: 0.35, side: THREE.DoubleSide });
+rockM.onBeforeCompile = sh => {                           // a crystalline grain drawn in the fragment: crisp at any distance
+  sh.uniforms.uGround = { value: RY };
+  sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute float aAo; varying vec3 vR; varying vec3 vRN; varying float vAo;').replace('#include <begin_vertex>', '#include <begin_vertex>\nvR = position; vRN = normal; vAo = aAo;');
+  sh.fragmentShader = sh.fragmentShader.replace('#include <common>', `#include <common>
+    varying vec3 vR; varying vec3 vRN; varying float vAo; uniform float uGround;
+    vec3 hash33(vec3 p){ p = fract(p * vec3(.1031, .1030, .0973)); p += dot(p, p.yxz + 33.33); return fract((p.xxy + p.yxx) * p.zyx); }
+    vec3 cellN(vec3 x){ vec3 i = floor(x), f = fract(x); float d1 = 8., d2 = 8., id = 0.;
+      for (int a = -1; a <= 1; a++) for (int b = -1; b <= 1; b++) for (int c = -1; c <= 1; c++){ vec3 g = vec3(float(a), float(b), float(c)), o = hash33(i + g), r = g + o - f; float d = dot(r, r);
+        if (d < d1){ d2 = d1; d1 = d; id = hash33(i + g + 17.31).x; } else if (d < d2) d2 = d; }
+      return vec3(sqrt(d1), sqrt(d2), id); }
+    float hs3(vec3 p){ return hash33(p).x; }
+    float vn3(vec3 x){ vec3 i = floor(x), f = fract(x); f = f * f * (3. - 2. * f);
+      return mix(mix(mix(hs3(i), hs3(i + vec3(1., 0., 0.)), f.x), mix(hs3(i + vec3(0., 1., 0.)), hs3(i + vec3(1., 1., 0.)), f.x), f.y),
+                 mix(mix(hs3(i + vec3(0., 0., 1.)), hs3(i + vec3(1., 0., 1.)), f.x), mix(hs3(i + vec3(0., 1., 1.)), hs3(i + vec3(1., 1., 1.)), f.x), f.y), f.z); }
+    vec3 rockBump(vec3 sp, vec3 sn, vec2 dH, float fd){ vec3 sx = normalize(dFdx(sp)), sy = normalize(dFdy(sp)), R1 = cross(sy, sn), R2 = cross(sn, sx);
+      float det = dot(sx, R1) * fd; vec3 g = sign(det) * (dH.x * R1 + dH.y * R2); return normalize(abs(det) * sn - g); }`)
+  .replace('#include <color_fragment>', `#include <color_fragment>
+    if (vR.y < uGround + .003) discard;
+    float wob = .06 * (vn3(vR * 11. + 1.) - .5), up = normalize(vRN).y, zD = smoothstep(.62, .67, vn3(vR * 2.6 + 7.) + wob + .12 * (up - .6) + .45 * (1. - vAo)), zR = smoothstep(.67, .71, vn3(vR * 2.3 + 13.) + wob + .14 * (.55 - up) - .3 * (1. - vAo)) * (1. - zD);
+    vec3 cg = cellN(vR * 34.), cf = cellN(vR * 90. + 3.), cs = cellN(vR * 120. + 9.);
+    float qz = step(.93, cg.z), rs = step(.95, fract(cg.z * 7.13)) * (1. - qz), mic = step(.93, fract(cg.z * 3.71)) * (1. - qz) * (1. - rs);
+    vec3 alb = vec3(.065, .06, .056) * (.75 + .5 * fract(cg.z * 13.7)) * (.85 + .3 * cf.z);
+    alb = mix(alb, vec3(.3, .29, .27) * (.8 + .4 * cf.z), qz); alb = mix(alb, vec3(.14, .07, .033), rs); alb = mix(alb, vec3(.012), mic);
+    float edge = smoothstep(0., .07, cg.y - cg.x); alb *= .72 + .28 * edge;
+    float rockRough = mix(.9, .25, qz), rockH = edge * .6 + .3 * (1. - cf.x);
+    float se = smoothstep(0., .1, cs.y - cs.x);                // a crust of sugary druse: tiny facets that glitter
+    alb = mix(alb, vec3(.3, .29, .27) * (.55 + .6 * cs.z) * (.6 + .4 * se), zD); rockRough = mix(rockRough, .14 + .3 * cs.z, zD); rockH = mix(rockH, se * .8 + cs.z * .5, zD);
+    alb = mix(alb, vec3(.17, .095, .045) * (.75 + .5 * cf.z), zR * .85); rockRough = mix(rockRough, .95, zR); rockH = mix(rockH, .5 * (1. - cf.x), zR);   // a matte rusty crust
+    diffuseColor.rgb *= alb;`)
+  .replace('#include <roughnessmap_fragment>', '#include <roughnessmap_fragment>\nroughnessFactor = rockRough;')
+  .replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = rockBump(-vViewPosition, normal, vec2(dFdx(rockH), dFdy(rockH)) * .9, faceDirection);');
+};
+// small quartz crystals crowding the foot of the big one, and scattered further out
+let grain = mergeGeometries([new THREE.CylinderGeometry(1, 1, 2, 6).translate(0, 1, 0), new THREE.ConeGeometry(1, 1.3, 6).translate(0, 2.65, 0)]);
+const grainM = new THREE.MeshStandardMaterial({ color: col(0.42, 0.41, 0.39), roughness: 0.08, metalness: 0, envMap: pmrem, envMapIntensity: 1.6, flatShading: true, transparent: true, opacity: 0.82 });
+const GR = [];
+const fr1 = x => x - Math.floor(x), hx = (a, b, c) => { let x = fr1(a * .1031), y = fr1(b * .1030), z = fr1(c * .0973); const d = x * (y + 33.33) + y * (x + 33.33) + z * (z + 33.33); x += d; y += d; z += d; return fr1((x + y) * z); };
+const vnG = (x, y, z) => { const i = Math.floor(x), j = Math.floor(y), k = Math.floor(z); let u = x - i, v = y - j, w = z - k; u = u * u * (3 - 2 * u); v = v * v * (3 - 2 * v); w = w * w * (3 - 2 * w); const l = (a, b, t) => a + (b - a) * t, c = (a, b, d) => hx(i + a, j + b, k + d);
+  return l(l(l(c(0, 0, 0), c(1, 0, 0), u), l(c(0, 1, 0), c(1, 1, 0), u), v), l(l(c(0, 0, 1), c(1, 0, 1), u), l(c(0, 1, 1), c(1, 1, 1), u), v), w); };   // the same field as the druse zones in the shader
+for (let n = 0; n < 12000 && GR.length < 900; n++) {
+  const th = rnd() * 2 * Math.PI, r = 0.74 + 0.85 * Math.pow(rnd(), 1.4), x = r * Math.cos(th), z = r * Math.sin(th), h = hAt(x, z);
+  if (h < 0.04) continue;
+  const cav = (hAt(x + .04, z) + hAt(x - .04, z) + hAt(x, z + .04) + hAt(x, z - .04)) / 4 - h, ao = Math.max(0.35, Math.min(1, 1 - 5 * cav));
+  const zD = ss(0.62, 0.67, vnG(x * 2.6 + 7, (RY + h) * 2.6 + 7, z * 2.6 + 7) + 0.45 * (1 - ao)), near = r < 0.95;
+  if (!(near && rnd() < 0.2) && !(zD > 0.4 && rnd() < 0.85)) continue;
+  const e = 0.01, nrm = V(-(hAt(x + e, z) - hAt(x - e, z)) / (2 * e), 1, -(hAt(x, z + e) - hAt(x, z - e)) / (2 * e)).normalize();
+  const s = near ? 0.007 + 0.032 * Math.pow(rnd(), 2.5) : 0.004 + 0.011 * Math.pow(rnd(), 2);
+  GR.push({ p: V(x, RY + h, z), n: nrm.add(V(rnd() - .5, rnd() - .5, rnd() - .5).multiplyScalar(1.3)).normalize(), s, el: 0.7 + 0.9 * rnd() });
+}
+function matrixInto(parent, shadows) {
+  const rock = new THREE.Mesh(rg, rockM); rock.castShadow = rock.receiveShadow = shadows; parent.add(rock);
+  const im = new THREE.InstancedMesh(grain, grainM, GR.length), m = new THREE.Matrix4(), q = new THREE.Quaternion();
+  GR.forEach((g, j) => { q.setFromUnitVectors(V(0, 1, 0), g.n); m.compose(g.p.clone().addScaledVector(g.n, -g.s * 0.9), q, V(g.s, g.s * g.el, g.s)); im.setMatrixAt(j, m); });
+  im.castShadow = im.receiveShadow = shadows; parent.add(im);
+}
+matrixInto(RIn.turn, false); matrixInto(ROut.turn, true);
+{ // a soft contact shadow on the ground, which does not turn
+  const g = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), new THREE.ShaderMaterial({ transparent: true, depthWrite: false,
+    vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`,
+    fragmentShader: `varying vec2 vUv; void main(){ vec2 q = (vUv - .5) * 9.; float a = .75 * exp(-dot(q * vec2(.62, .8), q * vec2(.62, .8)) / 1.3); gl_FragColor = vec4(0., 0., 0., a); }` }));
+  g.rotation.x = -Math.PI / 2; g.position.y = RY - 0.002; g.renderOrder = -5; outer.add(g);
+}
+
+// ---------- the phantoms as veils: faint where seen face-on, brighter where seen edgewise ----------
+function sprite(kind) {
+  const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d');
+  const r = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  if (kind === 'glint') {                                 // a small four-pointed glint: a free inclusion
+    g.fillStyle = '#fff'; g.beginPath(); const P4 = [[32, 2], [36, 28], [62, 32], [36, 36], [32, 62], [28, 36], [2, 32], [28, 28]]; P4.forEach(([x, y], j) => j ? g.lineTo(x, y) : g.moveTo(x, y)); g.closePath(); g.fill();
+    g.beginPath(); g.arc(32, 32, 7, 0, 2 * Math.PI); g.fill(); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; }
+  if (kind === 'ring') { g.strokeStyle = '#fff'; g.lineWidth = 7; g.beginPath(); g.arc(32, 32, 20, 0, 2 * Math.PI); g.stroke(); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; }
+  { r.addColorStop(0, 'rgba(255,255,255,1)'); r.addColorStop(.3, 'rgba(255,255,255,1)'); r.addColorStop(.45, 'rgba(255,255,255,.3)'); r.addColorStop(.7, 'rgba(255,255,255,.06)'); r.addColorStop(1, 'rgba(255,255,255,0)'); }
+  g.fillStyle = r; g.fillRect(0, 0, 64, 64); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+const T_STAR = sprite('star'), T_RING = sprite('ring'), T_GLINT = sprite('glint');
+const PHS = EVS.map((ev, i) => phantom(dyOf(i)));
+// growth sectors: each face of the crystal grew its own wedge of it; the crystal can be split along their boundaries
+const EDGEAZ = [];                                        // the azimuth of the upright edge after prism face k
+for (let k = 0; k < 6; k++) { const a = IDEAL[k], b = IDEAL[(k + 1) % 6], det = a.n.x * b.n.z - a.n.z * b.n.x; EDGEAZ.push(Math.atan2((a.n.x * b.d - a.d * b.n.x) / det, (a.d * b.n.z - a.n.z * b.d) / det)); }
+const cutPlanes = k => { const t0 = EDGEAZ[(k + 5) % 6], t1 = EDGEAZ[k]; return [{ n: V(Math.sin(t0), 0, -Math.cos(t0)), d: 0, kind: 'cut' }, { n: V(-Math.sin(t1), 0, Math.cos(t1)), d: 0, kind: 'cut' }]; };
+const SEC = [0, 1, 2, 3, 4, 5].map(k => { const gi = new THREE.Group(), go = new THREE.Group(); RIn.cry.add(gi); ROut.cry.add(go); return { k, gi, go }; });
+const CELL = SEC.map(S => EVS.map(() => { const g = new THREE.Group(); S.gi.add(g); return g; }));   // one group per sector and session
+const veilM = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending,
+    uniforms: { uC: { value: col(0.8, 0.82, 0.84) }, uFocus: FOCUS, uBoost: { value: 1 }, uLayer: { value: -1 }, uLit: { value: 0 }, uFill: { value: 0 }, uFillC: { value: col(0.3, 0.42, 0.34) } },
+    vertexShader: `attribute vec2 aF; uniform float uFocus; varying vec3 vN; varying vec3 vV; varying float vA; varying float vS;
+      void main(){ vec4 w = modelMatrix * vec4(position, 1.); vN = normalize(mat3(modelMatrix) * normal); vV = normalize(cameraPosition - w.xyz);
+        vS = aF.x; vA = exp(-.8 * max(0., -(viewMatrix * w).z - uFocus)); gl_Position = projectionMatrix * viewMatrix * w; }`,
+    fragmentShader: `uniform vec3 uC, uFillC; uniform float uBoost, uLayer, uLit, uFill; varying vec3 vN; varying vec3 vV; varying float vA; varying float vS;
+      void main(){ float g = 1. - abs(dot(normalize(vN), normalize(vV))), lit = step(abs(vS - uLayer), .5) * uLit;   // the phantom being read is lit as by a lamp held at its side
+        gl_FragColor = vec4((uC * (.006 + .1 * pow(g, 9.)) * uBoost * (1. - .575 * uLit + .575 * lit) + uFillC * lit * uFill * (.07 + .6 * pow(g, 2.))) * vA, 1.); }` });   // a chlorite tint, as in green phantoms
+PHS.forEach((faces, i) => faces.forEach(f => {
+  if (f.pl.kind !== 'tip') return;
+  const P = [], F = [], top = Math.max(...f.verts.map(v => v.y));
+  for (let j = 1; j < f.verts.length - 1; j++) [f.verts[0], f.verts[j], f.verts[j + 1]].forEach(v => { P.push(...v.toArray()); F.push(i, top); });
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); g.setAttribute('aF', new THREE.Float32BufferAttribute(F, 2)); g.computeVertexNormals();
+  CELL[f.pl.k][i].add(new THREE.Mesh(g, veilM));
+}));
+
+const edgeM = new LineMaterial({ color: 0xdfe8f2, linewidth: 1.1, transparent: true, depthWrite: false, opacity: 0 });   // the outline of a lit phantom
+const EDGES = [];
+PHS.forEach((faces, i) => faces.forEach(f => {
+  if (f.pl.kind !== 'tip') return;
+  const P = []; f.verts.forEach((v, j) => { const w = f.verts[(j + 1) % f.verts.length]; P.push(...v.toArray(), ...w.toArray()); });
+  const g = new LineSegmentsGeometry(); g.setPositions(P); const l = new LineSegments2(g, edgeM); l.visible = false; l.userData.i = i; CELL[f.pl.k][i].add(l); EDGES.push(l);
+}));
+
+// the milky core: cloudy quartz from before the sessions; it carries no figures
+const CP = OUTER.map(p => p.kind === 'tip' ? { ...p, d: p.d - DYC * p.n.y } : p.kind === 'base' ? p : { ...p, d: p.d - 0.012 });
+const coreM = new THREE.ShaderMaterial({ side: THREE.FrontSide, transparent: true, depthWrite: true, uniforms: { uL: { value: V(-3, 6, 4).normalize() } },
+    vertexShader: `varying vec3 vN; varying vec3 vW; varying vec3 vO; void main(){ vO = position; vec4 w = modelMatrix * vec4(position, 1.); vW = w.xyz; vN = normalize(mat3(modelMatrix) * normal); gl_Position = projectionMatrix * viewMatrix * w; }`,
+    fragmentShader: `uniform vec3 uL; varying vec3 vN; varying vec3 vW; varying vec3 vO;
+      float hs3(vec3 p){ p = fract(p * .3183099 + .1); p *= 17.; return fract(p.x * p.y * p.z * (p.x + p.y + p.z)); }
+      float vn3(vec3 x){ vec3 i = floor(x), f = fract(x); f = f * f * (3. - 2. * f);
+        return mix(mix(mix(hs3(i), hs3(i + vec3(1., 0., 0.)), f.x), mix(hs3(i + vec3(0., 1., 0.)), hs3(i + vec3(1., 1., 0.)), f.x), f.y),
+                   mix(mix(hs3(i + vec3(0., 0., 1.)), hs3(i + vec3(1., 0., 1.)), f.x), mix(hs3(i + vec3(0., 1., 1.)), hs3(i + vec3(1., 1., 1.)), f.x), f.y), f.z); }
+      void main(){ vec3 V = normalize(cameraPosition - vW), N = normalize(vN); if (dot(N, V) < 0.) N = -N;
+        float nv = abs(dot(N, V)), lam = .55 + .45 * dot(N, uL);
+        float gr = vn3(vO * 7.) * .5 + vn3(vO * 23. + 4.) * .3 + vn3(vO * 70.) * .2;
+        float root = 1. - smoothstep(${(YB + 0.2).toFixed(2)}, ${(YB + 1.0).toFixed(2)}, vO.y);   // denser at the root, clearing upward
+        gl_FragColor = vec4(vec3(.45, .425, .385) * (.62 + .5 * lam) * (.85 + .3 * gr), (.32 + .3 * nv + .3 * root) * (.75 + .5 * gr)); }` });
+SEC.forEach(S => {
+  const P = []; poly(CP.concat(cutPlanes(S.k))).forEach(f => { if (f.pl.kind === 'base') return; for (let j = 1; j < f.verts.length - 1; j++) [f.verts[0], f.verts[j], f.verts[j + 1]].forEach(v => P.push(...v.toArray())); });
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); g.computeVertexNormals();
+  const m = new THREE.Mesh(g, coreM); m.renderOrder = -1; S.gi.add(m);   // drawn before the lights, so those behind it are hidden
+});
+
+// ---------- the figures: dust on the phantom tip of their session ----------
+function faceUV(f) {                                     // u across, w up the slope, n out of the face
+  const n = f.pl.n, u = V(0, 1, 0).cross(n).normalize(), w = n.clone().cross(u).normalize(); if (w.y < 0) w.negate();
+  const P2 = f.verts.map(v => [v.dot(u), v.dot(w)]), ws = P2.map(p => p[1]), w0 = Math.min(...ws), w1 = Math.max(...ws);
+  const chord = wl => { let a = Infinity, b = -Infinity; P2.forEach((p, j) => { const q = P2[(j + 1) % P2.length]; if ((p[1] - wl) * (q[1] - wl) <= 0 && p[1] !== q[1]) { const x = p[0] + (wl - p[1]) / (q[1] - p[1]) * (q[0] - p[0]); a = Math.min(a, x); b = Math.max(b, x); } }); return [a, b]; };
+  return { n, u, at(cu, rv, lift) { const wl = w0 + (w1 - w0) * (0.8 - 0.6 * rv), [a, b] = chord(wl), uu = a + (b - a) * (0.2 + 0.6 * cu);
+    return u.clone().multiplyScalar(uu).addScaledVector(w, wl).addScaledVector(n, f.pl.d + lift); } };
+}
+const D6 = Array.from({ length: 6 }, () => Array.from({ length: N }, () => ({ dust: [], soft: [], miss: [], site: [], needle: [], ncol: [], slots: [], hr: [], hw: [], hn: [] }))), INFO = [];
+const H1 = {}; (RAW.h1 || []).forEach(h => (H1[h.a] = H1[h.a] || []).push(h));
+EVS.forEach((ev, i) => {
+  const tips = PHS[i].filter(f => f.pl.kind === 'tip');
+  FACESPEC.forEach((spec, k) => {
+    const fu = faceUV(tips.find(f => f.pl.k === k)), cols = spec.reps.length, Dk = D6[k][i];
+    spec.reps.forEach((rep, c) => {
+      const a = ANS.find(x => x.event === ev.event && x.app === spec.app && x.type === spec.t && x.rep === rep);
+      if (!a) return;
+      const cu = cols === 1 ? 0.5 : c / (cols - 1);
+      if (a.refused) { for (let r = 0; r < ROWS.length; r++) { const p = fu.at(cu, r / (ROWS.length - 1), 0); Dk.slots.push(...p.clone().addScaledVector(fu.u, -0.016).toArray(), ...p.clone().addScaledVector(fu.u, 0.016).toArray()); } INFO.push({ p: fu.at(cu, 0.5, 0), ev, spec, rep, k, i, refused: true }); return; }
+      ROWS.forEach((q, r) => a.figs.filter(f => f.q === q).forEach((f, m, arr) => {
+        const du = arr.length > 1 ? (m - (arr.length - 1) / 2) * 0.08 : 0, rv = r / (ROWS.length - 1);
+        const p = fu.at(cu + du, rv, isErr(f) ? liftOf(f.d) : 0);
+        if (!isErr(f)) (f.kind === 'frosted' ? Dk.soft : Dk.dust).push(...p.toArray());
+        else { const s = fu.at(cu + du, rv, 0); Dk.miss.push(...p.toArray()); Dk.site.push(...s.toArray()); Dk.needle.push(...s.toArray(), ...p.toArray()); Dk.ncol.push(0.2, 0.12, 0.045, 0.95, 0.62, 0.28); }
+        INFO.push({ p, ev, spec, rep, q, f, k, i });
+      }));
+      const tf = tips.find(f => f.pl.k === k), band = (dyOf(i) - (i < N - 1 ? dyOf(i + 1) : 0)) * tf.pl.n.y;   // the quartz grown after this session, up to the next tip
+      (H1[a.id] || []).forEach(h => {
+        const p = fu.at(cu + (rnd() - .5) * 0.34, rnd(), band * (0.22 + 0.56 * rnd()));
+        (h.o === 'wrong' ? Dk.hw : h.o === 'right' ? Dk.hr : Dk.hn).push(...p.toArray());
+        INFO.push({ p, ev, spec, rep, k, i, h });
+      });
+    });
+  });
+});
+const geo = list => { const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(list, 3)); return g; };
+// lights in focus near the front of the crystal; deeper ones dim and open into soft discs, as in a macro photograph
+const pts = (list, size, tex, c, o, minPx = 0) => new THREE.Points(geo(list), new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+  uniforms: { map: { value: tex }, uC: { value: c }, uO: { value: o }, uSize: { value: size }, uScale: SCALE, uFocus: FOCUS, uPr: PXR, uMin: { value: minPx } },
+  vertexShader: `uniform float uSize, uScale, uFocus, uO, uPr, uMin; varying float vA;
+    void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.); float z = -mv.z, b = 1.;
+      gl_PointSize = max(uMin * uPr, uSize * uScale / z * b); vA = uO * exp(-.5 * max(0., z - uFocus)) / b; gl_Position = projectionMatrix * mv; }`,
+  fragmentShader: `uniform sampler2D map; uniform vec3 uC; varying float vA; void main(){ gl_FragColor = vec4(uC * texture2D(map, gl_PointCoord).a * vA, 1.); }` }));
+const needleM = new LineMaterial({ vertexColors: true, linewidth: 1.35, transparent: true, depthWrite: false });
+needleM.blending = THREE.AdditiveBlending;
+const slotM = new LineMaterial({ color: 0x5f6c7c, linewidth: 1.3, transparent: true, depthWrite: false }); slotM.blending = THREE.AdditiveBlending;   // a refusal: a column of empty places
+D6.forEach((cells, k) => cells.forEach((d, i) => {
+  const g = CELL[k][i], add = (list, ...a) => { if (list.length) { const p = pts(list, ...a); p.userData.o0 = a[3]; p.userData.s0 = a[0]; g.add(p); } };
+  add(d.hr, 0.07, T_GLINT, col(0.84, 0.82, 0.77), 0.8, 5.5);
+  add(d.hw, 0.1, T_GLINT, col(1, 0.62, 0.28), 1, 7.5);
+  add(d.hn, 0.06, T_GLINT, col(0.45, 0.45, 0.48), 0.7, 5);
+  add(d.dust, 0.055, T_STAR, col(0.8, 0.88, 1), 0.85, 3);
+  add(d.soft, 0.08, T_RING, col(0.8, 0.88, 1), 0.85, 6);
+  add(d.site, 0.04, T_STAR, col(0.5, 0.58, 0.68), 0.5, 2.5);
+  add(d.miss, 0.12, T_STAR, col(1, 0.68, 0.32), 1, 6.5);
+  if (d.needle.length) { const l = new LineSegmentsGeometry(); l.setPositions(d.needle); l.setColors(d.ncol); g.add(new LineSegments2(l, needleM)); }
+  if (d.slots.length) { const l = new LineSegmentsGeometry(); l.setPositions(d.slots); g.add(new LineSegments2(l, slotM)); }
+}));
+
+// ---------- the outer crystal: traced inside its planes, with rounded edges and striated prism faces ----------
+const MAXP = 24;
+const SURF = [], FID = [];
+FOUT.forEach(f => { for (let j = 1; j < f.verts.length - 1; j++) [f.verts[0], f.verts[j], f.verts[j + 1]].forEach(v => { SURF.push(...v.toArray()); FID.push(f.i); }); });
+const surfG = geo(SURF); surfG.setAttribute('aFace', new THREE.Float32BufferAttribute(FID, 1));
+const SHU = { tIn: { value: RT.texture }, uEnv: { value: cubeRT.texture }, uRes: { value: new THREE.Vector2(1, 1) }, uK: { value: 0.11 }, uIor: { value: V(1.539, 1.544, 1.552) }, uSig: { value: V(0.06, 0.09, 0.15) }, uYB: { value: YB } };
+const planesOf = list => Array.from({ length: MAXP }, (_, i) => list[i] ? new THREE.Vector4(list[i].n.x, list[i].n.y, list[i].n.z, list[i].d) : new THREE.Vector4(0, 1, 0, 99));
+function makeSurf(list, cut) { return new THREE.ShaderMaterial({ side: THREE.DoubleSide,
+  uniforms: { ...SHU, uPl: { value: planesOf(list) }, uCount: { value: list.length }, uRot: { value: new THREE.Matrix3() }, uCamO: { value: V() }, uCut: { value: cut || Array.from({ length: 6 }, () => new THREE.Vector4(0, 1, 0, 99)) }, uCutOn: { value: cut ? 1 : 0 } },
+  vertexShader: `attribute float aFace; varying vec3 vO; varying float vF; void main(){ vO = position; vF = aFace; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`,
+  fragmentShader: `#define MAXP ${MAXP}
+    uniform sampler2D tIn; uniform samplerCube uEnv; uniform vec2 uRes; uniform float uK; uniform vec4 uPl[MAXP]; uniform int uCount;
+    uniform mat3 uRot; uniform vec3 uCamO; uniform vec3 uIor; uniform vec3 uSig; uniform float uYB; uniform vec4 uCut[6]; uniform float uCutOn;
+    varying vec3 vO; varying float vF;
+    float ch(vec3 c, int k){ return k == 0 ? c.r : (k == 1 ? c.g : c.b); }
+    vec3 envO(vec3 d){ return textureCube(uEnv, uRot * d).rgb; }
+    float hs(float n){ return fract(sin(n) * 43758.5453); }
+    float n1(float x){ float i = floor(x), f = fract(x); f = f * f * (3. - 2. * f); return mix(hs(i), hs(i + 1.), f); }
+    float hs3(vec3 p){ p = fract(p * .3183099 + .1); p *= 17.; return fract(p.x * p.y * p.z * (p.x + p.y + p.z)); }
+    float vn3(vec3 x){ vec3 i = floor(x), f = fract(x); f = f * f * (3. - 2. * f);
+      return mix(mix(mix(hs3(i), hs3(i + vec3(1., 0., 0.)), f.x), mix(hs3(i + vec3(0., 1., 0.)), hs3(i + vec3(1., 1., 0.)), f.x), f.y),
+                 mix(mix(hs3(i + vec3(0., 0., 1.)), hs3(i + vec3(1., 0., 1.)), f.x), mix(hs3(i + vec3(0., 1., 1.)), hs3(i + vec3(1., 1., 1.)), f.x), f.y), f.z); }
+    float milkD(vec3 p){                                         // the root grew fast and cloudy; the cloud thins upward in wisps
+      float w = vn3(p * 3.1) * .5 + vn3(p * 7.3 + 2.) * .3 + vn3(p * 15. + 5.) * .2;
+      float lvl = uYB + .62 + .4 * (vn3(p * 1.6 + 4.) - .5);
+      float m = smoothstep(lvl, lvl - .42, p.y);
+      return m * smoothstep(.3, .72, w + m * .35); }
+    float exitT(vec3 p, vec3 r){ float tmin = 1e9; for (int i = 0; i < MAXP; i++){ if (i >= uCount) break; vec4 P = uPl[i]; float den = dot(P.xyz, r); if (den <= 1e-5) continue; float t = (P.w - dot(P.xyz, p)) / den; if (t > 1e-4 && t < tmin) tmin = t; } return tmin; }
+    float traceIn(vec3 p, vec3 r, float ior, int k, out float T1){
+      float thr = 1., acc = 0., L = 0.; T1 = 1.;
+      float F0 = pow((ior - 1.) / (ior + 1.), 2.);
+      for (int b = 0; b < 4; b++){
+        float tmin = 1e9; vec3 nx = vec3(0., 1., 0.);
+        for (int i = 0; i < MAXP; i++){ if (i >= uCount) break; vec4 P = uPl[i]; float den = dot(P.xyz, r); if (den <= 1e-5) continue; float t = (P.w - dot(P.xyz, p)) / den; if (t > 1e-4 && t < tmin){ tmin = t; nx = P.xyz; } }
+        if (tmin > 1e8) break;
+        p += r * tmin; L += tmin;
+        float att = exp(-ch(uSig, k) * L);
+        if (b == 0) T1 = att;
+        if (nx.y < -.9) break;                                  // into the matrix
+        vec3 o = refract(r, -nx, ior);
+        if (dot(o, o) < 1e-6){ r = reflect(r, -nx); continue; }  // total internal reflection
+        float F = F0 + (1. - F0) * pow(1. - clamp(dot(o, nx), 0., 1.), 5.);
+        if (b > 0) acc += thr * att * (1. - F) * ch(envO(o), k);
+        thr *= F; r = reflect(r, -nx);
+      }
+      return acc;
+    }
+    void main(){
+      if (uCutOn > .5) { bool inside = true; for (int i = 0; i < 6; i++) if (dot(uCut[i].xyz, vO) > uCut[i].w - 1e-4) inside = false; if (inside) discard; }
+      int fi = int(vF + .5); vec3 n = uPl[fi].xyz;
+      vec3 d = normalize(vO - uCamO);
+      if (dot(n, d) >= 0.) discard;
+      vec3 N = n;
+      for (int j = 0; j < MAXP; j++){ if (j >= uCount) break; if (j == fi) continue; vec4 P = uPl[j]; float e = P.w - dot(P.xyz, vO); N += P.xyz * (1. - smoothstep(0., .05, e)) * .85; }
+      N = normalize(N); vec3 Ns = N;
+      if (abs(n.y) < .2) { float y = vO.y + .015 * n1(dot(vO.xz, vec2(5., 4.))); float s = (n1(y * 38.) - .5) + .6 * (n1(y * 11. + 3.) - .5); Ns = normalize(N + vec3(0., s * .07, 0.)); }
+      else { Ns = normalize(N + (n1(dot(vO, vec3(9., 5., 7.))) - .5) * .04 * normalize(vec3(n.z, 0., -n.x))); }
+      N = normalize(mix(N, Ns, .25));
+      vec2 suv = gl_FragCoord.xy / uRes;
+      float cosi = clamp(-dot(d, N), 0., 1.);
+      vec3 c = vec3(0.);
+      for (int k = 0; k < 3; k++){
+        float ior = ch(uIor, k), F0 = pow((ior - 1.) / (ior + 1.), 2.), F = F0 + (1. - F0) * pow(1. - cosi, 5.);
+        vec3 r = refract(d, N, 1. / ior);
+        vec2 off = (viewMatrix * vec4(uRot * (r - d), 0.)).xy * uK;
+        float T1; float inr = traceIn(vO, r, ior, k, T1);
+        float v = F * ch(envO(reflect(d, Ns)), k) + (1. - F) * (ch(texture2D(tIn, suv + off).rgb, k) * T1 + inr);
+        if (k == 0) c.r = v; else if (k == 1) c.g = v; else c.b = v;
+      }
+      gl_FragColor = vec4(1. - exp(-c * 1.15), 1.);
+    }` }); }
+const surfM = makeSurf(OUTER), surfMesh = new THREE.Mesh(surfG, surfM); surfMesh.userData = { planes: OUTER, fid: FID }; ROut.cry.add(surfMesh);
+const WEDGES = SEC.map(S => {                             // the six sectors as solids of their own, shown once the crystal splits
+  const list = OUTER.concat(cutPlanes(S.k)), P = [], F = [];
+  poly(list).forEach(f => { for (let j = 1; j < f.verts.length - 1; j++) [f.verts[0], f.verts[j], f.verts[j + 1]].forEach(v => { P.push(...v.toArray()); F.push(f.i); }); });
+  const g = geo(P); g.setAttribute('aFace', new THREE.Float32BufferAttribute(F, 1));
+  const m = new THREE.Mesh(g, makeSurf(list)); m.userData = { planes: list, fid: F }; m.visible = false; S.go.add(m); return m;
+});
+const tipsAt = dy => OUTER.map(p => p.kind === 'tip' ? { ...p, d: p.d - dy * p.n.y } : p);
+const SOLIDS = [surfMesh, ...WEDGES];
+
+// ---------- what is said ----------
+const N_OFF = D6.flat().reduce((t, d) => t + d.miss.length / 3, 0), N_ALL = N_OFF + D6.flat().reduce((t, d) => t + (d.dust.length + d.soft.length) / 3, 0);
+const H_W = D6.flat().reduce((t, d) => t + d.hw.length / 3, 0), H_N = H_W + D6.flat().reduce((t, d) => t + d.hr.length / 3, 0);
+document.getElementById('dek').textContent = 'This clear quartz grew over twelve sessions, and the tip it had at each one remains inside as a phantom. Every figure that ChatGPT, Claude and Gemini wrote about the session settles on its phantom as dust: right, it lies on the veil; wrong, it stands off on a needle. The other numbers that could be checked float free in the quartz around it.';
+document.getElementById('key').innerHTML = [
+  'Twelve phantom tips, from the lowest, 12 October, to the highest, 23 October. Beneath them lies the milky quartz the crystal grew from, which holds no figures.',
+  'Each tip has six faces, two for every app: the larger for the answers on the day’s reaction, the smaller for those on a false premise. On a face each answer is a column, from the change near the apex to the volume at the foot.',
+  `A figure about the session that is right lies on its veil: exact, within the minimal gap or within the tolerance it declares. ${N_OFF} of ${N_ALL} are wrong and stand off on a needle, outwards when above the record and inwards when below; each doubling of the minimal gap lengthens the needle by ${(LIFT / (2 * A0) * 100).toFixed(1)} per cent of the crystal’s width.`,
+  'A ring is a figure given as an approximation. A column of empty dashes is an answer that declined to give any figure.',
+  `The other numbers that could be checked, about other sessions, moments of the day, history or the false premise, belong to no veil: they float as glints in the quartz just outside their answer’s. ${H_W} of ${H_N} are wrong, in amber. A grey glint could not be checked. Numbers written in words are left out, as in the study.`,
+  'Split parts the crystal into its six growth sectors, one under each face, in pairs by app: each sector holds a single app and a single kind of question across all twelve sessions. Through the cut faces the phantoms show edgewise, and a needle stands clear of its line.',
+  'Clicking or tapping a light also lights its phantom, the way a lamp held to the side shows the phantoms in a real quartz: the outline of that session’s tip appears, its stock and day are named beside it and the other sessions fade. A click on empty space puts it out.',
+  '<span class="note">Pre-registered rounds only. Data confirmed on 30 October 2026. <a href="/work/on-precision">Plate 2</a> says the same data.</span>'
+].map(s => `<p class="prose">${s}</p>`).join('');
+function tie(el) {                                        // no widows: short words hold to the next, the last word to the one before (no-break spaces)
+  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let n, last = null;
+  while ((n = w.nextNode())) { n.textContent = n.textContent.replace(/(^|\s)([\p{L}\p{N}]{1,2}) (?=\S)/gu, '$1$2\u00a0'); last = n; }
+  if (last) last.textContent = last.textContent.replace(/ (\S+)\s*$/, '\u00a0$1');
+  el.querySelectorAll('p, span.h, span:not(.h)').forEach(b => { const t = [...b.childNodes].filter(c => c.nodeType === 3).pop(); if (t) t.textContent = t.textContent.replace(/ (\S+)\s*$/, '\u00a0$1'); });
+}
+document.querySelectorAll('.prose').forEach(tie);
+const fmtPct = x => (x > 0 ? '+' : '−') + Math.abs(x).toFixed(2) + '%';
+const fmtNum = (q, x) => q.endsWith('_pct') ? (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toFixed(2) + '%' : q === 'volume' ? Math.round(x).toLocaleString('en-GB') : '$' + x.toFixed(2);
+const gaps = d => `${Math.abs(d) < 10 ? Math.abs(d).toFixed(1) : Math.round(Math.abs(d))} minimal gap${Math.abs(d) >= 1.05 ? 's' : ''} ${d > 0 ? 'above' : 'below'} the record`;
+const why = document.getElementById('why');
+const tmp = V();
+const HI = pts([0, 0, 0], 0.15, T_RING, col(1, 1, 1), 1, 14); HI.visible = false; RIn.cry.add(HI);   // the light being read
+// the faces bend the view: find where the pointer really looks inside, as the face shader does, and read the light there
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2(), viewRot = new THREE.Matrix3();
+function apparent(cx, cy) {
+  ndc.set(cx / innerWidth * 2 - 1, 1 - cy / innerHeight * 2); ray.setFromCamera(ndc, camera);
+  const nOf = h => h.object.userData.planes[h.object.userData.fid[h.faceIndex * 3]].n.clone().transformDirection(h.object.matrixWorld);
+  const hit = ray.intersectObjects(SOLIDS.filter(m => m.visible), false).find(h => nOf(h).dot(ray.ray.direction) < 0);
+  if (!hit) return [cx, cy];
+  const n = nOf(hit), d = ray.ray.direction.clone(), eta = 1 / 1.544;
+  const ci = -d.dot(n), k = 1 - eta * eta * (1 - ci * ci); if (k < 0) return [cx, cy];
+  const r = d.clone().multiplyScalar(eta).addScaledVector(n, eta * ci - Math.sqrt(k));
+  const off = r.sub(d).applyMatrix3(viewRot.setFromMatrix4(camera.matrixWorldInverse)).multiplyScalar(surfM.uniforms.uK.value);
+  return [cx + off.x * innerWidth, cy - off.y * innerHeight];
+}
+const pv = V();
+function insideLit(cx, cy) {                               // is the pointer over the lit phantom's tip, as it shows on screen?
+  if (layer < 0 || litT < 1) return false;
+  return PHS[layer].some(f => {
+    if (f.pl.kind !== 'tip') return false;
+    const m = CELL[f.pl.k][layer].matrixWorld, Q = f.verts.map(v => { pv.copy(v).applyMatrix4(m).project(camera); return [(pv.x + 1) / 2 * innerWidth, (1 - pv.y) / 2 * innerHeight]; });
+    let inn = false; for (let a = 0, b = Q.length - 1; a < Q.length; b = a++) { if ((Q[a][1] > cy) !== (Q[b][1] > cy) && cx < (Q[b][0] - Q[a][0]) * (cy - Q[a][1]) / (Q[b][1] - Q[a][1]) + Q[a][0]) inn = !inn; }
+    return inn;
+  });
+}
+function pick(px, py, tol, select = false) {
+  const [cx, cy] = apparent(px, py);
+  let best = null, bd = tol * tol;
+  INFO.forEach(o => { tmp.copy(o.p).applyMatrix4(CELL[o.k][o.i].matrixWorld).project(camera); const x = (tmp.x + 1) / 2 * innerWidth - cx, y = (1 - tmp.y) / 2 * innerHeight - cy; const d2 = x * x + y * y; if (d2 < bd) { bd = d2; best = o; } });
+  inLit = insideLit(cx, cy); reading = !!best || inLit;
+  if (select) want = best ? best.i : -1;
+  readI = best ? best.i : -1;
+  if (!best) { why.innerHTML = '<span class="idle">Point at a light, or tap it, to read it.</span>'; HI.visible = false; return; }
+  CELL[best.k][best.i].add(HI); HI.geometry.attributes.position.setXYZ(0, best.p.x, best.p.y, best.p.z); HI.geometry.attributes.position.needsUpdate = true; HI.visible = true;
+  HI.material.uniforms.uC.value = (best.f && isErr(best.f)) || (best.h && best.h.o === 'wrong') ? col(1, 0.75, 0.42) : col(0.95, 0.97, 1);
+  why.innerHTML = msgOf(best); tie(why);
+}
+function msgOf(best) {
+  const ev = best.ev, head = `<span class="h">${ev.name}, ${+ev.session.slice(8, 10)} Oct, ${fmtPct(ev.move)} · ${best.spec.app}, ${best.spec.t === 'A' ? 'reaction' : 'false premise'} ${best.rep}${best.q ? ' · ' + QNAME[best.q] : best.h ? ' · another number' : ''}</span>`;
+  let body;
+  if (best.refused) body = 'Empty places: the answer declined to give any figure.';
+  else if (best.h) body = best.h.o === 'wrong' ? `<b>Wrong</b>, floating free: «${best.h.q}», about ${HT[best.h.t]}.` : best.h.o === 'right' ? `Floating free: «${best.h.q}», about ${HT[best.h.t]}. Checked: right.` : `Floating free: «${best.h.q}», about ${HT[best.h.t]}. It could not be checked.`;
+  else if (!isErr(best.f)) body = `On the veil: «${best.f.quote}» is ${OUT[best.f.o] || best.f.o} (the record: ${fmtNum(best.q, +best.f.ref)}).`;
+  else body = `<b>Off the veil</b>: «${best.f.quote}». The record: ${fmtNum(best.q, +best.f.ref)}, ${gaps(best.f.d)}. Scored as ${OUT[best.f.o] || best.f.o}.`;
+  return head + `<span>${body}</span>`;
+}
+function fitWhy() {                                     // reserve the height of the longest reading, so nothing above it moves
+  const probe = why.cloneNode(false); probe.removeAttribute('id'); probe.removeAttribute('aria-live'); Object.assign(probe.style, { position: 'absolute', visibility: 'hidden', left: '0', right: '0', minHeight: '0' }); probe.className = 'whyprobe'; why.parentNode.appendChild(probe);
+  let hMax = 0; INFO.map(o => [msgOf(o), o]).sort((a, b) => b[0].length - a[0].length).slice(0, 40).forEach(([m]) => { probe.innerHTML = m; tie(probe); hMax = Math.max(hMax, probe.offsetHeight); });
+  probe.remove(); why.style.minHeight = hMax + 'px';
+  document.querySelector('nav.ui').style.bottom = innerWidth <= 760 ? `calc(env(safe-area-inset-bottom, 0px) + ${30 + hMax + 26}px)` : '';   // on phones the controls sit above the reading panel
+  document.getElementById('key').style.maxHeight = Math.max(80, innerHeight - 62 - 30 - hMax - 24) + 'px';   // on short screens the key scrolls instead of running off the top
+  const ky = document.getElementById('key'), fade = () => ky.classList.toggle('more', ky.scrollHeight - ky.scrollTop - ky.clientHeight > 4); fade(); ky.onscroll = fade;
+}
+fitWhy(); if (document.fonts) document.fonts.ready.then(fitWhy); addEventListener('resize', fitWhy);
+renderer.domElement.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') pick(e.clientX, e.clientY, 14); });
+let down = null;                                          // a tap reads; a drag turns
+renderer.domElement.addEventListener('pointerdown', e => { down = { x: e.clientX, y: e.clientY, t: performance.now() }; });
+renderer.domElement.addEventListener('pointerup', e => { if (down && Math.hypot(e.clientX - down.x, e.clientY - down.y) < 7 && performance.now() - down.t < 400) pick(e.clientX, e.clientY, e.pointerType === 'mouse' ? 14 : 26, true); down = null; });
+let turning = !matchMedia('(prefers-reduced-motion: reduce)').matches, reading = false;   // the crystal holds still while a light is being read
+const touch = matchMedia('(pointer: coarse)').matches;
+document.getElementById('hint').textContent = touch ? 'Drag to turn it, pinch to come closer, tap a light to read it and light its phantom.' : 'Drag to turn it, scroll to come closer, click a light to light its phantom. On the keyboard: arrows to turn and tilt, + and − to come closer, S to split it, Esc to put the phantom out.'; tie(document.getElementById('hint'));
+renderer.domElement.setAttribute('aria-label', 'A quartz crystal holding the figures of study 2. Arrow keys turn and tilt it; plus and minus bring it closer.');
+renderer.domElement.addEventListener('pointerleave', () => { reading = false; inLit = false; });
+const tall = () => innerWidth / innerHeight < 0.8;          // on a phone the crystal steps back, to sit between the opening and the controls
+const HOME = { get p() { return tall() ? V(0.5, 1.9, 12.4) : V(0.4, 1.45, 9.1); }, get t() { return tall() ? V(0, -0.2, 0) : V(0, -0.06, 0); } };
+function resetView() { camera.position.copy(HOME.p); controls.target.copy(HOME.t); controls.update(); }
+document.getElementById('reset').onclick = resetView;
+const sb = document.getElementById('split');
+const toggleSplit = () => { splitTo = splitTo ? 0 : 1; sb.setAttribute('aria-pressed', !!splitTo); }; sb.onclick = toggleSplit;
+const sph = new THREE.Spherical(), off3 = V();
+addEventListener('keydown', e => {
+  if (e.target.closest && e.target.closest('button, input, textarea')) return;
+  const k = e.key; let used = true;
+  off3.copy(camera.position).sub(controls.target); sph.setFromVector3(off3);
+  if (k === 'ArrowLeft') spin -= 12 * DEG; else if (k === 'ArrowRight') spin += 12 * DEG;
+  else if (k === 'ArrowUp') sph.phi = Math.max(controls.minPolarAngle, sph.phi - 0.08);
+  else if (k === 'ArrowDown') sph.phi = Math.min(controls.maxPolarAngle, sph.phi + 0.08);
+  else if (k === '+' || k === '=') sph.radius = Math.max(controls.minDistance, sph.radius * 0.9);
+  else if (k === '-' || k === '−') sph.radius = Math.min(controls.maxDistance, sph.radius / 0.9);
+  else if (k === 'r' || k === 'R') { resetView(); e.preventDefault(); return; }
+  else if (k === 'Escape') { want = -1; return; }
+  else if (k === 's' || k === 'S') { toggleSplit(); e.preventDefault(); return; }
+  else used = false;
+  if (!used) return;
+  e.preventDefault(); camera.position.copy(controls.target).add(off3.setFromSpherical(sph));
+});
+const tb = document.getElementById('turn'); tb.setAttribute('aria-pressed', turning); tb.onclick = () => { turning = !turning; tb.setAttribute('aria-pressed', turning); };
+
+// ---------- frame ----------
+function resize() {
+  const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false);
+  const pr = renderer.getPixelRatio(); RT.setSize(w * pr, h * pr); SCALE.value = h * pr * 0.5; PXR.value = pr; needleM.resolution.set(w * pr, h * pr); slotM.resolution.set(w * pr, h * pr); edgeM.resolution.set(w * pr, h * pr); surfM.uniforms.uRes.value.set(w * pr, h * pr); bgMat.uniforms.uAsp.value = w / h;
+  camera.aspect = w / h; camera.fov = camera.aspect < 0.8 ? 40 : 27; camera.updateProjectionMatrix();
+}
+addEventListener('resize', resize);
+let spin = 0.6, last = performance.now(), split = 0, splitTo = 0, resumeAt = 0, spinV = 0;
+const UP = V(0, 1, 0);
+const TAGS = APPS.map(app => { const el = document.createElement('span'); el.className = 'tag'; el.textContent = app; document.getElementById('tags').appendChild(el); return el; });
+const tagAt = APPS.map((_, a) => V(Math.cos(PH[2 * a]) + Math.cos(PH[2 * a + 1]), 0, Math.sin(PH[2 * a]) + Math.sin(PH[2 * a + 1])).normalize().multiplyScalar(1.05).setY(0.35)), tv = V(), tw = V(), cv = V();
+const CAP = document.createElement('div'); CAP.className = 'cap'; CAP.innerHTML = '<span class="nm"></span><span class="rw"></span>'; document.getElementById('tags').appendChild(CAP);
+const DAY = CAP.querySelector('.nm'), RW = CAP.querySelector('.rw');
+const QSENT = { change_close_pct: 'the change on close in per cent', change_close_usd: 'the change on close in dollars', close: 'the close', previous_close: 'the previous close', open: 'the open', high: 'the high', low: 'the low', change_open_pct: 'the move at the open', change_high_pct: 'the move to the high', change_low_pct: 'the move to the low', volume: 'the volume' };
+const REWARD = EVS.map((ev, i) => {                       // one fact about the session, from the figures themselves
+  const figs = INFO.filter(o => o.i === i && o.f), miss = figs.filter(o => isErr(o.f)), refused = INFO.filter(o => o.i === i && o.refused).length;
+  const hs = INFO.filter(o => o.i === i && o.h && o.h.o !== 'not_verified'), hw = hs.filter(o => o.h.o === 'wrong').length;
+  const took = [...new Set(ANS.filter(a => a.event === ev.event && a.type === 'C' && a.premise === 'adopted').map(a => a.app))];
+  let t = miss.length ? `${miss.length} of ${figs.length} figures about the session ${miss.length === 1 ? 'stands' : 'stand'} off the veil.` : `All ${figs.length} figures about the session lie on the veil.`;
+  if (miss.length) { const m = miss.reduce((a, b) => Math.abs(b.f.d) > Math.abs(a.f.d) ? b : a); t += ` The furthest: ${m.spec.app}, ${m.spec.t === 'A' ? 'on the reaction' : 'on a false premise'}, «${m.f.quote}» for ${QSENT[m.q]}, ${gaps(m.f.d)}.`; }
+  if (hs.length) t += hw ? ` Of the ${hs.length} other numbers, ${hw} ${hw === 1 ? 'is' : 'are'} wrong.` : ` The ${hs.length} other numbers are all right.`;
+  took.forEach(app => { t += ` ${app} took the false premise as fact.`; });
+  if (refused) t += ` ${refused === 1 ? 'One answer' : refused + ' answers'} declined to give any figure.`;
+  return t;
+});
+function placeDay(t) {                                     // the lit phantom is named beside it
+  if (layer < 0 || t < 0.02) { CAP.style.opacity = 0; CAP.dataset.i = ''; document.getElementById('dek').style.opacity = ''; return; }
+  const ev = EVS[layer];
+  if (CAP.dataset.i !== String(layer)) { CAP.dataset.i = layer; DAY.textContent = `${ev.name} · ${+ev.session.slice(8, 10)} Oct`; RW.textContent = REWARD[layer]; tie(RW); }
+  const narrow = innerWidth <= 760, dek = document.getElementById('dek');
+  CAP.style.top = (narrow ? document.querySelector('.intro h1').getBoundingClientRect().bottom + 14 : document.getElementById('intro').getBoundingClientRect().bottom + 30).toFixed(0) + 'px'; CAP.style.opacity = t.toFixed(2);
+  dek.style.opacity = narrow ? (1 - t).toFixed(2) : '';
+  const f = FILL[layer]; RW.style.opacity = Math.max(0, (f - 0.97) / 0.03).toFixed(2);   // the fact appears once the colour is full
+}
+function placeTags(t) {                                   // once split, each app's pair of sectors is named beside it; the far ones recede
+  cv.set(0, 0.3, 0).applyMatrix4(camera.matrixWorldInverse);
+  APPS.forEach((_, a) => {
+    const el = TAGS[a]; if (t < 0.02) { el.style.opacity = 0; return; }
+    tv.copy(tagAt[a]).applyMatrix4(SEC[2 * a].go.matrixWorld); tw.copy(tagAt[a]).applyMatrix4(SEC[2 * a + 1].go.matrixWorld); tv.add(tw).multiplyScalar(0.5);
+    const z = tv.clone().applyMatrix4(camera.matrixWorldInverse).z - cv.z; tv.project(camera);
+    el.style.left = ((tv.x + 1) / 2 * innerWidth).toFixed(1) + 'px'; el.style.top = ((1 - tv.y) / 2 * innerHeight).toFixed(1) + 'px';
+    el.style.opacity = (t * (z > 0 ? 1 : Math.max(0.2, 1 + z * 1.4))).toFixed(2);
+  });
+}
+function placeSectors(e) {                                 // sectors drift apart in pairs, one pair per app, without rising
+  const t = e * e * (3 - 2 * e);
+  SEC.forEach(S => {
+    const k = S.k, a = Math.floor(k / 2), dk = V(Math.cos(PH[k]), 0, Math.sin(PH[k]));
+    const da = V(Math.cos(PH[2 * a]) + Math.cos(PH[2 * a + 1]), 0, Math.sin(PH[2 * a]) + Math.sin(PH[2 * a + 1])).normalize();
+    const pos = dk.clone().multiplyScalar(0.16 * t)  .addScaledVector(da, 0.3 * t), axis = V(-dk.z, 0, dk.x);
+    [S.gi, S.go].forEach(g => { g.position.copy(pos); g.quaternion.setFromAxisAngle(axis, -0.05 * t); });
+  });
+  WEDGES.forEach(m => { m.visible = t >= 1e-4; }); veilM.uniforms.uBoost.value = 1 + 2.5 * t;   // split open, the veils show plainly in section
+}
+let layer = -1, want = -1, litT = 0, readI = -1, inLit = false;
+const FILL = new Float32Array(N);                          // how far each phantom has taken colour; it keeps it once taken
+function placeLit(dt) {                                    // the phantom of the session being read lights up; the others fade
+  if (layer !== want) { litT = Math.max(0, litT - dt / 0.25); if (litT === 0) layer = want; }
+  else if (layer >= 0) litT = Math.min(1, litT + dt / 0.4);
+  const t = litT * litT * (3 - 2 * litT);
+  CELL.forEach(row => row.forEach((g, i) => {
+    const f = layer < 0 ? 1 : i === layer ? 1 + 0.955 * t : 1 - 0.5325 * t;
+    g.children.forEach(c => { if (c.isPoints && c.userData.o0 !== undefined) { c.material.uniforms.uO.value = c.userData.o0 * f; c.material.uniforms.uSize.value = c.userData.s0 * (i === layer ? 1 + 0.35 * t : 1); } });
+  }));
+  if (layer >= 0 && litT >= 1 && (inLit || (reading && readI === layer) || touch)) FILL[layer] = Math.min(1, FILL[layer] + dt / 5);   // about five seconds of attention anywhere on the lit phantom
+  const fl = layer >= 0 ? FILL[layer] * FILL[layer] * (3 - 2 * FILL[layer]) : 0; veilM.uniforms.uFill.value = fl * t;
+  edgeM.color.setRGB(0.87 - 0.27 * fl, 0.91 - 0.03 * fl, 0.95 - 0.27 * fl);   // the outline turns the same green as it fills
+  veilM.uniforms.uLayer.value = layer; veilM.uniforms.uLit.value = t; edgeM.opacity = 0.85 * t; EDGES.forEach(l => { l.visible = l.userData.i === layer && t > 0.01; });
+  return t;
+}
+const Minv = new THREE.Matrix4();
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  // stopping: it slows within a fifth of a second, so the light being read does not slide away;
+  // starting again: a short wait, then a long ease, slow through its first second, that settles into the normal speed
+  if (reading) resumeAt = now + (split > 0.5 ? 1000 : 250);
+  { const x = Math.min(1, Math.max(0, (now - resumeAt) / 2000)), ease = Math.pow(x * x * (3 - 2 * x), 1.5);
+    spinV = reading || !turning ? spinV * Math.exp(-dt / 0.12) : Math.max(spinV * Math.exp(-dt / 0.12), 0.16 * ease);
+    spin += dt * spinV; }
+  RIn.turn.rotation.y = ROut.turn.rotation.y = spin;
+  controls.update();
+  inner.updateMatrixWorld(); outer.updateMatrixWorld();
+  FOCUS.value = camera.position.distanceTo(V(0, 0.3, 0)) - 0.35;
+  split += Math.max(-dt / 1.6, Math.min(dt / 1.6, splitTo - split));
+  placeSectors(split); const tl = placeLit(dt); surfMesh.visible = split < 1e-4;
+  inner.updateMatrixWorld(); outer.updateMatrixWorld();
+  placeTags(split * split * (3 - 2 * split)); placeDay(tl);
+  SOLIDS.forEach(m => { if (!m.visible) return; const M = m.matrixWorld, u = m.material.uniforms; u.uRot.value.setFromMatrix4(M); u.uCamO.value.copy(camera.position).applyMatrix4(Minv.copy(M).invert()); });
+  renderer.setRenderTarget(RT); renderer.render(inner, camera);
+  renderer.setRenderTarget(null); renderer.render(outer, camera);
+  requestAnimationFrame(frame);
+}
+camera.position.copy(HOME.p); controls.target.copy(HOME.t);
+resize();
+const mh = location.hash.match(/^#rot(-?\d+)(?:d(\d+))?(s|c|sc)?$/); if (mh) { spin = +mh[1] * DEG; turning = false; if (mh[3] && mh[3].includes('s')) { split = splitTo = 1; sb.setAttribute('aria-pressed', true); } if (mh[3] && mh[3].includes('c')) { want = layer = 6; litT = 1; FILL[6] = 1; } if (mh[2]) camera.position.sub(controls.target).setLength(+mh[2] / 10).add(controls.target); }
+window.__ready = true;
+requestAnimationFrame(frame);
+</script>
+<script>
+(function(){
+  /* the writing menu in the running head, as on every page */
+  var nav=document.querySelector('.wnav');if(!nav)return;
+  var btn=nav.querySelector('.wtoggle'),m=nav.querySelector('.wmenu');
+  function setOpen(o){m.hidden=!o;btn.setAttribute('aria-expanded',o?'true':'false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();setOpen(m.hidden);});
+  document.addEventListener('click',function(e){if(!nav.contains(e.target))setOpen(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});
+})();
+</script>

@@ -40,7 +40,7 @@ Intervals are 95% Wilson intervals. Every measure of §8 of the pre-registration
 - `data/answers-text.jsonl` · the full text of every answer, with the sources it showed.
 - `analysis.json` · all the measures of §8.
 - `method/` · pre-registration (`prereg.md`), rules, decisions, the log of deviations (`deviations.md`), the questions and the schedule. In Italian, the language of the study.
-- `analysis/` · the scripts: export, analysis, reconciliation of the other numbers, sketches, the check and the plate builder.
+- `analysis/` · the scripts: export, analysis, reconciliation of the other numbers, sketches and the check. The plate is built by `plate2_build.py`, the crystal by `quartz_build.py` from its page, `quartz.html`.
 - `sketches/` · the two working sketches of plate 2, kept for the record. They are not the plate.
 
 ## Checking
@@ -112,7 +112,7 @@ Gli intervalli sono intervalli di Wilson al 95%. Tutte le misure del §8 della p
 - `data/answers-text.jsonl` · il testo completo di ogni risposta, con le fonti che mostrava.
 - `analysis.json` · tutte le misure del §8.
 - `method/` · preregistrazione (`prereg.md`), regole, decisioni, registro degli scostamenti (`deviations.md`), domande e calendario. In italiano, la lingua dello studio.
-- `analysis/` · gli script: esportazione, analisi, riconciliazione degli altri numeri, schizzi, controllo e costruzione della tavola.
+- `analysis/` · gli script: esportazione, analisi, riconciliazione degli altri numeri, schizzi e controllo. La tavola si costruisce con `plate2_build.py`, il cristallo con `quartz_build.py` a partire dalla sua pagina, `quartz.html`.
 - `sketches/` · i due schizzi di lavoro della tavola 2, conservati agli atti. Non sono la tavola.
 
 ## Controllo
