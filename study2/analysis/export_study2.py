@@ -67,7 +67,7 @@ for ev, t in TICK.items():
     EV[ev] = {
         "event": ev, "ticker": t, "session": e["date"], "previous_session": e["prev_date"],
         "previous_close": pc, "open_nasdaq": n["open"], "open_ibkr": e["open"], "high": e["high"], "low": e["low"],
-        "close": e["close"], "volume_nasdaq": n["volume"] if n["volume"] is not None else "", "volume_ibkr_not_consolidated": e["volume_ibkr"],
+        "close": e["close"], "volume_nasdaq": n["volume"], "volume_ibkr_not_consolidated": e["volume_ibkr"],
         "change_close_pct": round((e["close"] / pc - 1) * 100, 4), "change_open_pct": round((n["open"] / pc - 1) * 100, 4),
         "change_high_pct": round((e["high"] / pc - 1) * 100, 4), "change_low_pct": round((e["low"] / pc - 1) * 100, 4),
         "true_direction": "up" if e["close"] > pc else "down",
@@ -105,20 +105,15 @@ def refused(v, a):
     return "yes" if REFUSAL.match(a.get("risposta") or "") else "no"
 
 
-def links_of(a):
-    links = a.get("link") or []
-    if isinstance(links, str):
-        links = json.loads(links) if links.startswith("[") else []
-    return links
-
-
 answers, figures = [], []
 for rid, a in sorted(R2.items()) + sorted(RX.items()):
     study = "preregistered" if rid.startswith("s2-") else "exploration"
     vid = ("s2v-" + rid[3:]) if study == "preregistered" else ("xv-" + rid)
     v = (V2 if study == "preregistered" else VX).get(vid)
     ev = a["q"][:2]
-    links = links_of(a)
+    links = a.get("link") or []
+    if isinstance(links, str):
+        links = json.loads(links) if links.startswith("[") else []
     row = {
         "id": rid, "study": study, "round": str(a.get("blocco") or a.get("giro")), "app": APP[a["app"]], "event": ev,
         "ticker": TICK[ev], "type": a["tipo"], "repetition": rid.split("-")[2] if study == "preregistered" else (rid.split("-")[2] if rid.count("-") == 3 else ""),
@@ -159,6 +154,9 @@ for name, rows in (("answers", answers), ("figures", figures)):
 # answer texts, one JSON object per line (kept out of the CSV: long, with tables and line breaks)
 with open(f"{out}/answers-text.jsonl", "w", encoding="utf-8") as f:
     for rid, a in sorted(R2.items()) + sorted(RX.items()):
-        f.write(json.dumps({"id": rid, "text": a.get("risposta", ""), "sources": links_of(a)}, ensure_ascii=False) + "\n")
+        links = a.get("link") or []
+        if isinstance(links, str):
+            links = json.loads(links) if links.startswith("[") else []
+        f.write(json.dumps({"id": rid, "text": a.get("risposta", ""), "sources": links}, ensure_ascii=False) + "\n")
 
 print(len(EV), "events;", len(answers), "answers;", sum(r["scored"] == "yes" for r in answers), "scored;", len(figures), "figures")

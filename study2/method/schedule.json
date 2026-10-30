@@ -1,0 +1,745 @@
+{
+ "seed": 20261025,
+ "python": "3.13.17",
+ "method": "random.Random(seed): shuffle round 1, then app order per item; then round 2; then round 3",
+ "rounds": [
+  [
+   {
+    "q": "03A",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "12U",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "08U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "03U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "02U",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "02A",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "06A",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "07U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "08A",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "07C",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "07A",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "01A",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "04A",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "03C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "06C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "06U",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "10U",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "11A",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "11U",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "12A",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "04C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "01C",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "09C",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "08C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "12C",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "02C",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "04U",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "05C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "11C",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "09U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "01U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "10C",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "05A",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "05U",
+    "rep": 1,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "09A",
+    "rep": 1,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "10A",
+    "rep": 1,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   }
+  ],
+  [
+   {
+    "q": "11C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "09A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "07C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "03A",
+    "rep": 2,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "04C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "08C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "05A",
+    "rep": 2,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "10A",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "06U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "11A",
+    "rep": 2,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "06C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "03U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "09C",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "04A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "10U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "05C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "02C",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "12C",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "07A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "12A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "09U",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "08U",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "04U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "12U",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "07U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "06A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "02A",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "11U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "10C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "03C",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "08A",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "01A",
+    "rep": 2,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "01C",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "05U",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "01U",
+    "rep": 2,
+    "apps": [
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "02U",
+    "rep": 2,
+    "apps": [
+     "chatgpt",
+     "claude"
+    ]
+   }
+  ],
+  [
+   {
+    "q": "07A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "12A",
+    "rep": 3,
+    "apps": [
+     "chatgpt",
+     "gemini",
+     "claude"
+    ]
+   },
+   {
+    "q": "08A",
+    "rep": 3,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "06A",
+    "rep": 3,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "05A",
+    "rep": 3,
+    "apps": [
+     "chatgpt",
+     "claude",
+     "gemini"
+    ]
+   },
+   {
+    "q": "04A",
+    "rep": 3,
+    "apps": [
+     "claude",
+     "chatgpt",
+     "gemini"
+    ]
+   },
+   {
+    "q": "09A",
+    "rep": 3,
+    "apps": [
+     "claude",
+     "gemini",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "11A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "10A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "02A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   },
+   {
+    "q": "01A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "chatgpt",
+     "claude"
+    ]
+   },
+   {
+    "q": "03A",
+    "rep": 3,
+    "apps": [
+     "gemini",
+     "claude",
+     "chatgpt"
+    ]
+   }
+  ]
+ ]
+}

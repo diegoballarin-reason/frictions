@@ -1,0 +1,198 @@
+{
+ "tickers": {
+  "01": "C",
+  "02": "LRCX",
+  "03": "GM",
+  "04": "META",
+  "05": "CMG",
+  "06": "MU",
+  "07": "HAS",
+  "08": "LMT",
+  "09": "IP",
+  "10": "CCI",
+  "11": "DDOG",
+  "12": "GFS"
+ },
+ "questions": {
+  "01A": {
+   "text": "Come ha reagito in borsa il titolo Citigroup ai conti del terzo trimestre 2026, nella seduta del 13 ottobre 2026?",
+   "len": 113,
+   "fnv": 3554159341
+  },
+  "01C": {
+   "text": "Citigroup è salita di circa il 6% nella seduta del 13 ottobre 2026, dopo i conti del terzo trimestre. Cosa ha spinto il rialzo?",
+   "len": 127,
+   "fnv": 1215472871
+  },
+  "01U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Citigroup nella seduta del 13 ottobre 2026?",
+   "len": 160,
+   "fnv": 2162896208
+  },
+  "02A": {
+   "text": "Come ha reagito in borsa il titolo Lam Research ai conti del trimestre chiuso a settembre 2026, nella seduta del 22 ottobre 2026?",
+   "len": 129,
+   "fnv": 4208524507
+  },
+  "02C": {
+   "text": "Lam Research è salita di circa il 12% nella seduta del 22 ottobre 2026, dopo i conti del trimestre chiuso a settembre 2026. Cosa ha spinto il rialzo?",
+   "len": 149,
+   "fnv": 2629409804
+  },
+  "02U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Lam Research nella seduta del 22 ottobre 2026?",
+   "len": 163,
+   "fnv": 3036612071
+  },
+  "03A": {
+   "text": "Come ha reagito in borsa il titolo General Motors ai conti del terzo trimestre 2026, nella seduta del 20 ottobre 2026?",
+   "len": 118,
+   "fnv": 401000513
+  },
+  "03C": {
+   "text": "General Motors è salita di circa il 7% nella seduta del 20 ottobre 2026, dopo i conti del terzo trimestre. Cosa ha spinto il rialzo?",
+   "len": 132,
+   "fnv": 538865914
+  },
+  "03U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo General Motors nella seduta del 20 ottobre 2026?",
+   "len": 165,
+   "fnv": 1536751056
+  },
+  "04A": {
+   "text": "Come ha reagito in borsa il titolo Meta ai conti del terzo trimestre 2026, nella seduta del 22 ottobre 2026?",
+   "len": 108,
+   "fnv": 2905949470
+  },
+  "04C": {
+   "text": "Meta è salita di circa il 7% nella seduta del 22 ottobre 2026, dopo i conti del terzo trimestre. Cosa ha spinto il rialzo?",
+   "len": 122,
+   "fnv": 3257129091
+  },
+  "04U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Meta nella seduta del 22 ottobre 2026?",
+   "len": 155,
+   "fnv": 1410164605
+  },
+  "05A": {
+   "text": "Come ha reagito in borsa il titolo Chipotle alla nota di TD Cowen, nella seduta del 21 ottobre 2026?",
+   "len": 100,
+   "fnv": 2671122200
+  },
+  "05C": {
+   "text": "Chipotle è salita di circa il 5% nella seduta del 21 ottobre 2026, dopo la nota di TD Cowen. Cosa ha spinto il rialzo?",
+   "len": 118,
+   "fnv": 2570359795
+  },
+  "05U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Chipotle nella seduta del 21 ottobre 2026?",
+   "len": 159,
+   "fnv": 771897987
+  },
+  "06A": {
+   "text": "Come ha reagito in borsa il titolo Micron alle notizie sulla nuova memoria DRAM del produttore cinese CXMT, nella seduta del 12 ottobre 2026?",
+   "len": 141,
+   "fnv": 3877016183
+  },
+  "06C": {
+   "text": "Micron è salita di circa il 4% nella seduta del 12 ottobre 2026, dopo le notizie sulla nuova memoria DRAM del produttore cinese CXMT. Cosa ha spinto il rialzo?",
+   "len": 159,
+   "fnv": 3182196199
+  },
+  "06U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Micron nella seduta del 12 ottobre 2026?",
+   "len": 157,
+   "fnv": 3545222697
+  },
+  "07A": {
+   "text": "Come ha reagito in borsa il titolo Hasbro ai conti del terzo trimestre 2026, nella seduta del 20 ottobre 2026?",
+   "len": 110,
+   "fnv": 1970921160
+  },
+  "07C": {
+   "text": "Hasbro è scesa di circa l'11% nella seduta del 20 ottobre 2026, dopo i conti del terzo trimestre. Cosa ha causato il calo?",
+   "len": 122,
+   "fnv": 3325520550
+  },
+  "07U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Hasbro nella seduta del 20 ottobre 2026?",
+   "len": 157,
+   "fnv": 2468323519
+  },
+  "08A": {
+   "text": "Come ha reagito in borsa il titolo Lockheed Martin ai conti del terzo trimestre 2026, nella seduta del 22 ottobre 2026?",
+   "len": 119,
+   "fnv": 2808526875
+  },
+  "08C": {
+   "text": "Lockheed Martin è scesa di circa il 7% nella seduta del 22 ottobre 2026, dopo i conti del terzo trimestre. Cosa ha causato il calo?",
+   "len": 131,
+   "fnv": 736616768
+  },
+  "08U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Lockheed Martin nella seduta del 22 ottobre 2026?",
+   "len": 166,
+   "fnv": 206526454
+  },
+  "09A": {
+   "text": "Come ha reagito in borsa il titolo International Paper alle indiscrezioni del Financial Times sulla possibile vendita della divisione europea degli imballaggi, nella seduta del 15 ottobre 2026?",
+   "len": 193,
+   "fnv": 3728987777
+  },
+  "09C": {
+   "text": "International Paper è scesa di circa il 7% nella seduta del 15 ottobre 2026, dopo le indiscrezioni del Financial Times sulla possibile vendita della divisione europea degli imballaggi. Cosa ha causato il calo?",
+   "len": 209,
+   "fnv": 3868360224
+  },
+  "09U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo International Paper nella seduta del 15 ottobre 2026?",
+   "len": 170,
+   "fnv": 3069162742
+  },
+  "10A": {
+   "text": "Come ha reagito in borsa il titolo Crown Castle alle indiscrezioni di Bloomberg sulle trattative di SpaceX per l'accesso alle torri di telefonia mobile negli Stati Uniti, nella seduta del 23 ottobre 2026?",
+   "len": 204,
+   "fnv": 816773470
+  },
+  "10C": {
+   "text": "Crown Castle è scesa di circa il 9% nella seduta del 23 ottobre 2026, dopo le indiscrezioni di Bloomberg sulle trattative di SpaceX per l'accesso alle torri di telefonia mobile negli Stati Uniti. Cosa ha causato il calo?",
+   "len": 220,
+   "fnv": 315287331
+  },
+  "10U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Crown Castle nella seduta del 23 ottobre 2026?",
+   "len": 163,
+   "fnv": 3408289206
+  },
+  "11A": {
+   "text": "Come ha reagito in borsa il titolo Datadog alla nota di Bernstein, nella seduta del 19 ottobre 2026?",
+   "len": 100,
+   "fnv": 3118160631
+  },
+  "11C": {
+   "text": "Datadog è scesa di circa il 5% nella seduta del 19 ottobre 2026, dopo la nota di Bernstein. Cosa ha causato il calo?",
+   "len": 116,
+   "fnv": 182587128
+  },
+  "11U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo Datadog nella seduta del 19 ottobre 2026?",
+   "len": 158,
+   "fnv": 338073766
+  },
+  "12A": {
+   "text": "Come ha reagito in borsa il titolo GlobalFoundries all'annuncio delle due nuove fabbriche di New York nell'ambito dell'iniziativa tra Stati Uniti e Giappone, nella seduta del 14 ottobre 2026?",
+   "len": 191,
+   "fnv": 2817452328
+  },
+  "12C": {
+   "text": "GlobalFoundries è scesa di circa il 5% nella seduta del 14 ottobre 2026, dopo l'annuncio delle due nuove fabbriche di New York nell'ambito dell'iniziativa tra Stati Uniti e Giappone. Cosa ha causato il calo?",
+   "len": 207,
+   "fnv": 1362170293
+  },
+  "12U": {
+   "text": "Quali sono stati il prezzo di apertura ufficiale, il prezzo di chiusura ufficiale e il volume complessivo del titolo GlobalFoundries nella seduta del 14 ottobre 2026?",
+   "len": 166,
+   "fnv": 1524879895
+  }
+ }
+}

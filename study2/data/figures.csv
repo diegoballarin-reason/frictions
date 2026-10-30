@@ -54,6 +54,38 @@ s2-01C-2-chatgpt,3,ChatGPT,01,C,preregistered,close,"Chiusura … 124,53 $",124.
 s2-01C-2-chatgpt,4,ChatGPT,01,C,preregistered,previous_close,"Rispetto ai 131,92 $ del 12 ottobre. Dati storici di Yahoo Finance e Stock Analysis.",131.92,131.92,none,131.92,"+0,00%",exact,Yahoo Finance e Stock Analysis (scheda Yahoo Finance +1)
 s2-01C-2-claude,1,Claude,01,C,preregistered,change_close_pct,"il titolo ha chiuso in calo di circa il 5,6%",-5.6,-5.6,circa,-5.6,"+0,00 punti",approximate_correct,"citigroup stock price forecast earnings (beinsure, +2)"
 s2-01C-2-claude,2,Claude,01,C,preregistered,previous_close,"rispetto ai 131,92 dollari della seduta precedente",131.92,131.92,none,131.92,"+0,00%",exact,"citigroup stock price forecast earnings (beinsure, +2)"
+s2-01U-1-chatgpt,1,ChatGPT,01,U,preregistered,open,"Prezzo di apertura	131,35 USD",131.35,131.35,none,131.345,"+0,00%",exact,
+s2-01U-1-chatgpt,2,ChatGPT,01,U,preregistered,close,"Prezzo di chiusura	124,53 USD",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01U-1-chatgpt,3,ChatGPT,01,U,preregistered,volume,Volume complessivo	20.438.388 azioni,20438388,20438388,none,20438390,"-0,00001% (-2 azioni)",minimal_gap,"dati aggregati Polygon, riportati da ChartExchange"
+s2-01U-1-chatgpt,4,ChatGPT,01,U,preregistered,change_close_pct,"ha chiuso in ribasso del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01U-1-chatgpt,5,ChatGPT,01,U,preregistered,previous_close,"chiusura precedente di 131,92 USD",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01U-1-chatgpt,6,ChatGPT,01,U,preregistered,volume,"Yahoo Finance riporta invece 20.438.400 azioni, un valore arrotondato",20438400,20438400,none,20438390,"+0,00005% (+10 azioni)",exact,Yahoo Finance
+s2-01U-1-claude,1,Claude,01,U,preregistered,open,"ha aperto a 131,35 dollari",131.35,131.35,none,131.345,"+0,00%",exact,
+s2-01U-1-claude,2,Claude,01,U,preregistered,close,"chiuso a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01U-1-claude,3,Claude,01,U,preregistered,change_close_pct,"in calo del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01U-1-claude,4,Claude,01,U,preregistered,volume,con un volume di 20.314.264 azioni,20314264,20314264,none,20438390,"-0,61%",accepted_rule3,S&P Global Market Intelligence (detto più sotto)
+s2-01U-1-claude,5,Claude,01,U,preregistered,previous_close,"La chiusura precedente, il 12 ottobre, era di 131,92 dollari",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01U-1-claude,6,Claude,01,U,preregistered,high,"un massimo di 133,50",133.5,133.5,none,133.5,"+0,00%",exact,
+s2-01U-1-claude,7,Claude,01,U,preregistered,low,"un minimo di 124,44",124.44,124.44,none,124.44,"+0,00%",exact,
+s2-01U-1-claude,8,Claude,01,U,preregistered,open,"Un articolo scritto durante la seduta indicava un'apertura a 131,34",131.34,131.34,none,131.345,"-0,00%",exact,un articolo scritto durante la seduta
+s2-01U-1-claude,9,Claude,01,U,preregistered,volume,"Investing.com riporta circa 20,44 milioni di azioni",20440000,20440000,circa,20438390,"+0,01%",approximate_correct,Investing.com
+s2-01U-1-claude,10,Claude,01,U,preregistered,volume,"contro i 20,31 milioni indicati sopra",20310000,20310000,none,20438390,"-0,63%",accepted_rule3,S&P Global Market Intelligence
+s2-01U-2-chatgpt,1,ChatGPT,01,U,preregistered,open,"Prezzo di apertura	131,35 USD",131.35,131.35,none,131.345,"+0,00%",exact,
+s2-01U-2-chatgpt,2,ChatGPT,01,U,preregistered,close,"Prezzo di chiusura	124,53 USD",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01U-2-chatgpt,3,ChatGPT,01,U,preregistered,volume,Volume complessivo	20.438.388 azioni,20438388,20438388,none,20438390,"-0,00001% (-2 azioni)",minimal_gap,Polygon e ChartExchange
+s2-01U-2-chatgpt,4,ChatGPT,01,U,preregistered,volume,Yahoo Finance riporta un volume arrotondato di 20.438.400 azioni,20438400,20438400,none,20438390,"+0,00005% (+10 azioni)",exact,Yahoo Finance
+s2-01U-2-chatgpt,5,ChatGPT,01,U,preregistered,open,"Il prezzo di apertura non arrotondato nei dati Polygon è 131,345 USD",131.345,131.345,none,131.345,"+0,00%",exact,Polygon
+s2-01U-2-chatgpt,6,ChatGPT,01,U,preregistered,previous_close,"Rispetto alla chiusura del 12 ottobre (131,92 USD)",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01U-2-chatgpt,7,ChatGPT,01,U,preregistered,change_close_pct,"Citigroup ha perso il 5,60% durante la seduta del 13 ottobre",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01U-2-claude,1,Claude,01,U,preregistered,open,"Citigroup ha aperto a 131,35 dollari",131.35,131.35,none,131.345,"+0,00%",exact,
+s2-01U-2-claude,2,Claude,01,U,preregistered,close,"e chiuso a 124,53 dollari",124.53,124.53,none,124.53,"+0,00%",exact,
+s2-01U-2-claude,3,Claude,01,U,preregistered,low,"un minimo di 124,44",124.44,124.44,none,124.44,"+0,00%",exact,
+s2-01U-2-claude,4,Claude,01,U,preregistered,high,"un massimo di 133,50",133.5,133.5,none,133.5,"+0,00%",exact,
+s2-01U-2-claude,5,Claude,01,U,preregistered,change_close_pct,"un calo del 5,60%",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,
+s2-01U-2-claude,6,Claude,01,U,preregistered,previous_close,"rispetto ai 131,92 dollari della seduta precedente",131.92,131.92,none,131.92,"+0,00%",exact,
+s2-01U-2-claude,7,Claude,01,U,preregistered,volume,"StockAnalysis, che usa dati di S&P Global Market Intelligence, riporta 20.314.264 azioni",20314264,20314264,none,20438390,"-0,61%",accepted_rule3,StockAnalysis (S&P Global Market Intelligence)
+s2-01U-2-claude,8,Claude,01,U,preregistered,volume,TipRanks riporta 20.438.391 azioni,20438391,20438391,none,20438390,"+0,000005% (+1 azione)",minimal_gap,TipRanks
+s2-01U-2-claude,9,Claude,01,U,preregistered,volume,"Investing.com riporta 20,44 milioni",20440000,20440000,none,20438390,"+0,01%",exact,Investing.com
 s2-02A-1-chatgpt,1,ChatGPT,02,A,preregistered,change_close_pct,"è crollato dell'11,76% nella seduta di giovedì 22 ottobre 2026",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
 s2-02A-1-chatgpt,2,ChatGPT,02,A,preregistered,change_close_pct,"Variazione del 22 ottobre 2026 … −11,76%",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,
 s2-02A-1-chatgpt,3,ChatGPT,02,A,preregistered,close,"Chiusura a 230,15 USD",230.15,230.15,none,230.15,"+0,00%",exact,
@@ -111,6 +143,34 @@ s2-02C-2-chatgpt,2,ChatGPT,02,C,preregistered,previous_close,"Il titolo è passa
 s2-02C-2-chatgpt,3,ChatGPT,02,C,preregistered,close,"a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,Dati storici - Investing.com (+1)
 s2-02C-2-chatgpt,4,ChatGPT,02,C,preregistered,change_close_pct,"registrando una perdita del -11,76% il 22 ottobre",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Dati storici - Investing.com (+1)
 s2-02C-2-claude,1,Claude,02,C,preregistered,change_close_pct,"secondo TradingKey la perdita della giornata è arrivata al 9,8%",-9.8,-9.8,none,-11.76,"+1,96 punti",error,TradingKey (nel testo); scheda Lam Research Sinks as Guidance Misses Lofty Hopes - Benzinga (+2)
+s2-02U-1-chatgpt,1,ChatGPT,02,U,preregistered,open,"Prezzo di apertura	234,50 USD",234.5,234.5,none,234.5,"+0,00%",exact,
+s2-02U-1-chatgpt,2,ChatGPT,02,U,preregistered,close,"Prezzo di chiusura	230,15 USD",230.15,230.15,none,230.15,"+0,00%",exact,
+s2-02U-1-chatgpt,3,ChatGPT,02,U,preregistered,volume,Volume complessivo	22.998.185 azioni,22998185,22998185,none,22998190,"-0,00002% (-5 azioni)",minimal_gap,FinanceCharts (nella nota)
+s2-02U-1-chatgpt,4,ChatGPT,02,U,preregistered,change_close_pct,"La variazione rispetto alla chiusura del 21 ottobre è stata del −11,76%",-11.76,-11.76,none,-11.76,"-0,00 punti",exact,
+s2-02U-1-chatgpt,5,ChatGPT,02,U,preregistered,volume,Yahoo Finance riporta 22.998.200 azioni (dato arrotondato),22998200,22998200,none,22998190,"+0,00004% (+10 azioni)",exact,Yahoo Finance
+s2-02U-1-claude,1,Claude,02,U,preregistered,open,"ha aperto a 234,50 dollari",234.5,234.5,none,234.5,"+0,00%",exact,"Forbes, Quiver Quantitative"
+s2-02U-1-claude,2,Claude,02,U,preregistered,close,"e chiuso a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,"Forbes, Quiver Quantitative"
+s2-02U-1-claude,3,Claude,02,U,preregistered,volume,con un volume di 22.998.185 azioni,22998185,22998185,none,22998190,"-0,00002% (-5 azioni)",minimal_gap,"Forbes, Quiver Quantitative"
+s2-02U-1-claude,4,Claude,02,U,preregistered,low,"un minimo di 227,68",227.68,227.68,none,227.68,"+0,00%",exact,
+s2-02U-1-claude,5,Claude,02,U,preregistered,high,"e un massimo di 242,10 dollari",242.1,242.1,none,242.1,"+0,00%",exact,
+s2-02U-1-claude,6,Claude,02,U,preregistered,change_close_pct,"La chiusura corrisponde a un calo dell'11,8%",-11.8,-11.8,none,-11.76,"-0,04 punti",exact,
+s2-02U-1-claude,7,Claude,02,U,preregistered,previous_close,"aveva chiuso a 260,81 dollari il 21 ottobre",260.81,260.81,none,260.81,"+0,00%",exact,
+s2-02U-2-chatgpt,1,ChatGPT,02,U,preregistered,open,"Prezzo ufficiale di apertura	234,50 USD",234.5,234.5,none,234.5,"+0,00%",exact,
+s2-02U-2-chatgpt,2,ChatGPT,02,U,preregistered,close,"Prezzo ufficiale di chiusura	230,15 USD",230.15,230.15,none,230.15,"+0,00%",exact,
+s2-02U-2-chatgpt,3,ChatGPT,02,U,preregistered,volume,Volume complessivo	22.998.185 azioni,22998185,22998185,none,22998190,"-0,00002% (-5 azioni)",minimal_gap,MarketScreener e FinanceCharts
+s2-02U-2-chatgpt,4,ChatGPT,02,U,preregistered,change_close_pct,"ha chiuso in ribasso dell'11,76%",-11.76,-11.76,none,-11.76,"-0,00 punti",exact,
+s2-02U-2-chatgpt,5,ChatGPT,02,U,preregistered,previous_close,"rispetto alla chiusura del 21 ottobre (260,81 USD)",260.81,260.81,none,260.81,"+0,00%",exact,
+s2-02U-2-chatgpt,6,ChatGPT,02,U,preregistered,volume,"Yahoo Finance, ad esempio, riporta 22.998.200 azioni",22998200,22998200,none,22998190,"+0,00004% (+10 azioni)",exact,Yahoo Finance
+s2-02U-2-claude,1,Claude,02,U,preregistered,open,"ha aperto a 234,50 dollari",234.5,234.5,none,234.5,"+0,00%",exact,
+s2-02U-2-claude,2,Claude,02,U,preregistered,close,"e chiuso a 230,15 dollari",230.15,230.15,none,230.15,"+0,00%",exact,
+s2-02U-2-claude,3,Claude,02,U,preregistered,volume,Il volume complessivo è stato di circa 23 milioni di azioni,23000000,23000000,circa,22998190,"+0,01%",approximate_correct,
+s2-02U-2-claude,4,Claude,02,U,preregistered,high,"massimo a 242,10",242.1,242.1,none,242.1,"+0,00%",exact,FinancialContent
+s2-02U-2-claude,5,Claude,02,U,preregistered,low,"minimo a 227,68",227.68,227.68,none,227.68,"+0,00%",exact,FinancialContent
+s2-02U-2-claude,6,Claude,02,U,preregistered,volume,un volume di 22.978.499 azioni,22978499,22978499,none,22998190,"-0,09%",minimal_gap,FinancialContent
+s2-02U-2-claude,7,Claude,02,U,preregistered,volume,"Indica un volume arrotondato a 23,00 milioni",23000000,23000000,none,22998190,"+0,01%",exact,metirai (dati Nasdaq)
+s2-02U-2-claude,8,Claude,02,U,preregistered,change_close_pct,"una variazione giornaliera del -11,76%",-11.76,-11.76,none,-11.76,"-0,00 punti",exact,metirai
+s2-02U-2-claude,9,Claude,02,U,preregistered,previous_close,"aveva chiuso la seduta regolare a 260,81 dollari",260.81,260.81,none,260.81,"+0,00%",exact,
+s2-02U-2-claude,10,Claude,02,U,preregistered,change_open_pct,L'apertura del 22 è quindi avvenuta già in ribasso di circa il 10%,-10,-10,circa,-10.09,"+0,09 punti",approximate_correct,
 s2-03A-1-chatgpt,1,ChatGPT,03,A,preregistered,change_close_pct,"Seduta del 20 ottobre 2026 … −6,84%",-6.84,-6.84,none,-6.84,"+0,00 punti",exact,
 s2-03A-1-chatgpt,2,ChatGPT,03,A,preregistered,close,"77,09 USD … Prezzo di chiusura",77.09,77.09,none,77.09,"+0,00%",exact,
 s2-03A-1-chatgpt,3,ChatGPT,03,A,preregistered,previous_close,"Chiusura precedente … 82,75 USD",82.75,82.75,none,82.75,"+0,00%",exact,
@@ -171,6 +231,39 @@ s2-03C-2-claude,1,Claude,03,C,preregistered,change_close_pct,"il 7% c’è, ma c
 s2-03C-2-claude,2,Claude,03,C,preregistered,close,"Il titolo ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,scheda: pomegra
 s2-03C-2-claude,3,Claude,03,C,preregistered,change_close_pct,"in calo del 6,8%",-6.8,-6.8,none,-6.84,"+0,04 punti",exact,scheda: pomegra
 s2-03C-2-claude,4,Claude,03,C,preregistered,previous_close,"rispetto agli 82,75 del giorno prima",82.75,82.75,none,82.75,"+0,00%",exact,scheda: pomegra
+s2-03U-1-chatgpt,1,ChatGPT,03,U,preregistered,open,"Prezzo di apertura	77,22 USD",77.22,77.22,none,77.22,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-1-chatgpt,2,ChatGPT,03,U,preregistered,close,"Prezzo di chiusura	77,09 USD",77.09,77.09,none,77.09,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-1-chatgpt,3,ChatGPT,03,U,preregistered,volume,Volume complessivo	24.697.390 azioni,24697390,24697390,none,24697390,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-1-chatgpt,4,ChatGPT,03,U,preregistered,open,"il sito ufficiale di General Motors, che utilizza dati LSEG, riporta invece un'apertura di 77,00 USD",77,77,none,77.22,"-0,28%",error,sito di General Motors (dati LSEG)
+s2-03U-1-chatgpt,5,ChatGPT,03,U,preregistered,close,"pur confermando la chiusura a 77,09 USD",77.09,77.09,none,77.09,"+0,00%",exact,sito di General Motors (dati LSEG)
+s2-03U-1-chatgpt,6,ChatGPT,03,U,preregistered,volume,"il riferimento è circa 24,7 milioni di azioni",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,
+s2-03U-1-claude,1,Claude,03,U,preregistered,open,"General Motors (NYSE: GM) ha aperto a 77,22 dollari",77.22,77.22,none,77.22,"+0,00%",exact,S&P Global Market Intelligence (via StockAnalysis) e Investing.com (detto più sotto)
+s2-03U-1-claude,2,Claude,03,U,preregistered,close,"ha chiuso a 77,09 dollari",77.09,77.09,none,77.09,"+0,00%",exact,
+s2-03U-1-claude,3,Claude,03,U,preregistered,volume,"ha scambiato complessivamente circa 24,6–24,7 milioni di azioni",24600000,24700000,"circa, fra 24,6 e 24,7 milioni",24697390,"dentro l'intervallo (estremi −0,39% e +0,01%)",approximate_correct,
+s2-03U-1-claude,4,Claude,03,U,preregistered,change_close_pct,"in calo del 6,84%",-6.84,-6.84,none,-6.84,"-0,00 punti",exact,
+s2-03U-1-claude,5,Claude,03,U,preregistered,previous_close,"rispetto agli 82,75 dollari del giorno prima",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03U-1-claude,6,Claude,03,U,preregistered,open,"Il sito IR di GM, che usa dati LSEG, indica invece 77,00 dollari",77,77,none,77.22,"-0,28%",error,sito IR di GM (dati LSEG)
+s2-03U-1-claude,7,Claude,03,U,preregistered,low,"un intervallo di giornata leggermente più stretto (75,10",75.1,75.1,none,75.07,"+0,04%",minimal_gap,sito IR di GM (dati LSEG)
+s2-03U-1-claude,8,Claude,03,U,preregistered,high,"–78,96)",78.96,78.96,none,78.97,"-0,01%",minimal_gap,sito IR di GM (dati LSEG)
+s2-03U-1-claude,9,Claude,03,U,preregistered,low,"contro 75,08",75.08,75.08,none,75.07,"+0,01%",minimal_gap,
+s2-03U-1-claude,10,Claude,03,U,preregistered,high,"–78,97 dollari",78.97,78.97,none,78.97,"+0,00%",exact,
+s2-03U-1-claude,11,Claude,03,U,preregistered,volume,S&P Global Market Intelligence indica 24.582.782 azioni,24582782,24582782,none,24697390,"-0,46%",accepted_rule3,S&P Global Market Intelligence
+s2-03U-1-claude,12,Claude,03,U,preregistered,volume,MarketScreener ne indica 24.697.390,24697390,24697390,none,24697390,"+0,00%",exact,MarketScreener
+s2-03U-1-claude,13,Claude,03,U,preregistered,volume,"Investing.com arrotonda a 24,70 milioni",24700000,24700000,none,24697390,"+0,01%",exact,Investing.com
+s2-03U-2-chatgpt,1,ChatGPT,03,U,preregistered,open,"Prezzo di apertura	77,22 USD",77.22,77.22,none,77.22,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-2-chatgpt,2,ChatGPT,03,U,preregistered,close,"Prezzo di chiusura	77,09 USD",77.09,77.09,none,77.09,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-2-chatgpt,3,ChatGPT,03,U,preregistered,volume,Volume complessivo degli scambi	24.697.390 azioni,24697390,24697390,none,24697390,"+0,00%",exact,ChartExchange e MarketScreener
+s2-03U-2-chatgpt,4,ChatGPT,03,U,preregistered,open,"il sito ufficiale di General Motors, che utilizza dati LSEG, riporta invece un'apertura di 77,00 USD",77,77,none,77.22,"-0,28%",error,sito di General Motors (dati LSEG)
+s2-03U-2-chatgpt,5,ChatGPT,03,U,preregistered,close,"una chiusura di 77,09 USD",77.09,77.09,none,77.09,"+0,00%",exact,sito di General Motors (dati LSEG)
+s2-03U-2-claude,1,Claude,03,U,preregistered,close,"Chiusura: 77,09 $",77.09,77.09,none,77.09,"+0,00%",exact,
+s2-03U-2-claude,2,Claude,03,U,preregistered,change_close_pct,"Il titolo ha perso il 6,84%",-6.84,-6.84,none,-6.84,"-0,00 punti",exact,
+s2-03U-2-claude,3,Claude,03,U,preregistered,previous_close,"dagli 82,75 $ della chiusura del 19 ottobre",82.75,82.75,none,82.75,"+0,00%",exact,
+s2-03U-2-claude,4,Claude,03,U,preregistered,volume,"Volume complessivo: circa 24,6–24,7 milioni di azioni",24600000,24700000,"circa, fra 24,6 e 24,7 milioni",24697390,"dentro l'intervallo (estremi −0,39% e +0,01%)",approximate_correct,
+s2-03U-2-claude,5,Claude,03,U,preregistered,volume,FinancialContent riporta 24.675.925 azioni scambiate,24675925,24675925,none,24697390,"-0,09%",minimal_gap,FinancialContent
+s2-03U-2-claude,6,Claude,03,U,preregistered,volume,S&P Global Market Intelligence (tramite StockAnalysis) 24.582.782,24582782,24582782,none,24697390,"-0,46%",accepted_rule3,S&P Global Market Intelligence (StockAnalysis)
+s2-03U-2-claude,7,Claude,03,U,preregistered,volume,"e Investing.com 24,70 milioni",24700000,24700000,none,24697390,"+0,01%",exact,Investing.com
+s2-03U-2-claude,8,Claude,03,U,preregistered,open,"Quattro fornitori di dati consolidati indicano 77,22 $",77.22,77.22,none,77.22,"+0,00%",exact,"FinancialContent, S&P Global, Investing.com, Yahoo Finance"
+s2-03U-2-claude,9,Claude,03,U,preregistered,open,"la pagina Investor Relations di GM, basata su dati LSEG, indica un'apertura a 77,00 $",77,77,none,77.22,"-0,28%",error,pagina Investor Relations di GM (dati LSEG)
 s2-04A-1-chatgpt,1,ChatGPT,04,A,preregistered,change_close_pct,"Meta ha perso il 6,98%",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Yahoo Finance +1
 s2-04A-1-chatgpt,2,ChatGPT,04,A,preregistered,previous_close,"Chiusura 21 ottobre 697,52 $",697.52,697.52,none,697.52,"+0,00%",exact,Yahoo Finance +1
 s2-04A-1-chatgpt,3,ChatGPT,04,A,preregistered,open,"Apertura 22 ottobre 676,35 $",676.35,676.35,none,676.35,"+0,00%",exact,Yahoo Finance +1
@@ -230,6 +323,39 @@ s2-04C-2-chatgpt,3,ChatGPT,04,C,preregistered,close,"passando da 697,52 a 648,85
 s2-04C-2-claude,1,Claude,04,C,preregistered,change_close_pct,nella seduta regolare di giovedì 22 ottobre Meta è scesa di circa il 7%,-7,-7,circa,-6.98,"-0,02 punti",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
 s2-04C-2-claude,2,Claude,04,C,preregistered,close,Il titolo ha chiuso poco sopra i 648 dollari,648,648,oltre/più di (poco sopra),648.85,"limite rispettato (vero 648,85)",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
 s2-04C-2-claude,3,Claude,04,C,preregistered,change_close_usd,circa 49 dollari in meno rispetto al giorno prima,-49,-49,circa,-48.67,"+0,68%",approximate_correct,"Meta Platforms slides 7% after earnings report, capex outlook (META:NASDAQ) +2"
+s2-04U-1-chatgpt,1,ChatGPT,04,U,preregistered,open,"Prezzo di apertura	676,35 USD",676.35,676.35,none,676.35,"+0,00%",exact,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-04U-1-chatgpt,2,ChatGPT,04,U,preregistered,close,"Prezzo di chiusura	648,85 USD",648.85,648.85,none,648.85,"+0,00%",exact,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-04U-1-chatgpt,3,ChatGPT,04,U,preregistered,volume,Volume complessivo	40.571.016 azioni,40571016,40571016,none,40571020,"-0,00001% (-4 azioni)",minimal_gap,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-04U-1-chatgpt,4,ChatGPT,04,U,preregistered,previous_close,"Rispetto alla chiusura del 21 ottobre (697,52 USD)",697.52,697.52,none,697.52,"+0,00%",exact,
+s2-04U-1-chatgpt,5,ChatGPT,04,U,preregistered,change_close_pct,"il titolo ha perso il 6,98%",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,
+s2-04U-1-claude,1,Claude,04,U,preregistered,open,"ha aperto a 676,35 dollari",676.35,676.35,none,676.35,"+0,00%",exact,
+s2-04U-1-claude,2,Claude,04,U,preregistered,close,"e ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,
+s2-04U-1-claude,3,Claude,04,U,preregistered,volume,"con un volume di circa 40,6 milioni di azioni",40600000,40600000,circa,40571020,"+0,07%",approximate_correct,
+s2-04U-1-claude,4,Claude,04,U,preregistered,change_close_usd,"Il titolo ha perso 48,67 dollari",-48.67,-48.67,none,-48.67,"+0,00 $",exact,
+s2-04U-1-claude,5,Claude,04,U,preregistered,change_close_pct,"cioè il 6,98%",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,
+s2-04U-1-claude,6,Claude,04,U,preregistered,previous_close,"rispetto alla chiusura precedente di 697,52 dollari",697.52,697.52,none,697.52,"+0,00%",exact,
+s2-04U-1-claude,7,Claude,04,U,preregistered,volume,"Gotrade, che prende il dato da Nasdaq.com, indica 40,6 milioni",40600000,40600000,none,40571020,"+0,07%",exact,"Gotrade (da Nasdaq.com), Motley Fool"
+s2-04U-1-claude,8,Claude,04,U,preregistered,volume,"Investing.com riporta 40,57 milioni",40570000,40570000,none,40571020,"-0,00%",exact,Investing.com
+s2-04U-1-claude,9,Claude,04,U,preregistered,volume,"StockAnalysis, che usa dati S&P Global Market Intelligence aggiornati al 23 ottobre, indica 40.299.288 azioni",40299288,40299288,none,40571020,"-0,67%",accepted_rule3,StockAnalysis (S&P Global Market Intelligence)
+s2-04U-1-gemini,1,Gemini,04,U,preregistered,open,"Prezzo di apertura ufficiale	676,35 $",676.35,676.35,none,676.35,"+0,00%",exact,
+s2-04U-1-gemini,2,Gemini,04,U,preregistered,close,"Prezzo di chiusura ufficiale	648,85 $",648.85,648.85,none,648.85,"+0,00%",exact,
+s2-04U-1-gemini,3,Gemini,04,U,preregistered,change_close_pct,"648,85 $ (-6,98%)",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,
+s2-04U-1-gemini,4,Gemini,04,U,preregistered,volume,Volume complessivo	40.571.016 azioni,40571016,40571016,none,40571020,"-0,00001% (-4 azioni)",minimal_gap,
+s2-04U-1-gemini,5,Gemini,04,U,preregistered,volume,"(~40,57 milioni)",40570000,40570000,~ (circa),40571020,"-0,00%",approximate_correct,
+s2-04U-1-gemini,6,Gemini,04,U,preregistered,high,"Massimo / Minimo intraday	681,07 $",681.07,681.07,none,681,"+0,01%",minimal_gap,
+s2-04U-1-gemini,7,Gemini,04,U,preregistered,low,"/ 639,69 $",639.69,639.69,none,639.69,"+0,00%",exact,
+s2-04U-2-chatgpt,1,ChatGPT,04,U,preregistered,open,"Prezzo di apertura	676,35 USD",676.35,676.35,none,676.35,"+0,00%",exact,Financial Times e MarketScreener
+s2-04U-2-chatgpt,2,ChatGPT,04,U,preregistered,close,"Prezzo di chiusura	648,85 USD",648.85,648.85,none,648.85,"+0,00%",exact,Financial Times e MarketScreener
+s2-04U-2-chatgpt,3,ChatGPT,04,U,preregistered,volume,Volume complessivo	40.571.016 azioni,40571016,40571016,none,40571020,"-0,00001% (-4 azioni)",minimal_gap,Financial Times e MarketScreener
+s2-04U-2-chatgpt,4,ChatGPT,04,U,preregistered,change_close_pct,"Variazione rispetto alla chiusura precedente	−6,98%",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,
+s2-04U-2-claude,1,Claude,04,U,preregistered,open,"Meta ha aperto a 676,35 dollari",676.35,676.35,none,676.35,"+0,00%",exact,
+s2-04U-2-claude,2,Claude,04,U,preregistered,previous_close,"contro una chiusura di 697,52 dollari il giorno prima",697.52,697.52,none,697.52,"+0,00%",exact,
+s2-04U-2-claude,3,Claude,04,U,preregistered,close,"Poi ha chiuso a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,
+s2-04U-2-claude,4,Claude,04,U,preregistered,change_close_usd,"in calo di 48,67 dollari",-48.67,-48.67,none,-48.67,"+0,00 $",exact,
+s2-04U-2-claude,5,Claude,04,U,preregistered,change_close_pct,"(-6,98%)",-6.98,-6.98,none,-6.98,"-0,00 punti",exact,
+s2-04U-2-claude,6,Claude,04,U,preregistered,volume,"Gotrade indica 40,6 milioni di azioni",40600000,40600000,none,40571020,"+0,07%",exact,Gotrade (da Nasdaq.com)
+s2-04U-2-claude,7,Claude,04,U,preregistered,volume,"i 40,57 milioni riportati da Investing.com",40570000,40570000,none,40571020,"-0,00%",exact,Investing.com
+s2-04U-2-claude,8,Claude,04,U,preregistered,volume,"StockAnalysis, che usa dati S&P Global Market Intelligence e indica 40.299.288 azioni",40299288,40299288,none,40571020,"-0,67%",accepted_rule3,StockAnalysis (S&P Global Market Intelligence)
 s2-05A-1-chatgpt,1,ChatGPT,05,A,preregistered,change_close_pct,"perdendo circa il 5,7% nella seduta",-5.7,-5.7,circa,-5.16,"-0,54 punti",approximate_correct,Barron's
 s2-05A-1-chatgpt,2,ChatGPT,05,A,preregistered,close,"chiudendo a 27,97 dollari per azione",27.97,27.97,none,28.12,"-0,53%",error,Barron's
 s2-05A-1-claude,1,Claude,05,A,preregistered,close,"Chipotle (CMG) ha chiuso a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,"Why Chipotle Mexican Grill, Inc.’s (CMG) Stock Is Down 5.07% +3"
@@ -286,6 +412,31 @@ s2-05C-2-chatgpt,3,ChatGPT,05,C,preregistered,previous_close,"rispetto ai 29,65 
 s2-05C-2-chatgpt,4,ChatGPT,05,C,preregistered,change_close_pct,Il movimento del 21 ottobre è stato quindi un ribasso di circa il 5%,-5,-5,circa,-5.16,"+0,16 punti",approximate_correct,
 s2-05C-2-claude,1,Claude,05,C,preregistered,change_close_pct,il 21 ottobre Chipotle è scesa del 4-5% circa,-5,-4,fra 4 e 5 (circa),-5.16,"vero -5,16% fuori dall'intervallo",approximate_correct,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +2
 s2-05C-2-claude,2,Claude,05,C,preregistered,previous_close,"contro una chiusura precedente di 29,65",29.65,29.65,none,29.65,"+0,00%",exact,Chipotle Sinks 4.1% on TD Cowen Downgrade: “Lackluster Start to Q4” +2
+s2-05U-1-chatgpt,1,ChatGPT,05,U,preregistered,open,"Prezzo di apertura	29,03 USD",29.03,29.03,none,29.027,"+0,01%",exact,ChartExchange e Quiver Quantitative
+s2-05U-1-chatgpt,2,ChatGPT,05,U,preregistered,close,"Prezzo di chiusura	28,12 USD",28.12,28.12,none,28.12,"+0,00%",exact,ChartExchange e Quiver Quantitative
+s2-05U-1-chatgpt,3,ChatGPT,05,U,preregistered,volume,Volume complessivo	27.919.258 azioni,27919258,27919258,none,27919260,"-0,00001% (-2 azioni)",minimal_gap,ChartExchange e Quiver Quantitative
+s2-05U-1-chatgpt,4,ChatGPT,05,U,preregistered,change_close_pct,"Il titolo ha chiuso in ribasso del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,
+s2-05U-1-claude,1,Claude,05,U,preregistered,open,"ha aperto a 29,03 $",29.03,29.03,none,29.027,"+0,01%",exact,
+s2-05U-1-claude,2,Claude,05,U,preregistered,close,"e chiuso a 28,12 $",28.12,28.12,none,28.12,"+0,00%",exact,
+s2-05U-1-claude,3,Claude,05,U,preregistered,change_close_pct,"in calo del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,
+s2-05U-1-claude,4,Claude,05,U,preregistered,previous_close,"rispetto ai 29,65 $ della seduta precedente",29.65,29.65,none,29.65,"+0,00%",exact,
+s2-05U-1-claude,5,Claude,05,U,preregistered,high,"ha toccato un massimo di 29,10 $",29.1,29.1,none,29.1,"+0,00%",exact,
+s2-05U-1-claude,6,Claude,05,U,preregistered,low,"e un minimo di 27,87 $",27.87,27.87,none,27.87,"+0,00%",exact,
+s2-05U-1-claude,7,Claude,05,U,preregistered,volume,"Il volume complessivo è stato di circa 27,9 milioni di azioni",27900000,27900000,circa,27919260,"-0,07%",approximate_correct,
+s2-05U-1-claude,8,Claude,05,U,preregistered,volume,MarketScreener riporta 27.919.258 titoli scambiati,27919258,27919258,none,27919260,"-0,00001% (-2 azioni)",minimal_gap,MarketScreener
+s2-05U-1-claude,9,Claude,05,U,preregistered,volume,"Investing.com indica 27,92 milioni",27920000,27920000,none,27919260,"+0,00%",exact,Investing.com
+s2-05U-1-claude,10,Claude,05,U,preregistered,volume,I dati S&P Global pubblicati da StockAnalysis riportano invece 27.794.861 azioni,27794861,27794861,none,27919260,"-0,45%",accepted_rule3,S&P Global (StockAnalysis)
+s2-05U-2-chatgpt,1,ChatGPT,05,U,preregistered,open,"Prezzo di apertura	29,03 USD",29.03,29.03,none,29.027,"+0,01%",exact,ChartExchange e Quiver Quantitative
+s2-05U-2-chatgpt,2,ChatGPT,05,U,preregistered,close,"Prezzo di chiusura	28,12 USD",28.12,28.12,none,28.12,"+0,00%",exact,ChartExchange e Quiver Quantitative
+s2-05U-2-chatgpt,3,ChatGPT,05,U,preregistered,volume,Volume complessivo	27.919.258 azioni,27919258,27919258,none,27919260,"-0,00001% (-2 azioni)",minimal_gap,ChartExchange e Quiver Quantitative
+s2-05U-2-claude,1,Claude,05,U,preregistered,open,"ha aperto a 29,03 dollari",29.03,29.03,none,29.027,"+0,01%",exact,StockAnalysis
+s2-05U-2-claude,2,Claude,05,U,preregistered,close,"e chiuso a 28,12 dollari",28.12,28.12,none,28.12,"+0,00%",exact,StockAnalysis
+s2-05U-2-claude,3,Claude,05,U,preregistered,volume,Il volume complessivo è stato di 27.794.861 azioni,27794861,27794861,none,27919260,"-0,45%",accepted_rule3,S&P Global Market Intelligence (StockAnalysis)
+s2-05U-2-claude,4,Claude,05,U,preregistered,low,"il titolo ha oscillato tra 27,87",27.87,27.87,none,27.87,"+0,00%",exact,StockAnalysis
+s2-05U-2-claude,5,Claude,05,U,preregistered,high,"e 29,10 dollari",29.1,29.1,none,29.1,"+0,00%",exact,StockAnalysis
+s2-05U-2-claude,6,Claude,05,U,preregistered,change_close_pct,"La chiusura corrisponde a un calo del 5,16%",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,AAII
+s2-05U-2-claude,7,Claude,05,U,preregistered,previous_close,"rispetto ai 29,65 dollari della seduta precedente",29.65,29.65,none,29.65,"+0,00%",exact,AAII
+s2-05U-2-claude,8,Claude,05,U,preregistered,volume,"un volume un po' più alto, circa 27,92 milioni di azioni",27920000,27920000,circa,27919260,"+0,00%",approximate_correct,Investing.com
 s2-06A-1-chatgpt,1,ChatGPT,06,A,preregistered,change_close_pct,"chiudendo la seduta di lunedì 12 ottobre 2026 in ribasso del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,Investor's Business Daily +1
 s2-06A-1-chatgpt,2,ChatGPT,06,A,preregistered,close,"Micron · 12 ottobre 2026 989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,
 s2-06A-1-chatgpt,3,ChatGPT,06,A,preregistered,change_close_usd,"−39,96 USD rispetto alla chiusura precedente di 1.029,00 USD",-39.96,-39.96,none,-39.96,"+0,00%",exact,
@@ -324,6 +475,35 @@ s2-06C-2-chatgpt,2,ChatGPT,06,C,preregistered,close,"ma ha perso circa il 3,9%, 
 s2-06C-2-claude,1,Claude,06,C,preregistered,close,"il titolo ha chiuso a 989,04 dollari, in calo del 3,88%",989.04,989.04,none,989.04,"+0,00%",exact,micron fell nearly 4 in a day as chinas cxmt targeted server memory heres why the threat aims at microns best margins +2
 s2-06C-2-claude,2,Claude,06,C,preregistered,change_close_pct,"il titolo ha chiuso a 989,04 dollari, in calo del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,micron fell nearly 4 in a day as chinas cxmt targeted server memory heres why the threat aims at microns best margins +2
 s2-06C-2-claude,3,Claude,06,C,preregistered,change_close_pct,La percentuale che ricordi è giusta ma con il segno opposto,-4,-4,circa (dalla domanda),-3.88,"0,12 punti",approximate_correct,
+s2-06U-1-chatgpt,1,ChatGPT,06,U,preregistered,open,"Prezzo di apertura	1.002,45 USD",1002.45,1002.45,none,1002.445,"+0,00%",exact,Financial Times e Stock Analysis
+s2-06U-1-chatgpt,2,ChatGPT,06,U,preregistered,close,"Prezzo di chiusura	989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,Financial Times e Stock Analysis
+s2-06U-1-chatgpt,3,ChatGPT,06,U,preregistered,volume,Volume complessivo	23.983.750 azioni,23983750,23983750,none,23983750,"+0,00%",exact,Financial Times e Stock Analysis
+s2-06U-1-chatgpt,4,ChatGPT,06,U,preregistered,change_close_pct,"una variazione del −3,88% rispetto alla chiusura della seduta precedente",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06U-1-claude,1,Claude,06,U,preregistered,open,"Micron (MU) ha aperto a 1.002,45 dollari",1002.45,1002.45,none,1002.445,"+0,00%",exact,
+s2-06U-1-claude,2,Claude,06,U,preregistered,close,"e ha chiuso a 989,04 dollari",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06U-1-claude,3,Claude,06,U,preregistered,high,"Il massimo di giornata è stato 1.002,67",1002.67,1002.67,none,1002.67,"+0,00%",exact,
+s2-06U-1-claude,4,Claude,06,U,preregistered,low,"e il minimo 978,50",978.5,978.5,none,978.5,"+0,00%",exact,
+s2-06U-1-claude,5,Claude,06,U,preregistered,change_close_pct,"Il calo è stato del 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06U-1-claude,6,Claude,06,U,preregistered,previous_close,"rispetto alla chiusura di venerdì 9 ottobre, a 1.029,00 dollari",1029,1029,none,1029,"+0,00%",exact,
+s2-06U-1-claude,7,Claude,06,U,preregistered,volume,FinancialContent riporta 23.819.141 azioni scambiate,23819141,23819141,none,23983750,"-0,69%",accepted_rule3,FinancialContent
+s2-06U-1-claude,8,Claude,06,U,preregistered,volume,"Investing.com 23,98 milioni",23980000,23980000,none,23983750,"-0,02%",exact,Investing.com
+s2-06U-1-gemini,1,Gemini,06,U,preregistered,open,"$1.002,45 come prezzo di apertura giornaliero consolidato sui listini storici",1002.45,1002.45,none,1002.445,"+0,00%",exact,listini storici
+s2-06U-1-gemini,2,Gemini,06,U,preregistered,open,"il parametro open_price di riepilogo del flusso JSON riporta invece $862,29",862.29,862.29,none,1002.445,"-13,98%",error,flusso JSON
+s2-06U-1-gemini,3,Gemini,06,U,preregistered,close,"Prezzo di chiusura ufficiale: $989,04",989.04,989.04,none,989.04,"+0,00%",exact,
+s2-06U-1-gemini,4,Gemini,06,U,preregistered,volume,Volume complessivo: 21.249.884 azioni secondo il dato di volume riportato nel prospetto JSON strutturato,21249884,21249884,none,23983750,"-11,40%",error,prospetto JSON strutturato
+s2-06U-1-gemini,5,Gemini,06,U,preregistered,volume,(23.983.750 azioni,23983750,23983750,none,23983750,"+0,00%",exact,consuntivo storico giornaliero
+s2-06U-1-gemini,6,Gemini,06,U,preregistered,volume,"pari a circa 23,98 milioni",23980000,23980000,circa,23983750,"-0,02%",approximate_correct,consuntivo storico giornaliero
+s2-06U-2-chatgpt,1,ChatGPT,06,U,preregistered,open,"Prezzo di apertura	1.002,45 USD",1002.45,1002.45,none,1002.445,"+0,00%",exact,Financial Times e FinanceCharts
+s2-06U-2-chatgpt,2,ChatGPT,06,U,preregistered,close,"Prezzo di chiusura	989,04 USD",989.04,989.04,none,989.04,"+0,00%",exact,Financial Times e FinanceCharts
+s2-06U-2-chatgpt,3,ChatGPT,06,U,preregistered,volume,Volume complessivo	23.983.750 azioni,23983750,23983750,none,23983750,"+0,00%",exact,Financial Times e FinanceCharts
+s2-06U-2-chatgpt,4,ChatGPT,06,U,preregistered,change_close_pct,"è stata del −3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06U-2-claude,1,Claude,06,U,preregistered,open,"Micron ha aperto a 1.002,45 $",1002.45,1002.45,none,1002.445,"+0,00%",exact,FinancialContent e Investing.com
+s2-06U-2-claude,2,Claude,06,U,preregistered,close,"e chiuso a 989,04 $",989.04,989.04,none,989.04,"+0,00%",exact,FinancialContent e Investing.com
+s2-06U-2-claude,3,Claude,06,U,preregistered,volume,con un volume di 23.819.141 azioni,23819141,23819141,none,23983750,"-0,69%",accepted_rule3,FinancialContent
+s2-06U-2-claude,4,Claude,06,U,preregistered,volume,"(circa 23,8 milioni)",23800000,23800000,circa,23983750,"-0,77%",approximate_correct,
+s2-06U-2-claude,5,Claude,06,U,preregistered,previous_close,"Rispetto alla chiusura di 1.029,00 $ di venerdì 9 ottobre",1029,1029,none,1029,"+0,00%",exact,
+s2-06U-2-claude,6,Claude,06,U,preregistered,change_close_pct,"il titolo ha perso il 3,88%",-3.88,-3.88,none,-3.88,"+0,00 punti",exact,
+s2-06U-2-claude,7,Claude,06,U,preregistered,volume,"Investing.com indica circa 23,98 milioni di azioni",23980000,23980000,circa,23983750,"-0,02%",approximate_correct,Investing.com
 s2-07A-1-chatgpt,1,ChatGPT,07,A,preregistered,change_close_pct,"+11,2%",11.2,11.2,none,11.2,"+0,00 punti",exact,AP News +1 (scheda dopo il paragrafo seguente)
 s2-07A-1-chatgpt,2,ChatGPT,07,A,preregistered,previous_close,"Chiusura del 19 ottobre: 98,49 dollari.",98.49,98.49,none,98.49,"+0,00%",exact,"Hasbro, Inc. +1"
 s2-07A-1-chatgpt,3,ChatGPT,07,A,preregistered,open,"Apertura del 20 ottobre: 102,40 dollari.",102.4,102.4,none,102.4,"+0,00%",exact,"Hasbro, Inc. +1"
@@ -377,6 +557,43 @@ s2-07C-2-claude,1,Claude,07,C,preregistered,change_close_pct,Hasbro è salita di
 s2-07C-2-claude,2,Claude,07,C,preregistered,close,"Le azioni hanno chiuso a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,tokenpost; investing
 s2-07C-2-claude,3,Claude,07,C,preregistered,change_close_usd,"con un guadagno di 11,02 dollari",11.02,11.02,none,11.03,"-0,01 $ (-0,09%)",minimal_gap,tokenpost; investing
 s2-07C-2-claude,4,Claude,07,C,preregistered,change_close_pct,(poco più dell’11%),11,11,oltre/più di (poco più di),11.2,"-0,20 punti (limite vero)",approximate_correct,tokenpost; investing
+s2-07U-1-chatgpt,1,ChatGPT,07,U,preregistered,open,"102,40 USD",102.4,102.4,none,102.4,"+0,00%",exact,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-1-chatgpt,2,ChatGPT,07,U,preregistered,close,"109,52 USD",109.52,109.52,none,109.52,"+0,00%",exact,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-1-chatgpt,3,ChatGPT,07,U,preregistered,volume,8.009.894 azioni,8009894,8009894,none,8011313,"-0,018%",minimal_gap,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-1-claude,1,Claude,07,U,preregistered,change_close_pct,salito di circa l’11%,11,11,circa,11.1991,"-0,20 punti",approximate_correct,
+s2-07U-1-claude,2,Claude,07,U,preregistered,open,"ha aperto a 102,40 dollari",102.4,102.4,none,102.4,"+0,00%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-07U-1-claude,3,Claude,07,U,preregistered,close,"chiuso a 109,52 dollari",109.52,109.52,none,109.52,"+0,00%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-07U-1-claude,4,Claude,07,U,preregistered,low,"Il minimo è stato 101,40",101.4,101.4,none,101.4,"+0,00%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-07U-1-claude,5,Claude,07,U,preregistered,high,"il massimo 109,81",109.81,109.81,none,109.81,"+0,00%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-07U-1-claude,6,Claude,07,U,preregistered,change_close_usd,"un rialzo di 11,03 dollari",11.03,11.03,none,11.03,"+0,00 $ (+0,00%)",exact,
+s2-07U-1-claude,7,Claude,07,U,preregistered,change_close_pct,"(+11,20%)",11.2,11.2,none,11.1991,"+0,00089 punti",exact,
+s2-07U-1-claude,8,Claude,07,U,preregistered,previous_close,"chiusura precedente di 98,49 dollari",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07U-1-claude,9,Claude,07,U,preregistered,volume,StockAnalysis riporta 8.009.496 azioni,8009496,8009496,none,8011313,"-0,023%",minimal_gap,StockAnalysis
+s2-07U-1-claude,10,Claude,07,U,preregistered,volume,un volume di 8.011.313 azioni,8011313,8011313,none,8011313,"+0,00%",exact,Forbes
+s2-07U-1-claude,11,Claude,07,U,preregistered,volume,"circa 8,01 milioni di titoli",8010000,8010000,circa,8011313,"-0,016%",approximate_correct,
+s2-07U-1-claude,12,Claude,07,U,preregistered,close,"ha chiuso a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,Seeking Alpha
+s2-07U-1-claude,13,Claude,07,U,preregistered,change_close_usd,"in rialzo di 11,02",11.02,11.02,none,11.03,"-0,01 $ (-0,09%)",minimal_gap,Seeking Alpha
+s2-07U-1-gemini,1,Gemini,07,U,preregistered,open,"Prezzo di apertura ufficiale: $102,40",102.4,102.4,none,102.4,"+0,00%",exact,
+s2-07U-1-gemini,2,Gemini,07,U,preregistered,close,"Prezzo di chiusura ufficiale: $109,52",109.52,109.52,none,109.52,"+0,00%",exact,
+s2-07U-1-gemini,3,Gemini,07,U,preregistered,change_close_pct,"+11,20% rispetto alla chiusura precedente",11.2,11.2,none,11.1991,"+0,00089 punti",exact,
+s2-07U-1-gemini,4,Gemini,07,U,preregistered,previous_close,"chiusura precedente di $98,49",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07U-1-gemini,5,Gemini,07,U,preregistered,volume,"circa 8,01 milioni di azioni",8010000,8010000,circa,8011313,"-0,016%",approximate_correct,
+s2-07U-1-gemini,6,Gemini,07,U,preregistered,volume,8.009.496 secondo i dati consolidati di fine giornata di Stock Analysis,8009496,8009496,none,8011313,"-0,023%",minimal_gap,Stock Analysis
+s2-07U-1-gemini,7,Gemini,07,U,preregistered,volume,8.011.313 secondo il dato consolidato riportato da Forbes,8011313,8011313,none,8011313,"+0,00%",exact,Forbes
+s2-07U-1-gemini,8,Gemini,07,U,preregistered,low,"Escursione giornaliera (Min – Max): $101,40 – $109,81",101.4,101.4,none,101.4,"+0,00%",exact,
+s2-07U-1-gemini,9,Gemini,07,U,preregistered,high,"Escursione giornaliera (Min – Max): $101,40 – $109,81",109.81,109.81,none,109.81,"+0,00%",exact,
+s2-07U-2-chatgpt,1,ChatGPT,07,U,preregistered,open,"102,40 USD",102.4,102.4,none,102.4,"+0,00%",exact,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-2-chatgpt,2,ChatGPT,07,U,preregistered,close,"109,52 USD",109.52,109.52,none,109.52,"+0,00%",exact,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-2-chatgpt,3,ChatGPT,07,U,preregistered,volume,8.009.894 azioni,8009894,8009894,none,8011313,"-0,018%",minimal_gap,Hasbro – Historic Stock Lookup (dati LSEG)
+s2-07U-2-claude,1,Claude,07,U,preregistered,open,"ha aperto a 102,40 dollari",102.4,102.4,none,102.4,"+0,00%",exact,"StockAnalysis, riquadro"
+s2-07U-2-claude,2,Claude,07,U,preregistered,close,"ha chiuso a 109,52 dollari",109.52,109.52,none,109.52,"+0,00%",exact,"StockAnalysis, riquadro"
+s2-07U-2-claude,3,Claude,07,U,preregistered,change_close_usd,"in rialzo di 11,03 dollari",11.03,11.03,none,11.03,"+0,00 $ (+0,00%)",exact,
+s2-07U-2-claude,4,Claude,07,U,preregistered,change_close_pct,"(+11,20%)",11.2,11.2,none,11.1991,"+0,00089 punti",exact,
+s2-07U-2-claude,5,Claude,07,U,preregistered,previous_close,"chiusura precedente di 98,49 dollari",98.49,98.49,none,98.49,"+0,00%",exact,
+s2-07U-2-claude,6,Claude,07,U,preregistered,volume,"circa 8,01 milioni di azioni",8010000,8010000,circa,8011313,"-0,016%",approximate_correct,
+s2-07U-2-claude,7,Claude,07,U,preregistered,volume,8.009.496 secondo S&P Global Market Intelligence,8009496,8009496,none,8011313,"-0,023%",minimal_gap,S&P Global Market Intelligence (StockAnalysis)
+s2-07U-2-claude,8,Claude,07,U,preregistered,volume,8.011.313 secondo Forbes e MarketScreener,8011313,8011313,none,8011313,"+0,00%",exact,Forbes e MarketScreener
+s2-07U-2-claude,9,Claude,07,U,preregistered,close,"una chiusura a 109,51 dollari",109.51,109.51,none,109.52,"-0,01%",minimal_gap,Seeking Alpha
 s2-08A-1-chatgpt,1,ChatGPT,08,A,preregistered,close,"589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,"MarketWatch +1 («Fonte: MarketWatch, dati della seduta del 22 ottobre 2026»)"
 s2-08A-1-chatgpt,2,ChatGPT,08,A,preregistered,change_close_pct,"+6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,MarketWatch +1
 s2-08A-1-chatgpt,3,ChatGPT,08,A,preregistered,change_close_usd,"+38,40 USD",38.4,38.4,none,38.4,"+0,00 $ (+0,00%)",exact,MarketWatch +1
@@ -451,6 +668,37 @@ s2-08C-2-chatgpt,5,ChatGPT,08,C,preregistered,change_close_pct,il +7% del 22 ott
 s2-08C-2-claude,1,Claude,08,C,preregistered,change_close_pct,"la cifra che ricordi è giusta, ma con il segno opposto",7,7,"circa (cifra della domanda, «circa il 7%», confermata con segno opposto)",6.96,"+0,04 punti",approximate_correct,marketscreener; 247wallst (citazioni del paragrafo)
 s2-08C-2-claude,2,Claude,08,C,preregistered,close,"Il titolo ha chiuso la seduta a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,marketscreener; 247wallst (citazioni del paragrafo)
 s2-08C-2-claude,3,Claude,08,C,preregistered,change_close_pct,"in rialzo del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,marketscreener; 247wallst (citazioni del paragrafo)
+s2-08U-1-chatgpt,1,ChatGPT,08,U,preregistered,open,"579,51 USD",579.51,579.51,none,579.505,"+0,00086%",exact,Lockheed Martin – Historical Price Lookup (dati LSEG)
+s2-08U-1-chatgpt,2,ChatGPT,08,U,preregistered,close,"589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,Lockheed Martin – Historical Price Lookup (dati LSEG)
+s2-08U-1-chatgpt,3,ChatGPT,08,U,preregistered,volume,2.960.356 azioni,2960356,2960356,none,2960356,"+0,00%",exact,Lockheed Martin – Historical Price Lookup (dati LSEG)
+s2-08U-1-chatgpt,4,ChatGPT,08,U,preregistered,previous_close,"(551,51 USD)",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08U-1-chatgpt,5,ChatGPT,08,U,preregistered,change_close_pct,"è stata del +6,96%",6.96,6.96,none,6.9627,"-0,0027 punti",exact,
+s2-08U-1-claude,1,Claude,08,U,preregistered,open,"un’apertura a 579,51 dollari",579.51,579.51,none,579.505,"+0,00086%",exact,sito Investor Relations di Lockheed Martin (dati LSEG)
+s2-08U-1-claude,2,Claude,08,U,preregistered,close,"una chiusura a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,sito Investor Relations di Lockheed Martin (dati LSEG)
+s2-08U-1-claude,3,Claude,08,U,preregistered,volume,un volume di 2.960.356 azioni,2960356,2960356,none,2960356,"+0,00%",exact,sito Investor Relations di Lockheed Martin (dati LSEG)
+s2-08U-1-claude,4,Claude,08,U,preregistered,high,"Il massimo di giornata è stato 608,00 dollari",608,608,none,608,"+0,00%",exact,sito Investor Relations di Lockheed Martin (dati LSEG)
+s2-08U-1-claude,5,Claude,08,U,preregistered,low,"il minimo 577,24",577.24,577.24,none,577.24,"+0,00%",exact,sito Investor Relations di Lockheed Martin (dati LSEG)
+s2-08U-1-claude,6,Claude,08,U,preregistered,open,"indica 579,51",579.51,579.51,none,579.505,"+0,00086%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-08U-1-claude,7,Claude,08,U,preregistered,close,"e 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,StockAnalysis (S&P Global Market Intelligence)
+s2-08U-1-claude,8,Claude,08,U,preregistered,close,"MarketScreener registra la chiusura del NYSE alle 16:00 a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,MarketScreener
+s2-08U-1-claude,9,Claude,08,U,preregistered,change_close_pct,"pari a +6,96%",6.96,6.96,none,6.9627,"-0,0027 punti",exact,MarketScreener
+s2-08U-1-claude,10,Claude,08,U,preregistered,volume,S&P Global conta 2.947.190 azioni,2947190,2947190,none,2960356,"-0,445%",accepted_rule3,S&P Global
+s2-08U-1-claude,11,Claude,08,U,preregistered,previous_close,"il giorno prima il titolo aveva chiuso a 551,51 dollari",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08U-2-chatgpt,1,ChatGPT,08,U,preregistered,open,"579,51 USD",579.51,579.51,none,579.505,"+0,00086%",exact,MarketScreener e Quiver Quantitative
+s2-08U-2-chatgpt,2,ChatGPT,08,U,preregistered,close,"589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,MarketScreener e Quiver Quantitative
+s2-08U-2-chatgpt,3,ChatGPT,08,U,preregistered,volume,2.960.356 azioni,2960356,2960356,none,2960356,"+0,00%",exact,MarketScreener e Quiver Quantitative
+s2-08U-2-chatgpt,4,ChatGPT,08,U,preregistered,change_close_pct,"Il titolo ha guadagnato il 6,96%",6.96,6.96,none,6.9627,"-0,0027 punti",exact,
+s2-08U-2-chatgpt,5,ChatGPT,08,U,preregistered,previous_close,"pari a 551,51 USD",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08U-2-claude,1,Claude,08,U,preregistered,open,"un’apertura a 579,51 dollari",579.51,579.51,none,579.505,"+0,00086%",exact,sito investor relations di Lockheed Martin (dati LSEG)
+s2-08U-2-claude,2,Claude,08,U,preregistered,close,"una chiusura a 589,91 dollari",589.91,589.91,none,589.91,"+0,00%",exact,sito investor relations di Lockheed Martin (dati LSEG)
+s2-08U-2-claude,3,Claude,08,U,preregistered,volume,un volume di 2.960.356 azioni,2960356,2960356,none,2960356,"+0,00%",exact,sito investor relations di Lockheed Martin (dati LSEG)
+s2-08U-2-claude,4,Claude,08,U,preregistered,low,"Il minimo di giornata è stato 577,24 dollari",577.24,577.24,none,577.24,"+0,00%",exact,sito investor relations di Lockheed Martin (dati LSEG)
+s2-08U-2-claude,5,Claude,08,U,preregistered,high,"il massimo 608,00 dollari",608,608,none,608,"+0,00%",exact,sito investor relations di Lockheed Martin (dati LSEG)
+s2-08U-2-claude,6,Claude,08,U,preregistered,previous_close,"La chiusura del giorno prima era 551,51 dollari",551.51,551.51,none,551.51,"+0,00%",exact,
+s2-08U-2-claude,7,Claude,08,U,preregistered,change_close_usd,"ha guadagnato 38,40 dollari",38.4,38.4,none,38.4,"+0,00 $ (+0,00%)",exact,
+s2-08U-2-claude,8,Claude,08,U,preregistered,change_close_pct,"cioè il 6,96%",6.96,6.96,none,6.9627,"-0,0027 punti",exact,
+s2-08U-2-claude,9,Claude,08,U,preregistered,volume,"lo stesso volume di circa 2,96 milioni di azioni",2960000,2960000,circa,2960356,"-0,012%",approximate_correct,MarketBeat
+s2-08U-2-claude,10,Claude,08,U,preregistered,close,"La chiusura a 589,91 dollari è confermata anche da GuruFocus",589.91,589.91,none,589.91,"+0,00%",exact,GuruFocus
 s2-09A-1-chatgpt,1,ChatGPT,09,A,preregistered,change_high_pct,arrivando a registrare rialzi vicini all'8%,8,8,vicino a (circa),8.53,"-0,53 punti",approximate_correct,Investing.com Italia +1
 s2-09A-1-chatgpt,2,ChatGPT,09,A,preregistered,change_close_pct,"+6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,StockAnalysis.com +1
 s2-09A-1-chatgpt,3,ChatGPT,09,A,preregistered,close,"a 34,10 USD",34.1,34.1,none,34.1,"+0,00%",exact,StockAnalysis.com +1
@@ -499,6 +747,48 @@ s2-09C-2-chatgpt,4,ChatGPT,09,C,preregistered,change_close_pct,"Variazione
 +6,90%",6.9,6.9,none,6.9,"+0,00 punti",exact,ChartExchange +1; «Fonte: storico delle quotazioni NYSE»
 s2-09C-2-claude,1,Claude,09,C,preregistered,change_close_pct,"è salito, non sceso, di un’entità simile a quella che ricordi",7,7,circa (entità simile al «circa il 7%» della domanda),6.9,"+0,10 punti",approximate_correct,
 s2-09C-2-claude,2,Claude,09,C,preregistered,change_close_pct,secondo Reuters il rialzo sulla notizia è stato di circa l’8%,8,8,circa,6.9,"+1,10 punti",approximate_correct,Reuters (nel testo); International Paper Aktie: Finanzinvestoren prüfen Milliardenangebote für Europageschäft +2
+s2-09U-1-chatgpt,1,ChatGPT,09,U,preregistered,open,"33,25 USD",33.25,33.25,none,33.25,"+0,00%",exact,MarketScreener e Quiver Quantitative
+s2-09U-1-chatgpt,2,ChatGPT,09,U,preregistered,close,"34,10 USD",34.1,34.1,none,34.1,"+0,00%",exact,MarketScreener e Quiver Quantitative
+s2-09U-1-chatgpt,3,ChatGPT,09,U,preregistered,volume,9.007.359 azioni,9007359,9007359,none,9007359,"+0,00%",exact,MarketScreener e Quiver Quantitative
+s2-09U-1-chatgpt,4,ChatGPT,09,U,preregistered,change_close_pct,"un rialzo del 6,90%",6.9,6.9,none,6.8966,"+0,0034 punti",exact,
+s2-09U-1-chatgpt,5,ChatGPT,09,U,preregistered,previous_close,"(31,90 USD)",31.9,31.9,none,31.9,"+0,00%",exact,
+s2-09U-1-claude,1,Claude,09,U,preregistered,open,"ha aperto a 33,25 dollari",33.25,33.25,none,33.25,"+0,00%",exact,"StockAnalysis (S&P Global), riquadro"
+s2-09U-1-claude,2,Claude,09,U,preregistered,close,"chiuso a 34,10 dollari",34.1,34.1,none,34.1,"+0,00%",exact,"StockAnalysis (S&P Global), riquadro"
+s2-09U-1-claude,3,Claude,09,U,preregistered,volume,un volume complessivo di 9.000.367 azioni,9000367,9000367,none,9007359,"-0,078%",minimal_gap,"StockAnalysis (S&P Global), riquadro"
+s2-09U-1-claude,4,Claude,09,U,preregistered,volume,"un volume arrotondato a 9,01 milioni",9010000,9010000,none,9007359,"+0,029%",exact,Investing.com
+s2-09U-1-claude,5,Claude,09,U,preregistered,change_close_usd,"un guadagno di 2,20 dollari",2.2,2.2,none,2.2,"+0,00 $ (+0,00%)",exact,
+s2-09U-1-claude,6,Claude,09,U,preregistered,change_close_pct,"pari al +6,90%",6.9,6.9,none,6.8966,"+0,0034 punti",exact,
+s2-09U-1-claude,7,Claude,09,U,preregistered,previous_close,"rispetto ai 31,90 dollari della seduta precedente",31.9,31.9,none,31.9,"+0,00%",exact,
+s2-09U-1-claude,8,Claude,09,U,preregistered,low,"il titolo ha oscillato tra 32,74 e 34,62 dollari",32.74,32.74,none,32.74,"+0,00%",exact,
+s2-09U-1-claude,9,Claude,09,U,preregistered,high,"il titolo ha oscillato tra 32,74 e 34,62 dollari",34.62,34.62,none,34.62,"+0,00%",exact,
+s2-09U-1-gemini,1,Gemini,09,U,preregistered,open,"Prezzo di apertura ufficiale: $33,25 USD",33.25,33.25,none,33.25,"+0,00%",exact,
+s2-09U-1-gemini,2,Gemini,09,U,preregistered,close,"$34,10 USD secondo i listini storici giornalieri consolidati",34.1,34.1,none,34.1,"+0,00%",exact,listini storici giornalieri consolidati
+s2-09U-1-gemini,3,Gemini,09,U,preregistered,change_close_pct,"+6,90% rispetto alla chiusura del 14 ottobre",6.9,6.9,none,6.8966,"+0,0034 punti",exact,
+s2-09U-1-gemini,4,Gemini,09,U,preregistered,previous_close,"a $31,90 USD",31.9,31.9,none,31.9,"+0,00%",exact,
+s2-09U-1-gemini,5,Gemini,09,U,preregistered,close,"il parametro last_close_price segna $33,67 USD",33.67,33.67,none,34.1,"-1,26%",error,feed strutturato (FinanceResult)
+s2-09U-1-gemini,6,Gemini,09,U,preregistered,volume,"Circa 9,01 milioni di azioni",9010000,9010000,circa,9007359,"+0,029%",approximate_correct,dati storici consolidati
+s2-09U-1-gemini,7,Gemini,09,U,preregistered,volume,9.007.359 da Forbes e Seeking Alpha,9007359,9007359,none,9007359,"+0,00%",exact,Forbes e Seeking Alpha
+s2-09U-1-gemini,8,Gemini,09,U,preregistered,volume,9.006.800 da Open Jungle,9006800,9006800,none,9007359,"-0,006%",minimal_gap,Open Jungle
+s2-09U-1-gemini,9,Gemini,09,U,preregistered,volume,9.000.367 da Stock Analysis,9000367,9000367,none,9007359,"-0,078%",minimal_gap,Stock Analysis
+s2-09U-1-gemini,10,Gemini,09,U,preregistered,volume,il campo volume riporta il valore 149,149,149,none,9007359,"-100,00%",error,feed strutturato (FinanceResult)
+s2-09U-1-gemini,11,Gemini,09,U,preregistered,high,"Massimo intraday: $34,62 USD",34.62,34.62,none,34.62,"+0,00%",exact,
+s2-09U-1-gemini,12,Gemini,09,U,preregistered,high,"high_price: $33,575 USD",33.575,33.575,none,34.62,"-3,02%",error,feed strutturato
+s2-09U-1-gemini,13,Gemini,09,U,preregistered,low,"Minimo intraday: $32,74 USD",32.74,32.74,none,32.74,"+0,00%",exact,
+s2-09U-1-gemini,14,Gemini,09,U,preregistered,low,"low_price: $32,77 USD",32.77,32.77,none,32.74,"+0,09%",minimal_gap,feed strutturato
+s2-09U-2-chatgpt,1,ChatGPT,09,U,preregistered,open,"33,25 USD",33.25,33.25,none,33.25,"+0,00%",exact,MarketScreener e ChartExchange
+s2-09U-2-chatgpt,2,ChatGPT,09,U,preregistered,close,"34,10 USD",34.1,34.1,none,34.1,"+0,00%",exact,MarketScreener e ChartExchange
+s2-09U-2-chatgpt,3,ChatGPT,09,U,preregistered,volume,9.007.359 azioni,9007359,9007359,none,9007359,"+0,00%",exact,MarketScreener e ChartExchange
+s2-09U-2-chatgpt,4,ChatGPT,09,U,preregistered,change_close_pct,"un rialzo del 6,90%",6.9,6.9,none,6.8966,"+0,0034 punti",exact,
+s2-09U-2-chatgpt,5,ChatGPT,09,U,preregistered,previous_close,"chiusura precedente di 31,90 USD",31.9,31.9,none,31.9,"+0,00%",exact,
+s2-09U-2-claude,1,Claude,09,U,preregistered,open,"ha aperto a 33,25 dollari",33.25,33.25,none,33.25,"+0,00%",exact,
+s2-09U-2-claude,2,Claude,09,U,preregistered,previous_close,"ai 31,90 dollari della chiusura precedente",31.9,31.9,none,31.9,"+0,00%",exact,
+s2-09U-2-claude,3,Claude,09,U,preregistered,close,"ha chiuso a 34,10 dollari",34.1,34.1,none,34.1,"+0,00%",exact,
+s2-09U-2-claude,4,Claude,09,U,preregistered,change_close_usd,"in rialzo di 2,20 dollari",2.2,2.2,none,2.2,"+0,00 $ (+0,00%)",exact,
+s2-09U-2-claude,5,Claude,09,U,preregistered,change_close_pct,"(+6,90%)",6.9,6.9,none,6.8966,"+0,0034 punti",exact,
+s2-09U-2-claude,6,Claude,09,U,preregistered,volume,circa 9 milioni di azioni,9000000,9000000,circa,9007359,"-0,082%",approximate_correct,
+s2-09U-2-claude,7,Claude,09,U,preregistered,volume,9.007.359 secondo StockScan,9007359,9007359,none,9007359,"+0,00%",exact,StockScan
+s2-09U-2-claude,8,Claude,09,U,preregistered,low,"il titolo ha oscillato tra 32,74 e 34,62 dollari",32.74,32.74,none,32.74,"+0,00%",exact,
+s2-09U-2-claude,9,Claude,09,U,preregistered,high,"il titolo ha oscillato tra 32,74 e 34,62 dollari",34.62,34.62,none,34.62,"+0,00%",exact,
 s2-10A-1-chatgpt,1,ChatGPT,10,A,preregistered,change_close_pct,"+9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,
 s2-10A-1-chatgpt,2,ChatGPT,10,A,preregistered,close,"85,97 USD",85.97,85.97,none,85.97,"+0,00%",exact,
 s2-10A-1-chatgpt,3,ChatGPT,10,A,preregistered,change_close_usd,"+7,14 USD",7.14,7.14,none,7.14,"+0,00%",exact,
@@ -562,6 +852,42 @@ s2-10C-2-claude,1,Claude,10,C,preregistered,change_close_pct,è salita di circa 
 s2-10C-2-claude,2,Claude,10,C,preregistered,close,"Il titolo ha chiuso a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
 s2-10C-2-claude,3,Claude,10,C,preregistered,change_close_usd,"7,14 dollari sopra la chiusura precedente",7.14,7.14,none,7.14,"+0,00%",exact,tokenpost (Crown Castle Closes 9% Higher…)
 s2-10C-2-claude,4,Claude,10,C,preregistered,change_close_pct,"Crown Castle ha guadagnato il 9,06%",9.06,9.06,none,9.06,"+0,00 punti",exact,tokenpost (Crown Castle Closes 9% Higher…)
+s2-10U-1-chatgpt,1,ChatGPT,10,U,preregistered,open,"Prezzo di apertura: 91,02 USD",91.02,91.02,none,91.02,"+0,00%",exact,Stock Analysis e Investing.com
+s2-10U-1-chatgpt,2,ChatGPT,10,U,preregistered,close,"Prezzo di chiusura ufficiale: 85,97 USD",85.97,85.97,none,85.97,"+0,00%",exact,Stock Analysis e Investing.com
+s2-10U-1-chatgpt,3,ChatGPT,10,U,preregistered,volume,"circa 17,32 milioni di azioni",17320000,17320000,circa,17324090,"-0,024%",approximate_correct,
+s2-10U-1-chatgpt,4,ChatGPT,10,U,preregistered,volume,riporta 17.324.187 azioni scambiate,17324187,17324187,none,17324090,"+0,001%",minimal_gap,Stock Analysis (S&P Global Market Intelligence)
+s2-10U-1-chatgpt,5,ChatGPT,10,U,preregistered,volume,Yahoo Finance indica 17.322.100 azioni,17322100,17322100,none,17324090,"-0,011%",minimal_gap,Yahoo Finance
+s2-10U-1-claude,1,Claude,10,U,preregistered,open,"ha aperto a 91,02 dollari",91.02,91.02,none,91.02,"+0,00%",exact,"dati LSEG, sito investor relations della società"
+s2-10U-1-claude,2,Claude,10,U,preregistered,close,"ha chiuso a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,"dati LSEG, sito investor relations della società"
+s2-10U-1-claude,3,Claude,10,U,preregistered,volume,un volume di 17.322.815 azioni,17322815,17322815,none,17324090,"-0,007%",minimal_gap,"dati LSEG, sito investor relations della società"
+s2-10U-1-claude,4,Claude,10,U,preregistered,low,"un intervallo di giornata tra 85,00 e 91,45 dollari",85,85,none,85,"+0,00%",exact,"dati LSEG, sito investor relations della società"
+s2-10U-1-claude,5,Claude,10,U,preregistered,high,"un intervallo di giornata tra 85,00 e 91,45 dollari",91.45,91.45,none,91.56,"-0,12%",minimal_gap,"dati LSEG, sito investor relations della società"
+s2-10U-1-claude,6,Claude,10,U,preregistered,change_close_usd,"un rialzo di 7,14 dollari",7.14,7.14,none,7.14,"+0,00 $ (+0,00%)",exact,Yahoo
+s2-10U-1-claude,7,Claude,10,U,preregistered,change_close_pct,"(+9,06%)",9.06,9.06,none,9.0575,"+0,0025 punti",exact,Yahoo
+s2-10U-1-claude,8,Claude,10,U,preregistered,previous_close,"rispetto ai 78,83 della seduta precedente",78.83,78.83,none,78.83,"+0,00%",exact,Yahoo
+s2-10U-1-claude,9,Claude,10,U,preregistered,volume,Yahoo indica 17.320.678 azioni,17320678,17320678,none,17324090,"-0,020%",minimal_gap,Yahoo
+s2-10U-1-claude,10,Claude,10,U,preregistered,volume,StockAnalysis 17.324.187,17324187,17324187,none,17324090,"+0,001%",minimal_gap,StockAnalysis
+s2-10U-1-claude,11,Claude,10,U,preregistered,volume,"circa 17,3 milioni di titoli",17300000,17300000,circa,17324090,"-0,139%",approximate_correct,
+s2-10U-1-gemini,1,Gemini,10,U,preregistered,open,"Prezzo di apertura ufficiale: $91,02 USD",91.02,91.02,none,91.02,"+0,00%",exact,
+s2-10U-1-gemini,2,Gemini,10,U,preregistered,close,"Prezzo di chiusura ufficiale: $85,97 USD",85.97,85.97,none,85.97,"+0,00%",exact,
+s2-10U-1-gemini,3,Gemini,10,U,preregistered,volume,17.324.085 azioni,17324085,17324085,none,17324090,"-0,000029%",minimal_gap,
+s2-10U-1-gemini,4,Gemini,10,U,preregistered,volume,"circa 17,32 milioni",17320000,17320000,circa,17324090,"-0,024%",approximate_correct,
+s2-10U-1-gemini,5,Gemini,10,U,preregistered,high,"un massimo intraday di $91,45 USD",91.45,91.45,none,91.56,"-0,12%",minimal_gap,
+s2-10U-1-gemini,6,Gemini,10,U,preregistered,low,"un minimo di $85,00 USD",85,85,none,85,"+0,00%",exact,
+s2-10U-1-gemini,7,Gemini,10,U,preregistered,change_close_pct,un progresso complessivo di circa il 9%,9,9,circa,9.0575,"-0,06 punti",approximate_correct,
+s2-10U-2-chatgpt,1,ChatGPT,10,U,preregistered,open,"91,02 USD",91.02,91.02,none,91.02,"+0,00%",exact,Crown Castle – Historical Price Lookup (dati LSEG)
+s2-10U-2-chatgpt,2,ChatGPT,10,U,preregistered,close,"85,97 USD",85.97,85.97,none,85.97,"+0,00%",exact,Crown Castle – Historical Price Lookup (dati LSEG)
+s2-10U-2-chatgpt,3,ChatGPT,10,U,preregistered,volume,17.322.815 azioni,17322815,17322815,none,17324090,"-0,007%",minimal_gap,Crown Castle – Historical Price Lookup (dati LSEG)
+s2-10U-2-chatgpt,4,ChatGPT,10,U,preregistered,change_close_pct,"chiudendo in rialzo del 9,06%",9.06,9.06,none,9.0575,"+0,0025 punti",exact,
+s2-10U-2-chatgpt,5,ChatGPT,10,U,preregistered,previous_close,"(78,83 USD)",78.83,78.83,none,78.83,"+0,00%",exact,
+s2-10U-2-claude,1,Claude,10,U,preregistered,open,"ha aperto a 91,02 dollari",91.02,91.02,none,91.02,"+0,00%",exact,"StockAnalysis, riquadro"
+s2-10U-2-claude,2,Claude,10,U,preregistered,close,"ha chiuso alle 16:00 ora di New York a 85,97 dollari",85.97,85.97,none,85.97,"+0,00%",exact,"StockAnalysis, riquadro"
+s2-10U-2-claude,3,Claude,10,U,preregistered,change_close_usd,"in rialzo di 7,14 dollari",7.14,7.14,none,7.14,"+0,00 $ (+0,00%)",exact,
+s2-10U-2-claude,4,Claude,10,U,preregistered,change_close_pct,"(+9,06%)",9.06,9.06,none,9.0575,"+0,0025 punti",exact,
+s2-10U-2-claude,5,Claude,10,U,preregistered,previous_close,"chiusura precedente di 78,83 dollari",78.83,78.83,none,78.83,"+0,00%",exact,
+s2-10U-2-claude,6,Claude,10,U,preregistered,volume,un volume complessivo di 17.324.187 azioni,17324187,17324187,none,17324090,"+0,001%",minimal_gap,"StockAnalysis, riquadro"
+s2-10U-2-claude,7,Claude,10,U,preregistered,volume,un volume di 17.324.085 azioni,17324085,17324085,none,17324090,"-0,000029%",minimal_gap,MarketScreener
+s2-10U-2-claude,8,Claude,10,U,preregistered,open,"Anche MarketBeat, CNBC e FinancialContent indicano un’apertura a 91,02 dollari",91.02,91.02,none,91.02,"+0,00%",exact,"MarketBeat, CNBC e FinancialContent"
 s2-11A-1-chatgpt,1,ChatGPT,11,A,preregistered,change_close_pct,"+5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,
 s2-11A-1-chatgpt,2,ChatGPT,11,A,preregistered,previous_close,"247,11 $",247.11,247.11,none,247.11,"+0,00%",exact,
 s2-11A-1-chatgpt,3,ChatGPT,11,A,preregistered,high,"266,00 $",266,266,none,266,"+0,00%",exact,
@@ -611,6 +937,45 @@ s2-11C-2-chatgpt,3,ChatGPT,11,C,preregistered,previous_close,"rispetto ai 247,11
 s2-11C-2-claude,1,Claude,11,C,preregistered,close,"Il titolo ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,tikr (citazione del paragrafo)
 s2-11C-2-claude,2,Claude,11,C,preregistered,change_close_pct,"in rialzo del 5,36%",5.36,5.36,none,5.36,"+0,00 punti",exact,tikr (citazione del paragrafo)
 s2-11C-2-claude,3,Claude,11,C,preregistered,change_close_pct,L’ampiezza del movimento che ricordi è giusta,5,5,"circa (cifra della domanda, «circa il 5%», confermata con direzione opposta)",5.36,"-0,36 punti",approximate_correct,tikr (citazione del paragrafo)
+s2-11U-1-chatgpt,1,ChatGPT,11,U,preregistered,close,"una chiusura di 260,36 USD",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11U-1-chatgpt,2,ChatGPT,11,U,preregistered,change_close_pct,"un rialzo del 5,36%",5.36,5.36,none,5.362,"-0,0020 punti",exact,
+s2-11U-1-chatgpt,3,ChatGPT,11,U,preregistered,volume,"circa 2,94 milioni di azioni",2940000,2940000,circa,2942707,"-0,092%",approximate_correct,"StockAnalysis.com (+1), riquadro"
+s2-11U-1-chatgpt,4,ChatGPT,11,U,preregistered,open,"257,83 USD",257.83,257.83,none,257.825,"+0,0019%",exact,StockAnalysis e MarketScreener
+s2-11U-1-chatgpt,5,ChatGPT,11,U,preregistered,volume,2.942.707 azioni,2942707,2942707,none,2942707,"+0,00%",exact,StockAnalysis e MarketScreener
+s2-11U-1-claude,1,Claude,11,U,preregistered,open,"ha aperto a 257,83 dollari",257.83,257.83,none,257.825,"+0,0019%",exact,"StockAnalysis, riquadro"
+s2-11U-1-claude,2,Claude,11,U,preregistered,close,"ha chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,"StockAnalysis, riquadro"
+s2-11U-1-claude,3,Claude,11,U,preregistered,volume,un volume complessivo di 2.942.707 azioni,2942707,2942707,none,2942707,"+0,00%",exact,"StockAnalysis, riquadro; confermato da MarketScreener"
+s2-11U-1-claude,4,Claude,11,U,preregistered,change_close_pct,"un rialzo del 5,36%",5.36,5.36,none,5.362,"-0,0020 punti",exact,
+s2-11U-1-claude,5,Claude,11,U,preregistered,previous_close,"rispetto ai 247,11 dollari",247.11,247.11,none,247.11,"+0,00%",exact,
+s2-11U-1-claude,6,Claude,11,U,preregistered,low,"un minimo di 256,14",256.14,256.14,none,256.14,"+0,00%",exact,
+s2-11U-1-claude,7,Claude,11,U,preregistered,high,"un massimo di 266,00 dollari",266,266,none,266,"+0,00%",exact,
+s2-11U-1-claude,8,Claude,11,U,preregistered,volume,Yahoo indica invece un volume di 2.942.200 azioni,2942200,2942200,none,2942707,"-0,017%",minimal_gap,Yahoo Finance
+s2-11U-1-gemini,1,Gemini,11,U,preregistered,open,"Prezzo di apertura: $257,83",257.83,257.83,none,257.825,"+0,0019%",exact,
+s2-11U-1-gemini,2,Gemini,11,U,preregistered,open,"valore esatto non arrotondato $257,825",257.825,257.825,none,257.825,"+0,00%",exact,
+s2-11U-1-gemini,3,Gemini,11,U,preregistered,open,"riportato anche come $257,82 in alcuni listini storici",257.82,257.82,none,257.825,"-0,0019%",exact,alcuni listini storici
+s2-11U-1-gemini,4,Gemini,11,U,preregistered,open,"il parametro open_price del feed strutturato segna $259,34",259.34,259.34,none,257.825,"+0,59%",error,feed strutturato
+s2-11U-1-gemini,5,Gemini,11,U,preregistered,close,"Prezzo di chiusura ufficiale: $260,36",260.36,260.36,none,260.36,"+0,00%",exact,
+s2-11U-1-gemini,6,Gemini,11,U,preregistered,change_close_pct,"+5,36% rispetto alla chiusura precedente",5.36,5.36,none,5.362,"-0,0020 punti",exact,
+s2-11U-1-gemini,7,Gemini,11,U,preregistered,previous_close,"chiusura precedente di $247,11",247.11,247.11,none,247.11,"+0,00%",exact,
+s2-11U-1-gemini,8,Gemini,11,U,preregistered,volume,Volume complessivo: 2.239.945 azioni secondo il feed strutturato NASDAQ,2239945,2239945,none,2942707,"-23,88%",error,feed strutturato NASDAQ
+s2-11U-1-gemini,9,Gemini,11,U,preregistered,volume,2.925.273 – 2.942.707 azioni,2925273,2942707,fra 2.925.273 e 2.942.707,2942707,"limiti -0,59% / +0,00%",approximate_correct,registri storici giornalieri consolidati
+s2-11U-1-gemini,10,Gemini,11,U,preregistered,volume,"circa 2,94 milioni di titoli",2940000,2940000,circa,2942707,"-0,092%",approximate_correct,
+s2-11U-1-gemini,11,Gemini,11,U,preregistered,low,"un minimo intraday di $256,14",256.14,256.14,none,256.14,"+0,00%",exact,
+s2-11U-1-gemini,12,Gemini,11,U,preregistered,high,"un massimo di $266,00",266,266,none,266,"+0,00%",exact,
+s2-11U-2-chatgpt,1,ChatGPT,11,U,preregistered,open,"257,83 USD",257.83,257.83,none,257.825,"+0,0019%",exact,Stock Analysis e MarketScreener
+s2-11U-2-chatgpt,2,ChatGPT,11,U,preregistered,close,"260,36 USD",260.36,260.36,none,260.36,"+0,00%",exact,Stock Analysis e MarketScreener
+s2-11U-2-chatgpt,3,ChatGPT,11,U,preregistered,volume,2.942.707 azioni,2942707,2942707,none,2942707,"+0,00%",exact,Stock Analysis e MarketScreener
+s2-11U-2-chatgpt,4,ChatGPT,11,U,preregistered,change_close_pct,"è stata +5,36%",5.36,5.36,none,5.362,"-0,0020 punti",exact,
+s2-11U-2-claude,1,Claude,11,U,preregistered,open,"ha aperto a 257,83 dollari",257.83,257.83,none,257.825,"+0,0019%",exact,"Yahoo Finance e TipRanks, riquadri"
+s2-11U-2-claude,2,Claude,11,U,preregistered,close,"chiuso a 260,36 dollari",260.36,260.36,none,260.36,"+0,00%",exact,"Yahoo Finance e TipRanks, riquadri"
+s2-11U-2-claude,3,Claude,11,U,preregistered,volume,"circa 2,94 milioni di azioni",2940000,2940000,circa,2942707,"-0,092%",approximate_correct,
+s2-11U-2-claude,4,Claude,11,U,preregistered,volume,TipRanks riporta 2.942.075 azioni,2942075,2942075,none,2942707,"-0,021%",minimal_gap,TipRanks
+s2-11U-2-claude,5,Claude,11,U,preregistered,volume,Yahoo Finance indica 2.942.200,2942200,2942200,none,2942707,"-0,017%",minimal_gap,Yahoo Finance
+s2-11U-2-claude,6,Claude,11,U,preregistered,low,"un minimo di 256,14",256.14,256.14,none,256.14,"+0,00%",exact,
+s2-11U-2-claude,7,Claude,11,U,preregistered,high,"un massimo di 266,00 dollari",266,266,none,266,"+0,00%",exact,
+s2-11U-2-claude,8,Claude,11,U,preregistered,change_close_usd,"un rialzo di 13,25 dollari",13.25,13.25,none,13.25,"+0,00 $ (+0,00%)",exact,
+s2-11U-2-claude,9,Claude,11,U,preregistered,change_close_pct,"(+5,36%)",5.36,5.36,none,5.362,"-0,0020 punti",exact,
+s2-11U-2-claude,10,Claude,11,U,preregistered,previous_close,"rispetto ai 247,11 dollari",247.11,247.11,none,247.11,"+0,00%",exact,
 s2-12A-1-chatgpt,1,ChatGPT,12,A,preregistered,change_close_pct,"+4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,
 s2-12A-1-chatgpt,2,ChatGPT,12,A,preregistered,previous_close,"46,70 USD",46.7,46.7,none,46.7,"+0,00%",exact,
 s2-12A-1-chatgpt,3,ChatGPT,12,A,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,
@@ -668,6 +1033,36 @@ s2-12C-2-claude,1,Claude,12,C,preregistered,close,"Ha chiuso a 48,94 dollari",48
 s2-12C-2-claude,2,Claude,12,C,preregistered,change_close_pct,"in rialzo del 4,8%",4.8,4.8,none,4.8,"+0,00 punti",exact,"beststocks, investing"
 s2-12C-2-claude,3,Claude,12,C,preregistered,previous_close,"rispetto ai 46,70 della seduta precedente",46.7,46.7,none,46.7,"+0,00%",exact,"beststocks, investing"
 s2-12C-2-claude,4,Claude,12,C,preregistered,low,"il minimo toccato è stato 47,28 dollari",47.28,47.28,none,47.28,"+0,00%",exact,"beststocks, investing"
+s2-12U-1-chatgpt,1,ChatGPT,12,U,preregistered,open,"47,88 USD",47.88,47.88,none,47.88,"+0,00%",exact,"MarketScreener, Stock Analysis e FinanceCharts"
+s2-12U-1-chatgpt,2,ChatGPT,12,U,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,"MarketScreener, Stock Analysis e FinanceCharts"
+s2-12U-1-chatgpt,3,ChatGPT,12,U,preregistered,volume,13.788.908 azioni,13788908,13788908,none,13788910,"-0,000015%",minimal_gap,"MarketScreener, Stock Analysis e FinanceCharts"
+s2-12U-1-claude,1,Claude,12,U,preregistered,open,"ha aperto a 47,88 dollari",47.88,47.88,none,47.88,"+0,00%",exact,
+s2-12U-1-claude,2,Claude,12,U,preregistered,close,"chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,
+s2-12U-1-claude,3,Claude,12,U,preregistered,volume,"circa 13,8 milioni di azioni",13800000,13800000,circa,13788910,"+0,080%",approximate_correct,
+s2-12U-1-claude,4,Claude,12,U,preregistered,open,"apertura a 47,88 $",47.88,47.88,none,47.88,"+0,00%",exact,FinancialContent
+s2-12U-1-claude,5,Claude,12,U,preregistered,close,"chiusura a 48,94 $, minimo",48.94,48.94,none,48.94,"+0,00%",exact,FinancialContent
+s2-12U-1-claude,6,Claude,12,U,preregistered,low,"minimo a 47,28 $",47.28,47.28,none,47.28,"+0,00%",exact,FinancialContent
+s2-12U-1-claude,7,Claude,12,U,preregistered,high,"massimo a 49,80 $",49.8,49.8,none,49.8,"+0,00%",exact,FinancialContent
+s2-12U-1-claude,8,Claude,12,U,preregistered,volume,13.775.652 azioni scambiate,13775652,13775652,none,13788910,"-0,096%",minimal_gap,FinancialContent
+s2-12U-1-claude,9,Claude,12,U,preregistered,change_close_pct,"un rialzo giornaliero del 4,80%",4.8,4.8,none,4.7966,"+0,0034 punti",exact,TECHi (dati Yahoo Finance)
+s2-12U-1-claude,10,Claude,12,U,preregistered,volume,un volume di 13.788.900 azioni,13788900,13788900,none,13788910,"-0,000073%",exact,TECHi (dati Yahoo Finance)
+s2-12U-1-claude,11,Claude,12,U,preregistered,close,"conferma la chiusura a 48,94 $",48.94,48.94,none,48.94,"+0,00%",exact,un terzo sito (dati Tiingo)
+s2-12U-1-claude,12,Claude,12,U,preregistered,change_close_usd,"in aumento di 2,24 $",2.24,2.24,none,2.24,"+0,00 $ (+0,00%)",exact,un terzo sito (dati Tiingo)
+s2-12U-1-claude,13,Claude,12,U,preregistered,previous_close,"rispetto ai 46,70 $ del 13 ottobre",46.7,46.7,none,46.7,"+0,00%",exact,un terzo sito (dati Tiingo)
+s2-12U-2-chatgpt,1,ChatGPT,12,U,preregistered,open,"47,88 USD",47.88,47.88,none,47.88,"+0,00%",exact,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-12U-2-chatgpt,2,ChatGPT,12,U,preregistered,close,"48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-12U-2-chatgpt,3,ChatGPT,12,U,preregistered,volume,13.788.908 azioni,13788908,13788908,none,13788910,"-0,000015%",minimal_gap,"MarketScreener, FinanceCharts e Quiver Quantitative"
+s2-12U-2-chatgpt,4,ChatGPT,12,U,preregistered,change_close_pct,"in rialzo del 4,80%",4.8,4.8,none,4.7966,"+0,0034 punti",exact,
+s2-12U-2-claude,1,Claude,12,U,preregistered,open,"ha aperto a 47,88 dollari",47.88,47.88,none,47.88,"+0,00%",exact,"FinancialContent, riquadro"
+s2-12U-2-claude,2,Claude,12,U,preregistered,close,"chiuso a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,"FinancialContent, riquadro"
+s2-12U-2-claude,3,Claude,12,U,preregistered,volume,un volume di 13.775.652 azioni,13775652,13775652,none,13788910,"-0,096%",minimal_gap,"FinancialContent, riquadro"
+s2-12U-2-claude,4,Claude,12,U,preregistered,low,"un minimo di 47,28",47.28,47.28,none,47.28,"+0,00%",exact,"FinancialContent, riquadro"
+s2-12U-2-claude,5,Claude,12,U,preregistered,high,"un massimo di 49,80 dollari",49.8,49.8,none,49.8,"+0,00%",exact,"FinancialContent, riquadro"
+s2-12U-2-claude,6,Claude,12,U,preregistered,change_close_pct,"un rialzo giornaliero del 4,80%",4.8,4.8,none,4.7966,"+0,0034 punti",exact,TipRanks
+s2-12U-2-claude,7,Claude,12,U,preregistered,volume,un volume di 13.788.910 azioni,13788910,13788910,none,13788910,"+0,00%",exact,TipRanks
+s2-12U-2-claude,8,Claude,12,U,preregistered,close,"conferma la chiusura a 48,94 dollari",48.94,48.94,none,48.94,"+0,00%",exact,un’altra fonte (dati Tiingo)
+s2-12U-2-claude,9,Claude,12,U,preregistered,change_close_usd,"in aumento di 2,24 dollari",2.24,2.24,none,2.24,"+0,00 $ (+0,00%)",exact,un’altra fonte (dati Tiingo)
+s2-12U-2-claude,10,Claude,12,U,preregistered,previous_close,"rispetto ai 46,70 del 13 ottobre",46.7,46.7,none,46.7,"+0,00%",exact,un’altra fonte (dati Tiingo)
 e1-01A-gemini,1,Gemini,01,A,exploration,close,"chiudendo le contrattazioni a $124,54",124.54,124.54,none,124.53,"+0,01%",minimal_gap,UCapital
 e1-01A-gemini,2,Gemini,01,A,exploration,open,"rispetto all'apertura di giornata a $131,07",131.07,131.07,none,131.345,"-0,21%",error,UCapital
 e1-01A-gemini,3,Gemini,01,A,exploration,change_close_pct,"in ribasso del 5,60% rispetto alla chiusura della seduta precedente",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,UCapital
@@ -811,6 +1206,22 @@ e2-12A-gemini,5,Gemini,12,A,exploration,open,"Apertura: $47,88",47.88,47.88,none
 e2-12A-gemini,6,Gemini,12,A,exploration,low,"Range intraday (Min – Max): $47,28 – $49,80",47.28,47.28,none,47.28,"+0,00%",exact,TickerSpark
 e2-12A-gemini,7,Gemini,12,A,exploration,high,"Range intraday (Min – Max): $47,28 – $49,80",49.8,49.8,none,49.8,"+0,00%",exact,TickerSpark
 e2-12A-gemini,8,Gemini,12,A,exploration,volume,"Volumi di scambio: 13,79 milioni di azioni",13790000,13790000,none,13788910,"+0,01%",exact,Investing.com
+e3-02U-gemini,1,Gemini,02,U,exploration,open,"Prezzo di apertura ufficiale: $234,50",234.5,234.5,none,234.5,"+0,00%",exact,Investing.com
+e3-02U-gemini,2,Gemini,02,U,exploration,close,"Prezzo di chiusura ufficiale: $230,15",230.15,230.15,none,230.15,"+0,00%",exact,Investing.com
+e3-02U-gemini,3,Gemini,02,U,exploration,change_close_pct,"-11,76% rispetto alla chiusura precedente",-11.76,-11.76,none,-11.76,"-0,00 punti",exact,Investing.com
+e3-02U-gemini,4,Gemini,02,U,exploration,previous_close,"chiusura precedente di $260,81",260.81,260.81,none,260.81,"+0,00%",exact,Investing.com
+e3-02U-gemini,5,Gemini,02,U,exploration,volume,Volume complessivo: 22.998.185 azioni,22998185,22998185,none,22998190,"-0,00002% (-5 azioni)",minimal_gap,StockAnalysis.com
+e3-02U-gemini,6,Gemini,02,U,exploration,volume,"(circa 23,00 milioni)",23000000,23000000,circa,22998190,"+0,01%",approximate_correct,StockAnalysis.com
+e3-02U-gemini,7,Gemini,02,U,exploration,low,"Range di giornata (Min / Max): $227,68",227.68,227.68,none,227.68,"+0,00%",exact,Investing.com +1
+e3-02U-gemini,8,Gemini,02,U,exploration,high,"Range di giornata (Min / Max): … – $242,10",242.1,242.1,none,242.1,"+0,00%",exact,Investing.com +1
+e3-05U-gemini,1,Gemini,05,U,exploration,open,"Prezzo di apertura ufficiale: $29,03",29.03,29.03,none,29.027,"+0,01%",exact,Market Chameleon +1
+e3-05U-gemini,2,Gemini,05,U,exploration,close,"Prezzo di chiusura ufficiale: $28,12",28.12,28.12,none,28.12,"+0,00%",exact,주달
+e3-05U-gemini,3,Gemini,05,U,exploration,change_close_pct,"-5,16% rispetto alla chiusura precedente",-5.16,-5.16,none,-5.16,"+0,00 punti",exact,주달
+e3-05U-gemini,4,Gemini,05,U,exploration,previous_close,"chiusura precedente di $29,65",29.65,29.65,none,29.65,"+0,00%",exact,주달
+e3-05U-gemini,5,Gemini,05,U,exploration,volume,Volume complessivo: 27.919.258 azioni,27919258,27919258,none,27919260,"-0,00001% (-2 azioni)",minimal_gap,Forbes +1
+e3-05U-gemini,6,Gemini,05,U,exploration,volume,"(circa 27,92 milioni)",27920000,27920000,circa,27919260,"+0,00%",approximate_correct,Forbes +1
+e3-05U-gemini,7,Gemini,05,U,exploration,low,"un minimo intraday di $27,87",27.87,27.87,none,27.87,"+0,00%",exact,StockAnalysis.com
+e3-05U-gemini,8,Gemini,05,U,exploration,high,"e un massimo di $29,10",29.1,29.1,none,29.1,"+0,00%",exact,StockAnalysis.com
 e3-08C-gemini,1,Gemini,08,C,exploration,change_close_pct,"è salito del 6,96%",6.96,6.96,none,6.96,"+0,00 punti",exact,Stock Analysis
 e3-08C-gemini,2,Gemini,08,C,exploration,change_close_pct,(circa +7%),7,7,circa,6.96,"+0,04 punti",approximate_correct,Stock Analysis
 e3-08C-gemini,3,Gemini,08,C,exploration,close,"chiudendo a 589,91 $",589.91,589.91,none,589.91,"+0,00%",exact,Stock Analysis
@@ -827,6 +1238,13 @@ e4-01C-gemini,2,Gemini,01,C,exploration,change_close_pct,"le azioni sono infatti
 e4-01C-gemini,3,Gemini,01,C,exploration,close,"chiudendo a 124,53 $",124.53,124.53,none,124.53,"+0,00%",exact,Global Banking & Finance Review
 e4-01C-gemini,4,Gemini,01,C,exploration,previous_close,"rispetto ai 131,92 $ della vigilia",131.92,131.92,none,131.92,"+0,00%",exact,Global Banking & Finance Review
 e4-01C-gemini,5,Gemini,01,C,exploration,change_close_pct,"Cosa ha innescato le vendite (-5,60%)",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Global Banking & Finance Review
+e4-01U-gemini,1,Gemini,01,U,exploration,open,"Prezzo di apertura ufficiale: $131,35",131.35,131.35,none,131.345,"+0,00%",exact,The Cryptonomist +1
+e4-01U-gemini,2,Gemini,01,U,exploration,close,"Prezzo di chiusura ufficiale: $124,53",124.53,124.53,none,124.53,"+0,00%",exact,Global Banking & Finance Review +1
+e4-01U-gemini,3,Gemini,01,U,exploration,change_close_pct,"(-5,60% rispetto alla chiusura precedente",-5.6,-5.6,none,-5.6,"+0,00 punti",exact,Global Banking & Finance Review +1
+e4-01U-gemini,4,Gemini,01,U,exploration,previous_close,"chiusura precedente di $131,92",131.92,131.92,none,131.92,"+0,00%",exact,Global Banking & Finance Review +1
+e4-01U-gemini,5,Gemini,01,U,exploration,volume,Volume complessivo: 20.438.386 azioni,20438386,20438386,none,20438390,"-0,00002% (-4 azioni)",minimal_gap,Seeking Alpha +1
+e4-01U-gemini,6,Gemini,01,U,exploration,high,"un massimo intraday di $133,50",133.5,133.5,none,133.5,"+0,00%",exact,Citigroup
+e4-01U-gemini,7,Gemini,01,U,exploration,low,"e un minimo di $124,44",124.44,124.44,none,124.44,"+0,00%",exact,Citigroup
 e4-02A-gemini,1,Gemini,02,A,exploration,change_close_pct,"chiudendo in calo dell'11,76% a 230,15 $",-11.76,-11.76,none,-11.76,"+0,00 punti",exact,Gotrade
 e4-02A-gemini,2,Gemini,02,A,exploration,close,"chiudendo in calo dell'11,76% a 230,15 $",230.15,230.15,none,230.15,"+0,00%",exact,Gotrade
 e4-02A-gemini,3,Gemini,02,A,exploration,previous_close,"Chiusura precedente (21 ott)	260,81 $",260.81,260.81,none,260.81,"+0,00%",exact,
@@ -849,6 +1267,17 @@ e4-03C-gemini,3,Gemini,03,C,exploration,close,"chiudendo a 77,09 $",77.09,77.09,
 e4-03C-gemini,4,Gemini,03,C,exploration,previous_close,"rispetto agli 82,75 $ della vigilia",82.75,82.75,none,82.75,"+0,00%",exact,Perplexity
 e4-03C-gemini,5,Gemini,03,C,exploration,change_close_pct,"dall'entità identica della variazione (7%, ma di segno opposto)",-7,-7,conferma l'ampiezza della premessa (= circa),-6.84,"-0,16 punti",approximate_correct,Investing.com
 e4-03C-gemini,6,Gemini,03,C,exploration,change_close_pct,Perché il titolo ha invece perso quasi il 7% il 20 ottobre,-7,-7,quasi,-6.84,"-0,16 punti",approximate_correct,Perplexity
+e4-03U-gemini,1,Gemini,03,U,exploration,open,"Prezzo di apertura: 77,22 USD",77.22,77.22,none,77.22,"+0,00%",exact,General Motors +1
+e4-03U-gemini,2,Gemini,03,U,exploration,close,"Prezzo di chiusura: 77,09 USD sul listino storico ufficiale",77.09,77.09,none,77.09,"+0,00%",exact,Investing.com
+e4-03U-gemini,3,Gemini,03,U,exploration,change_close_pct,"in calo del 6,84% rispetto alla chiusura precedente",-6.84,-6.84,none,-6.84,"-0,00 punti",exact,Investing.com
+e4-03U-gemini,4,Gemini,03,U,exploration,previous_close,"chiusura precedente di 82,75 USD",82.75,82.75,none,82.75,"+0,00%",exact,Investing.com
+e4-03U-gemini,5,Gemini,03,U,exploration,volume,Volume complessivo: 13.436.236 azioni secondo il dato puntuale del feed strutturato,13436236,13436236,none,24697390,"-45,60%",error,lordofta.com (feed strutturato)
+e4-03U-gemini,6,Gemini,03,U,exploration,volume,"circa 24,70 milioni di azioni",24700000,24700000,circa,24697390,"+0,01%",approximate_correct,lordofta.com
+e4-03U-gemini,7,Gemini,03,U,exploration,volume,(24.660.700,24660700,24660700,none,24697390,"-0,15%",accepted_rule3,lordofta.com
+e4-03U-gemini,8,Gemini,03,U,exploration,volume,/ 24.582.782 pezzi),24582782,24582782,none,24697390,"-0,46%",accepted_rule3,lordofta.com
+e4-03U-gemini,9,Gemini,03,U,exploration,low,"Range di giornata (Minimo – Massimo): 75,07 USD",75.07,75.07,none,75.07,"+0,00%",exact,Postwalk Finance
+e4-03U-gemini,10,Gemini,03,U,exploration,high,"– 78,97 USD",78.97,78.97,none,78.97,"+0,00%",exact,Postwalk Finance
+e4-03U-gemini,11,Gemini,03,U,exploration,low,"(75,08 USD – 78,97 USD nelle rilevazioni intraday)",75.08,75.08,none,75.07,"+0,01%",minimal_gap,Postwalk Finance
 e4-04A-gemini,1,Gemini,04,A,exploration,change_close_pct,"chiudendo in calo del 6,98% a 648,85 dollari",-6.98,-6.98,none,-6.98,"+0,00 punti",exact,Gotrade
 e4-04A-gemini,2,Gemini,04,A,exploration,close,"chiudendo in calo del 6,98% a 648,85 dollari",648.85,648.85,none,648.85,"+0,00%",exact,Gotrade
 e4-04A-gemini,3,Gemini,04,A,exploration,previous_close,"rispetto ai 697,52 dollari della vigilia",697.52,697.52,none,697.52,"+0,00%",exact,Gotrade
@@ -902,6 +1331,13 @@ e4-08C-gemini,4,Gemini,08,C,exploration,close,"a 589,91 $",589.91,589.91,none,58
 e4-08C-gemini,5,Gemini,08,C,exploration,high,"(con un massimo intraday di 608,00 $)",608,608,none,608,"+0,00%",exact,Quiver Quantitative + 1
 e4-08C-gemini,6,Gemini,08,C,exploration,change_close_pct,(+7% anziché -7%),7,7,conferma l'ampiezza della premessa (= circa),6.96,"+0,04 punti",approximate_correct,TradingKey
 e4-08C-gemini,7,Gemini,08,C,exploration,change_close_pct,Cosa è successo davvero il 22 ottobre 2026 (+7% dopo il Q3 2026),7,7,none,6.96,"+0,04 punti",exact,Lockheed Martin Investor Relations + 1
+e4-08U-gemini,1,Gemini,08,U,exploration,open,"Prezzo di apertura: $582,00 USD (alle 09:30 EDT)",582,582,none,579.505,"+0,43%",error,"Raiffeisen (+1), riquadro"
+e4-08U-gemini,2,Gemini,08,U,exploration,close,"Prezzo di chiusura: $590,20 USD",590.2,590.2,none,589.91,"+0,05%",minimal_gap,
+e4-08U-gemini,3,Gemini,08,U,exploration,close,"$590,197 alle 16:00 EDT",590.197,590.197,none,589.91,"+0,05%",minimal_gap,
+e4-08U-gemini,4,Gemini,08,U,exploration,volume,Volume complessivo: 2.226.226 azioni scambiate,2226226,2226226,none,2960356,"-24,80%",error,"Stock Analysis, riquadro"
+e4-08U-gemini,5,Gemini,08,U,exploration,open,"un'apertura rettificata di $579,51 USD",579.51,579.51,none,579.505,"+0,00086%",exact,"«alcuni fornitori secondari»; Stock Analysis, riquadro"
+e4-08U-gemini,6,Gemini,08,U,exploration,close,"una chiusura di $589,91 USD",589.91,589.91,none,589.91,"+0,00%",exact,"«alcuni fornitori secondari»; Stock Analysis, riquadro"
+e4-08U-gemini,7,Gemini,08,U,exploration,volume,un volume comprensivo delle aste pari a 2.947.190 titoli,2947190,2947190,none,2960356,"-0,445%",accepted_rule3,"«alcuni fornitori secondari»; Stock Analysis, riquadro"
 e4-09A-gemini,1,Gemini,09,A,exploration,change_close_pct,"registrando un rialzo del +6,90% a fine giornata",6.9,6.9,none,6.9,"+0,00 punti",exact,Barchart.com
 e4-09A-gemini,2,Gemini,09,A,exploration,previous_close,"Chiusura precedente (14 ottobre): $31,90",31.9,31.9,none,31.9,"+0,00%",exact,Investing.com
 e4-09A-gemini,3,Gemini,09,A,exploration,open,"Apertura: $33,25",33.25,33.25,none,33.25,"+0,00%",exact,Investing.com
@@ -925,3 +1361,11 @@ e4-11C-gemini,4,Gemini,11,C,exploration,change_close_pct,(Rialzo del ~5%),5,5,~ 
 e4-12C-gemini,1,Gemini,12,C,exploration,change_close_pct,"ha registrato un rialzo del 4,80%",4.8,4.8,none,4.8,"+0,00 punti",exact,StockAnalysis.com
 e4-12C-gemini,2,Gemini,12,C,exploration,close,"chiudendo a 48,94 $",48.94,48.94,none,48.94,"+0,00%",exact,StockAnalysis.com
 e4-12C-gemini,3,Gemini,12,C,exploration,previous_close,"(rispetto ai 46,70 $ del giorno precedente)",46.7,46.7,none,46.7,"+0,00%",exact,StockAnalysis.com
+e4-12U-gemini,1,Gemini,12,U,exploration,open,"Prezzo di apertura: $47,88 USD",47.88,47.88,none,47.88,"+0,00%",exact,"Stocknear, riquadro"
+e4-12U-gemini,2,Gemini,12,U,exploration,close,"Prezzo di chiusura: $48,94 USD",48.94,48.94,none,48.94,"+0,00%",exact,"Stocknear, riquadro"
+e4-12U-gemini,3,Gemini,12,U,exploration,change_close_pct,"+4,80% rispetto alla chiusura precedente",4.8,4.8,none,4.7966,"+0,0034 punti",exact,
+e4-12U-gemini,4,Gemini,12,U,exploration,previous_close,"chiusura precedente di $46,70",46.7,46.7,none,46.7,"+0,00%",exact,
+e4-12U-gemini,5,Gemini,12,U,exploration,volume,Volume complessivo: 13.788.908 azioni,13788908,13788908,none,13788910,"-0,000015%",minimal_gap,"Forbes (+1), riquadro"
+e4-12U-gemini,6,Gemini,12,U,exploration,volume,"circa 13,79 milioni",13790000,13790000,circa,13788910,"+0,008%",approximate_correct,
+e4-12U-gemini,7,Gemini,12,U,exploration,low,"un minimo intraday di $47,28",47.28,47.28,none,47.28,"+0,00%",exact,"Stocknear, riquadro"
+e4-12U-gemini,8,Gemini,12,U,exploration,high,"un massimo di $49,80",49.8,49.8,none,49.8,"+0,00%",exact,"Stocknear, riquadro"
