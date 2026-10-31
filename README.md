@@ -105,7 +105,7 @@ Two pieces carry no references, and should not. 04 is prescriptive and 08 is a c
 
 Every article closes on a question its protocol does not answer. This page opens on the one they share: how much of what a model gets wrong is available to be&nbsp;noticed?
 
-© Diego Ballarin. Texts released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): sharing and adaptation allowed with attribution, no commercial use. The code in [tools/](tools/) is released under the&nbsp;[MIT](tools/LICENSE)&nbsp;licence.
+© Diego Ballarin. Texts released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): sharing and adaptation allowed with attribution, no commercial use. The code in [tools/](tools/) and in the analysis folders of the two studies, [study/analysis/](study/analysis/) and [study2/analysis/](study2/analysis/), is released under the&nbsp;[MIT](tools/LICENSE)&nbsp;licence.
 
 ---
 
@@ -218,4 +218,4 @@ Ogni articolo si chiude su una domanda cui il suo protocollo non risponde. Quest
 
 ---
 
-© Diego Ballarin. Testi rilasciati sotto [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): condivisione e adattamento consentiti con attribuzione, uso commerciale escluso. Il codice in [tools/](tools/) è rilasciato sotto licenza&nbsp;[MIT](tools/LICENSE).
+© Diego Ballarin. Testi rilasciati sotto [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): condivisione e adattamento consentiti con attribuzione, uso commerciale escluso. Il codice in [tools/](tools/) e nelle cartelle di analisi dei due studi, [study/analysis/](study/analysis/) e [study2/analysis/](study2/analysis/), è rilasciato sotto licenza&nbsp;[MIT](tools/LICENSE).
