@@ -239,7 +239,7 @@ body = f"""
       <div class="notes">
         <p><b>method</b>Daily bars from a retail broker, regular session. Every move is on the previous close. Claims about after-hours or pre-market trading are checked on the next open, which daily bars show and the evening does not.</p>
         <p><b>selection</b>These are the claims I checked in one chain with one model, not a sample. No rate of accuracy can be read from them, and none is claimed for other models.</p>
-        <p><b>source</b>The study, the prices and the script that recomputes every figure are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study">GitHub</a>. The model’s sentences are translated from the Italian of the chain.</p>
+        <p><b>source</b>The study, the prices and the script that recomputes every figure are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study">GitHub</a>, with the essay, <a href="https://github.com/diegoballarin-reason/frictions/blob/main/study/where-no-one-can-know.en.md">where&nbsp;no&nbsp;one&nbsp;can&nbsp;know</a>. The model’s sentences are translated from the Italian of the chain.</p>
       </div>
     </section>
 

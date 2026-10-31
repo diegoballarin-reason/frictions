@@ -658,9 +658,9 @@ body = f"""
       <p class="shown"><a href="/work/on-precision/shown">shown, not said: the same answers in quartz</a></p>
 
       <div class="notes">
-        <p><b>method</b>Close, high and low from Interactive Brokers’ daily bars, regular session; open and volume from Nasdaq’s history. Moves are on the previous close. A price is off beyond 0.13 per cent, a change beyond 0.14 points, a volume beyond 0.1 per cent; with “about”, beyond 1 per cent or 1.2 points. The other numbers were checked against the same sources, with intraday bars for the moments of the day. The rules were fixed before the scoring.</p>
+        <p><b>method</b>Close, high and low from Interactive Brokers’ daily bars, regular session; open and volume from Nasdaq’s history. Moves are on the previous close. A price is off beyond 0.13 per cent, a change beyond 0.14 points, a volume beyond 0.1 per cent; with “about”, beyond 1 per cent or 1.2 points. The other numbers were checked against the same sources, with intraday bars for the moments of the day. The main rules were fixed before the scoring.</p>
         <p><b>selection</b>Twelve sessions and 36 questions fixed in a pre-registration before the first answer, each asked in a new chat. Gemini’s usage limits left it with fewer answers; its exploration blocks are declared as a deviation and kept apart. No rate is claimed beyond these answers.</p>
-        <p><b>source</b>The answers, every scored figure and the scripts that recompute this plate are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study2">GitHub</a>. Claude proposed every evaluation, its own answers included. The rules were fixed beforehand and each evaluation was confirmed one by one.</p>
+        <p><b>source</b>The answers, every scored figure and the scripts that recompute this plate are on <a href="https://github.com/diegoballarin-reason/frictions/tree/main/study2">GitHub</a>, with the essay that reads them, <a href="https://github.com/diegoballarin-reason/frictions/blob/main/study2/here-is-one-hand.en.md">here&nbsp;is&nbsp;one&nbsp;hand</a>. Claude proposed every evaluation, its own answers included; each was confirmed one by one, and the conventions added after seeing some answers are dated in the&nbsp;method.</p>
       </div>
     </section>
 
