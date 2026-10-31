@@ -369,7 +369,8 @@ def panel2(wide=True):
     s.append(f'<line class="axis" x1="{AX0}" y1="{ya}" x2="{AX1}" y2="{ya}"/>')
     for n_, lab in ((0.01, "0.01"), (0.1, "0.1"), (1, "1"), (10, "10"), (100, "100"), (1000, "1000")):
         x = X(n_)
-        s.append(f'<line class="tick" x1="{x:.1f}" y1="{ya}" x2="{x:.1f}" y2="{ya + 5}"/><text class="tl" x="{x:.1f}" y="{ya + 19}">{lab}</text>')
+        last = not wide and n_ == 1000   # on a phone the last label ends at its tick, inside the chart
+        s.append(f'<line class="tick" x1="{x:.1f}" y1="{ya}" x2="{x:.1f}" y2="{ya + 5}"/><text class="tl{" end" if last else ""}" x="{x + (4 if last else 0):.1f}" y="{ya + 19}">{lab}</text>')
     if wide:
         s.append(f'<text class="axl" x="{AX1}" y="{ya + 40}">distance from the record, in minimal gaps: 0.13% for a price, 0.14 points for a change, 0.1% for a volume</text>')
     else:
@@ -421,7 +422,8 @@ def panel3(wide=True):
     ya = 4 + len(rows) * RH
     for h in range(0, 25, 3 if wide else 6):
         x = X(h)
-        s.append(f'<line class="tick" x1="{x:.1f}" y1="{ya}" x2="{x:.1f}" y2="{ya + 5}"/><text class="tl" x="{x:.1f}" y="{ya + 19}">{h:02d}:00</text>')
+        last = not wide and h == 24   # on a phone the last label ends at its tick, inside the chart
+        s.append(f'<line class="tick" x1="{x:.1f}" y1="{ya}" x2="{x:.1f}" y2="{ya + 5}"/><text class="tl{" end" if last else ""}" x="{x + (4 if last else 0):.1f}" y="{ya + 19}">{h:02d}:00</text>')
     s.append(f'<text class="axl" x="{X1}" y="{ya + 40}">time the question was sent, New York</text>')
     s.append("</svg>")
     return "".join(s)
@@ -519,7 +521,7 @@ LEG4 = """
         </p>"""
 
 EVENT_KEY = "".join(
-    f'<li><b>{E[ev]["ticker"]}</b> {esc(NAMES[E[ev]["ticker"]])}<span>{day(E[ev]["session"])} · {num(float(E[ev]["change_close_pct"]))}%</span></li>'
+    f'<li><b>{E[ev]["ticker"]}</b> {esc(NAMES[E[ev]["ticker"]]).replace(" ", "&nbsp;")}<span>{day(E[ev]["session"])} · {num(float(E[ev]["change_close_pct"]))}%</span></li>'
     for ev in EVS)
 
 PLATE_CSS = """
@@ -540,7 +542,7 @@ PLATE_CSS = """
   svg .dt,svg .mv,svg .hd,svg .col,svg .tl,svg .thl,svg .cnt,svg .axl{font-size:11px;}
   svg .mv,svg .end,svg .axl,svg .cnt.end{text-anchor:end;}
   svg .col,svg .tl,svg .thl{text-anchor:middle;}
-  svg .thl.end{text-anchor:end;} svg .thl.start,svg .axl.start{text-anchor:start;}
+  svg .thl.end,svg .tl.end{text-anchor:end;} svg .thl.start,svg .axl.start{text-anchor:start;}
   svg .col.sub{font-size:9.5px;}
   svg .app{font-family:var(--mono);font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;fill:var(--ink);}
   svg .bar{stroke:var(--ink);stroke-width:1;}
@@ -585,6 +587,9 @@ PLATE_CSS = """
   .notes a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);}
   @media (max-width:760px){
     .wide{display:none;} .narrow{display:block;}
+    /* the narrow charts are drawn 400 wide and shrink to the phone: labels drawn larger keep at least 11px on a 360 screen */
+    .narrow svg .tl,.narrow svg .thl,.narrow svg .cnt,.narrow svg .axl,.narrow svg .per{font-size:14px;}
+    .narrow svg .app{font-size:14px;}
     .notes,.apps{grid-template-columns:minmax(0,1fr);}
   }
   @media (max-width:340px){ .evkey{grid-template-columns:minmax(0,1fr);} }
@@ -655,7 +660,7 @@ body = f"""
         </article>
       </div>
 
-      <p class="shown"><a href="/work/on-precision/shown">shown, not said: the same answers in quartz</a></p>
+      <p class="shown"><a href="/work/on-precision/shown">shown, not said: the answers to A and C in quartz</a></p>
 
       <div class="notes">
         <p><b>method</b>Close, high and low from Interactive Brokers’ daily bars, regular session; open and volume from Nasdaq’s history. Moves are on the previous close. A price is off beyond 0.13 per cent, a change beyond 0.14 points, a volume beyond 0.1 per cent; with “about”, beyond 1 per cent or 1.2 points. The other numbers were checked against the same sources, with intraday bars for the moments of the day. The main rules were fixed before the scoring.</p>
@@ -681,16 +686,16 @@ SCRIPT = """
 <script>
 (function(){
   /* typesetting: no word alone at the end of a block, no short word hanging */
-  var SHORT=/(?<=^|\\s)([\\p{L}\\p{N}]{1,2}) (?=\\S)/gu;
-  document.querySelectorAll('.panel .sub2,.notes p,.open .sub,.contract,.colophon p,.panel h2,.legend span,.apps p,.apps h3').forEach(function(el){
+  var SHORT=/(?<=^|\\s)([“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b))) (?=\\S)/gu; /* up to three letters or digits: a, of, the, and */
+  document.querySelectorAll('.statement,.evkey li,.panel .sub2,.notes p,.open .sub,.contract,.colophon p,.panel h2,.legend span,.apps p,.apps h3,.shown a').forEach(function(el){
     var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);
     nodes.forEach(function(n,i){n.nodeValue=n.nodeValue.replace(SHORT,'$1\\u00A0');
       var nx=nodes[i+1];if(!nx)return;
-      if(/(^|\\s)[\\p{L}\\p{N}]{1,2} $/u.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
-      else if(/(^|\\s)[\\p{L}\\p{N}]{1,2}$/u.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
-    for(var i=nodes.length-1,seen=false;i>=0;i--){var v=nodes[i].nodeValue,body=v.replace(/\\s+$/,''),k=body.lastIndexOf(' ');
-      if(seen&&/ $/.test(v)){nodes[i].nodeValue=v.slice(0,-1)+'\\u00A0';break;}
-      if(k>0){nodes[i].nodeValue=v.slice(0,k)+'\\u00A0'+v.slice(k+1);break;}
+      if(/(^|\\s)[“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b)) $/u.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
+      else if(/(^|\\s)[“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b))$/u.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
+    for(var i=nodes.length-1,seen=false;i>=0;i--){var v=nodes[i].nodeValue,body=v.replace(/\\s+$/,''),k=body.lastIndexOf(' '),after=nodes.slice(i+1).map(function(x){return x.nodeValue;}).join(''),held=function(t){return t.replace(/\\s+$/,'').indexOf('\\u00A0')>=0;}; /* a last word already held to the one before is left as it is: binding further back would make a long unbreakable run */
+      if(seen&&/ $/.test(v)){if(!held(after))nodes[i].nodeValue=v.slice(0,-1)+'\\u00A0';break;}
+      if(k>0){if(!held(body.slice(k+1)+after))nodes[i].nodeValue=v.slice(0,k)+'\\u00A0'+v.slice(k+1);break;}
       if(body.trim())seen=true;}
   });
 })();

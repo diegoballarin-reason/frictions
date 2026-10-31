@@ -5,14 +5,14 @@
 <link rel="icon" href="/assets/favicon.ico" sizes="32x32"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>on precision, shown — diego ballarin</title>
-<meta name="description" content="Every figure three chat apps gave about twelve stock sessions, set inside a quartz crystal: the right ones on the phantom of their session, the wrong ones off it, the numbers around the day floating free. Plate 2 of nothing to notice it by, shown." />
+<meta name="description" content="The figures three chat apps gave about twelve stock sessions, asked how each stock reacted and told it moved the other way, set inside a quartz crystal: the right ones on the phantom of their session, the wrong ones off it, the numbers around the day floating free. Plate 2 of nothing to notice it by, shown." />
 <meta name="author" content="Diego Ballarin" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://diegoballarin.com/work/on-precision/shown" />
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://diegoballarin.com/work/on-precision/shown">
 <meta property="og:title" content="on precision, shown — diego ballarin">
-<meta property="og:description" content="Every figure three chat apps gave about twelve stock sessions, set inside a quartz crystal. Plate 2 of nothing to notice it by, shown.">
+<meta property="og:description" content="The figures three chat apps gave about twelve stock sessions, asked how each stock reacted and told it moved the other way, set inside a quartz crystal. Plate 2 of nothing to notice it by, shown.">
 <meta property="og:image" content="https://diegoballarin.com/assets/op-quartz-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,7 +85,7 @@
   .ui{position:fixed;z-index:2}
   .intro{top:var(--top);left:var(--gut);width:min(23rem,calc(100vw - 60px));display:grid;gap:.7rem;pointer-events:none}
   .intro a{pointer-events:auto}
-  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;white-space:nowrap;text-transform:uppercase;color:var(--faint);display:flex;gap:0.8em;align-items:center;flex-wrap:wrap;}
+  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);display:flex;gap:0.8em;align-items:center;flex-wrap:wrap;line-height:1.6;}
   .kicker::before{content:"";width:22px;height:1px;background:var(--faint);display:inline-block;}
   .kicker a{color:var(--accent);border-bottom:0;}
   .kicker a:hover{color:var(--ink);}
@@ -142,7 +142,7 @@
     </div>
 </header>
 <section class="ui intro" id="intro">
-  <div class="kicker"><span><a href="/work">work</a> · where no one can know · <a href="/work/on-precision">plate 2</a>, shown</span></div>
+  <div class="kicker"><span><a href="/work">work</a>&nbsp;· where&nbsp;no&nbsp;one&nbsp;can&nbsp;know&nbsp;· <a href="/work/on-precision">plate&nbsp;2</a>,&nbsp;shown</span></div>
   <h1>Shown, not said.</h1>
   <p class="dek prose" id="dek"></p>
 </section>
@@ -154,7 +154,7 @@
   <div class="key" id="key"></div>
   <div id="why" aria-live="polite"><span class="idle">Point at a light, or tap it, to read it.</span></div>
 </aside>
-<noscript><div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>The crystal is drawn by a script. A still of it is shown here; <a href="/work/on-precision">plate 2</a> says the same data.</p></div></div></noscript>
+<noscript><div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>The crystal is drawn by a script. A still of it is shown here; <a href="/work/on-precision">plate 2</a> says it in figures.</p></div></div></noscript>
 <script type="application/json" id="data">/*DATA*/</script>
 <script type="importmap">{"imports":{"three":"/assets/three/0.160.0/build/three.module.js","three/addons/":"/assets/three/0.160.0/examples/jsm/"}}</script>
 <script type="module">
@@ -165,7 +165,7 @@ import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 { const c = document.createElement('canvas'); if (!(c.getContext('webgl2') || c.getContext('webgl'))) {
-  document.body.insertAdjacentHTML('beforeend', '<div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>This browser does not draw WebGL, so the crystal cannot be turned or read here. A still of it is shown instead; <a href="/work/on-precision">plate 2</a> says the same data.</p></div></div>');
+  document.body.insertAdjacentHTML('beforeend', '<div class="nogl"><div><img src="/assets/op-quartz.jpg" alt="A clear quartz point on a dark rock, with lights inside it and short amber needles"><p>This browser does not draw WebGL, so the crystal cannot be turned or read here. A still of it is shown instead; <a href="/work/on-precision">plate 2</a> says it in figures.</p></div></div>');
   document.querySelectorAll('nav.ui, aside.ui').forEach(el => el.hidden = true); throw new Error('no WebGL'); } }
 const RAW = JSON.parse(document.getElementById('data').textContent);
 const ANS = RAW.answers.filter(a => a.study === 'preregistered');
@@ -588,7 +588,7 @@ const SOLIDS = [surfMesh, ...WEDGES];
 // ---------- what is said ----------
 const N_OFF = D6.flat().reduce((t, d) => t + d.miss.length / 3, 0), N_ALL = N_OFF + D6.flat().reduce((t, d) => t + (d.dust.length + d.soft.length) / 3, 0);
 const H_W = D6.flat().reduce((t, d) => t + d.hw.length / 3, 0), H_N = H_W + D6.flat().reduce((t, d) => t + d.hr.length / 3, 0);
-document.getElementById('dek').textContent = 'This clear quartz grew over twelve sessions, and the tip it had at each one remains inside as a phantom. Every figure that ChatGPT, Claude and Gemini wrote about the session settles on its phantom as dust: right, it lies on the veil; wrong, it stands off on a needle. The other numbers that could be checked float free in the quartz around it.';
+document.getElementById('dek').textContent = 'This clear quartz grew over twelve sessions, and the tip it had at each one remains inside as a phantom. Every figure about the session that ChatGPT, Claude and Gemini wrote when asked how the stock reacted, or told it moved the other way, settles on its phantom as dust: right, it lies on the veil; wrong, it stands off on a needle. The other numbers that could be checked float free in the quartz around it.';
 document.getElementById('key').innerHTML = [
   'Twelve phantom tips, from the lowest, 12 October, to the highest, 23 October. Beneath them lies the milky quartz the crystal grew from, which holds no figures.',
   'Each tip has six faces, two for every app: the larger for the answers on the day’s reaction, the smaller for those on a false premise. On a face each answer is a column, from the change near the apex to the volume at the foot.',
@@ -597,11 +597,16 @@ document.getElementById('key').innerHTML = [
   `The other numbers that could be checked, about other sessions, moments of the day, history or the false premise, belong to no veil: they float as glints in the quartz just outside their answer’s. ${H_W} of ${H_N} are wrong, in amber. A grey glint could not be checked. Numbers written in words are left out, as in the study.`,
   'Split parts the crystal into its six growth sectors, one under each face, in pairs by app: each sector holds a single app and a single kind of question across all twelve sessions. Through the cut faces the phantoms show edgewise, and a needle stands clear of its line.',
   'Clicking or tapping a light also lights its phantom, the way a lamp held to the side shows the phantoms in a real quartz: the outline of that session’s tip appears, its stock and day are named beside it and the other sessions fade. A click on empty space puts it out.',
-  '<span class="note">Pre-registered rounds only. Data confirmed on 30 October 2026. <a href="/work/on-precision">Plate 2</a> says the same data.</span>'
+  '<span class="note">Pre-registered answers to two of the three questions: how the stock reacted, and the same with a false premise. The answers asking for the official open, close and volume are on <a href="/work/on-precision">plate 2</a>, which counts them too. Data confirmed on 30 October 2026.</span>'
 ].map(s => `<p class="prose">${s}</p>`).join('');
-function tie(el) {                                        // no widows: short words hold to the next, the last word to the one before (no-break spaces)
-  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let n, last = null;
-  while ((n = w.nextNode())) { n.textContent = n.textContent.replace(/(^|\s)([\p{L}\p{N}]{1,2}) (?=\S)/gu, '$1$2\u00a0'); last = n; }
+function tie(el) {                                        // no widows: words of up to three letters (a, of, the, and) hold to the next, the last word to the one before (no-break spaces)
+  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = []; let n, last = null;
+  while ((n = w.nextNode())) nodes.push(n);
+  nodes.forEach((n, i) => {
+    n.textContent = n.textContent.replace(/(?<=^|\s)([“‘«(]?(?:[\p{L}\p{N}]{1,3}|[−–+-]?\p{N}+(?:[.,:]\p{N}+)*%?(?= (?:per|points?)\b))) (?=\S)/gu, '$1\u00a0');
+    if (nodes[i + 1] && /(?:^|\s)[“‘«(]?(?:[\p{L}\p{N}]{1,3}|[−–+-]?\p{N}+(?:[.,:]\p{N}+)*%?(?= (?:per|points?)\b)) $/u.test(n.textContent)) n.textContent = n.textContent.slice(0, -1) + '\u00a0';   // a short word before a link or tag
+    last = n;
+  });
   if (last) last.textContent = last.textContent.replace(/ (\S+)\s*$/, '\u00a0$1');
   el.querySelectorAll('p, span.h, span:not(.h)').forEach(b => { const t = [...b.childNodes].filter(c => c.nodeType === 3).pop(); if (t) t.textContent = t.textContent.replace(/ (\S+)\s*$/, '\u00a0$1'); });
 }
@@ -675,7 +680,7 @@ document.getElementById('hint').textContent = touch ? 'Drag to turn it, pinch to
 renderer.domElement.setAttribute('aria-label', 'A quartz crystal holding the figures of study 2. Arrow keys turn and tilt it; plus and minus bring it closer.');
 renderer.domElement.addEventListener('pointerleave', () => { reading = false; inLit = false; });
 const tall = () => innerWidth / innerHeight < 0.8;          // on a phone the crystal steps back, to sit between the opening and the controls
-const HOME = { get p() { return tall() ? V(0.5, 1.9, 12.4) : V(0.4, 1.45, 9.1); }, get t() { return tall() ? V(0, -0.2, 0) : V(0, -0.06, 0); } };
+const HOME = { get p() { return tall() ? V(0.5, 1.9, 13.2) : V(0.4, 1.45, 9.1); }, get t() { return tall() ? V(0, 0.05, 0) : V(0, -0.06, 0); } };
 function resetView() { camera.position.copy(HOME.p); controls.target.copy(HOME.t); controls.update(); }
 document.getElementById('reset').onclick = resetView;
 const sb = document.getElementById('split');
@@ -704,8 +709,26 @@ function resize() {
   const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false);
   const pr = renderer.getPixelRatio(); RT.setSize(w * pr, h * pr); SCALE.value = h * pr * 0.5; PXR.value = pr; needleM.resolution.set(w * pr, h * pr); slotM.resolution.set(w * pr, h * pr); edgeM.resolution.set(w * pr, h * pr); surfM.uniforms.uRes.value.set(w * pr, h * pr); bgMat.uniforms.uAsp.value = w / h;
   camera.aspect = w / h; camera.fov = camera.aspect < 0.8 ? 40 : 27; camera.updateProjectionMatrix();
+  fitFrame();
 }
 addEventListener('resize', resize);
+let FRAME = null;
+function fitFrame() {                                     // on a phone the crystal sits in the band between the opening text and the controls: smaller if it must be, never under the words
+  camera.zoom = 1; camera.clearViewOffset();
+  if (tall()) {
+    if (!FRAME) {                                         // the crystal and its rock at rest, widened to the circle it sweeps as it turns
+      const b = new THREE.Box3().setFromObject(ROut.turn), r = Math.max(-b.min.x, b.max.x, -b.min.z, b.max.z);
+      FRAME = [b.min.y, b.max.y].flatMap(y => [0, 1, 2, 3, 4, 5, 6, 7].map(k => V(r * Math.cos(k * Math.PI / 4), y, r * Math.sin(k * Math.PI / 4))));
+    }
+    const W = innerWidth, H = innerHeight, c = camera.clone();
+    c.position.copy(HOME.p); c.lookAt(HOME.t); c.updateMatrixWorld(); c.updateProjectionMatrix();
+    const ys = FRAME.map(q => (1 - q.clone().project(c).y) / 2 * H), y0 = Math.min(...ys), y1 = Math.max(...ys);
+    const top = document.getElementById('intro').getBoundingClientRect().bottom + 12, bot = document.querySelector('nav.ui').getBoundingClientRect().top - 4;
+    const s = Math.min(1, Math.max(0.55, (bot - top) / (y1 - y0))), mid = H / 2 + ((y0 + y1) / 2 - H / 2) * s;
+    camera.zoom = s; camera.setViewOffset(W, H, 0, Math.round(mid - (top + bot) / 2), W, H);
+  }
+  camera.updateProjectionMatrix();
+}
 let spin = 0.6, last = performance.now(), split = 0, splitTo = 0, resumeAt = 0, spinV = 0;
 const UP = V(0, 1, 0);
 const TAGS = APPS.map(app => { const el = document.createElement('span'); el.className = 'tag'; el.textContent = app; document.getElementById('tags').appendChild(el); return el; });
@@ -792,7 +815,7 @@ function frame(now) {
   requestAnimationFrame(frame);
 }
 camera.position.copy(HOME.p); controls.target.copy(HOME.t);
-resize();
+resize(); if (document.fonts) document.fonts.ready.then(fitFrame);
 const mh = location.hash.match(/^#rot(-?\d+)(?:d(\d+))?(s|c|sc)?$/); if (mh) { spin = +mh[1] * DEG; turning = false; if (mh[3] && mh[3].includes('s')) { split = splitTo = 1; sb.setAttribute('aria-pressed', true); } if (mh[3] && mh[3].includes('c')) { want = layer = 6; litT = 1; FILL[6] = 1; } if (mh[2]) camera.position.sub(controls.target).setLength(+mh[2] / 10).add(controls.target); }
 window.__ready = true;
 requestAnimationFrame(frame);

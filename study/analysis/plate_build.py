@@ -248,7 +248,7 @@ body = f"""
         <div class="rail"></div>
         <div class="c-body">
           <h3>nothing to notice it by</h3>
-          <p>Research, data and design: Diego Ballarin, 2026. Every mark is placed from the prices by a script; the decisions and the final revision are mine, and the drafting and the code were done in dialogue with Claude. The case study built on the same finding is <a href="/work/agent-review">something to notice it by</a>.</p>
+          <p>Research, data and design: Diego Ballarin, 2026. Every mark is placed from the prices by a script; the decisions and the final revision are mine, and the drafting and the code were done in dialogue with Claude. The case study built on the same finding is <a href="/work/agent-review">something to notice it by</a>. Plate&nbsp;2 is <a href="/work/on-precision">on precision</a>.</p>
         </div>
       </section>
     </div>
@@ -270,16 +270,16 @@ SCRIPT = """
     document.querySelectorAll('.row').forEach(function(r){show(r,on);});});
   if(/[?&]all\\b/.test(location.search))all.click();
   /* typesetting: no word alone on a line's end of block, no short word hanging */
-  var SHORT=/(?<=^|\\s)([\\p{L}\\p{N}]{1,2}) (?=\\S)/gu;
-  document.querySelectorAll('.said p,.verdict,.premises p,.notes p,.open .sub,.contract,.colophon p,.premises h2,.how p').forEach(function(el){
+  var SHORT=/(?<=^|\\s)([“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b))) (?=\\S)/gu; /* up to three letters or digits: a, of, the, and */
+  document.querySelectorAll('.statement,.said p,.verdict,.premises p,.notes p,.open .sub,.contract,.colophon p,.premises h2,.how p').forEach(function(el){
     var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);
     nodes.forEach(function(n,i){n.nodeValue=n.nodeValue.replace(SHORT,'$1\\u00A0');
       var nx=nodes[i+1];if(!nx)return; /* a short word at the edge of a link or tag */
-      if(/(^|\\s)[\\p{L}\\p{N}]{1,2} $/u.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
-      else if(/(^|\\s)[\\p{L}\\p{N}]{1,2}$/u.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
-    for(var i=nodes.length-1,seen=false;i>=0;i--){var v=nodes[i].nodeValue,body=v.replace(/\\s+$/,''),k=body.lastIndexOf(' ');
-      if(seen&&/ $/.test(v)){nodes[i].nodeValue=v.slice(0,-1)+'\\u00A0';break;}
-      if(k>0){nodes[i].nodeValue=v.slice(0,k)+'\\u00A0'+v.slice(k+1);break;}
+      if(/(^|\\s)[“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b)) $/u.test(n.nodeValue))n.nodeValue=n.nodeValue.slice(0,-1)+'\\u00A0';
+      else if(/(^|\\s)[“‘«(]?(?:[\\p{L}\\p{N}]{1,3}|[−–+-]?\\p{N}+(?:[.,:]\\p{N}+)*%?(?= (?:per|points?)\\b))$/u.test(n.nodeValue)&&/^ /.test(nx.nodeValue))nx.nodeValue='\\u00A0'+nx.nodeValue.slice(1);});
+    for(var i=nodes.length-1,seen=false;i>=0;i--){var v=nodes[i].nodeValue,body=v.replace(/\\s+$/,''),k=body.lastIndexOf(' '),after=nodes.slice(i+1).map(function(x){return x.nodeValue;}).join(''),held=function(t){return t.replace(/\\s+$/,'').indexOf('\\u00A0')>=0;}; /* a last word already held to the one before is left as it is: binding further back would make a long unbreakable run */
+      if(seen&&/ $/.test(v)){if(!held(after))nodes[i].nodeValue=v.slice(0,-1)+'\\u00A0';break;}
+      if(k>0){if(!held(body.slice(k+1)+after))nodes[i].nodeValue=v.slice(0,k)+'\\u00A0'+v.slice(k+1);break;}
       if(body.trim())seen=true;}
   });
 })();
