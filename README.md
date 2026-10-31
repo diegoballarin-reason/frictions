@@ -1,6 +1,6 @@
 # Frictions
 
-*Some recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed. Alongside it, a separate study of the causes a model gave for stock-market moves, checked against the&nbsp;prices.*<br>
+*Some recurring ways language models fail, named and countered, from inside an extended writing and research project run as a standing&nbsp;testbed. Alongside it, two separate studies of what models say about stock-market moves, checked against the&nbsp;prices.*<br>
 *Bilingual, EN and IT.*
 
 [Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [Versione italiana](#attriti)
@@ -25,16 +25,23 @@ Most of this work was done with Claude, and Claude is named wherever the episode
 
 This inventory was produced by applying the protocols it describes. The observations, the analysis, the protocols and the final revision are mine; the drafting was done in dialogue with the systems under observation, under those same protocols: blind fields, forced refutations, pre-declared failure criteria. A set of articles on the failure modes of language models, written without a working method for handling those failure modes, would be an odd artefact.
 
-Within the series, episodes are reconstructed rather than transcribed: same structure of error, neutral content. Where a piece reports episodes directly instead, as the case report in 08 does, it says so on its own first page. The separate study follows a different rule again and declares it on its own first page: the material there is quoted verbatim, and every claim is checked against a public record. The project the material comes from stays out of view; the behaviour it exposed does not.
+Within the series, episodes are reconstructed rather than transcribed: same structure of error, neutral content. Where a piece reports episodes directly instead, as the case report in 08 does, it says so on its own first page. The separate studies follow a different rule again and declare it on their own first page: the material there is quoted verbatim in its original language, and every claim is checked against a public record. The project the material comes from stays out of view; the behaviour it exposed does not.
 
-## A separate study
+## Separate studies
 
-Alongside the series, one piece of work that does not belong to it.
+Alongside the series, two pieces of work that do not belong to it.
 
 **[Where No One Can Know](study/where-no-one-can-know.en.md)** / *[Dove la causa non è conoscibile](study/where-no-one-can-know.it.md)*
 *Seven weeks of generated market commentary, checked against the prices.*
 
-Different testbed, different model, and an observational study rather than a protocol piece: under conversational pressure, explanation becomes a function of the asserted outcome rather than of the evidence, and the register does not vary between the accurate case and the fabricated one. It is the only work here whose evidence is produced by third parties and checkable by the reader without privileged access. Method, domain-suitability criteria and findings table are in **[protocol.md](study/protocol.md)**, kept separate so it can be reused.
+Different testbed, different model, and an observational study rather than a protocol piece: under conversational pressure, explanation becomes a function of the asserted outcome rather than of the evidence, and the register does not vary between the accurate case and the fabricated one. Method, domain-suitability criteria and findings table are in **[protocol.md](study/protocol.md)**, kept separate so it can be reused.
+
+**[Here Is One Hand](study2/here-is-one-hand.en.md)** / *[And Here Is Another](study2/here-is-one-hand.it.md)*
+*Twelve stock sessions, three chat apps with web search, every number checked against the record.*
+
+A pre-registered follow-up across three vendors: ChatGPT, Claude and Gemini, a new chat for every question, web search on, and a false premise in one question out of three. The prices of the session asked about are almost always right. The numbers each answer adds about other moments are wrong more often in each of the three apps, about one time in eight overall, and they are written in the same register. Data, method, scripts and the check behind every figure are in **[study2](study2/README.md)**.
+
+These two are the only works here whose evidence is produced by third parties and checkable by the reader without privileged&nbsp;access.
 
 ---
 
@@ -98,11 +105,13 @@ Two pieces carry no references, and should not. 04 is prescriptive and 08 is a c
 
 Every article closes on a question its protocol does not answer. This page opens on the one they share: how much of what a model gets wrong is available to be&nbsp;noticed?
 
+© Diego Ballarin. Texts released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): sharing and adaptation allowed with attribution, no commercial use. The code in [tools/](tools/) is released under the&nbsp;[MIT](tools/LICENSE)&nbsp;licence.
+
 ---
 
 # Attriti
 
-*Alcuni cedimenti ricorrenti di modelli linguistici, emersi nel corso di un ampio progetto di scrittura e ricerca usato come banco di prova permanente, qui nominati e isolati. Accanto, uno studio a sé sulle cause che un modello ha attribuito ai movimenti di Borsa, verificate sui&nbsp;prezzi.*<br>
+*Alcuni cedimenti ricorrenti di modelli linguistici, emersi nel corso di un ampio progetto di scrittura e ricerca usato come banco di prova permanente, qui nominati e isolati. Accanto, due studi a sé su ciò che i modelli dicono dei movimenti di Borsa, verificato sui&nbsp;prezzi.*<br>
 *Bilingue, IT e EN.*
 
 [Rilasciato sotto Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [LICENSE](LICENSE) · → [English version](#frictions)
@@ -127,16 +136,23 @@ Gran parte di questo lavoro è stata fatta con Claude, e Claude viene nominato o
 
 Questo inventario è stato prodotto applicando i protocolli che descrive. Osservazioni, analisi, protocolli e revisione finale sono miei; la stesura è avvenuta in dialogo con i sistemi sotto osservazione, sotto quegli stessi protocolli: campi ciechi, confutazioni obbligate, criteri di fallimento dichiarati in anticipo. Una serie di articoli sui modi di guasto dei modelli linguistici, scritta senza un metodo di lavoro per gestirli, sarebbe un oggetto singolare.
 
-Dentro la serie, gli episodi sono ricostruiti, non trascritti: stessa struttura dell'errore, contenuto neutro. Dove un pezzo riporta invece episodi diretti, come il rapporto di caso in 08, lo dichiara nella propria prima pagina. Lo studio separato segue una regola ancora diversa e la dichiara nella propria: lì il materiale è citato alla lettera, e ogni affermazione è verificata contro un registro pubblico. Il progetto da cui il materiale proviene resta fuori campo; il comportamento che ha messo in luce no.
+Dentro la serie, gli episodi sono ricostruiti, non trascritti: stessa struttura dell'errore, contenuto neutro. Dove un pezzo riporta invece episodi diretti, come il rapporto di caso in 08, lo dichiara nella propria prima pagina. Gli studi separati seguono una regola ancora diversa e la dichiarano nella propria: lì il materiale è citato alla lettera, nella lingua originale, e ogni affermazione è verificata contro un registro pubblico. Il progetto da cui il materiale proviene resta fuori campo; il comportamento che ha messo in luce no.
 
-## Uno studio separato
+## Studi separati
 
-Accanto alla serie, un lavoro che non le appartiene.
+Accanto alla serie, due lavori che non le appartengono.
 
 **[Dove la causa non è conoscibile](study/where-no-one-can-know.it.md)** / *[Where No One Can Know](study/where-no-one-can-know.en.md)*
 *Sette settimane di commento finanziario generato, verificato contro i prezzi.*
 
-Altro banco di prova, altro modello, e uno studio osservazionale invece di un pezzo con protocollo: sotto pressione conversazionale la spiegazione diventa funzione dell'esito asserito anziché delle prove, e il registro non varia fra il caso accurato e quello fabbricato. È l'unico lavoro qui la cui evidenza è prodotta da terzi e controllabile dal lettore senza accessi privilegiati. Metodo, criteri di idoneità del dominio e tabella dei reperti stanno in **[protocol.md](study/protocol.md)**, tenuto separato perché sia riutilizzabile.
+Altro banco di prova, altro modello, e uno studio osservazionale invece di un pezzo con protocollo: sotto pressione conversazionale la spiegazione diventa funzione dell'esito asserito anziché delle prove, e il registro non varia fra il caso accurato e quello fabbricato. Metodo, criteri di idoneità del dominio e tabella dei reperti stanno in **[protocol.md](study/protocol.md)**, tenuto separato perché sia riutilizzabile.
+
+**[And Here Is Another](study2/here-is-one-hand.it.md)** / *[Here Is One Hand](study2/here-is-one-hand.en.md)*
+*Dodici sedute di Borsa, tre app di chat con la ricerca sul web, ogni numero verificato sul registro.*
+
+Un seguito preregistrato su tre produttori: ChatGPT, Claude e Gemini, una chat nuova per ogni domanda, la ricerca sul web attiva e una premessa falsa in una domanda su tre. I prezzi della seduta chiesta sono quasi sempre giusti. I numeri che ogni risposta aggiunge su altri momenti sono sbagliati più spesso in ciascuna delle tre app, circa una volta su otto nel complesso, e sono scritti con lo stesso registro. Dati, metodo, script e il controllo dietro ogni cifra stanno in **[study2](study2/README.md)**.
+
+Sono gli unici lavori qui la cui evidenza è prodotta da terzi e controllabile dal lettore senza accessi&nbsp;privilegiati.
 
 ---
 

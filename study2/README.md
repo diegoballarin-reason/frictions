@@ -5,7 +5,7 @@
 
 Twelve sessions of 12–23 October 2026, each asked three ways in the chat apps of ChatGPT, Claude and Gemini, with web search on: **A**, how did the stock react?; **C**, the same with a false premise, the wrong direction; **U**, the official open, close and volume. 217 pre-registered answers (ChatGPT 84, Claude 84, Gemini 49), plus 54 from Gemini's exploration blocks. Every evaluation was proposed by Claude and confirmed by me one by one: all 407 are confirmed.
 
-On the site it is plate 2 of *nothing to notice it by*, [as a plate](https://diegoballarin.com/work/on-precision) and [in quartz](https://diegoballarin.com/work/on-precision/shown).
+On the site it is plate 2 of *nothing to notice it by*, [as a plate](https://diegoballarin.com/work/on-precision) and [in quartz](https://diegoballarin.com/work/on-precision/shown). The essay is **[Here Is One Hand](here-is-one-hand.en.md)**, with its Italian original *[And Here Is Another](here-is-one-hand.it.md)*; every number and quotation in it is checked by `analysis/essay_check.py`.
 
 ## Main results
 
@@ -66,7 +66,9 @@ Decisions taken after seeing cases are dated in `method/decisioni_30ott.md` and 
 
 ## Limits
 
-Claude evaluated Claude's answers too. The rules were fixed beforehand and every evaluation passed my confirmation, which reduces the bias without removing it. Gemini's sample is smaller (49 answers against 84), so the comparisons between apps on the questions all three answered are kept apart in `analysis.json` (`common`). For sessions outside the frozen file, the extra checks used Interactive Brokers prices (the reference of §6 for other sessions) instead of Nasdaq's history; no outcome depends on a gap between the two sources.
+Claude evaluated Claude's answers too. The main rules were fixed beforehand and every evaluation passed my confirmation, which reduces the bias without removing it. Gemini's sample is smaller (49 answers against 84), so the comparisons between apps on the questions all three answered are kept apart in `analysis.json` (`common`). For sessions outside the frozen file, the extra checks used Interactive Brokers prices (the reference of §6 for other sessions) instead of Nasdaq's history; no outcome depends on a gap between the two sources.
+
+[Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · © Diego&nbsp;Ballarin
 
 ---
 
@@ -77,7 +79,7 @@ Claude evaluated Claude's answers too. The rules were fixed beforehand and every
 
 Dodici sedute fra il 12 e il 23 ottobre 2026, ciascuna chiesta in tre modi nelle app di ChatGPT, Claude e Gemini, con la ricerca sul web attiva: **A**, come ha reagito il titolo?; **C**, la stessa domanda con una premessa falsa, la direzione sbagliata; **U**, apertura, chiusura e volume ufficiali. 217 risposte preregistrate (ChatGPT 84, Claude 84, Gemini 49), più 54 dai blocchi esplorativi di Gemini. Ogni valutazione è stata proposta da Claude e confermata da me una per una: sono confermate tutte e 407.
 
-Sul sito è la tavola 2 di *nothing to notice it by*, [come tavola](https://diegoballarin.com/work/on-precision) e [nel quarzo](https://diegoballarin.com/work/on-precision/shown).
+Sul sito è la tavola 2 di *nothing to notice it by*, [come tavola](https://diegoballarin.com/work/on-precision) e [nel quarzo](https://diegoballarin.com/work/on-precision/shown). Il saggio è **[And Here Is Another](here-is-one-hand.it.md)**, con il suo originale inglese *[Here Is One Hand](here-is-one-hand.en.md)*; ogni numero e ogni citazione sono verificati da `analysis/essay_check.py`.
 
 ## Risultati principali
 
@@ -138,4 +140,6 @@ Le decisioni prese dopo aver visto i casi sono datate in `method/decisioni_30ott
 
 ## Limiti
 
-Claude ha valutato anche le risposte di Claude. Le regole erano fissate prima e ogni valutazione è passata dalla mia conferma, il che riduce la distorsione senza eliminarla. Il campione di Gemini è più piccolo (49 risposte contro 84), perciò i confronti fra app sulle domande a cui hanno risposto tutte e tre stanno a parte in `analysis.json` (`common`). Per le sedute fuori dal file congelato i controlli aggiuntivi hanno usato i prezzi di Interactive Brokers (il riferimento del §6 per le altre sedute) invece della storia di Nasdaq; nessun esito dipende da uno scarto fra le due fonti.
+Claude ha valutato anche le risposte di Claude. Le regole principali erano fissate prima e ogni valutazione è passata dalla mia conferma, il che riduce la distorsione senza eliminarla. Il campione di Gemini è più piccolo (49 risposte contro 84), perciò i confronti fra app sulle domande a cui hanno risposto tutte e tre stanno a parte in `analysis.json` (`common`). Per le sedute fuori dal file congelato i controlli aggiuntivi hanno usato i prezzi di Interactive Brokers (il riferimento del §6 per le altre sedute) invece della storia di Nasdaq; nessun esito dipende da uno scarto fra le due fonti.
+
+[Rilasciato sotto Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · © Diego&nbsp;Ballarin
