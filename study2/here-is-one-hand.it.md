@@ -96,4 +96,6 @@ Il primo studio si chiudeva su una frase: nel testo non c'è niente da cui accor
 
 ---
 
+*Indicazioni aggiuntive, 14 novembre 2026: [ricerche affini](../notes/2026-11-14-related-research.it.md), rinvenute a studio&nbsp;chiuso.*
+
 [Rilasciato sotto Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · © Diego&nbsp;Ballarin

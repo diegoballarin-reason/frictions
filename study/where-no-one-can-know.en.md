@@ -122,4 +122,6 @@ Of this chain I have shown the points where I checked. I do not know how many we
 
 ---
 
+*Addendum, 14 November 2026: [related research](../notes/2026-11-14-related-research.en.md), found after this study had&nbsp;closed.*
+
 [Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · © Diego&nbsp;Ballarin
