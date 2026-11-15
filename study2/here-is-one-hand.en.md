@@ -96,4 +96,6 @@ The first study closed on a sentence: there is nothing in the text to notice it 
 
 ---
 
+*Addendum, 14 November 2026: [related research](../notes/2026-11-14-related-research.en.md), found after this study had&nbsp;closed.*
+
 [Licensed under Creative Commons — CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · © Diego&nbsp;Ballarin

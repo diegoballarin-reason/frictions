@@ -43,6 +43,8 @@ A pre-registered follow-up across three vendors: ChatGPT, Claude and Gemini, a n
 
 These two are the only works here whose evidence is produced by third parties and checkable by the reader without privileged&nbsp;access.
 
+*Note of 14 November 2026.* **[Addendum: related research](notes/2026-11-14-related-research.en.md)** / *[Indicazioni aggiuntive – ricerche affini](notes/2026-11-14-related-research.it.md)*: work close to the two studies, which I came across only after both had&nbsp;closed.
+
 ---
 
 ## Contents
@@ -153,6 +155,8 @@ Altro banco di prova, altro modello, e uno studio osservazionale invece di un pe
 Un seguito preregistrato su tre produttori: ChatGPT, Claude e Gemini, una chat nuova per ogni domanda, la ricerca sul web attiva e una premessa falsa in una domanda su tre. I prezzi della seduta chiesta sono quasi sempre giusti. I numeri che ogni risposta aggiunge su altri momenti sono sbagliati più spesso in ciascuna delle tre app, circa una volta su otto nel complesso, e sono scritti con lo stesso registro. Dati, metodo, script e il controllo dietro ogni cifra stanno in **[study2](study2/README.md)**.
 
 Sono gli unici lavori qui la cui evidenza è prodotta da terzi e controllabile dal lettore senza accessi&nbsp;privilegiati.
+
+*Nota del 14 novembre 2026.* **[Indicazioni aggiuntive – ricerche affini](notes/2026-11-14-related-research.it.md)** / *[Addendum: related research](notes/2026-11-14-related-research.en.md)*: lavori vicini ai due studi, rinvenuti solo a studi&nbsp;chiusi.
 
 ---
 
